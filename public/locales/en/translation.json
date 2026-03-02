@@ -1,0 +1,163 @@
+{
+  "app": {
+    "title": "AI Storyboard",
+    "tagline": "Create stunning storyboards for your video productions"
+  },
+  "nav": {
+    "home": "Projects",
+    "settings": "Settings",
+    "import": "Import"
+  },
+  "project": {
+    "create": "New Project",
+    "edit": "Edit",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure you want to delete this project?",
+    "name": "Project Name",
+    "description": "Description",
+    "type": "Type",
+    "status": "Status",
+    "language": "Language",
+    "noProjects": "No projects yet. Create your first project!",
+    "types": {
+      "talking-character": "Talking Character",
+      "music-video": "Music Video",
+      "event-promo": "Event Promo",
+      "invitation": "Invitation",
+      "recap-video": "Recap Video",
+      "custom": "Custom"
+    },
+    "statuses": {
+      "draft": "Draft",
+      "in-progress": "In Progress",
+      "prompts-ready": "Prompts Ready",
+      "completed": "Completed"
+    }
+  },
+  "editor": {
+    "addShot": "Add Shot",
+    "intro": "Intro",
+    "outro": "Outro",
+    "shots": "Shots",
+    "views": {
+      "cards": "Cards",
+      "timeline": "Timeline",
+      "prompts": "Prompts"
+    },
+    "noShots": "No shots yet. Add your first shot!",
+    "autoSaved": "Auto-saved"
+  },
+  "shot": {
+    "title": "Title",
+    "environment": "Environment",
+    "character": "Character",
+    "dialogue": "Dialogue",
+    "camera": "Camera Angle",
+    "duration": "Duration",
+    "mood": "Mood",
+    "transition": "Transition",
+    "notes": "Notes",
+    "setting": "Setting",
+    "lighting": "Lighting",
+    "props": "Props",
+    "atmosphere": "Atmosphere",
+    "appearance": "Appearance",
+    "outfit": "Outfit",
+    "expression": "Expression",
+    "action": "Action",
+    "text": "Text",
+    "voiceStyle": "Voice Style",
+    "seconds": "seconds",
+    "cameraAngles": {
+      "wide-shot": "Wide Shot",
+      "medium-shot": "Medium Shot",
+      "close-up": "Close-Up",
+      "extreme-close-up": "Extreme Close-Up",
+      "over-the-shoulder": "Over the Shoulder",
+      "birds-eye": "Bird's Eye",
+      "low-angle": "Low Angle",
+      "high-angle": "High Angle",
+      "dutch-angle": "Dutch Angle",
+      "tracking": "Tracking",
+      "pan": "Pan",
+      "zoom-in": "Zoom In",
+      "zoom-out": "Zoom Out"
+    },
+    "moods": {
+      "energetic": "Energetic",
+      "romantic": "Romantic",
+      "dramatic": "Dramatic",
+      "festive": "Festive",
+      "emotional": "Emotional",
+      "funny": "Funny",
+      "elegant": "Elegant",
+      "mysterious": "Mysterious",
+      "calm": "Calm",
+      "exciting": "Exciting"
+    },
+    "transitions": {
+      "cut": "Cut",
+      "fade": "Fade",
+      "dissolve": "Dissolve",
+      "wipe": "Wipe",
+      "slide": "Slide",
+      "zoom": "Zoom",
+      "none": "None"
+    }
+  },
+  "prompt": {
+    "generate": "Generate Prompt",
+    "generateAll": "Generate All",
+    "regenerate": "Regenerate",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "targetModel": "Target Model",
+    "environment": "Environment Prompt",
+    "character": "Character Prompt",
+    "music": "Music Prompt",
+    "video": "Video Prompt",
+    "quality": "Quality",
+    "qualities": {
+      "draft": "Draft",
+      "standard": "Standard",
+      "high": "High"
+    }
+  },
+  "export": {
+    "title": "Export Storyboard",
+    "kolboPrompts": "Kolbo.AI Prompts",
+    "pdf": "PDF Storyboard",
+    "json": "JSON File",
+    "download": "Download",
+    "copyAll": "Copy All",
+    "close": "Close"
+  },
+  "ai": {
+    "manual": "Manual",
+    "claudeImport": "Claude Code Import",
+    "apiMode": "API",
+    "comingSoon": "Coming Soon",
+    "pasteJson": "Paste your storyboard JSON here...",
+    "validate": "Validate",
+    "importBtn": "Import Storyboard",
+    "validJson": "Valid JSON!",
+    "invalidJson": "Invalid JSON",
+    "importSuccess": "Storyboard imported successfully!"
+  },
+  "section": {
+    "title": "Title",
+    "background": "Background",
+    "textOverlay": "Text Overlay",
+    "musicRef": "Music Reference",
+    "showLogo": "Show Logo"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "create": "Create",
+    "back": "Back",
+    "loading": "Loading...",
+    "error": "Error"
+  }
+}

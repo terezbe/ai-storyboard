@@ -1,0 +1,163 @@
+{
+  "app": {
+    "title": "AI Storyboard",
+    "tagline": "צור סטוריבורדים מדהימים להפקות הווידאו שלך"
+  },
+  "nav": {
+    "home": "פרויקטים",
+    "settings": "הגדרות",
+    "import": "ייבוא"
+  },
+  "project": {
+    "create": "פרויקט חדש",
+    "edit": "ערוך",
+    "delete": "מחק",
+    "deleteConfirm": "בטוח שאתה רוצה למחוק את הפרויקט?",
+    "name": "שם הפרויקט",
+    "description": "תיאור",
+    "type": "סוג",
+    "status": "סטטוס",
+    "language": "שפה",
+    "noProjects": "אין פרויקטים עדיין. צור את הפרויקט הראשון שלך!",
+    "types": {
+      "talking-character": "דמות מדברת",
+      "music-video": "קליפ",
+      "event-promo": "פרומו לאירוע",
+      "invitation": "הזמנה",
+      "recap-video": "סרטון סיכום",
+      "custom": "מותאם אישית"
+    },
+    "statuses": {
+      "draft": "טיוטה",
+      "in-progress": "בתהליך",
+      "prompts-ready": "פרומפטים מוכנים",
+      "completed": "הושלם"
+    }
+  },
+  "editor": {
+    "addShot": "הוסף שוט",
+    "intro": "אינטרו",
+    "outro": "אאוטרו",
+    "shots": "שוטים",
+    "views": {
+      "cards": "כרטיסים",
+      "timeline": "ציר זמן",
+      "prompts": "פרומפטים"
+    },
+    "noShots": "אין שוטים עדיין. הוסף את השוט הראשון!",
+    "autoSaved": "נשמר אוטומטית"
+  },
+  "shot": {
+    "title": "כותרת",
+    "environment": "סביבה",
+    "character": "דמות",
+    "dialogue": "דיאלוג",
+    "camera": "זווית מצלמה",
+    "duration": "משך",
+    "mood": "מצב רוח",
+    "transition": "מעבר",
+    "notes": "הערות",
+    "setting": "סביבה/מיקום",
+    "lighting": "תאורה",
+    "props": "אביזרים",
+    "atmosphere": "אווירה",
+    "appearance": "מראה",
+    "outfit": "לבוש",
+    "expression": "הבעה",
+    "action": "פעולה",
+    "text": "טקסט",
+    "voiceStyle": "סגנון קול",
+    "seconds": "שניות",
+    "cameraAngles": {
+      "wide-shot": "שוט רחב",
+      "medium-shot": "שוט בינוני",
+      "close-up": "קלוז אפ",
+      "extreme-close-up": "אקסטרים קלוז אפ",
+      "over-the-shoulder": "מעל הכתף",
+      "birds-eye": "מבט ציפור",
+      "low-angle": "זווית נמוכה",
+      "high-angle": "זווית גבוהה",
+      "dutch-angle": "זווית הולנדית",
+      "tracking": "מעקב",
+      "pan": "פאן",
+      "zoom-in": "זום אין",
+      "zoom-out": "זום אאוט"
+    },
+    "moods": {
+      "energetic": "אנרגטי",
+      "romantic": "רומנטי",
+      "dramatic": "דרמטי",
+      "festive": "חגיגי",
+      "emotional": "רגשי",
+      "funny": "מצחיק",
+      "elegant": "אלגנטי",
+      "mysterious": "מסתורי",
+      "calm": "רגוע",
+      "exciting": "מרגש"
+    },
+    "transitions": {
+      "cut": "חיתוך",
+      "fade": "פייד",
+      "dissolve": "המסה",
+      "wipe": "מחיקה",
+      "slide": "החלקה",
+      "zoom": "זום",
+      "none": "ללא"
+    }
+  },
+  "prompt": {
+    "generate": "צור פרומפט",
+    "generateAll": "צור הכל",
+    "regenerate": "צור מחדש",
+    "copy": "העתק",
+    "copied": "הועתק!",
+    "targetModel": "מודל יעד",
+    "environment": "פרומפט סביבה",
+    "character": "פרומפט דמות",
+    "music": "פרומפט מוזיקה",
+    "video": "פרומפט וידאו",
+    "quality": "איכות",
+    "qualities": {
+      "draft": "טיוטה",
+      "standard": "סטנדרט",
+      "high": "גבוהה"
+    }
+  },
+  "export": {
+    "title": "ייצוא סטוריבורד",
+    "kolboPrompts": "פרומפטים ל-Kolbo.AI",
+    "pdf": "PDF סטוריבורד",
+    "json": "קובץ JSON",
+    "download": "הורד",
+    "copyAll": "העתק הכל",
+    "close": "סגור"
+  },
+  "ai": {
+    "manual": "ידני",
+    "claudeImport": "ייבוא מ-Claude Code",
+    "apiMode": "API",
+    "comingSoon": "בקרוב",
+    "pasteJson": "הדבק כאן JSON של סטוריבורד...",
+    "validate": "בדוק",
+    "importBtn": "ייבא סטוריבורד",
+    "validJson": "JSON תקין!",
+    "invalidJson": "JSON לא תקין",
+    "importSuccess": "סטוריבורד יובא בהצלחה!"
+  },
+  "section": {
+    "title": "כותרת",
+    "background": "רקע",
+    "textOverlay": "טקסט",
+    "musicRef": "מוזיקה",
+    "showLogo": "הצג לוגו"
+  },
+  "common": {
+    "save": "שמור",
+    "cancel": "ביטול",
+    "delete": "מחק",
+    "create": "צור",
+    "back": "חזרה",
+    "loading": "טוען...",
+    "error": "שגיאה"
+  }
+}

@@ -1,0 +1,243 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Copy, Check, Sparkles, RefreshCw } from 'lucide-react';
+import { useProjectStore } from '../../store/project-store';
+import { useEditorStore } from '../../store/editor-store';
+import { useSettingsStore } from '../../store/settings-store';
+import {
+  generateEnvironmentPrompt,
+  generateCharacterPrompt,
+  generateMusicPrompt,
+  generateVideoPrompt,
+  generateAllPromptsForShot,
+} from '../../lib/prompt-engine';
+import { KOLBO_MODELS } from '../../config/kolbo-models';
+import type { Prompt, PromptType } from '../../types/project';
+
+function PromptCard({
+  prompt,
+  type,
+  onRegenerate,
+  onUpdateText,
+}: {
+  prompt: Prompt | null;
+  type: PromptType;
+  onRegenerate: () => void;
+  onUpdateText: (text: string) => void;
+}) {
+  const { t } = useTranslation();
+  const [copied, setCopied] = useState(false);
+
+  const typeLabels: Record<PromptType, string> = {
+    environment: t('prompt.environment'),
+    character: t('prompt.character'),
+    music: t('prompt.music'),
+    video: t('prompt.video'),
+  };
+
+  const typeColors: Record<PromptType, string> = {
+    environment: 'border-green-500/30 bg-green-500/5',
+    character: 'border-blue-500/30 bg-blue-500/5',
+    music: 'border-yellow-500/30 bg-yellow-500/5',
+    video: 'border-purple-500/30 bg-purple-500/5',
+  };
+
+  const handleCopy = async () => {
+    if (!prompt) return;
+    await navigator.clipboard.writeText(prompt.text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className={`rounded-xl border p-4 ${typeColors[type]}`}>
+      <div className="flex items-center justify-between mb-2">
+        <h4 className="text-sm font-semibold text-text">{typeLabels[type]}</h4>
+        <div className="flex items-center gap-1">
+          <button
+            onClick={onRegenerate}
+            className="p-1.5 text-text-muted hover:text-text rounded-lg hover:bg-surface-lighter transition-colors"
+            title={t('prompt.regenerate')}
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+          </button>
+          <button
+            onClick={handleCopy}
+            disabled={!prompt}
+            className="p-1.5 text-text-muted hover:text-text rounded-lg hover:bg-surface-lighter transition-colors disabled:opacity-30"
+            title={t('prompt.copy')}
+          >
+            {copied ? (
+              <Check className="w-3.5 h-3.5 text-green-400" />
+            ) : (
+              <Copy className="w-3.5 h-3.5" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {prompt ? (
+        <>
+          <textarea
+            value={prompt.text}
+            onChange={(e) => onUpdateText(e.target.value)}
+            rows={4}
+            className="w-full bg-surface/50 border border-border/50 rounded-lg px-3 py-2 text-sm text-text focus:outline-none focus:border-primary-500 resize-none"
+          />
+          <div className="mt-2 flex items-center gap-2 text-[10px] text-text-muted">
+            <span className="bg-surface-lighter px-1.5 py-0.5 rounded">
+              {KOLBO_MODELS[prompt.targetModel]?.name || prompt.targetModel}
+            </span>
+            <span>{prompt.quality}</span>
+          </div>
+        </>
+      ) : (
+        <div className="h-24 flex items-center justify-center text-text-muted text-sm">
+          <button
+            onClick={onRegenerate}
+            className="flex items-center gap-1.5 text-primary-400 hover:text-primary-300"
+          >
+            <Sparkles className="w-4 h-4" />
+            {t('prompt.generate')}
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function PromptPanel() {
+  const { t } = useTranslation();
+  const { currentProject, updateShotPrompts } = useProjectStore();
+  const { selectedShotId, setSelectedShotId } = useEditorStore();
+  const settings = useSettingsStore();
+
+  if (!currentProject) return null;
+  const { shots } = currentProject.storyboard;
+
+  // If a shot is selected, show its prompts
+  const shot = shots.find((s) => s.id === selectedShotId);
+
+  if (!shot) {
+    return (
+      <div className="p-6">
+        <p className="text-text-muted text-center py-10">
+          {t('editor.noShots') === t('editor.noShots') ? 'Select a shot to view prompts' : t('editor.noShots')}
+        </p>
+        {/* Show all shots prompts overview */}
+        <div className="space-y-4">
+          {shots.map((s) => (
+            <div
+              key={s.id}
+              onClick={() => setSelectedShotId(s.id)}
+              className="bg-surface-light border border-border rounded-xl p-4 cursor-pointer hover:border-primary-500/50 transition-colors"
+            >
+              <h4 className="font-medium text-text mb-2">
+                {s.title || `Shot ${s.orderIndex + 1}`}
+              </h4>
+              <div className="flex gap-2">
+                {(['environment', 'character', 'music', 'video'] as PromptType[]).map((type) => {
+                  const has = !!s.prompts[type];
+                  return (
+                    <span
+                      key={type}
+                      className={`text-[10px] px-1.5 py-0.5 rounded ${
+                        has ? 'bg-green-900/50 text-green-300' : 'bg-surface-lighter text-text-muted'
+                      }`}
+                    >
+                      {type}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  const regenerate = (type: PromptType) => {
+    let prompt: Prompt;
+    switch (type) {
+      case 'environment':
+        prompt = generateEnvironmentPrompt(shot, settings.preferredImageModel, 'standard');
+        break;
+      case 'character':
+        prompt = generateCharacterPrompt(shot, settings.preferredImageModel, 'standard');
+        break;
+      case 'music':
+        prompt = generateMusicPrompt(shot, settings.preferredMusicModel, 'standard');
+        break;
+      case 'video':
+        prompt = generateVideoPrompt(shot, settings.preferredVideoModel, 'standard');
+        break;
+    }
+    updateShotPrompts(shot.id, { [type]: prompt });
+  };
+
+  const updatePromptText = (type: PromptType, text: string) => {
+    const existing = shot.prompts[type];
+    if (!existing) return;
+    updateShotPrompts(shot.id, {
+      [type]: { ...existing, text, isManuallyEdited: true },
+    });
+  };
+
+  return (
+    <div className="p-6">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="font-semibold text-text">
+          {shot.title || `Shot ${shot.orderIndex + 1}`} - {t('editor.views.prompts')}
+        </h3>
+        <button
+          onClick={() => {
+            const prompts = generateAllPromptsForShot(
+              shot,
+              settings.preferredImageModel,
+              settings.preferredVideoModel,
+              settings.preferredMusicModel,
+              'standard'
+            );
+            updateShotPrompts(shot.id, prompts);
+          }}
+          className="flex items-center gap-1.5 bg-primary-600 hover:bg-primary-700 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+        >
+          <Sparkles className="w-4 h-4" />
+          {t('prompt.generateAll')}
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <PromptCard
+          prompt={shot.prompts.environment}
+          type="environment"
+
+          onRegenerate={() => regenerate('environment')}
+          onUpdateText={(text) => updatePromptText('environment', text)}
+        />
+        <PromptCard
+          prompt={shot.prompts.character}
+          type="character"
+
+          onRegenerate={() => regenerate('character')}
+          onUpdateText={(text) => updatePromptText('character', text)}
+        />
+        <PromptCard
+          prompt={shot.prompts.music}
+          type="music"
+
+          onRegenerate={() => regenerate('music')}
+          onUpdateText={(text) => updatePromptText('music', text)}
+        />
+        <PromptCard
+          prompt={shot.prompts.video}
+          type="video"
+
+          onRegenerate={() => regenerate('video')}
+          onUpdateText={(text) => updatePromptText('video', text)}
+        />
+      </div>
+    </div>
+  );
+}

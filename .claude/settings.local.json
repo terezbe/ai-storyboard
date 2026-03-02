@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:kolbo.ai)",
+      "Bash(npm create vite@latest . -- --template react-ts)",
+      "Bash(npx --yes create-vite@latest temp-scaffold --template react-ts)",
+      "Bash(npm install)",
+      "Bash(npm install tailwindcss @tailwindcss/vite react-router-dom zustand dexie dexie-react-hooks @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities react-i18next i18next i18next-http-backend i18next-browser-languagedetector jspdf html2canvas lucide-react clsx uuid)",
+      "Bash(npm install -D @types/uuid)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npm run build)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node)"
+    ]
+  }
+}
