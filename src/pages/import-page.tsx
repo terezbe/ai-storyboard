@@ -6,6 +6,7 @@ import { validateStoryboardJson } from '../lib/ai/json-importer';
 import { useSettingsStore } from '../store/settings-store';
 import { db } from '../db/database';
 import { v4 as uuid } from 'uuid';
+import { generateAllPromptsForShot } from '../lib/prompt-engine';
 import type { Project } from '../types/project';
 
 export function ImportPage() {
@@ -28,6 +29,22 @@ export function ImportPage() {
     if (!result.isValid || !result.data) return;
 
     const data = result.data;
+    const settings = useSettingsStore.getState();
+
+    // Auto-generate prompts for every shot from their descriptions
+    const shotsWithPrompts = data.shots.map((shot) => {
+      const hasPrompts = shot.prompts.environment || shot.prompts.character || shot.prompts.video;
+      if (hasPrompts) return shot; // keep existing prompts
+      const prompts = generateAllPromptsForShot(
+        shot,
+        settings.preferredImageModel,
+        settings.preferredVideoModel,
+        settings.preferredMusicModel,
+        'standard'
+      );
+      return { ...shot, prompts };
+    });
+
     const project: Project = {
       id: uuid(),
       name: data.projectName,
@@ -37,7 +54,7 @@ export function ImportPage() {
       language: data.language || language,
       storyboard: {
         intro: data.intro,
-        shots: data.shots,
+        shots: shotsWithPrompts,
         outro: data.outro,
         musicTrack: null,
       },
@@ -46,7 +63,7 @@ export function ImportPage() {
     };
 
     await db.projects.add(project);
-    navigate(`/project/${project.id}`);
+    navigate(`/project/${project.id}?generate=true`);
   };
 
   const sampleJson = JSON.stringify(

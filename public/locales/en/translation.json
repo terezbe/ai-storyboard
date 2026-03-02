@@ -151,6 +151,19 @@
     "musicRef": "Music Reference",
     "showLogo": "Show Logo"
   },
+  "generation": {
+    "generateImage": "Generate Image",
+    "generateVideo": "Generate Video",
+    "generateAllImages": "Generate All Images",
+    "generating": "Generating...",
+    "failed": "Generation failed",
+    "retry": "Retry",
+    "noPrompt": "Generate prompts first",
+    "batchProgress": "{{completed}}/{{total}} completed",
+    "testConnection": "Test Connection",
+    "connected": "Connected!",
+    "connectionFailed": "Connection Failed"
+  },
   "common": {
     "save": "Save",
     "cancel": "Cancel",

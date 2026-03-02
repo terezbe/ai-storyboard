@@ -1,10 +1,26 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Loader2, CheckCircle, XCircle } from 'lucide-react';
 import { useSettingsStore } from '../store/settings-store';
-import { IMAGE_MODELS, VIDEO_MODELS, MUSIC_MODELS } from '../config/kolbo-models';
+import { FAL_IMAGE_MODELS, FAL_VIDEO_MODELS } from '../config/fal-models';
+import { MUSIC_MODELS } from '../config/kolbo-models';
+import { testProviderConnection } from '../services/generation/generation-service';
 
 export function SettingsPage() {
   const { t } = useTranslation();
   const settings = useSettingsStore();
+  const [testStatus, setTestStatus] = useState<'idle' | 'testing' | 'success' | 'error'>('idle');
+
+  const handleTestConnection = async () => {
+    setTestStatus('testing');
+    try {
+      const ok = await testProviderConnection(settings.preferredImageModel);
+      setTestStatus(ok ? 'success' : 'error');
+    } catch {
+      setTestStatus('error');
+    }
+    setTimeout(() => setTestStatus('idle'), 4000);
+  };
 
   return (
     <div className="max-w-2xl mx-auto p-6">
@@ -54,30 +70,34 @@ export function SettingsPage() {
           <div className="space-y-3">
             <div>
               <label className="block text-xs text-text-muted mb-1">
-                {settings.language === 'he' ? 'תמונות' : 'Images'}
+                {settings.language === 'he' ? 'תמונות (FAL.ai)' : 'Images (FAL.ai)'}
               </label>
               <select
                 value={settings.preferredImageModel}
                 onChange={(e) => settings.setPreferredImageModel(e.target.value)}
                 className="input-field"
               >
-                {IMAGE_MODELS.map((m) => (
-                  <option key={m.id} value={m.id}>{m.name}</option>
+                {FAL_IMAGE_MODELS.map((m) => (
+                  <option key={m.id} value={m.id}>
+                    {m.name} ({m.cost})
+                  </option>
                 ))}
               </select>
             </div>
 
             <div>
               <label className="block text-xs text-text-muted mb-1">
-                {settings.language === 'he' ? 'וידאו' : 'Video'}
+                {settings.language === 'he' ? 'וידאו (FAL.ai)' : 'Video (FAL.ai)'}
               </label>
               <select
                 value={settings.preferredVideoModel}
                 onChange={(e) => settings.setPreferredVideoModel(e.target.value)}
                 className="input-field"
               >
-                {VIDEO_MODELS.map((m) => (
-                  <option key={m.id} value={m.id}>{m.name}</option>
+                {FAL_VIDEO_MODELS.map((m) => (
+                  <option key={m.id} value={m.id}>
+                    {m.name} ({m.cost})
+                  </option>
                 ))}
               </select>
             </div>
@@ -99,21 +119,33 @@ export function SettingsPage() {
           </div>
         </Section>
 
-        {/* API Key (future) */}
-        <Section title="API Key (Anthropic)">
-          <p className="text-sm text-text-muted mb-2">
+        {/* FAL.ai API Key */}
+        <Section title={settings.language === 'he' ? 'מפתח FAL.ai API' : 'FAL.ai API Key'}>
+          <p className="text-sm text-text-muted mb-3">
             {settings.language === 'he'
-              ? 'בעתיד - חבר API key של Anthropic ליצירה אוטומטית'
-              : 'Future - connect Anthropic API key for automatic generation'}
+              ? 'הזן את מפתח ה-API שלך מ-fal.ai כדי ליצור תמונות ווידאו'
+              : 'Enter your API key from fal.ai to generate images and videos'}
           </p>
           <input
             type="password"
-            placeholder="sk-ant-..."
-            value={settings.apiKey || ''}
-            onChange={(e) => settings.setApiKey(e.target.value || null)}
-            className="input-field"
+            placeholder="fal-..."
+            value={settings.falApiKey || ''}
+            onChange={(e) => settings.setFalApiKey(e.target.value || null)}
+            className="input-field mb-3"
             dir="ltr"
           />
+          <button
+            onClick={handleTestConnection}
+            disabled={testStatus === 'testing' || !settings.falApiKey}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors bg-primary-600 hover:bg-primary-700 text-white disabled:opacity-60"
+          >
+            {testStatus === 'testing' && <Loader2 className="w-4 h-4 animate-spin" />}
+            {testStatus === 'success' && <CheckCircle className="w-4 h-4 text-green-300" />}
+            {testStatus === 'error' && <XCircle className="w-4 h-4 text-red-300" />}
+            {settings.language === 'he'
+              ? testStatus === 'testing' ? 'בודק...' : testStatus === 'success' ? 'מחובר!' : testStatus === 'error' ? 'חיבור נכשל' : 'בדוק חיבור'
+              : testStatus === 'testing' ? 'Testing...' : testStatus === 'success' ? 'Connected!' : testStatus === 'error' ? 'Connection Failed' : 'Test Connection'}
+          </button>
         </Section>
       </div>
     </div>

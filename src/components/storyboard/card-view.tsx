@@ -1,7 +1,15 @@
-﻿import { useTranslation } from 'react-i18next';
-import { Camera, Clock, Sparkles, Film, Copy } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, Video, AlertCircle, CheckCircle } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useEditorStore } from '../../store/editor-store';
+import {
+  useGenerationStore,
+  useShotImageStatus,
+  useShotVideoStatus,
+  useShotImageError,
+  useShotVideoError,
+} from '../../store/generation-store';
+import { useGeneration } from '../../hooks/use-generation';
 import type { Shot, StoryboardSection } from '../../types/project';
 import { useState } from 'react';
 
@@ -85,6 +93,17 @@ function ShotCard({ shot }: { shot: Shot }) {
   const { selectedShotId, setSelectedShotId } = useEditorStore();
   const isSelected = selectedShotId === shot.id;
   const hasPrompts = !!(shot.prompts.environment || shot.prompts.character || shot.prompts.video);
+  const { generateImage, generateVideo } = useGeneration();
+
+  // Use primitive selectors so Zustand triggers re-renders on status changes
+  const imageStatus = useShotImageStatus(shot.id);
+  const videoStatus = useShotVideoStatus(shot.id);
+  const imageError = useShotImageError(shot.id);
+  const videoError = useShotVideoError(shot.id);
+
+  const isGeneratingImage = imageStatus === 'generating';
+  const isGeneratingVideo = videoStatus === 'generating';
+  const imageCompleted = imageStatus === 'completed';
 
   return (
     <div
@@ -92,7 +111,13 @@ function ShotCard({ shot }: { shot: Shot }) {
       className={`rounded-xl border overflow-hidden cursor-pointer transition-all hover:scale-[1.02] ${
         isSelected
           ? 'border-primary-500 ring-2 ring-primary-500/30'
-          : `${MOOD_BORDER[shot.mood] || 'border-border'} hover:border-primary-500/50`
+          : isGeneratingImage
+            ? 'border-primary-500/50 ring-1 ring-primary-500/20'
+            : imageStatus === 'error'
+              ? 'border-red-500/50'
+              : imageCompleted
+                ? 'border-green-500/40'
+                : `${MOOD_BORDER[shot.mood] || 'border-border'} hover:border-primary-500/50`
       }`}
     >
       <div className={`h-28 relative flex items-center justify-center ${
@@ -103,27 +128,96 @@ function ShotCard({ shot }: { shot: Shot }) {
         ) : (
           <span className="text-3xl font-bold text-white/10">{shot.orderIndex + 1}</span>
         )}
-        {shot.imageUrl && (
+
+        {/* Generating overlay with spinner + text */}
+        {isGeneratingImage && (
+          <div className="absolute inset-0 bg-black/60 flex flex-col items-center justify-center gap-1.5">
+            <Loader2 className="w-6 h-6 text-primary-400 animate-spin" />
+            <span className="text-[10px] text-primary-300 font-medium animate-pulse">
+              {t('generation.generating')}
+            </span>
+          </div>
+        )}
+
+        {/* Error overlay */}
+        {imageStatus === 'error' && imageError && (
+          <div className="absolute inset-0 bg-red-900/40 flex flex-col items-center justify-center gap-1 p-2">
+            <AlertCircle className="w-5 h-5 text-red-400" />
+            <span className="text-[9px] text-red-300 text-center line-clamp-2">{imageError}</span>
+          </div>
+        )}
+
+        {/* Completed flash (shows briefly when image just arrived) */}
+        {imageCompleted && shot.imageUrl && (
+          <div className="absolute top-2 end-2">
+            <CheckCircle className="w-4 h-4 text-green-400 drop-shadow-lg" />
+          </div>
+        )}
+
+        {/* Generate Image button hover (on empty cards) */}
+        {!shot.imageUrl && !isGeneratingImage && imageStatus !== 'error' && hasPrompts && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              generateImage(shot);
+            }}
+            className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black/40 transition-opacity"
+            title={t('generation.generateImage')}
+          >
+            <ImagePlus className="w-6 h-6 text-white" />
+          </button>
+        )}
+
+        {shot.imageUrl && !imageCompleted && (
           <span className="absolute top-2 start-2 px-1.5 py-0.5 rounded bg-black/60 text-white text-[10px] font-bold">
             {shot.orderIndex + 1}
           </span>
         )}
-        {hasPrompts && (
+        {hasPrompts && !isGeneratingImage && imageStatus !== 'error' && !imageCompleted && (
           <div className="absolute top-2 end-2">
             <Sparkles className="w-4 h-4 text-primary-400" />
           </div>
         )}
-        {shot.videoPrompt && (
-          <div className="absolute bottom-2 end-2">
+
+        {/* Bottom action buttons */}
+        <div className="absolute bottom-2 end-2 flex items-center gap-1">
+          {shot.imageUrl && (shot.prompts.video?.text || shot.videoPrompt) && !isGeneratingVideo && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                generateVideo(shot);
+              }}
+              className="flex items-center gap-1 px-2 py-1 rounded bg-purple-600/80 hover:bg-purple-500 text-white text-[10px] font-medium transition-colors"
+              title={t('generation.generateVideo')}
+            >
+              <Video className="w-3 h-3" />
+              {t('generation.generateVideo')}
+            </button>
+          )}
+          {isGeneratingVideo && (
+            <span className="flex items-center gap-1 px-2 py-1 rounded bg-purple-600/60 text-white text-[10px]">
+              <Loader2 className="w-3 h-3 animate-spin" />
+              {t('generation.generating')}
+            </span>
+          )}
+          {videoStatus === 'error' && videoError && (
+            <span className="flex items-center gap-1 px-2 py-1 rounded bg-red-600/80 text-white text-[10px]" title={videoError}>
+              <AlertCircle className="w-3 h-3" />
+            </span>
+          )}
+          {!isGeneratingVideo && !shot.imageUrl && shot.videoPrompt && (
             <CopyVideoPromptBtn prompt={shot.videoPrompt} />
-          </div>
-        )}
-        {!shot.imageUrl && shot.environment.setting && (
+          )}
+        </div>
+
+        {!shot.imageUrl && shot.environment.setting && !isGeneratingImage && imageStatus !== 'error' && (
           <p className="absolute bottom-2 inset-x-2 text-xs text-text-muted truncate text-center">
             {shot.environment.setting}
           </p>
         )}
       </div>
+
+      {/* Card footer */}
       <div className="p-3 bg-surface-light">
         <h4 className="font-medium text-text text-sm truncate mb-2">
           {shot.title || `Shot ${shot.orderIndex + 1}`}
@@ -136,10 +230,31 @@ function ShotCard({ shot }: { shot: Shot }) {
             <Camera className="w-3 h-3" /> {t(`shot.cameraAngles.${shot.cameraAngle}`)}
           </span>
         </div>
-        <div className="mt-2">
+        <div className="mt-2 flex items-center gap-1">
           <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-lighter text-text-muted">
             {t(`shot.moods.${shot.mood}`)}
           </span>
+          {isGeneratingImage && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-primary-900/40 text-primary-300 flex items-center gap-1">
+              <Loader2 className="w-2.5 h-2.5 animate-spin" />
+              generating
+            </span>
+          )}
+          {imageCompleted && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-green-900/40 text-green-300">
+              done
+            </span>
+          )}
+          {imageStatus === 'error' && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-red-900/40 text-red-300">
+              failed
+            </span>
+          )}
+          {shot.videoUrl && (
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-purple-900/40 text-purple-300">
+              video
+            </span>
+          )}
         </div>
       </div>
     </div>
@@ -149,6 +264,8 @@ function ShotCard({ shot }: { shot: Shot }) {
 export function CardView() {
   const { t } = useTranslation();
   const { currentProject } = useProjectStore();
+  const { generateAllImages } = useGeneration();
+  const batch = useGenerationStore((s) => s.batch);
 
   if (!currentProject) return null;
   const { intro, shots, outro } = currentProject.storyboard;
@@ -161,13 +278,57 @@ export function CardView() {
     );
   }
 
+  const shotsWithPrompts = shots.filter(
+    (s) => !s.imageUrl && (s.prompts.environment?.text || s.prompts.character?.text)
+  );
+
   return (
-    <div className="p-6 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-      <SectionCard section={intro} label="Intro" />
-      {shots.map((shot) => (
-        <ShotCard key={shot.id} shot={shot} />
-      ))}
-      <SectionCard section={outro} label="Outro" />
+    <div>
+      {/* Batch generation banner — always visible while running */}
+      {batch.isRunning && (
+        <div className="px-6 pt-4 pb-2">
+          <div className="bg-primary-900/30 border border-primary-500/30 rounded-xl px-4 py-3 flex items-center gap-3">
+            <Loader2 className="w-5 h-5 text-primary-400 animate-spin shrink-0" />
+            <div className="flex-1">
+              <div className="flex items-center justify-between mb-1.5">
+                <span className="text-sm font-medium text-primary-300">
+                  {t('generation.generateAllImages')}
+                </span>
+                <span className="text-xs text-primary-400 font-mono">
+                  {batch.completed}/{batch.total}
+                </span>
+              </div>
+              <div className="h-2 bg-surface-lighter rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-primary-500 transition-all duration-500 ease-out rounded-full"
+                  style={{ width: `${batch.total > 0 ? (batch.completed / batch.total) * 100 : 0}%` }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Generate All button — shown when not already running and there are shots to generate */}
+      {!batch.isRunning && shotsWithPrompts.length > 0 && (
+        <div className="px-6 pt-4 flex items-center gap-3">
+          <button
+            onClick={generateAllImages}
+            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-primary-600 hover:bg-primary-700 text-white transition-colors"
+          >
+            <ImagePlus className="w-4 h-4" />
+            {t('generation.generateAllImages')} ({shotsWithPrompts.length})
+          </button>
+        </div>
+      )}
+
+      <div className="p-6 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+        <SectionCard section={intro} label="Intro" />
+        {shots.map((shot) => (
+          <ShotCard key={shot.id} shot={shot} />
+        ))}
+        <SectionCard section={outro} label="Outro" />
+      </div>
     </div>
   );
 }

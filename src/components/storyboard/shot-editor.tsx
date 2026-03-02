@@ -1,7 +1,9 @@
 import { useTranslation } from 'react-i18next';
-import { Sparkles } from 'lucide-react';
+import { Sparkles, ImagePlus, Video, Loader2, AlertCircle, RefreshCw } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useSettingsStore } from '../../store/settings-store';
+import { useShotImageStatus, useShotVideoStatus, useShotImageError, useShotVideoError } from '../../store/generation-store';
+import { useGeneration } from '../../hooks/use-generation';
 import { generateAllPromptsForShot } from '../../lib/prompt-engine';
 import type { Shot, CameraAngle, Mood, TransitionType } from '../../types/project';
 
@@ -24,6 +26,16 @@ export function ShotEditor({ shot }: { shot: Shot }) {
   const { t } = useTranslation();
   const { updateShot, updateShotPrompts } = useProjectStore();
   const settings = useSettingsStore();
+  const { generateImage, generateVideo } = useGeneration();
+  const imageStatus = useShotImageStatus(shot.id);
+  const videoStatus = useShotVideoStatus(shot.id);
+  const imageError = useShotImageError(shot.id);
+  const videoError = useShotVideoError(shot.id);
+
+  const isGeneratingImage = imageStatus === 'generating';
+  const isGeneratingVideo = videoStatus === 'generating';
+  const hasImagePrompt = !!(shot.prompts.environment?.text || shot.prompts.character?.text);
+  const hasVideoPrompt = !!(shot.prompts.video?.text || shot.videoPrompt);
 
   const update = (updates: Partial<Shot>) => updateShot(shot.id, updates);
 
@@ -51,13 +63,89 @@ export function ShotEditor({ shot }: { shot: Shot }) {
         </button>
       </div>
 
+      {/* Image Preview / Generate */}
+      <div className="rounded-lg overflow-hidden border border-border relative">
+        {shot.imageUrl ? (
+          <div className="relative group">
+            <img src={shot.imageUrl} alt={shot.title} className="w-full h-40 object-cover" />
+            {/* Regenerate overlay on hover */}
+            <button
+              onClick={() => generateImage(shot)}
+              disabled={isGeneratingImage || !hasImagePrompt}
+              className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity disabled:cursor-not-allowed"
+            >
+              {isGeneratingImage ? (
+                <Loader2 className="w-6 h-6 text-white animate-spin" />
+              ) : (
+                <RefreshCw className="w-6 h-6 text-white" />
+              )}
+            </button>
+          </div>
+        ) : (
+          <div className="h-40 flex flex-col items-center justify-center gap-2 bg-surface-lighter">
+            {isGeneratingImage ? (
+              <>
+                <Loader2 className="w-6 h-6 text-primary-400 animate-spin" />
+                <span className="text-xs text-text-muted">{t('generation.generating')}</span>
+              </>
+            ) : (
+              <button
+                onClick={() => generateImage(shot)}
+                disabled={!hasImagePrompt}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm bg-primary-600 hover:bg-primary-700 text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                <ImagePlus className="w-4 h-4" />
+                {t('generation.generateImage')}
+              </button>
+            )}
+            {!hasImagePrompt && !isGeneratingImage && (
+              <span className="text-[10px] text-text-muted">{t('generation.noPrompt')}</span>
+            )}
+          </div>
+        )}
+        {imageError && (
+          <div className="px-3 py-1.5 bg-red-900/30 text-red-300 text-xs flex items-center gap-1">
+            <AlertCircle className="w-3 h-3" /> {imageError}
+          </div>
+        )}
+      </div>
+
+      {/* Generate Video */}
+      <div className="rounded-lg border border-border overflow-hidden">
+        {shot.videoUrl ? (
+          <div className="relative">
+            <video src={shot.videoUrl} controls className="w-full h-40 object-cover bg-black" />
+          </div>
+        ) : (
+          <div className="p-3 flex items-center justify-between bg-surface-lighter">
+            <span className="text-xs text-text-muted">
+              {settings.language === 'he' ? 'וידאו' : 'Video'}
+            </span>
+            {isGeneratingVideo ? (
+              <span className="flex items-center gap-1.5 text-xs text-purple-300">
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                {t('generation.generating')}
+              </span>
+            ) : (
+              <button
+                onClick={() => generateVideo(shot)}
+                disabled={!hasVideoPrompt}
+                className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs bg-purple-600 hover:bg-purple-700 text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+              >
+                <Video className="w-3.5 h-3.5" />
+                {t('generation.generateVideo')}
+              </button>
+            )}
+          </div>
+        )}
+        {videoError && (
+          <div className="px-3 py-1.5 bg-red-900/30 text-red-300 text-xs flex items-center gap-1">
+            <AlertCircle className="w-3 h-3" /> {videoError}
+          </div>
+        )}
+      </div>
+
       {/* Title */}
-      {/* Image Preview */}
-      {shot.imageUrl && (
-        <div className="rounded-lg overflow-hidden border border-border">
-          <img src={shot.imageUrl} alt={shot.title} className="w-full h-40 object-cover" />
-        </div>
-      )}
       <Field label={t('shot.title')}>
         <input
           value={shot.title}

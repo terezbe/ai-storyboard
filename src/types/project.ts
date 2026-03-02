@@ -106,6 +106,7 @@ export interface Shot {
   prompts: ShotPrompts;
   imageUrl?: string;
   videoPrompt?: string;
+  videoUrl?: string;
 }
 
 export interface StoryboardSection {
@@ -120,6 +121,7 @@ export interface StoryboardSection {
   prompts: SectionPrompts;
   imageUrl?: string;
   videoPrompt?: string;
+  videoUrl?: string;
 }
 
 export interface MusicSyncPoint {

@@ -1,10 +1,11 @@
 import { useEffect, useRef } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight, ArrowLeft, Download } from 'lucide-react';
 import { useProjectStore } from '../store/project-store';
 import { useEditorStore, type EditorView } from '../store/editor-store';
 import { useSettingsStore } from '../store/settings-store';
+import { useGeneration } from '../hooks/use-generation';
 import { StoryboardEditor } from '../components/storyboard/storyboard-editor';
 import { ExportModal } from '../components/export/export-modal';
 
@@ -12,15 +13,35 @@ export function ProjectPage() {
   const { id } = useParams<{ id: string }>();
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const language = useSettingsStore((s) => s.language);
   const { currentProject, loadProject, saveProject, unloadProject } = useProjectStore();
   const { activeView, setActiveView, showExportModal, setShowExportModal } = useEditorStore();
+  const { generateAllImages } = useGeneration();
   const saveTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const autoGenerateTriggered = useRef(false);
 
   useEffect(() => {
     if (id) loadProject(id);
     return () => unloadProject();
   }, [id]);
+
+  // Auto-generate images when arriving from import with ?generate=true
+  useEffect(() => {
+    if (
+      currentProject &&
+      searchParams.get('generate') === 'true' &&
+      !autoGenerateTriggered.current
+    ) {
+      autoGenerateTriggered.current = true;
+      // Clear the query param so refresh doesn't re-trigger
+      setSearchParams({}, { replace: true });
+      // Small delay to let the UI render first
+      setTimeout(() => {
+        generateAllImages();
+      }, 500);
+    }
+  }, [currentProject, searchParams]);
 
   // Auto-save every 3 seconds when project changes
   useEffect(() => {

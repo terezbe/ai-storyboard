@@ -151,6 +151,19 @@
     "musicRef": "מוזיקה",
     "showLogo": "הצג לוגו"
   },
+  "generation": {
+    "generateImage": "צור תמונה",
+    "generateVideo": "צור וידאו",
+    "generateAllImages": "צור את כל התמונות",
+    "generating": "מייצר...",
+    "failed": "הייצור נכשל",
+    "retry": "נסה שוב",
+    "noPrompt": "צור פרומפטים קודם",
+    "batchProgress": "{{completed}}/{{total}} הושלמו",
+    "testConnection": "בדוק חיבור",
+    "connected": "מחובר!",
+    "connectionFailed": "החיבור נכשל"
+  },
   "common": {
     "save": "שמור",
     "cancel": "ביטול",

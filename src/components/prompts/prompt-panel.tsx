@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Copy, Check, Sparkles, RefreshCw } from 'lucide-react';
+import { Copy, Check, Sparkles, RefreshCw, ImagePlus, Video, Loader2 } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useEditorStore } from '../../store/editor-store';
 import { useSettingsStore } from '../../store/settings-store';
+import { useShotImageStatus, useShotVideoStatus } from '../../store/generation-store';
+import { useGeneration } from '../../hooks/use-generation';
 import {
   generateEnvironmentPrompt,
   generateCharacterPrompt,
@@ -12,21 +14,26 @@ import {
   generateAllPromptsForShot,
 } from '../../lib/prompt-engine';
 import { KOLBO_MODELS } from '../../config/kolbo-models';
-import type { Prompt, PromptType } from '../../types/project';
+import type { Prompt, PromptType, Shot } from '../../types/project';
 
 function PromptCard({
   prompt,
   type,
+  shot,
   onRegenerate,
   onUpdateText,
 }: {
   prompt: Prompt | null;
   type: PromptType;
+  shot: Shot;
   onRegenerate: () => void;
   onUpdateText: (text: string) => void;
 }) {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
+  const { generateImage, generateVideo } = useGeneration();
+  const imageStatus = useShotImageStatus(shot.id);
+  const videoStatus = useShotVideoStatus(shot.id);
 
   const typeLabels: Record<PromptType, string> = {
     environment: t('prompt.environment'),
@@ -49,11 +56,46 @@ function PromptCard({
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const showGenerateImage = (type === 'environment' || type === 'character') && prompt;
+  const showGenerateVideo = type === 'video' && prompt;
+  const isGeneratingImage = imageStatus === 'generating';
+  const isGeneratingVideo = videoStatus === 'generating';
+
   return (
     <div className={`rounded-xl border p-4 ${typeColors[type]}`}>
       <div className="flex items-center justify-between mb-2">
         <h4 className="text-sm font-semibold text-text">{typeLabels[type]}</h4>
         <div className="flex items-center gap-1">
+          {/* Generate Image button for environment/character */}
+          {showGenerateImage && (
+            <button
+              onClick={() => generateImage(shot)}
+              disabled={isGeneratingImage}
+              className="p-1.5 text-text-muted hover:text-green-400 rounded-lg hover:bg-surface-lighter transition-colors disabled:opacity-40"
+              title={t('generation.generateImage')}
+            >
+              {isGeneratingImage ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : (
+                <ImagePlus className="w-3.5 h-3.5" />
+              )}
+            </button>
+          )}
+          {/* Generate Video button for video prompt */}
+          {showGenerateVideo && (
+            <button
+              onClick={() => generateVideo(shot)}
+              disabled={isGeneratingVideo}
+              className="p-1.5 text-text-muted hover:text-purple-400 rounded-lg hover:bg-surface-lighter transition-colors disabled:opacity-40"
+              title={t('generation.generateVideo')}
+            >
+              {isGeneratingVideo ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : (
+                <Video className="w-3.5 h-3.5" />
+              )}
+            </button>
+          )}
           <button
             onClick={onRegenerate}
             className="p-1.5 text-text-muted hover:text-text rounded-lg hover:bg-surface-lighter transition-colors"
@@ -89,6 +131,13 @@ function PromptCard({
               {KOLBO_MODELS[prompt.targetModel]?.name || prompt.targetModel}
             </span>
             <span>{prompt.quality}</span>
+            {/* Generation status indicator */}
+            {(type === 'environment' || type === 'character') && imageStatus === 'completed' && (
+              <span className="text-green-400">image ready</span>
+            )}
+            {type === 'video' && videoStatus === 'completed' && (
+              <span className="text-purple-400">video ready</span>
+            )}
           </div>
         </>
       ) : (
@@ -212,28 +261,28 @@ export function PromptPanel() {
         <PromptCard
           prompt={shot.prompts.environment}
           type="environment"
-
+          shot={shot}
           onRegenerate={() => regenerate('environment')}
           onUpdateText={(text) => updatePromptText('environment', text)}
         />
         <PromptCard
           prompt={shot.prompts.character}
           type="character"
-
+          shot={shot}
           onRegenerate={() => regenerate('character')}
           onUpdateText={(text) => updatePromptText('character', text)}
         />
         <PromptCard
           prompt={shot.prompts.music}
           type="music"
-
+          shot={shot}
           onRegenerate={() => regenerate('music')}
           onUpdateText={(text) => updatePromptText('music', text)}
         />
         <PromptCard
           prompt={shot.prompts.video}
           type="video"
-
+          shot={shot}
           onRegenerate={() => regenerate('video')}
           onUpdateText={(text) => updatePromptText('video', text)}
         />

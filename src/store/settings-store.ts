@@ -6,6 +6,7 @@ interface SettingsState {
   language: 'en' | 'he';
   aiMode: AIMode;
   apiKey: string | null;
+  falApiKey: string | null;
   defaultDuration: number;
   defaultCameraAngle: string;
   preferredImageModel: string;
@@ -14,6 +15,7 @@ interface SettingsState {
   setLanguage: (lang: 'en' | 'he') => void;
   setAiMode: (mode: AIMode) => void;
   setApiKey: (key: string | null) => void;
+  setFalApiKey: (key: string | null) => void;
   setDefaultDuration: (d: number) => void;
   setPreferredImageModel: (m: string) => void;
   setPreferredVideoModel: (m: string) => void;
@@ -26,14 +28,16 @@ export const useSettingsStore = create<SettingsState>()(
       language: 'he',
       aiMode: 'manual',
       apiKey: null,
+      falApiKey: null,
       defaultDuration: 8,
       defaultCameraAngle: 'medium-shot',
-      preferredImageModel: 'midjourney',
-      preferredVideoModel: 'kling-2.1',
+      preferredImageModel: 'fal-ai/flux/schnell',
+      preferredVideoModel: 'fal-ai/minimax/video-01',
       preferredMusicModel: 'suno-v4.5',
       setLanguage: (language) => set({ language }),
       setAiMode: (aiMode) => set({ aiMode }),
       setApiKey: (apiKey) => set({ apiKey }),
+      setFalApiKey: (falApiKey) => set({ falApiKey }),
       setDefaultDuration: (defaultDuration) => set({ defaultDuration }),
       setPreferredImageModel: (preferredImageModel) => set({ preferredImageModel }),
       setPreferredVideoModel: (preferredVideoModel) => set({ preferredVideoModel }),
