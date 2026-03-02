@@ -7,6 +7,7 @@ interface SettingsState {
   aiMode: AIMode;
   apiKey: string | null;
   falApiKey: string | null;
+  claudeApiKey: string | null;
   defaultDuration: number;
   defaultCameraAngle: string;
   preferredImageModel: string;
@@ -16,6 +17,7 @@ interface SettingsState {
   setAiMode: (mode: AIMode) => void;
   setApiKey: (key: string | null) => void;
   setFalApiKey: (key: string | null) => void;
+  setClaudeApiKey: (key: string | null) => void;
   setDefaultDuration: (d: number) => void;
   setPreferredImageModel: (m: string) => void;
   setPreferredVideoModel: (m: string) => void;
@@ -29,6 +31,7 @@ export const useSettingsStore = create<SettingsState>()(
       aiMode: 'manual',
       apiKey: null,
       falApiKey: null,
+      claudeApiKey: null,
       defaultDuration: 8,
       defaultCameraAngle: 'medium-shot',
       preferredImageModel: 'fal-ai/flux/schnell',
@@ -38,6 +41,7 @@ export const useSettingsStore = create<SettingsState>()(
       setAiMode: (aiMode) => set({ aiMode }),
       setApiKey: (apiKey) => set({ apiKey }),
       setFalApiKey: (falApiKey) => set({ falApiKey }),
+      setClaudeApiKey: (claudeApiKey) => set({ claudeApiKey }),
       setDefaultDuration: (defaultDuration) => set({ defaultDuration }),
       setPreferredImageModel: (preferredImageModel) => set({ preferredImageModel }),
       setPreferredVideoModel: (preferredVideoModel) => set({ preferredVideoModel }),

@@ -5,22 +5,8 @@ import { useSettingsStore } from '../../store/settings-store';
 import { useShotImageStatus, useShotVideoStatus, useShotImageError, useShotVideoError } from '../../store/generation-store';
 import { useGeneration } from '../../hooks/use-generation';
 import { generateAllPromptsForShot } from '../../lib/prompt-engine';
+import { CAMERA_ANGLES, MOODS, TRANSITIONS } from './shot-constants';
 import type { Shot, CameraAngle, Mood, TransitionType } from '../../types/project';
-
-const CAMERA_ANGLES: CameraAngle[] = [
-  'wide-shot', 'medium-shot', 'close-up', 'extreme-close-up',
-  'over-the-shoulder', 'birds-eye', 'low-angle', 'high-angle',
-  'dutch-angle', 'tracking', 'pan', 'zoom-in', 'zoom-out',
-];
-
-const MOODS: Mood[] = [
-  'energetic', 'romantic', 'dramatic', 'festive', 'emotional',
-  'funny', 'elegant', 'mysterious', 'calm', 'exciting',
-];
-
-const TRANSITIONS: TransitionType[] = [
-  'cut', 'fade', 'dissolve', 'wipe', 'slide', 'zoom', 'none',
-];
 
 export function ShotEditor({ shot }: { shot: Shot }) {
   const { t } = useTranslation();

@@ -30,33 +30,37 @@ export function StoryboardEditor() {
 
         <div className="flex-1 overflow-y-auto p-2 space-y-1">
           {/* Intro */}
-          <button
-            onClick={() => setSelectedShotId('__intro__')}
-            className={`w-full text-start px-3 py-2 rounded-lg text-sm transition-colors ${
-              selectedShotId === '__intro__'
-                ? 'bg-primary-600/20 text-primary-300 border border-primary-500/30'
-                : 'text-text-muted hover:bg-surface-lighter hover:text-text border border-transparent'
-            }`}
-          >
-            {t('editor.intro')}
-            <span className="text-xs ms-1 opacity-60">{storyboard.intro.duration}s</span>
-          </button>
+          {storyboard.intro && (
+            <button
+              onClick={() => setSelectedShotId('__intro__')}
+              className={`w-full text-start px-3 py-2 rounded-lg text-sm transition-colors ${
+                selectedShotId === '__intro__'
+                  ? 'bg-primary-600/20 text-primary-300 border border-primary-500/30'
+                  : 'text-text-muted hover:bg-surface-lighter hover:text-text border border-transparent'
+              }`}
+            >
+              {t('editor.intro')}
+              <span className="text-xs ms-1 opacity-60">{storyboard.intro.duration}s</span>
+            </button>
+          )}
 
           {/* Shots */}
           <ShotList />
 
           {/* Outro */}
-          <button
-            onClick={() => setSelectedShotId('__outro__')}
-            className={`w-full text-start px-3 py-2 rounded-lg text-sm transition-colors ${
-              selectedShotId === '__outro__'
-                ? 'bg-primary-600/20 text-primary-300 border border-primary-500/30'
-                : 'text-text-muted hover:bg-surface-lighter hover:text-text border border-transparent'
-            }`}
-          >
-            {t('editor.outro')}
-            <span className="text-xs ms-1 opacity-60">{storyboard.outro.duration}s</span>
-          </button>
+          {storyboard.outro && (
+            <button
+              onClick={() => setSelectedShotId('__outro__')}
+              className={`w-full text-start px-3 py-2 rounded-lg text-sm transition-colors ${
+                selectedShotId === '__outro__'
+                  ? 'bg-primary-600/20 text-primary-300 border border-primary-500/30'
+                  : 'text-text-muted hover:bg-surface-lighter hover:text-text border border-transparent'
+              }`}
+            >
+              {t('editor.outro')}
+              <span className="text-xs ms-1 opacity-60">{storyboard.outro.duration}s</span>
+            </button>
+          )}
         </div>
 
         <div className="p-2 border-t border-border">
@@ -77,12 +81,12 @@ export function StoryboardEditor() {
         {activeView === 'prompts' && <PromptPanel />}
       </div>
 
-      {/* Detail panel */}
-      {selectedShotId && (
+      {/* Detail panel (hidden in timeline mode — inline editor handles it) */}
+      {selectedShotId && activeView !== 'timeline' && (
         <div className="w-80 bg-surface-light border-s border-border overflow-y-auto shrink-0">
-          {selectedShotId === '__intro__' ? (
+          {selectedShotId === '__intro__' && storyboard.intro ? (
             <SectionPanel type="intro" />
-          ) : selectedShotId === '__outro__' ? (
+          ) : selectedShotId === '__outro__' && storyboard.outro ? (
             <SectionPanel type="outro" />
           ) : selectedShot ? (
             <ShotEditor shot={selectedShot} />

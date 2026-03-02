@@ -119,6 +119,23 @@ export function SettingsPage() {
           </div>
         </Section>
 
+        {/* Claude API Key */}
+        <Section title={settings.language === 'he' ? 'מפתח Claude API' : 'Claude API Key'}>
+          <p className="text-sm text-text-muted mb-3">
+            {settings.language === 'he'
+              ? 'הזן את מפתח ה-API שלך מ-Anthropic כדי ליצור סטוריבורד מרעיון'
+              : 'Enter your API key from Anthropic to generate storyboards from ideas'}
+          </p>
+          <input
+            type="password"
+            placeholder="sk-ant-..."
+            value={settings.claudeApiKey || ''}
+            onChange={(e) => settings.setClaudeApiKey(e.target.value || null)}
+            className="input-field"
+            dir="ltr"
+          />
+        </Section>
+
         {/* FAL.ai API Key */}
         <Section title={settings.language === 'he' ? 'מפתח FAL.ai API' : 'FAL.ai API Key'}>
           <p className="text-sm text-text-muted mb-3">

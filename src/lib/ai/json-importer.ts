@@ -53,8 +53,13 @@ export function validateStoryboardJson(raw: string): ValidationResult {
     errors.push(`Invalid or missing projectType. Must be one of: ${PROJECT_TYPES.join(', ')}`);
   }
 
-  errors.push(...validateSection(parsed.intro, 'Intro'));
-  errors.push(...validateSection(parsed.outro, 'Outro'));
+  // Intro/outro are optional (null allowed)
+  if (parsed.intro && parsed.intro !== null) {
+    errors.push(...validateSection(parsed.intro, 'Intro'));
+  }
+  if (parsed.outro && parsed.outro !== null) {
+    errors.push(...validateSection(parsed.outro, 'Outro'));
+  }
 
   if (!Array.isArray(parsed.shots) || parsed.shots.length === 0) {
     errors.push('Must have at least one shot');
@@ -68,25 +73,31 @@ export function validateStoryboardJson(raw: string): ValidationResult {
     return { isValid: false, errors, data: null };
   }
 
+  // Helper to normalize a section (intro/outro)
+  function normalizeSection(section: any, type: 'intro' | 'outro') {
+    if (!section) return null;
+    return {
+      id: section.id || crypto.randomUUID(),
+      type,
+      title: section.title || (type === 'intro' ? 'Intro' : 'Outro'),
+      backgroundDescription: section.backgroundDescription || '',
+      textOverlay: section.textOverlay || '',
+      duration: section.duration || 5,
+      musicReference: section.musicReference || '',
+      showLogo: section.showLogo ?? true,
+      prompts: section.prompts || { background: null, music: null },
+      imageUrl: section.imageUrl || undefined,
+      videoPrompt: section.videoPrompt || undefined,
+    };
+  }
+
   // Normalize the data with defaults
   const normalized: StoryboardImportSchema = {
     version: parsed.version || '1.0',
     projectName: parsed.projectName,
     projectType: parsed.projectType,
     language: parsed.language || 'he',
-    intro: {
-      id: parsed.intro.id || crypto.randomUUID(),
-      type: 'intro',
-      title: parsed.intro.title || 'Intro',
-      backgroundDescription: parsed.intro.backgroundDescription || '',
-      textOverlay: parsed.intro.textOverlay || '',
-      duration: parsed.intro.duration || 5,
-      musicReference: parsed.intro.musicReference || '',
-      showLogo: parsed.intro.showLogo ?? true,
-      prompts: parsed.intro.prompts || { background: null, music: null },
-      imageUrl: parsed.intro.imageUrl || undefined,
-      videoPrompt: parsed.intro.videoPrompt || undefined,
-    },
+    intro: normalizeSection(parsed.intro, 'intro'),
     shots: parsed.shots.map((s: any, i: number) => ({
       id: s.id || crypto.randomUUID(),
       orderIndex: i,
@@ -117,19 +128,7 @@ export function validateStoryboardJson(raw: string): ValidationResult {
       imageUrl: s.imageUrl || undefined,
       videoPrompt: s.videoPrompt || undefined,
     })),
-    outro: {
-      id: parsed.outro.id || crypto.randomUUID(),
-      type: 'outro',
-      title: parsed.outro.title || 'Outro',
-      backgroundDescription: parsed.outro.backgroundDescription || '',
-      textOverlay: parsed.outro.textOverlay || '',
-      duration: parsed.outro.duration || 5,
-      musicReference: parsed.outro.musicReference || '',
-      showLogo: parsed.outro.showLogo ?? true,
-      prompts: parsed.outro.prompts || { background: null, music: null },
-      imageUrl: parsed.outro.imageUrl || undefined,
-      videoPrompt: parsed.outro.videoPrompt || undefined,
-    },
+    outro: normalizeSection(parsed.outro, 'outro'),
   };
 
   return { isValid: true, errors: [], data: normalized };

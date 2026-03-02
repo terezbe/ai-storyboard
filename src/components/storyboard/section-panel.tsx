@@ -7,6 +7,7 @@ export function SectionPanel({ type }: { type: 'intro' | 'outro' }) {
 
   if (!currentProject) return null;
   const section = type === 'intro' ? currentProject.storyboard.intro : currentProject.storyboard.outro;
+  if (!section) return null;
   const update = type === 'intro' ? updateIntro : updateOutro;
 
   return (

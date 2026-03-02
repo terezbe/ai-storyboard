@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Film, Settings, Download, Home, FlaskConical } from 'lucide-react';
+import { Film, Settings, Download, Home, FlaskConical, Lightbulb } from 'lucide-react';
 import { LanguageToggle } from './language-toggle';
 
 export function Header() {
@@ -29,6 +29,13 @@ export function Header() {
           >
             <Home className="w-4 h-4" />
             {t('nav.home')}
+          </Link>
+          <Link
+            to="/idea"
+            className={`flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${isActive('/idea')}`}
+          >
+            <Lightbulb className="w-4 h-4" />
+            {t('nav.newIdea')}
           </Link>
           <Link
             to="/import"

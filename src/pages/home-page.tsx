@@ -28,9 +28,9 @@ function ProjectCard({ project }: { project: Project }) {
 
   const shotCount = project.storyboard.shots.length;
   const totalDuration =
-    project.storyboard.intro.duration +
+    (project.storyboard.intro?.duration || 0) +
     project.storyboard.shots.reduce((s, shot) => s + shot.duration, 0) +
-    project.storyboard.outro.duration;
+    (project.storyboard.outro?.duration || 0);
 
   const mainMood = project.storyboard.shots[0]?.mood || 'festive';
 

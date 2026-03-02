@@ -6,7 +6,8 @@
   "nav": {
     "home": "Projects",
     "settings": "Settings",
-    "import": "Import"
+    "import": "Import",
+    "newIdea": "New Idea"
   },
   "project": {
     "create": "New Project",
@@ -143,6 +144,21 @@
     "validJson": "Valid JSON!",
     "invalidJson": "Invalid JSON",
     "importSuccess": "Storyboard imported successfully!"
+  },
+  "idea": {
+    "title": "New Idea",
+    "subtitle": "Describe your video idea and AI will break it down into a full storyboard with images",
+    "placeholder": "Describe your video idea...\nFor example: A romantic wedding video with a talking character inviting guests, set in an elegant venue with warm lighting and a festive atmosphere",
+    "generate": "Create Storyboard",
+    "generating": "Claude is creating your storyboard...",
+    "generatingImages": "Generating images for shots...",
+    "step1": "Analyzing your idea...",
+    "step2": "Creating shots and descriptions...",
+    "step3": "Generating images...",
+    "success": "Storyboard is ready!",
+    "error": "Error creating storyboard",
+    "noApiKey": "Set Claude API key in Settings",
+    "goToSettings": "Go to Settings"
   },
   "section": {
     "title": "Title",

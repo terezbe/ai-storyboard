@@ -323,11 +323,11 @@ export function CardView() {
       )}
 
       <div className="p-6 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-        <SectionCard section={intro} label="Intro" />
+        {intro && <SectionCard section={intro} label="Intro" />}
         {shots.map((shot) => (
           <ShotCard key={shot.id} shot={shot} />
         ))}
-        <SectionCard section={outro} label="Outro" />
+        {outro && <SectionCard section={outro} label="Outro" />}
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import { ProjectPage } from './pages/project-page';
 import { SettingsPage } from './pages/settings-page';
 import { ImportPage } from './pages/import-page';
 import { TestGenerationPage } from './pages/test-generation-page';
+import { IdeaPage } from './pages/idea-page';
 
 function App() {
   const { i18n } = useTranslation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/idea" element={<IdeaPage />} />
           <Route path="/import" element={<ImportPage />} />
           <Route path="/test" element={<TestGenerationPage />} />
         </Route>

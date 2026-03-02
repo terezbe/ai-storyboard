@@ -142,9 +142,9 @@ export interface MusicTrack {
 }
 
 export interface Storyboard {
-  intro: StoryboardSection;
+  intro: StoryboardSection | null;
   shots: Shot[];
-  outro: StoryboardSection;
+  outro: StoryboardSection | null;
   musicTrack: MusicTrack | null;
 }
 
@@ -175,7 +175,7 @@ export interface StoryboardImportSchema {
   projectName: string;
   projectType: ProjectType;
   language: 'en' | 'he';
-  intro: StoryboardSection;
+  intro: StoryboardSection | null;
   shots: Shot[];
-  outro: StoryboardSection;
+  outro: StoryboardSection | null;
 }

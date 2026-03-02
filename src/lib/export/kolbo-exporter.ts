@@ -3,9 +3,9 @@ import type { Project } from '../../types/project';
 export function exportToKolboPrompts(project: Project): string {
   const { storyboard, name, type } = project;
   const totalDuration =
-    storyboard.intro.duration +
+    (storyboard.intro?.duration || 0) +
     storyboard.shots.reduce((sum, s) => sum + s.duration, 0) +
-    storyboard.outro.duration;
+    (storyboard.outro?.duration || 0);
 
   let output = '';
   output += `====================================\n`;
@@ -14,15 +14,17 @@ export function exportToKolboPrompts(project: Project): string {
   output += `====================================\n\n`;
 
   // Intro
-  output += `--- INTRO ---\n`;
-  output += `Duration: ${storyboard.intro.duration}s\n\n`;
-  if (storyboard.intro.prompts.background) {
-    output += `  Background Prompt [${storyboard.intro.prompts.background.targetModel}]:\n`;
-    output += `  ${storyboard.intro.prompts.background.text}\n\n`;
-  }
-  if (storyboard.intro.prompts.music) {
-    output += `  Music Prompt [${storyboard.intro.prompts.music.targetModel}]:\n`;
-    output += `  ${storyboard.intro.prompts.music.text}\n\n`;
+  if (storyboard.intro) {
+    output += `--- INTRO ---\n`;
+    output += `Duration: ${storyboard.intro.duration}s\n\n`;
+    if (storyboard.intro.prompts.background) {
+      output += `  Background Prompt [${storyboard.intro.prompts.background.targetModel}]:\n`;
+      output += `  ${storyboard.intro.prompts.background.text}\n\n`;
+    }
+    if (storyboard.intro.prompts.music) {
+      output += `  Music Prompt [${storyboard.intro.prompts.music.targetModel}]:\n`;
+      output += `  ${storyboard.intro.prompts.music.text}\n\n`;
+    }
   }
 
   // Shots
@@ -55,15 +57,17 @@ export function exportToKolboPrompts(project: Project): string {
   }
 
   // Outro
-  output += `--- OUTRO ---\n`;
-  output += `Duration: ${storyboard.outro.duration}s\n\n`;
-  if (storyboard.outro.prompts.background) {
-    output += `  Background Prompt [${storyboard.outro.prompts.background.targetModel}]:\n`;
-    output += `  ${storyboard.outro.prompts.background.text}\n\n`;
-  }
-  if (storyboard.outro.prompts.music) {
-    output += `  Music Prompt [${storyboard.outro.prompts.music.targetModel}]:\n`;
-    output += `  ${storyboard.outro.prompts.music.text}\n\n`;
+  if (storyboard.outro) {
+    output += `--- OUTRO ---\n`;
+    output += `Duration: ${storyboard.outro.duration}s\n\n`;
+    if (storyboard.outro.prompts.background) {
+      output += `  Background Prompt [${storyboard.outro.prompts.background.targetModel}]:\n`;
+      output += `  ${storyboard.outro.prompts.background.text}\n\n`;
+    }
+    if (storyboard.outro.prompts.music) {
+      output += `  Music Prompt [${storyboard.outro.prompts.music.targetModel}]:\n`;
+      output += `  ${storyboard.outro.prompts.music.text}\n\n`;
+    }
   }
 
   return output;

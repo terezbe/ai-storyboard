@@ -168,7 +168,7 @@ export const useProjectStore = create<ProjectState>()((set, get) => ({
 
   updateIntro: (updates) => {
     const { currentProject } = get();
-    if (!currentProject) return;
+    if (!currentProject || !currentProject.storyboard.intro) return;
     set({
       currentProject: {
         ...currentProject,
@@ -182,7 +182,7 @@ export const useProjectStore = create<ProjectState>()((set, get) => ({
 
   updateOutro: (updates) => {
     const { currentProject } = get();
-    if (!currentProject) return;
+    if (!currentProject || !currentProject.storyboard.outro) return;
     set({
       currentProject: {
         ...currentProject,
@@ -211,15 +211,16 @@ export const useProjectStore = create<ProjectState>()((set, get) => ({
   updateSectionPrompts: (sectionType, prompts) => {
     const { currentProject } = get();
     if (!currentProject) return;
-    const key = sectionType;
+    const section = currentProject.storyboard[sectionType];
+    if (!section) return;
     set({
       currentProject: {
         ...currentProject,
         storyboard: {
           ...currentProject.storyboard,
-          [key]: {
-            ...currentProject.storyboard[key],
-            prompts: { ...currentProject.storyboard[key].prompts, ...prompts },
+          [sectionType]: {
+            ...section,
+            prompts: { ...section.prompts, ...prompts },
           },
         },
       },
