@@ -1,13 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, Video, AlertCircle, CheckCircle, RefreshCw } from 'lucide-react';
+import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, AlertCircle, CheckCircle, RefreshCw, Pencil } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useEditorStore } from '../../store/editor-store';
 import {
   useGenerationStore,
   useShotImageStatus,
-  useShotVideoStatus,
   useShotImageError,
-  useShotVideoError,
 } from '../../store/generation-store';
 import { useGeneration } from '../../hooks/use-generation';
 import type { Shot, StoryboardSection } from '../../types/project';
@@ -93,16 +91,13 @@ function ShotCard({ shot }: { shot: Shot }) {
   const { selectedShotId, setSelectedShotId } = useEditorStore();
   const isSelected = selectedShotId === shot.id;
   const hasPrompts = !!(shot.prompts.environment || shot.prompts.character || shot.prompts.video);
-  const { generateImage, generateVideo } = useGeneration();
+  const { generateImage } = useGeneration();
 
   // Use primitive selectors so Zustand triggers re-renders on status changes
   const imageStatus = useShotImageStatus(shot.id);
-  const videoStatus = useShotVideoStatus(shot.id);
   const imageError = useShotImageError(shot.id);
-  const videoError = useShotVideoError(shot.id);
 
   const isGeneratingImage = imageStatus === 'generating';
-  const isGeneratingVideo = videoStatus === 'generating';
   const imageCompleted = imageStatus === 'completed';
 
   return (
@@ -179,36 +174,12 @@ function ShotCard({ shot }: { shot: Shot }) {
           </div>
         )}
 
-        {/* Bottom action buttons */}
-        <div className="absolute bottom-2 end-2 flex items-center gap-1">
-          {shot.imageUrl && (shot.prompts.video?.text || shot.videoPrompt) && !isGeneratingVideo && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                generateVideo(shot);
-              }}
-              className="flex items-center gap-1 px-2 py-1 rounded bg-purple-600/80 hover:bg-purple-500 text-white text-[10px] font-medium transition-colors"
-              title={t('generation.generateVideo')}
-            >
-              <Video className="w-3 h-3" />
-              {t('generation.generateVideo')}
-            </button>
-          )}
-          {isGeneratingVideo && (
-            <span className="flex items-center gap-1 px-2 py-1 rounded bg-purple-600/60 text-white text-[10px]">
-              <Loader2 className="w-3 h-3 animate-spin" />
-              {t('generation.generating')}
-            </span>
-          )}
-          {videoStatus === 'error' && videoError && (
-            <span className="flex items-center gap-1 px-2 py-1 rounded bg-red-600/80 text-white text-[10px]" title={videoError}>
-              <AlertCircle className="w-3 h-3" />
-            </span>
-          )}
-          {!isGeneratingVideo && !shot.imageUrl && shot.videoPrompt && (
+        {/* Bottom action buttons — video prompt copy for shots without image */}
+        {!shot.imageUrl && shot.videoPrompt && (
+          <div className="absolute bottom-2 end-2">
             <CopyVideoPromptBtn prompt={shot.videoPrompt} />
-          )}
-        </div>
+          </div>
+        )}
 
         {!shot.imageUrl && shot.environment.setting && !isGeneratingImage && imageStatus !== 'error' && (
           <p className="absolute bottom-2 inset-x-2 text-xs text-text-muted truncate text-center">
@@ -256,27 +227,17 @@ function ShotCard({ shot }: { shot: Shot }) {
             </span>
           )}
         </div>
-        {/* Regenerate Image button — visible when shot already has an image */}
-        {shot.imageUrl && hasPrompts && (
+        {/* Edit Image button — opens full Kolbo-style editor */}
+        {hasPrompts && (
           <button
             onClick={(e) => {
               e.stopPropagation();
-              generateImage(shot);
+              setSelectedShotId(shot.id);
             }}
-            disabled={isGeneratingImage}
-            className="mt-2 w-full flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium bg-surface-lighter hover:bg-primary-600/30 text-text-muted hover:text-primary-300 border border-border hover:border-primary-500/40 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="mt-2 w-full flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium bg-gradient-to-r from-primary-600/20 to-purple-600/20 hover:from-primary-600/40 hover:to-purple-600/40 text-primary-300 border border-primary-500/30 hover:border-primary-500/50 transition-all"
           >
-            {isGeneratingImage ? (
-              <>
-                <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                {t('generation.generating')}
-              </>
-            ) : (
-              <>
-                <RefreshCw className="w-3.5 h-3.5" />
-                {t('generation.regenerateImage', 'Regenerate Image')}
-              </>
-            )}
+            <Pencil className="w-3.5 h-3.5" />
+            {t('imageEditor.editImage', 'Edit Image')}
           </button>
         )}
       </div>

@@ -167,6 +167,42 @@
     "musicRef": "מוזיקה",
     "showLogo": "הצג לוגו"
   },
+  "imageEditor": {
+    "editImage": "ערוך תמונה",
+    "backToStoryboard": "חזרה לסטוריבורד",
+    "adjustAngle": "כוונון זווית ופרספקטיבה",
+    "rotation": "סיבוב",
+    "tilt": "הטיה",
+    "zoom": "זום",
+    "reset": "איפוס",
+    "generate": "צור",
+    "noImage": "אין תמונה",
+    "adjustAndGenerate": "כוונן זוויות וצור",
+    "photographyControls": "בקרת צילום",
+    "focus": "פוקוס",
+    "exposure": "חשיפה",
+    "autoFocus": "אוטומטי",
+    "autoExposure": "אוטומטי",
+    "imagePrompt": "פרומפט תמונה",
+    "generateFromPrompt": "צור",
+    "promptPlaceholder": "טקסט הפרומפט יופיע כאן לאחר יצירה...",
+    "manuallyEdited": "✏️ נערך ידנית",
+    "focusModes": {
+      "shallow-dof": "עומק שדה רדוד",
+      "deep-focus": "פוקוס עמוק",
+      "soft-focus": "פוקוס רך",
+      "tilt-shift": "טילט-שיפט",
+      "rack-focus": "העברת פוקוס"
+    },
+    "exposureModes": {
+      "natural": "טבעי",
+      "high-key": "היי-קי",
+      "low-key": "לו-קי",
+      "silhouette": "צללית",
+      "overexposed": "חשיפת יתר",
+      "dramatic": "דרמטי"
+    }
+  },
   "generation": {
     "generateImage": "צור תמונה",
     "generateVideo": "צור וידאו",

@@ -167,6 +167,42 @@
     "musicRef": "Music Reference",
     "showLogo": "Show Logo"
   },
+  "imageEditor": {
+    "editImage": "Edit Image",
+    "backToStoryboard": "Back to Storyboard",
+    "adjustAngle": "Adjust Angle & Perspective",
+    "rotation": "Rotation",
+    "tilt": "Tilt",
+    "zoom": "Zoom",
+    "reset": "Reset",
+    "generate": "Generate",
+    "noImage": "No image",
+    "adjustAndGenerate": "Adjust angles and generate",
+    "photographyControls": "Photography Controls",
+    "focus": "Focus",
+    "exposure": "Exposure",
+    "autoFocus": "Auto",
+    "autoExposure": "Auto",
+    "imagePrompt": "Image Prompt",
+    "generateFromPrompt": "Generate",
+    "promptPlaceholder": "Prompt text will appear here after generating...",
+    "manuallyEdited": "✏️ Manually edited",
+    "focusModes": {
+      "shallow-dof": "Shallow DOF",
+      "deep-focus": "Deep Focus",
+      "soft-focus": "Soft Focus",
+      "tilt-shift": "Tilt-Shift",
+      "rack-focus": "Rack Focus"
+    },
+    "exposureModes": {
+      "natural": "Natural",
+      "high-key": "High Key",
+      "low-key": "Low Key",
+      "silhouette": "Silhouette",
+      "overexposed": "Overexposed",
+      "dramatic": "Dramatic"
+    }
+  },
   "generation": {
     "generateImage": "Generate Image",
     "generateVideo": "Generate Video",

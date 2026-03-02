@@ -61,7 +61,22 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
   },
 ];
 
-export const ALL_FAL_MODELS = [...FAL_IMAGE_MODELS, ...FAL_VIDEO_MODELS];
+/** Angle variation model — takes existing image and changes camera perspective */
+export const FAL_ANGLE_MODEL: FalModelConfig = {
+  id: 'fal-ai/qwen-image-edit-2511-multiple-angles',
+  name: 'Qwen Multi-Angle',
+  category: 'image',
+  cost: '~$0.03',
+  defaultParams: {
+    lora_scale: 1,
+    guidance_scale: 4.5,
+    num_inference_steps: 28,
+    output_format: 'jpeg',
+    num_images: 1,
+  },
+};
+
+export const ALL_FAL_MODELS = [...FAL_IMAGE_MODELS, ...FAL_VIDEO_MODELS, FAL_ANGLE_MODEL];
 
 export function getFalModel(id: string): FalModelConfig | undefined {
   return ALL_FAL_MODELS.find((m) => m.id === id);

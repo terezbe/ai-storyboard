@@ -1,4 +1,4 @@
-import type { CameraAngle, Mood, TransitionType } from '../../types/project';
+import type { CameraAngle, Mood, TransitionType, FocusMode, ExposureMode } from '../../types/project';
 
 export const CAMERA_ANGLES: CameraAngle[] = [
   'wide-shot', 'medium-shot', 'close-up', 'extreme-close-up',
@@ -13,6 +13,14 @@ export const MOODS: Mood[] = [
 
 export const TRANSITIONS: TransitionType[] = [
   'cut', 'fade', 'dissolve', 'wipe', 'slide', 'zoom', 'none',
+];
+
+export const FOCUS_MODES: FocusMode[] = [
+  'shallow-dof', 'deep-focus', 'soft-focus', 'tilt-shift', 'rack-focus',
+];
+
+export const EXPOSURE_MODES: ExposureMode[] = [
+  'natural', 'high-key', 'low-key', 'silhouette', 'overexposed', 'dramatic',
 ];
 
 export const MOOD_COLORS: Record<string, string> = {

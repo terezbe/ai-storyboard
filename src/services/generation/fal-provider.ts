@@ -4,6 +4,7 @@ import type {
   ImageGenerationResult,
   VideoGenerationRequest,
   VideoGenerationResult,
+  AngleVariationRequest,
 } from './types';
 import { getFalModel } from '../../config/fal-models';
 import { useSettingsStore } from '../../store/settings-store';
@@ -219,6 +220,48 @@ export class FalProvider implements GenerationProvider {
       }
     }
     return null;
+  }
+
+  async generateAngleVariation(request: AngleVariationRequest): Promise<ImageGenerationResult> {
+    const model = getFalModel(request.modelId);
+    const body = {
+      image_urls: [request.imageUrl],
+      horizontal_angle: request.horizontalAngle,
+      vertical_angle: request.verticalAngle,
+      zoom: request.zoom,
+      ...model?.defaultParams,
+      ...request.params,
+    };
+
+    console.log('[FAL Angle Variation]', {
+      model: request.modelId,
+      horizontal: request.horizontalAngle,
+      vertical: request.verticalAngle,
+      zoom: request.zoom,
+    });
+
+    const res = await fetch(`/api/fal/${request.modelId}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+      body: JSON.stringify(body),
+    });
+
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`FAL angle variation failed (${res.status}): ${text}`);
+    }
+
+    const data = await res.json();
+    const imageUrl =
+      data?.images?.[0]?.url ??
+      data?.output?.images?.[0]?.url ??
+      data?.image?.url;
+
+    if (!imageUrl) {
+      throw new Error('No image URL in FAL angle variation response');
+    }
+
+    return { imageUrl };
   }
 
   async testConnection(): Promise<boolean> {

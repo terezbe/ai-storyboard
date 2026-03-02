@@ -91,6 +91,21 @@ export interface SectionPrompts {
   music: Prompt | null;
 }
 
+export type FocusMode =
+  | 'shallow-dof'
+  | 'deep-focus'
+  | 'soft-focus'
+  | 'tilt-shift'
+  | 'rack-focus';
+
+export type ExposureMode =
+  | 'natural'
+  | 'high-key'
+  | 'low-key'
+  | 'silhouette'
+  | 'overexposed'
+  | 'dramatic';
+
 export interface Shot {
   id: string;
   orderIndex: number;
@@ -102,6 +117,12 @@ export interface Shot {
   duration: number;
   mood: Mood;
   transition: TransitionType;
+  focusMode?: FocusMode;
+  exposure?: ExposureMode;
+  /** Angle variation controls (Kolbo-style) */
+  angleRotation?: number;  // -180 to 180 horizontal rotation
+  angleTilt?: number;      // -90 to 90 vertical tilt
+  angleZoom?: number;      // -100 to 100 zoom/distance
   notes: string;
   prompts: ShotPrompts;
   imageUrl?: string;
