@@ -5,6 +5,9 @@ import { useGenerationStore } from '../store/generation-store';
 import { generateImageForShot, generateVideoForShot } from '../services/generation/generation-service';
 import type { Shot } from '../types/project';
 
+/** When a shot has an image, always use an image-to-video model so the image becomes the first frame */
+const IMAGE_TO_VIDEO_MODEL = 'fal-ai/kling-video/v2.1/master/image-to-video';
+
 export function useGeneration() {
   const { updateShot, currentProject, saveProject } = useProjectStore();
   const { preferredImageModel, preferredVideoModel } = useSettingsStore();
@@ -40,11 +43,14 @@ export function useGeneration() {
         return;
       }
 
+      // If the shot has an image, use image-to-video model so the image is the first frame
+      const videoModel = shot.imageUrl ? IMAGE_TO_VIDEO_MODEL : preferredVideoModel;
+
       setVideoStatus(shot.id, 'generating');
       try {
         const result = await generateVideoForShot(
           prompt,
-          preferredVideoModel,
+          videoModel,
           shot.imageUrl,
           shot.duration
         );

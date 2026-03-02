@@ -50,7 +50,14 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
     name: 'Kling 2.0 Master (img2vid)',
     category: 'video',
     cost: '~$0.70',
-    defaultParams: { duration: '5' },
+    defaultParams: { duration: '5', negative_prompt: 'blur, distort, low quality' },
+  },
+  {
+    id: 'fal-ai/kling-video/v2.1/master/image-to-video',
+    name: 'Kling 2.1 Master (img2vid)',
+    category: 'video',
+    cost: '~$0.70',
+    defaultParams: { duration: '5', negative_prompt: 'blur, distort, low quality' },
   },
 ];
 

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, Video, AlertCircle, CheckCircle } from 'lucide-react';
+import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, Video, AlertCircle, CheckCircle, RefreshCw } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useEditorStore } from '../../store/editor-store';
 import {
@@ -256,6 +256,29 @@ function ShotCard({ shot }: { shot: Shot }) {
             </span>
           )}
         </div>
+        {/* Regenerate Image button — visible when shot already has an image */}
+        {shot.imageUrl && hasPrompts && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              generateImage(shot);
+            }}
+            disabled={isGeneratingImage}
+            className="mt-2 w-full flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium bg-surface-lighter hover:bg-primary-600/30 text-text-muted hover:text-primary-300 border border-border hover:border-primary-500/40 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            {isGeneratingImage ? (
+              <>
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                {t('generation.generating')}
+              </>
+            ) : (
+              <>
+                <RefreshCw className="w-3.5 h-3.5" />
+                {t('generation.regenerateImage', 'Regenerate Image')}
+              </>
+            )}
+          </button>
+        )}
       </div>
     </div>
   );

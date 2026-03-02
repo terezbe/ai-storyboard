@@ -9,7 +9,9 @@ import { getFalModel } from '../../config/fal-models';
 import { useSettingsStore } from '../../store/settings-store';
 
 const POLL_INTERVAL = 5000;
-const POLL_TIMEOUT = 5 * 60 * 1000;
+/** Kling can take longer — use 10 minutes for image-to-video, 5 minutes otherwise */
+const POLL_TIMEOUT_DEFAULT = 5 * 60 * 1000;
+const POLL_TIMEOUT_KLING = 10 * 60 * 1000;
 
 function getAuthHeaders(): Record<string, string> {
   const key = useSettingsStore.getState().falApiKey;
@@ -17,6 +19,19 @@ function getAuthHeaders(): Record<string, string> {
     return { Authorization: `Key ${key}` };
   }
   return {};
+}
+
+/** Extract video URL from various FAL response shapes */
+function extractVideoUrl(data: Record<string, unknown>): string | undefined {
+  const d = data as any;
+  return (
+    d?.video?.url ??
+    d?.output?.video?.url ??
+    d?.response?.video?.url ??
+    d?.video_url ??
+    d?.response?.video_url ??
+    d?.output?.video_url
+  );
 }
 
 export class FalProvider implements GenerationProvider {
@@ -59,6 +74,8 @@ export class FalProvider implements GenerationProvider {
 
   async generateVideo(request: VideoGenerationRequest): Promise<VideoGenerationResult> {
     const model = getFalModel(request.modelId);
+    const isImg2Vid = request.modelId.includes('image-to-video');
+
     const body: Record<string, unknown> = {
       prompt: request.prompt,
       ...model?.defaultParams,
@@ -69,8 +86,23 @@ export class FalProvider implements GenerationProvider {
       body.image_url = request.imageUrl;
     }
     if (request.duration) {
-      body.duration = String(request.duration);
+      // Kling image-to-video only accepts '5' or '10' — snap to nearest valid value
+      // eslint-disable-next-line no-console
+      if (isImg2Vid) {
+        body.duration = request.duration <= 7 ? '5' : '10';
+      } else {
+        body.duration = String(request.duration);
+      }
     }
+
+    // Debug: log the request being sent to FAL
+    console.log('[FAL Video Request]', {
+      model: request.modelId,
+      hasImageUrl: !!body.image_url,
+      imageUrl: body.image_url,
+      duration: body.duration,
+      prompt: (body.prompt as string)?.substring(0, 80) + '...',
+    });
 
     const res = await fetch(`/api/fal/${request.modelId}`, {
       method: 'POST',
@@ -87,13 +119,11 @@ export class FalProvider implements GenerationProvider {
 
     // Check if this is an async/queued response
     if (data.request_id && !data.video) {
-      return this.pollForVideo(data.request_id, request.modelId);
+      const timeout = isImg2Vid ? POLL_TIMEOUT_KLING : POLL_TIMEOUT_DEFAULT;
+      return this.pollForVideo(data.request_id, request.modelId, timeout);
     }
 
-    const videoUrl =
-      data?.video?.url ??
-      data?.output?.video?.url ??
-      data?.video_url;
+    const videoUrl = extractVideoUrl(data);
 
     if (!videoUrl) {
       throw new Error('No video URL in FAL response');
@@ -104,43 +134,35 @@ export class FalProvider implements GenerationProvider {
 
   private async pollForVideo(
     requestId: string,
-    modelId: string
+    modelId: string,
+    timeout: number
   ): Promise<VideoGenerationResult> {
     const start = Date.now();
+    const timeoutMinutes = Math.round(timeout / 60000);
 
-    while (Date.now() - start < POLL_TIMEOUT) {
+    while (Date.now() - start < timeout) {
       await new Promise((resolve) => setTimeout(resolve, POLL_INTERVAL));
 
-      const res = await fetch(`/api/fal/${modelId}/requests/${requestId}/status`, {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
-      });
+      // Try both queue-style and direct-style status endpoints
+      const statusRes = await this.tryFetchStatus(modelId, requestId);
+      if (!statusRes) continue;
 
-      if (!res.ok) continue;
-
-      const data = await res.json();
+      const data = statusRes;
 
       if (data.status === 'COMPLETED') {
-        const videoUrl =
-          data?.response?.video?.url ??
-          data?.response?.video_url ??
-          data?.video?.url;
-
+        // Try extracting video URL from the status response itself
+        const videoUrl = extractVideoUrl(data);
         if (videoUrl) return { videoUrl };
 
-        // If completed but no video, try fetching the result
-        const resultRes = await fetch(
-          `/api/fal/${modelId}/requests/${requestId}`,
-          { method: 'GET', headers: { 'Content-Type': 'application/json', ...getAuthHeaders() } }
-        );
-        if (resultRes.ok) {
-          const resultData = await resultRes.json();
-          const url =
-            resultData?.video?.url ??
-            resultData?.output?.video?.url ??
-            resultData?.video_url;
-          if (url) return { videoUrl: url };
+        // Also check nested response object
+        if (data.response) {
+          const nestedUrl = extractVideoUrl(data.response as Record<string, unknown>);
+          if (nestedUrl) return { videoUrl: nestedUrl };
         }
+
+        // If completed but no video in status, fetch the full result
+        const resultUrl = await this.fetchResult(modelId, requestId);
+        if (resultUrl) return { videoUrl: resultUrl };
 
         throw new Error('Video generation completed but no video URL found');
       }
@@ -150,7 +172,53 @@ export class FalProvider implements GenerationProvider {
       }
     }
 
-    throw new Error('Video generation timed out (5 minutes)');
+    throw new Error(`Video generation timed out (${timeoutMinutes} minutes)`);
+  }
+
+  /** Try fetching status from queue endpoint, fall back to direct endpoint */
+  private async tryFetchStatus(
+    modelId: string,
+    requestId: string
+  ): Promise<any | null> {
+    const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() };
+
+    // Try queue-style endpoint first (FAL's standard queue API)
+    const queueRes = await fetch(
+      `/api/fal/queue/${modelId}/requests/${requestId}/status`,
+      { method: 'GET', headers }
+    );
+    if (queueRes.ok) return queueRes.json();
+
+    // Fall back to direct endpoint
+    const directRes = await fetch(
+      `/api/fal/${modelId}/requests/${requestId}/status`,
+      { method: 'GET', headers }
+    );
+    if (directRes.ok) return directRes.json();
+
+    return null;
+  }
+
+  /** Fetch the full result after polling shows COMPLETED */
+  private async fetchResult(
+    modelId: string,
+    requestId: string
+  ): Promise<string | null> {
+    const headers = { 'Content-Type': 'application/json', ...getAuthHeaders() };
+
+    // Try queue-style result endpoint first
+    for (const prefix of ['queue/', '']) {
+      const res = await fetch(
+        `/api/fal/${prefix}${modelId}/requests/${requestId}`,
+        { method: 'GET', headers }
+      );
+      if (res.ok) {
+        const data = await res.json();
+        const url = extractVideoUrl(data);
+        if (url) return url;
+      }
+    }
+    return null;
   }
 
   async testConnection(): Promise<boolean> {
