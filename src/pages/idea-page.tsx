@@ -1,16 +1,27 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Sparkles, Loader2, AlertCircle, Settings, Lightbulb } from 'lucide-react';
+import { Mic, AlertCircle } from 'lucide-react';
 import { useSettingsStore } from '../store/settings-store';
-import { generateStoryboardFromIdea } from '../services/generation/claude-storyboard';
+import { generateStoryboardFromWizard } from '../services/generation/claude-storyboard';
 import { validateStoryboardJson } from '../lib/ai/json-importer';
-import { generateAllPromptsForShot } from '../lib/prompt-engine';
+import { generateAllPromptsForShot, generateSectionPrompt } from '../lib/prompt-engine';
 import { db } from '../db/database';
 import { v4 as uuid } from 'uuid';
-import type { Project } from '../types/project';
+import { VISUAL_STYLE_PRESETS } from '../config/style-presets';
+import { WizardForm } from '../components/idea-wizard/wizard-form';
+import { GenerationProgress } from '../components/idea-wizard/generation-progress';
+import { StoryboardPreview } from '../components/idea-wizard/storyboard-preview';
+import type { Project, StoryboardImportSchema } from '../types/project';
+import type { IdeaWizardInput, WizardStage } from '../types/idea-wizard';
 
-type Stage = 'idle' | 'claude' | 'importing' | 'done' | 'error';
+const DEFAULT_INPUT: IdeaWizardInput = {
+  idea: '',
+  characterDescription: '',
+  visualStyle: 'cinematic',
+  mood: 'festive',
+  shotCountRange: '6-8',
+};
 
 export function IdeaPage() {
   const { t } = useTranslation();
@@ -18,18 +29,24 @@ export function IdeaPage() {
   const claudeApiKey = useSettingsStore((s) => s.claudeApiKey);
   const language = useSettingsStore((s) => s.language);
 
-  const [idea, setIdea] = useState('');
-  const [stage, setStage] = useState<Stage>('idle');
+  const [stage, setStage] = useState<WizardStage>('input');
+  const [wizardInput, setWizardInput] = useState<IdeaWizardInput>(DEFAULT_INPUT);
+  const [previewData, setPreviewData] = useState<StoryboardImportSchema | null>(null);
+  const [genStep, setGenStep] = useState<'analyzing' | 'building'>('analyzing');
   const [error, setError] = useState('');
 
+  /* ── Generate storyboard from wizard input ──────────────── */
   const handleGenerate = async () => {
-    if (!idea.trim() || !claudeApiKey) return;
-
-    setStage('claude');
+    setStage('generating');
+    setGenStep('analyzing');
     setError('');
 
+    // Simulate a brief "analyzing" step for UX
+    const analyzeTimer = setTimeout(() => setGenStep('building'), 2500);
+
     // Step 1: Claude generates storyboard JSON
-    const result = await generateStoryboardFromIdea(idea.trim(), language);
+    const result = await generateStoryboardFromWizard(wizardInput, language);
+    clearTimeout(analyzeTimer);
 
     if (!result.success || !result.data) {
       setStage('error');
@@ -37,9 +54,7 @@ export function IdeaPage() {
       return;
     }
 
-    // Step 2: Validate and import
-    setStage('importing');
-
+    // Step 2: Validate
     const validation = validateStoryboardJson(result.data);
     if (!validation.isValid || !validation.data) {
       setStage('error');
@@ -47,11 +62,19 @@ export function IdeaPage() {
       return;
     }
 
-    const data = validation.data;
+    setPreviewData(validation.data);
+    setStage('preview');
+  };
+
+  /* ── Approve & create project ──────────────────────────── */
+  const handleApprove = async () => {
+    if (!previewData) return;
+    setStage('importing');
+
     const settings = useSettingsStore.getState();
 
-    // Auto-generate image prompts for every shot
-    const shotsWithPrompts = data.shots.map((shot) => {
+    // Auto-generate prompts for every shot
+    const shotsWithPrompts = previewData.shots.map((shot) => {
       const hasPrompts = shot.prompts.environment || shot.prompts.character || shot.prompts.video;
       if (hasPrompts) return shot;
       const prompts = generateAllPromptsForShot(
@@ -64,18 +87,32 @@ export function IdeaPage() {
       return { ...shot, prompts };
     });
 
+    // Auto-generate prompts for intro/outro
+    const intro = previewData.intro
+      ? {
+          ...previewData.intro,
+          prompts: generateSectionPrompt(previewData.intro, settings.preferredImageModel, settings.preferredMusicModel, 'standard'),
+        }
+      : null;
+    const outro = previewData.outro
+      ? {
+          ...previewData.outro,
+          prompts: generateSectionPrompt(previewData.outro, settings.preferredImageModel, settings.preferredMusicModel, 'standard'),
+        }
+      : null;
+
     // Create project
     const project: Project = {
       id: uuid(),
-      name: data.projectName,
-      type: data.projectType,
-      description: idea.trim(),
+      name: previewData.projectName,
+      type: 'talking-character',
+      description: wizardInput.idea.trim(),
       status: 'draft',
-      language: data.language || language,
+      language: previewData.language || language,
       storyboard: {
-        intro: data.intro,
+        intro,
         shots: shotsWithPrompts,
-        outro: data.outro,
+        outro,
         musicTrack: null,
       },
       createdAt: new Date().toISOString(),
@@ -83,95 +120,87 @@ export function IdeaPage() {
     };
 
     await db.projects.add(project);
-    setStage('done');
-
-    // Navigate to project with auto-generate flag
     navigate(`/project/${project.id}?generate=true`);
   };
 
-  const stageMessage = () => {
-    switch (stage) {
-      case 'claude': return t('idea.step1');
-      case 'importing': return t('idea.step2');
-      case 'done': return t('idea.success');
-      default: return '';
-    }
+  /* ── Helpers ────────────────────────────────────────────── */
+  const handleRegenerate = () => {
+    handleGenerate();
   };
 
-  const isLoading = stage === 'claude' || stage === 'importing';
+  const handleBack = () => {
+    setStage('input');
+  };
 
+  const selectedStyleName = (() => {
+    const style = VISUAL_STYLE_PRESETS.find((s) => s.id === wizardInput.visualStyle);
+    return style ? t(style.labelKey) : '';
+  })();
+
+  /* ── Render ─────────────────────────────────────────────── */
   return (
     <div className="max-w-2xl mx-auto p-6">
+      {/* Header */}
       <div className="text-center mb-8">
         <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-600/20 mb-4">
-          <Lightbulb className="w-8 h-8 text-primary-400" />
+          <Mic className="w-8 h-8 text-primary-400" />
         </div>
-        <h2 className="text-2xl font-bold text-text">{t('idea.title')}</h2>
-        <p className="text-text-muted mt-2">{t('idea.subtitle')}</p>
+        <h2 className="text-2xl font-bold text-text">{t('wizard.title')}</h2>
+        <p className="text-text-muted mt-2">{t('wizard.subtitle')}</p>
       </div>
 
-      {/* API Key Warning */}
-      {!claudeApiKey && (
-        <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-xl p-4 mb-6 flex items-start gap-3">
-          <AlertCircle className="w-5 h-5 text-yellow-400 shrink-0 mt-0.5" />
-          <div>
-            <p className="text-sm text-yellow-300 font-medium">{t('idea.noApiKey')}</p>
-            <button
-              onClick={() => navigate('/settings')}
-              className="text-sm text-primary-400 hover:text-primary-300 mt-1 underline"
-            >
-              {t('idea.goToSettings')}
-            </button>
-          </div>
+      {/* Stage: Input */}
+      {stage === 'input' && (
+        <div className="bg-surface-light border border-border rounded-xl p-5">
+          <WizardForm
+            input={wizardInput}
+            onChange={setWizardInput}
+            onSubmit={handleGenerate}
+            claudeApiKey={claudeApiKey}
+          />
         </div>
       )}
 
-      {/* Idea Input */}
-      <div className="bg-surface-light border border-border rounded-xl p-5 mb-6">
-        <textarea
-          value={idea}
-          onChange={(e) => setIdea(e.target.value)}
-          rows={6}
-          placeholder={t('idea.placeholder')}
-          disabled={isLoading}
-          className="w-full bg-surface border border-border rounded-xl px-4 py-3 text-sm text-text placeholder:text-text-muted focus:outline-none focus:border-primary-500 resize-y disabled:opacity-50"
+      {/* Stage: Generating */}
+      {stage === 'generating' && <GenerationProgress step={genStep} />}
+
+      {/* Stage: Preview */}
+      {stage === 'preview' && previewData && (
+        <StoryboardPreview
+          data={previewData}
+          characterDescription={wizardInput.characterDescription}
+          styleName={selectedStyleName}
+          onChange={setPreviewData}
+          onApprove={handleApprove}
+          onRegenerate={handleRegenerate}
+          onBack={handleBack}
         />
+      )}
 
-        {/* Generate Button */}
-        <button
-          onClick={handleGenerate}
-          disabled={!idea.trim() || !claudeApiKey || isLoading}
-          className="mt-4 w-full flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-xl font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {isLoading ? (
-            <Loader2 className="w-5 h-5 animate-spin" />
-          ) : (
-            <Sparkles className="w-5 h-5" />
-          )}
-          {isLoading ? stageMessage() : t('idea.generate')}
-        </button>
-      </div>
-
-      {/* Progress indicator */}
-      {isLoading && (
-        <div className="flex items-center gap-3 justify-center">
-          <div className="flex gap-1.5">
-            <div className={`w-2.5 h-2.5 rounded-full ${stage === 'claude' ? 'bg-primary-500 animate-pulse' : 'bg-primary-500'}`} />
-            <div className={`w-2.5 h-2.5 rounded-full ${stage === 'importing' ? 'bg-primary-500 animate-pulse' : stage === 'claude' ? 'bg-border' : 'bg-primary-500'}`} />
-            <div className={`w-2.5 h-2.5 rounded-full ${stage === 'done' ? 'bg-primary-500' : 'bg-border'}`} />
-          </div>
-          <span className="text-sm text-text-muted">{stageMessage()}</span>
+      {/* Stage: Importing */}
+      {stage === 'importing' && (
+        <div className="flex flex-col items-center justify-center py-16 gap-4">
+          <div className="w-8 h-8 border-2 border-primary-500 border-t-transparent rounded-full animate-spin" />
+          <p className="text-sm text-text-muted">{t('idea.step2')}</p>
         </div>
       )}
 
-      {/* Error */}
+      {/* Stage: Error */}
       {stage === 'error' && (
-        <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-4 flex items-start gap-3">
-          <AlertCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-          <div>
-            <p className="text-sm text-red-300 font-medium">{t('idea.error')}</p>
-            <p className="text-xs text-red-400 mt-1">{error}</p>
+        <div className="space-y-4">
+          <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-4 flex items-start gap-3">
+            <AlertCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+            <div>
+              <p className="text-sm text-red-300 font-medium">{t('idea.error')}</p>
+              <p className="text-xs text-red-400 mt-1">{error}</p>
+            </div>
           </div>
+          <button
+            onClick={handleBack}
+            className="w-full px-4 py-2.5 rounded-xl text-sm border border-border text-text-muted hover:text-text hover:border-primary-500/50 transition-colors"
+          >
+            {t('wizard.preview.backToEdit')}
+          </button>
         </div>
       )}
     </div>

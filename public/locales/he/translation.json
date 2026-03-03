@@ -216,6 +216,48 @@
     "connected": "מחובר!",
     "connectionFailed": "החיבור נכשל"
   },
+  "wizard": {
+    "title": "צור דמות מדברת",
+    "subtitle": "תאר את הדמות, בחר סגנון, וכתוב את התסריט",
+    "ideaLabel": "התסריט / הרעיון",
+    "ideaPlaceholder": "תאר את הרעיון לוידאו... מה הדמות אומרת? באיזה הקשר?\nלדוגמה: סרטון פתיחה לחתונה, הדמות מזמינה את האורחים בחום ומספרת על הזוג",
+    "characterLabel": "תיאור הדמות",
+    "characterRequired": "חובה",
+    "characterPlaceholder": "אישה צעירה, שיער כהה ארוך, עור זית, עיניים חומות, חיוך חם",
+    "styleLabel": "סגנון ויזואלי",
+    "moodLabel": "מצב רוח",
+    "shotCountLabel": "אורך הוידאו",
+    "generate": "צור סטוריבורד",
+    "generating": "יוצר את הסטוריבורד שלך...",
+    "analyzingCharacter": "מנתח דמות וסגנון...",
+    "buildingShots": "בונה שוטים ותיאורים...",
+    "styles": {
+      "cinematic": "קולנועי",
+      "fantasyEpic": "פנטזיה אפית",
+      "cute3d": "תלת מימד חמוד",
+      "sciFi": "מדע בדיוני",
+      "anime": "אנימה",
+      "filmGrain": "פילם וינטג'",
+      "popArt": "פופ ארט",
+      "watercolor": "צבעי מים",
+      "realistic": "ריאליסטי"
+    },
+    "shotCounts": {
+      "short": "קצר (4-6)",
+      "medium": "בינוני (6-8)",
+      "long": "ארוך (8-12)"
+    },
+    "preview": {
+      "title": "תצוגה מקדימה",
+      "subtitle": "בדוק את השוטים ועשה שינויים לפני אישור",
+      "character": "הדמות",
+      "approve": "אשר וצור פרויקט",
+      "regenerate": "צור מחדש",
+      "backToEdit": "חזרה לעריכה",
+      "removeShot": "הסר שוט",
+      "shotsCount": "{{count}} שוטים"
+    }
+  },
   "common": {
     "save": "שמור",
     "cancel": "ביטול",

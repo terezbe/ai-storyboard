@@ -216,6 +216,48 @@
     "connected": "Connected!",
     "connectionFailed": "Connection Failed"
   },
+  "wizard": {
+    "title": "Create Talking Character",
+    "subtitle": "Describe your character, choose a style, and write the script",
+    "ideaLabel": "Script / Idea",
+    "ideaPlaceholder": "Describe your video idea... What does the character say? In what context?\nFor example: A wedding opening video, the character warmly invites guests and tells about the couple",
+    "characterLabel": "Character Description",
+    "characterRequired": "Required",
+    "characterPlaceholder": "Young woman, long dark hair, olive skin, brown eyes, warm smile",
+    "styleLabel": "Visual Style",
+    "moodLabel": "Mood",
+    "shotCountLabel": "Video Length",
+    "generate": "Create Storyboard",
+    "generating": "Creating your storyboard...",
+    "analyzingCharacter": "Analyzing character and style...",
+    "buildingShots": "Building shots and descriptions...",
+    "styles": {
+      "cinematic": "Cinematic",
+      "fantasyEpic": "Fantasy Epic",
+      "cute3d": "Cute 3D",
+      "sciFi": "Sci-Fi",
+      "anime": "Anime",
+      "filmGrain": "Film Grain",
+      "popArt": "Pop Art",
+      "watercolor": "Watercolor",
+      "realistic": "Realistic"
+    },
+    "shotCounts": {
+      "short": "Short (4-6)",
+      "medium": "Medium (6-8)",
+      "long": "Long (8-12)"
+    },
+    "preview": {
+      "title": "Preview",
+      "subtitle": "Review your shots and make changes before confirming",
+      "character": "Character",
+      "approve": "Approve & Create Project",
+      "regenerate": "Regenerate",
+      "backToEdit": "Back to Edit",
+      "removeShot": "Remove Shot",
+      "shotsCount": "{{count}} shots"
+    }
+  },
   "common": {
     "save": "Save",
     "cancel": "Cancel",
