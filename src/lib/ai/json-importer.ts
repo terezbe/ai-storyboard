@@ -123,6 +123,7 @@ export function validateStoryboardJson(raw: string): ValidationResult {
       duration: s.duration || 8,
       mood: s.mood || 'festive',
       transition: s.transition || 'cut',
+      shotCategory: s.shotCategory || undefined,
       notes: s.notes || '',
       prompts: s.prompts || { environment: null, character: null, music: null, video: null },
       imageUrl: s.imageUrl || undefined,

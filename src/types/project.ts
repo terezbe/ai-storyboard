@@ -117,6 +117,8 @@ export interface Shot {
   duration: number;
   mood: Mood;
   transition: TransitionType;
+  /** Whether this is a character shot or environment-only B-Roll */
+  shotCategory?: 'character' | 'b-roll';
   focusMode?: FocusMode;
   exposure?: ExposureMode;
   /** Angle variation controls (Kolbo-style) */
@@ -177,6 +179,7 @@ export interface Project {
   status: ProjectStatus;
   language: 'en' | 'he';
   storyboard: Storyboard;
+  referenceImageUrl?: string;
   createdAt: string;
   updatedAt: string;
 }

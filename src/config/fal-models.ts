@@ -76,7 +76,35 @@ export const FAL_ANGLE_MODEL: FalModelConfig = {
   },
 };
 
-export const ALL_FAL_MODELS = [...FAL_IMAGE_MODELS, ...FAL_VIDEO_MODELS, FAL_ANGLE_MODEL];
+/** Flux Kontext — purpose-built for character consistency, preserves identity across scenes */
+export const FAL_KONTEXT_MODEL: FalModelConfig = {
+  id: 'fal-ai/flux-pro/kontext',
+  name: 'Flux Kontext Pro',
+  category: 'image',
+  cost: '~$0.04',
+  defaultParams: {
+    guidance_scale: 3.5,
+    num_images: 1,
+    output_format: 'jpeg',
+  },
+};
+
+/** Flux Dev img2img fallback — lower strength for character preservation */
+export const FAL_IMG2IMG_MODEL: FalModelConfig = {
+  id: 'fal-ai/flux/dev/image-to-image',
+  name: 'Flux Dev (img2img)',
+  category: 'image',
+  cost: '~$0.025',
+  defaultParams: {
+    strength: 0.65,
+    num_inference_steps: 40,
+    guidance_scale: 3.5,
+    num_images: 1,
+    output_format: 'jpeg',
+  },
+};
+
+export const ALL_FAL_MODELS = [...FAL_IMAGE_MODELS, ...FAL_VIDEO_MODELS, FAL_ANGLE_MODEL, FAL_KONTEXT_MODEL, FAL_IMG2IMG_MODEL];
 
 export function getFalModel(id: string): FalModelConfig | undefined {
   return ALL_FAL_MODELS.find((m) => m.id === id);

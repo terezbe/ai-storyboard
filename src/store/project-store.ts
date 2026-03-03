@@ -56,6 +56,7 @@ interface ProjectState {
   updateOutro: (updates: Partial<StoryboardSection>) => void;
   updateShotPrompts: (shotId: string, prompts: Partial<ShotPrompts>) => void;
   updateSectionPrompts: (sectionType: 'intro' | 'outro', prompts: Partial<SectionPrompts>) => void;
+  setReferenceImage: (url: string | null) => void;
   unloadProject: () => void;
 }
 
@@ -223,6 +224,17 @@ export const useProjectStore = create<ProjectState>()((set, get) => ({
             prompts: { ...section.prompts, ...prompts },
           },
         },
+      },
+    });
+  },
+
+  setReferenceImage: (url) => {
+    const { currentProject } = get();
+    if (!currentProject) return;
+    set({
+      currentProject: {
+        ...currentProject,
+        referenceImageUrl: url || undefined,
       },
     });
   },

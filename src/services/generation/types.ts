@@ -32,11 +32,20 @@ export interface AngleVariationRequest {
   params?: Record<string, unknown>;
 }
 
+export interface ImageToImageRequest {
+  prompt: string;
+  modelId: string;
+  imageUrl: string;
+  strength?: number;
+  params?: Record<string, unknown>;
+}
+
 export interface GenerationProvider {
   id: string;
   name: string;
   generateImage(request: ImageGenerationRequest): Promise<ImageGenerationResult>;
   generateVideo(request: VideoGenerationRequest): Promise<VideoGenerationResult>;
   generateAngleVariation?(request: AngleVariationRequest): Promise<ImageGenerationResult>;
+  generateImageToImage?(request: ImageToImageRequest): Promise<ImageGenerationResult>;
   testConnection(): Promise<boolean>;
 }

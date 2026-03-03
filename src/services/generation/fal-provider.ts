@@ -2,6 +2,7 @@ import type {
   GenerationProvider,
   ImageGenerationRequest,
   ImageGenerationResult,
+  ImageToImageRequest,
   VideoGenerationRequest,
   VideoGenerationResult,
   AngleVariationRequest,
@@ -259,6 +260,51 @@ export class FalProvider implements GenerationProvider {
 
     if (!imageUrl) {
       throw new Error('No image URL in FAL angle variation response');
+    }
+
+    return { imageUrl };
+  }
+
+  async generateImageToImage(request: ImageToImageRequest): Promise<ImageGenerationResult> {
+    const model = getFalModel(request.modelId);
+    const body: Record<string, unknown> = {
+      prompt: request.prompt,
+      image_url: request.imageUrl,
+      ...model?.defaultParams,
+      ...request.params,
+    };
+
+    // Override strength if explicitly provided
+    if (request.strength !== undefined) {
+      body.strength = request.strength;
+    }
+
+    console.log('[FAL img2img Request]', {
+      model: request.modelId,
+      imageUrl: (request.imageUrl)?.substring(0, 60) + '...',
+      strength: body.strength,
+      prompt: (request.prompt)?.substring(0, 80) + '...',
+    });
+
+    const res = await fetch(`/api/fal/${request.modelId}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+      body: JSON.stringify(body),
+    });
+
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(`FAL img2img generation failed (${res.status}): ${text}`);
+    }
+
+    const data = await res.json();
+    const imageUrl =
+      data?.images?.[0]?.url ??
+      data?.output?.images?.[0]?.url ??
+      data?.image?.url;
+
+    if (!imageUrl) {
+      throw new Error('No image URL in FAL img2img response');
     }
 
     return { imageUrl };

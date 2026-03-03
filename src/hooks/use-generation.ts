@@ -6,7 +6,10 @@ import {
   generateImageForShot,
   generateVideoForShot,
   generateAngleVariation as generateAngleVariationService,
+  generateCharacterShot,
+  generateImageToImageForShot,
 } from '../services/generation/generation-service';
+import { getImg2ImgStrength } from '../lib/img2img-strength';
 import type { Shot } from '../types/project';
 
 /** When a shot has an image, always use an image-to-video model so the image becomes the first frame */
@@ -27,7 +30,27 @@ export function useGeneration() {
 
       setImageStatus(shot.id, 'generating');
       try {
-        const result = await generateImageForShot(prompt, preferredImageModel);
+        const project = useProjectStore.getState().currentProject;
+        let result;
+
+        const isCharacterShot = shot.shotCategory !== 'b-roll';
+        const hasReference = !!project?.referenceImageUrl;
+
+        if (hasReference && isCharacterShot) {
+          // CHARACTER shot with reference → use Kontext for best character consistency
+          // Prompt should describe ONLY the scene (not the character)
+          try {
+            result = await generateCharacterShot(prompt, project!.referenceImageUrl!);
+          } catch {
+            // Fallback to img2img if Kontext fails
+            const strength = getImg2ImgStrength(shot.cameraAngle);
+            result = await generateImageToImageForShot(prompt, project!.referenceImageUrl!, strength);
+          }
+        } else {
+          // B-ROLL shot OR no reference → standard text-to-image
+          result = await generateImageForShot(prompt, preferredImageModel);
+        }
+
         updateShot(shot.id, { imageUrl: result.imageUrl });
         setImageStatus(shot.id, 'completed');
         saveProject();

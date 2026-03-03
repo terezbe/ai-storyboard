@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { X, ArrowRight, RefreshCw, Check, User, Clock, Camera } from 'lucide-react';
+import { X, ArrowRight, RefreshCw, Check, User, Clock, Camera, ImageIcon } from 'lucide-react';
 import { MOOD_COLORS } from '../storyboard/shot-constants';
 import type { StoryboardImportSchema } from '../../types/project';
 
@@ -7,6 +7,7 @@ interface StoryboardPreviewProps {
   data: StoryboardImportSchema;
   characterDescription: string;
   styleName: string;
+  referenceImageUrl?: string | null;
   onChange: (data: StoryboardImportSchema) => void;
   onApprove: () => void;
   onRegenerate: () => void;
@@ -17,6 +18,7 @@ export function StoryboardPreview({
   data,
   characterDescription,
   styleName,
+  referenceImageUrl,
   onChange,
   onApprove,
   onRegenerate,
@@ -58,6 +60,24 @@ export function StoryboardPreview({
           <span>{characterDescription}</span>
         </div>
       </div>
+
+      {/* Reference image */}
+      {referenceImageUrl && (
+        <div className="bg-surface-light border border-primary-500/30 rounded-xl p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <ImageIcon className="w-4 h-4 text-primary-400" />
+            <span className="text-sm font-medium text-text">{t('referenceImage.title')}</span>
+            <span className="text-xs text-primary-300 bg-primary-600/20 px-2 py-0.5 rounded-md ms-auto">
+              {t('referenceImage.badge')}
+            </span>
+          </div>
+          <img
+            src={referenceImageUrl}
+            alt="Reference"
+            className="w-full rounded-lg aspect-video object-cover"
+          />
+        </div>
+      )}
 
       {/* Shot list */}
       <div className="space-y-2">
