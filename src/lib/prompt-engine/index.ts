@@ -278,12 +278,8 @@ export function generateEnvironmentPrompt(
   let text = parts.join(', ');
   text += buildQualitySuffix(quality);
 
-  // Flux-optimized: add negative guidance for common artifacts
-  if (!modelId.includes('midjourney')) {
-    text += ', no text, no watermark, no UI elements';
-  }
-
-  if (modelId === 'midjourney') text += ' --ar 16:9 --v 6.1 --style raw';
+  // Add negative guidance for common artifacts
+  text += ', no text, no watermark, no UI elements';
 
   return {
     id: uuid(),
@@ -342,11 +338,7 @@ export function generateCharacterPrompt(
   let text = parts.join(', ');
   text += buildQualitySuffix(quality);
 
-  if (!modelId.includes('midjourney')) {
-    text += ', no text, no watermark';
-  }
-
-  if (modelId === 'midjourney') text += ' --ar 16:9 --v 6.1';
+  text += ', no text, no watermark';
 
   return {
     id: uuid(),
@@ -403,6 +395,8 @@ export function generateVideoPrompt(
   // Scene and subject
   sceneParts.push(environment.setting || 'cinematic scene');
   if (character.appearance) sceneParts.push(character.appearance);
+  if (character.expression) sceneParts.push(`with ${character.expression} expression`);
+  if (character.outfit) sceneParts.push(`wearing ${character.outfit}`);
 
   const sceneDesc = sceneParts.join(', ');
 
@@ -411,10 +405,37 @@ export function generateVideoPrompt(
     ? character.action
     : 'subtle ambient motion, gentle environmental movement';
 
-  // Build the structured video prompt: Scene. Motion. Camera. Lighting. Duration.
+  // Build the structured video prompt: Scene. Motion. Dialogue. Camera. Lighting. Duration.
   const segments: string[] = [];
   segments.push(sceneDesc);
   if (motionDesc) segments.push(motionDesc);
+
+  // Dialogue: describe speaking action so video model generates talking/lip movement
+  const dialogueText = shot.dialogue?.text?.trim();
+  if (dialogueText) {
+    const voiceStyle = shot.dialogue.voiceStyle?.trim();
+    // Use voiceStyle as an adverb when it's a single word (e.g. "warm" → "warmly"),
+    // or as a descriptive clause for multi-word styles (e.g. "warm and reflective" → "with warm and reflective tone")
+    let speakingDesc: string;
+    if (!voiceStyle) {
+      speakingDesc = 'character speaking';
+    } else if (/^\w+$/.test(voiceStyle)) {
+      // Single word → adverb form: append "ly" (handles most adjectives well enough for prompt context)
+      const adverb = voiceStyle.endsWith('ic')
+        ? voiceStyle + 'ally'
+        : voiceStyle.endsWith('y')
+          ? voiceStyle.slice(0, -1) + 'ily'
+          : voiceStyle + 'ly';
+      speakingDesc = `character speaking ${adverb}`;
+    } else {
+      // Multi-word voice style → use as a descriptive clause
+      speakingDesc = `character speaking with ${voiceStyle} tone`;
+    }
+    segments.push(
+      `${speakingDesc}, saying: '${dialogueText}', natural lip movement, clear articulation`
+    );
+  }
+
   if (cameraHint) segments.push(cameraHint);
   segments.push(moodMod.lighting);
   segments.push(`${moodMod.palette}`);
@@ -471,10 +492,7 @@ export function generateSectionPrompt(
 
   bgText += buildQualitySuffix(quality);
 
-  if (!imageModel.includes('midjourney')) {
-    bgText += ', no text, no watermark, no UI elements';
-  }
-  if (imageModel === 'midjourney') bgText += ' --ar 16:9 --v 6.1';
+  bgText += ', no text, no watermark, no UI elements';
 
   const background: Prompt = {
     id: uuid(),

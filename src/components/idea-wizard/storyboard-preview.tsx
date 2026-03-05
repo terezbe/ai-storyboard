@@ -50,7 +50,7 @@ export function StoryboardPreview({
             {styleName}
           </span>
           <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-surface text-text-muted text-xs border border-border">
-            {t(`project.types.talking-character`)}
+            {t(`project.types.${data.projectType}`)}
           </span>
         </div>
 

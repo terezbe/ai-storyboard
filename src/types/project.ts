@@ -4,6 +4,7 @@ export type ProjectType =
   | 'event-promo'
   | 'invitation'
   | 'recap-video'
+  | 'brand-reveal'
   | 'custom';
 
 export type ProjectStatus = 'draft' | 'in-progress' | 'prompts-ready' | 'completed';
@@ -130,6 +131,8 @@ export interface Shot {
   imageUrl?: string;
   videoPrompt?: string;
   videoUrl?: string;
+  /** Per-shot video continuity: 'cut' = normal, 'continuity' = use last frame of previous shot as first frame */
+  continuityMode?: 'cut' | 'continuity';
 }
 
 export interface StoryboardSection {
@@ -171,6 +174,23 @@ export interface Storyboard {
   musicTrack: MusicTrack | null;
 }
 
+export interface ReferenceImage {
+  id: string;
+  dataUrl: string;       // base64 data URL (persists across sessions)
+  label: string;         // user-given or auto label
+  stepSource: string;    // which wizard step it came from
+}
+
+export interface WizardMetadata {
+  videoType: ProjectType;
+  referenceImages?: ReferenceImage[];
+  // Serialized wizard data — stored as a generic record since the full
+  // typed interfaces are in wizard-data.ts / idea-wizard.ts and may evolve.
+  // Keyed by: 'character', 'environment', 'story', 'eventPromo', 'invitation',
+  // 'musicVideo', 'recapVideo', 'brandReveal', 'customData'
+  data: Record<string, unknown>;
+}
+
 export interface Project {
   id: string;
   name: string;
@@ -180,6 +200,7 @@ export interface Project {
   language: 'en' | 'he';
   storyboard: Storyboard;
   referenceImageUrl?: string;
+  wizardMetadata?: WizardMetadata;
   createdAt: string;
   updatedAt: string;
 }

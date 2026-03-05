@@ -13,6 +13,7 @@ interface SettingsState {
   preferredImageModel: string;
   preferredVideoModel: string;
   preferredMusicModel: string;
+  enableAudioGeneration: boolean;
   setLanguage: (lang: 'en' | 'he') => void;
   setAiMode: (mode: AIMode) => void;
   setApiKey: (key: string | null) => void;
@@ -22,6 +23,7 @@ interface SettingsState {
   setPreferredImageModel: (m: string) => void;
   setPreferredVideoModel: (m: string) => void;
   setPreferredMusicModel: (m: string) => void;
+  setEnableAudioGeneration: (v: boolean) => void;
 }
 
 export const useSettingsStore = create<SettingsState>()(
@@ -37,6 +39,7 @@ export const useSettingsStore = create<SettingsState>()(
       preferredImageModel: 'fal-ai/flux/schnell',
       preferredVideoModel: 'fal-ai/minimax/video-01',
       preferredMusicModel: 'suno-v4.5',
+      enableAudioGeneration: true,
       setLanguage: (language) => set({ language }),
       setAiMode: (aiMode) => set({ aiMode }),
       setApiKey: (apiKey) => set({ apiKey }),
@@ -46,6 +49,7 @@ export const useSettingsStore = create<SettingsState>()(
       setPreferredImageModel: (preferredImageModel) => set({ preferredImageModel }),
       setPreferredVideoModel: (preferredVideoModel) => set({ preferredVideoModel }),
       setPreferredMusicModel: (preferredMusicModel) => set({ preferredMusicModel }),
+      setEnableAudioGeneration: (enableAudioGeneration) => set({ enableAudioGeneration }),
     }),
     { name: 'storyboard-settings' }
   )

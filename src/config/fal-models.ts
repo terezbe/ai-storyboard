@@ -4,6 +4,12 @@ export interface FalModelConfig {
   category: 'image' | 'video';
   cost: string;
   defaultParams?: Record<string, unknown>;
+  /** Whether this model is image-to-video (requires imageUrl input) */
+  isImg2Vid?: boolean;
+  /** Whether this model handles talking/dialogue well (lip movement, speech) */
+  supportsDialogue?: boolean;
+  /** Whether this model can generate audio alongside video (e.g. Kling v2.6+) */
+  supportsAudio?: boolean;
 }
 
 export const FAL_IMAGE_MODELS: FalModelConfig[] = [
@@ -37,6 +43,8 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
     category: 'video',
     cost: '~$0.50',
     defaultParams: {},
+    isImg2Vid: false,
+    supportsDialogue: true,
   },
   {
     id: 'fal-ai/minimax/video-01-live',
@@ -44,6 +52,8 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
     category: 'video',
     cost: '~$0.25',
     defaultParams: {},
+    isImg2Vid: false,
+    supportsDialogue: true,
   },
   {
     id: 'fal-ai/kling-video/v2/master/image-to-video',
@@ -51,6 +61,8 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
     category: 'video',
     cost: '~$0.70',
     defaultParams: { duration: '5', negative_prompt: 'blur, distort, low quality' },
+    isImg2Vid: true,
+    supportsDialogue: false,
   },
   {
     id: 'fal-ai/kling-video/v2.1/master/image-to-video',
@@ -58,6 +70,18 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
     category: 'video',
     cost: '~$0.70',
     defaultParams: { duration: '5', negative_prompt: 'blur, distort, low quality' },
+    isImg2Vid: true,
+    supportsDialogue: false,
+  },
+  {
+    id: 'fal-ai/kling-video/v2.6/pro/image-to-video',
+    name: 'Kling 2.6 Pro (img2vid + audio)',
+    category: 'video',
+    cost: '~$0.14/sec',
+    defaultParams: { duration: '5', negative_prompt: 'blur, distort, low quality' },
+    isImg2Vid: true,
+    supportsDialogue: true,
+    supportsAudio: true,
   },
 ];
 

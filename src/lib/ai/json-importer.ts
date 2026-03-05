@@ -12,6 +12,7 @@ const PROJECT_TYPES = [
   'event-promo',
   'invitation',
   'recap-video',
+  'brand-reveal',
   'custom',
 ];
 

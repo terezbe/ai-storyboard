@@ -5,6 +5,7 @@ import { ArrowRight, ArrowLeft, Download } from 'lucide-react';
 import { useProjectStore } from '../store/project-store';
 import { useEditorStore, type EditorView } from '../store/editor-store';
 import { useSettingsStore } from '../store/settings-store';
+import { useGenerationStore } from '../store/generation-store';
 import { useGeneration } from '../hooks/use-generation';
 import { StoryboardEditor } from '../components/storyboard/storyboard-editor';
 import { ExportModal } from '../components/export/export-modal';
@@ -22,7 +23,10 @@ export function ProjectPage() {
   const autoGenerateTriggered = useRef(false);
 
   useEffect(() => {
-    if (id) loadProject(id);
+    if (id) {
+      useGenerationStore.getState().clearAllShots();
+      loadProject(id);
+    }
     return () => unloadProject();
   }, [id]);
 

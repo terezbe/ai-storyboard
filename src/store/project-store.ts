@@ -54,6 +54,7 @@ interface ProjectState {
   reorderShots: (fromIndex: number, toIndex: number) => void;
   updateIntro: (updates: Partial<StoryboardSection>) => void;
   updateOutro: (updates: Partial<StoryboardSection>) => void;
+  duplicateShot: (id: string) => void;
   updateShotPrompts: (shotId: string, prompts: Partial<ShotPrompts>) => void;
   updateSectionPrompts: (sectionType: 'intro' | 'outro', prompts: Partial<SectionPrompts>) => void;
   setReferenceImage: (url: string | null) => void;
@@ -148,6 +149,29 @@ export const useProjectStore = create<ProjectState>()((set, get) => ({
       currentProject: {
         ...currentProject,
         storyboard: { ...currentProject.storyboard, shots },
+      },
+    });
+  },
+
+  duplicateShot: (id) => {
+    const { currentProject } = get();
+    if (!currentProject) return;
+    const shots = [...currentProject.storyboard.shots];
+    const sourceIndex = shots.findIndex((s) => s.id === id);
+    if (sourceIndex === -1) return;
+    const source = shots[sourceIndex];
+    const clone: Shot = {
+      ...structuredClone(source),
+      id: uuid(),
+      imageUrl: undefined,
+      videoUrl: undefined,
+    };
+    shots.splice(sourceIndex + 1, 0, clone);
+    const reindexed = shots.map((s, i) => ({ ...s, orderIndex: i }));
+    set({
+      currentProject: {
+        ...currentProject,
+        storyboard: { ...currentProject.storyboard, shots: reindexed },
       },
     });
   },

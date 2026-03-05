@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import type { CharacterDefinition, FacialFeature } from '../../types/character-builder';
+import type { ReferenceImage } from '../../types/project';
 import {
   CHARACTER_TYPES,
   GENDERS,
@@ -13,15 +14,18 @@ import {
   EXPRESSIONS,
   FACIAL_FEATURES,
 } from '../../config/character-options';
+import { StepReferenceUpload } from './step-reference-upload';
 
 interface CharacterBuilderStepProps {
   data: CharacterDefinition;
   onChange: (data: CharacterDefinition) => void;
   onNext: () => void;
   promptPreview: string;
+  referenceImages: ReferenceImage[];
+  onReferenceChange: (imgs: ReferenceImage[]) => void;
 }
 
-export function CharacterBuilderStep({ data, onChange, onNext, promptPreview }: CharacterBuilderStepProps) {
+export function CharacterBuilderStep({ data, onChange, onNext, promptPreview, referenceImages, onReferenceChange }: CharacterBuilderStepProps) {
   const { t } = useTranslation();
 
   const update = (partial: Partial<CharacterDefinition>) => {
@@ -290,6 +294,13 @@ export function CharacterBuilderStep({ data, onChange, onNext, promptPreview }: 
         </label>
         <p className="text-xs text-text leading-relaxed">{promptPreview || '...'}</p>
       </div>
+
+      {/* Reference Images */}
+      <StepReferenceUpload
+        images={referenceImages}
+        onChange={onReferenceChange}
+        stepId="character-builder"
+      />
 
       {/* Next button */}
       <button

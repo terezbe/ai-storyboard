@@ -9,6 +9,16 @@ export class StoryboardDB extends Dexie {
     this.version(1).stores({
       projects: 'id, name, type, status, updatedAt',
     });
+    // v2: Rename 'custom' type → 'brand-reveal' (custom is now freeform)
+    this.version(2).stores({
+      projects: 'id, name, type, status, updatedAt',
+    }).upgrade(tx => {
+      return tx.table('projects').toCollection().modify(project => {
+        if (project.type === 'custom') {
+          project.type = 'brand-reveal';
+        }
+      });
+    });
   }
 }
 

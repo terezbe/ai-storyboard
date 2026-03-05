@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, AlertCircle, CheckCircle, RefreshCw, Pencil } from 'lucide-react';
+import { Camera, Clock, Sparkles, Film, Copy, Loader2, ImagePlus, AlertCircle, CheckCircle, RefreshCw, Pencil, ChevronDown, ChevronUp, MessageSquare, Bot, Send } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useEditorStore } from '../../store/editor-store';
 import {
@@ -8,6 +8,7 @@ import {
   useShotImageError,
 } from '../../store/generation-store';
 import { useGeneration } from '../../hooks/use-generation';
+import { convertBotPromptToImagePrompt, buildWizardSummary } from '../../services/generation/claude-storyboard';
 import type { Shot, StoryboardSection } from '../../types/project';
 import { useState } from 'react';
 
@@ -38,6 +39,7 @@ const MOOD_BORDER: Record<string, string> = {
 };
 
 function CopyVideoPromptBtn({ prompt }: { prompt?: string }) {
+  const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
   if (!prompt) return null;
   return (
@@ -52,7 +54,7 @@ function CopyVideoPromptBtn({ prompt }: { prompt?: string }) {
       title="Copy video prompt"
     >
       {copied ? <Copy className="w-3 h-3" /> : <Film className="w-3 h-3" />}
-      {copied ? 'Copied!' : 'Create Video'}
+      {copied ? t('shot.copied', 'Copied!') : t('shot.createVideo', 'Create Video')}
     </button>
   );
 }
@@ -89,9 +91,13 @@ function SectionCard({ section, label }: { section: StoryboardSection; label: st
 function ShotCard({ shot }: { shot: Shot }) {
   const { t } = useTranslation();
   const { selectedShotId, setSelectedShotId } = useEditorStore();
+  const { updateShot, updateShotPrompts, currentProject } = useProjectStore();
   const isSelected = selectedShotId === shot.id;
-  const hasPrompts = !!(shot.prompts.environment || shot.prompts.character || shot.prompts.video);
+  const hasPrompts = !!(shot.prompts.environment?.text || shot.prompts.character?.text || shot.prompts.video?.text);
   const { generateImage } = useGeneration();
+  const [expanded, setExpanded] = useState(false);
+  const [botInstruction, setBotInstruction] = useState('');
+  const [botLoading, setBotLoading] = useState(false);
 
   // Use primitive selectors so Zustand triggers re-renders on status changes
   const imageStatus = useShotImageStatus(shot.id);
@@ -100,10 +106,66 @@ function ShotCard({ shot }: { shot: Shot }) {
   const isGeneratingImage = imageStatus === 'generating';
   const imageCompleted = imageStatus === 'completed';
 
+  const imagePromptText = shot.prompts.environment?.text || shot.prompts.character?.text || '';
+  const hasImagePrompt = !!imagePromptText;
+
+  const updateImagePrompt = (text: string) => {
+    if (shot.prompts.environment) {
+      updateShotPrompts(shot.id, {
+        environment: { ...shot.prompts.environment, text, isManuallyEdited: true },
+      });
+    } else if (shot.prompts.character) {
+      updateShotPrompts(shot.id, {
+        character: { ...shot.prompts.character, text, isManuallyEdited: true },
+      });
+    } else {
+      updateShotPrompts(shot.id, {
+        environment: {
+          id: crypto.randomUUID(),
+          type: 'environment',
+          text,
+          targetModel: '',
+          quality: 'standard',
+          isManuallyEdited: true,
+        },
+      });
+    }
+  };
+
+  const [botError, setBotError] = useState('');
+
+  const handleBotSend = async () => {
+    if (!botInstruction.trim()) return;
+    setBotLoading(true);
+    setBotError('');
+    const shotIndex = currentProject?.storyboard.shots.findIndex(s => s.id === shot.id) ?? -1;
+    const totalShots = currentProject?.storyboard.shots.length ?? 0;
+    const result = await convertBotPromptToImagePrompt(botInstruction, {
+      shotTitle: shot.title,
+      character: shot.character,
+      environment: shot.environment,
+      mood: shot.mood,
+      cameraAngle: shot.cameraAngle,
+      shotIndex,
+      totalShots,
+      projectType: currentProject?.type,
+      projectDescription: currentProject?.description,
+      wizardSummary: buildWizardSummary(currentProject?.wizardMetadata),
+      referenceImages: currentProject?.wizardMetadata?.referenceImages,
+    });
+    setBotLoading(false);
+    if (result.success && result.prompt) {
+      updateImagePrompt(result.prompt);
+      setBotInstruction('');
+    } else {
+      console.error('Bot prompt error:', result.error);
+      setBotError(result.error || 'Unknown error');
+    }
+  };
+
   return (
     <div
-      onClick={() => setSelectedShotId(shot.id)}
-      className={`rounded-xl border overflow-hidden cursor-pointer transition-all hover:scale-[1.02] ${
+      className={`rounded-xl border overflow-hidden transition-all ${
         isSelected
           ? 'border-primary-500 ring-2 ring-primary-500/30'
           : isGeneratingImage
@@ -115,9 +177,13 @@ function ShotCard({ shot }: { shot: Shot }) {
                 : `${MOOD_BORDER[shot.mood] || 'border-border'} hover:border-primary-500/50`
       }`}
     >
-      <div className={`h-28 relative flex items-center justify-center ${
-        shot.imageUrl ? '' : `bg-gradient-to-br ${MOOD_BG[shot.mood] || 'from-primary-500/20 to-primary-500/5'}`
-      }`}>
+      {/* Image area — click selects shot in editor */}
+      <div
+        onClick={() => setSelectedShotId(shot.id)}
+        className={`h-28 relative flex items-center justify-center cursor-pointer ${
+          shot.imageUrl ? '' : `bg-gradient-to-br ${MOOD_BG[shot.mood] || 'from-primary-500/20 to-primary-500/5'}`
+        }`}
+      >
         {shot.imageUrl ? (
           <img src={shot.imageUrl} alt={shot.title} className="w-full h-full object-cover" />
         ) : (
@@ -163,12 +229,26 @@ function ShotCard({ shot }: { shot: Shot }) {
           </button>
         )}
 
+        {/* Regenerate overlay on hover (on cards WITH images) */}
+        {shot.imageUrl && !isGeneratingImage && hasImagePrompt && (
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              generateImage(shot);
+            }}
+            className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black/50 transition-opacity"
+            title={t('shotCard.regenerateImage')}
+          >
+            <RefreshCw className="w-6 h-6 text-white" />
+          </button>
+        )}
+
         {shot.imageUrl && !imageCompleted && (
           <span className="absolute top-2 start-2 px-1.5 py-0.5 rounded bg-black/60 text-white text-[10px] font-bold">
             {shot.orderIndex + 1}
           </span>
         )}
-        {hasPrompts && !isGeneratingImage && imageStatus !== 'error' && !imageCompleted && (
+        {hasPrompts && !isGeneratingImage && imageStatus !== 'error' && !imageCompleted && !shot.imageUrl && (
           <div className="absolute top-2 end-2">
             <Sparkles className="w-4 h-4 text-primary-400" />
           </div>
@@ -190,9 +270,18 @@ function ShotCard({ shot }: { shot: Shot }) {
 
       {/* Card footer */}
       <div className="p-3 bg-surface-light">
-        <h4 className="font-medium text-text text-sm truncate mb-2">
+        <h4 className="font-medium text-text text-sm truncate mb-1">
           {shot.title || `Shot ${shot.orderIndex + 1}`}
         </h4>
+
+        {/* Dialogue preview */}
+        {shot.dialogue.text && (
+          <p className="text-[11px] text-text-muted truncate mb-1.5 italic">
+            <MessageSquare className="w-3 h-3 inline-block me-1 opacity-50" />
+            {shot.dialogue.text}
+          </p>
+        )}
+
         <div className="flex items-center gap-3 text-xs text-text-muted">
           <span className="flex items-center gap-1">
             <Clock className="w-3 h-3" /> {shot.duration}s
@@ -201,46 +290,146 @@ function ShotCard({ shot }: { shot: Shot }) {
             <Camera className="w-3 h-3" /> {t(`shot.cameraAngles.${shot.cameraAngle}`)}
           </span>
         </div>
-        <div className="mt-2 flex items-center gap-1">
+        <div className="mt-2 flex items-center gap-1 flex-wrap">
           <span className="text-[10px] px-1.5 py-0.5 rounded bg-surface-lighter text-text-muted">
             {t(`shot.moods.${shot.mood}`)}
           </span>
           {isGeneratingImage && (
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-primary-900/40 text-primary-300 flex items-center gap-1">
               <Loader2 className="w-2.5 h-2.5 animate-spin" />
-              generating
+              {t('generation.generating', 'Generating...')}
             </span>
           )}
           {imageCompleted && (
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-green-900/40 text-green-300">
-              done
+              {t('generation.done', 'Done')}
             </span>
           )}
           {imageStatus === 'error' && (
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-red-900/40 text-red-300">
-              failed
+              {t('generation.failed', 'Failed')}
             </span>
           )}
           {shot.videoUrl && (
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-purple-900/40 text-purple-300">
-              video
+              {t('shot.video', 'Video')}
             </span>
           )}
         </div>
-        {/* Edit Image button — opens full Kolbo-style editor */}
-        {hasPrompts && (
+
+        {/* Action buttons */}
+        <div className="mt-2 flex gap-1.5">
+          {/* Edit Image — opens full editor */}
+          {hasPrompts && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                setSelectedShotId(shot.id);
+              }}
+              className="flex-1 flex items-center justify-center gap-1 px-2 py-1.5 rounded-lg text-[11px] font-medium bg-gradient-to-r from-primary-600/20 to-purple-600/20 hover:from-primary-600/40 hover:to-purple-600/40 text-primary-300 border border-primary-500/30 hover:border-primary-500/50 transition-all"
+            >
+              <Pencil className="w-3 h-3" />
+              {t('imageEditor.editImage', 'Edit Image')}
+            </button>
+          )}
+          {/* Expand quick-edit panel */}
           <button
             onClick={(e) => {
               e.stopPropagation();
-              setSelectedShotId(shot.id);
+              setExpanded(!expanded);
             }}
-            className="mt-2 w-full flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium bg-gradient-to-r from-primary-600/20 to-purple-600/20 hover:from-primary-600/40 hover:to-purple-600/40 text-primary-300 border border-primary-500/30 hover:border-primary-500/50 transition-all"
+            className="flex items-center justify-center gap-1 px-2 py-1.5 rounded-lg text-[11px] font-medium bg-surface hover:bg-surface-lighter text-text-muted hover:text-text border border-border transition-all"
+            title={t('shotCard.editFrame')}
           >
-            <Pencil className="w-3.5 h-3.5" />
-            {t('imageEditor.editImage', 'Edit Image')}
+            <Bot className="w-3 h-3" />
+            {expanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
           </button>
-        )}
+        </div>
       </div>
+
+      {/* Expanded quick-edit panel */}
+      {expanded && (
+        <div className="px-3 pb-3 bg-surface-light border-t border-border space-y-2.5">
+          {/* Dialogue text */}
+          <div>
+            <label className="block text-[10px] font-medium text-text-muted mb-0.5">
+              {t('shot.dialogue')}
+            </label>
+            <textarea
+              rows={2}
+              value={shot.dialogue.text}
+              onChange={(e) =>
+                updateShot(shot.id, { dialogue: { ...shot.dialogue, text: e.target.value } })
+              }
+              onClick={(e) => e.stopPropagation()}
+              className="w-full text-[11px] rounded-md border border-border bg-surface px-2 py-1.5 text-text placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-primary-500/50 resize-none"
+              placeholder={t('shot.text')}
+            />
+          </div>
+
+          {/* Bot prompt — natural language to Claude */}
+          <div>
+            <label className="block text-[10px] font-medium text-text-muted mb-0.5 flex items-center gap-1">
+              <Bot className="w-3 h-3" />
+              {t('shotCard.botPrompt')}
+            </label>
+            <div className="flex gap-1.5">
+              <textarea
+                rows={2}
+                value={botInstruction}
+                onChange={(e) => setBotInstruction(e.target.value)}
+                onClick={(e) => e.stopPropagation()}
+                onKeyDown={(e) => { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); handleBotSend(); } }}
+                className="flex-1 text-[11px] rounded-md border border-border bg-surface px-2 py-1.5 text-text placeholder-text-muted focus:outline-none focus:ring-1 focus:ring-primary-500/50 resize-none"
+                placeholder={t('shotCard.botPlaceholder')}
+              />
+              <button
+                onClick={(e) => { e.stopPropagation(); handleBotSend(); }}
+                disabled={botLoading || !botInstruction.trim()}
+                className="self-end px-2.5 py-1.5 rounded-md bg-primary-600 hover:bg-primary-700 text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title={t('shotCard.sendToBot')}
+              >
+                {botLoading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Send className="w-3.5 h-3.5" />}
+              </button>
+            </div>
+            {botError && (
+              <p className="text-[10px] text-red-400 mt-1">{botError}</p>
+            )}
+          </div>
+
+          {/* Generated image prompt — read-only preview */}
+          {imagePromptText && (
+            <div>
+              <label className="block text-[10px] font-medium text-text-muted mb-0.5">
+                {t('shotEditor.imagePromptLabel')}
+              </label>
+              <div
+                onClick={(e) => e.stopPropagation()}
+                className="text-[10px] text-text-muted bg-surface rounded-md p-1.5 max-h-16 overflow-y-auto whitespace-pre-wrap select-all border border-border/50"
+              >
+                {imagePromptText}
+              </div>
+            </div>
+          )}
+
+          {/* Regenerate Image button */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              generateImage(shot);
+            }}
+            disabled={isGeneratingImage || !hasImagePrompt}
+            className="w-full flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-[11px] font-medium bg-primary-600 hover:bg-primary-700 text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            {isGeneratingImage ? (
+              <Loader2 className="w-3.5 h-3.5 animate-spin" />
+            ) : (
+              <RefreshCw className="w-3.5 h-3.5" />
+            )}
+            {t('shotCard.regenerateImage')}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

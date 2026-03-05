@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import {
-  Loader2, ImagePlus, Video, CheckCircle, AlertCircle,
+  Loader2, ImagePlus, Video, CheckCircle, AlertCircle, MessageCircle,
+  Volume2, VolumeX,
 } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useEditorStore } from '../../store/editor-store';
+import { useSettingsStore } from '../../store/settings-store';
 import {
   useGenerationStore,
   useShotImageStatus,
@@ -86,10 +88,14 @@ function TimelineClip({ shot, isSelected, onSelect }: {
           <CheckCircle className="w-3.5 h-3.5 text-green-400 drop-shadow-lg" />
         )}
         {imageStatus === 'error' && (
-          <AlertCircle className="w-3.5 h-3.5 text-red-400" title={imageError} />
+          <span title={imageError}><AlertCircle className="w-3.5 h-3.5 text-red-400" /></span>
         )}
         {shot.videoUrl && (
           <Video className="w-3.5 h-3.5 text-purple-400 drop-shadow-lg" />
+        )}
+        {/* Dialogue indicator */}
+        {shot.dialogue?.text?.trim() && (
+          <MessageCircle className="w-3.5 h-3.5 text-amber-400 drop-shadow-lg" />
         )}
       </div>
 
@@ -129,9 +135,11 @@ export function TimelineView() {
   const { t } = useTranslation();
   const { currentProject } = useProjectStore();
   const { selectedShotId, setSelectedShotId } = useEditorStore();
-  const { generateAllImages } = useGeneration();
+  const { generateAllImages, generateAllVideos } = useGeneration();
+  const enableAudio = useSettingsStore((s) => s.enableAudioGeneration);
+  const setEnableAudio = useSettingsStore((s) => s.setEnableAudioGeneration);
   const batch = useGenerationStore((s) => s.batch);
-
+  const videoBatch = useGenerationStore((s) => s.videoBatch);
   if (!currentProject) return null;
   const { intro, shots, outro } = currentProject.storyboard;
   const selectedShot = shots.find((s) => s.id === selectedShotId) || null;
@@ -156,6 +164,11 @@ export function TimelineView() {
   // Shots needing generation
   const shotsWithPrompts = shots.filter(
     (s) => !s.imageUrl && (s.prompts.environment?.text || s.prompts.character?.text)
+  );
+
+  // Shots needing video generation
+  const shotsWithVideoPrompts = shots.filter(
+    (s) => !s.videoUrl && (s.prompts.video?.text || s.videoPrompt)
   );
 
   return (
@@ -191,6 +204,59 @@ export function TimelineView() {
             {t('generation.generateAllImages')} ({shotsWithPrompts.length})
           </button>
         ) : null}
+
+        {/* Video batch generate */}
+        <div className="mt-2" />
+        {videoBatch.isRunning ? (
+          <div className="bg-purple-900/30 border border-purple-500/30 rounded-xl px-4 py-3 flex items-center gap-3">
+            <Loader2 className="w-5 h-5 text-purple-400 animate-spin shrink-0" />
+            <div className="flex-1">
+              <div className="flex items-center justify-between mb-1.5">
+                <span className="text-sm font-medium text-purple-300">
+                  {t('generation.generateAllVideos')}
+                </span>
+                <span className="text-xs text-purple-400 font-mono">
+                  {videoBatch.completed}/{videoBatch.total}
+                </span>
+              </div>
+              <div className="h-2 bg-surface-lighter rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-purple-500 transition-all duration-500 ease-out rounded-full"
+                  style={{ width: `${videoBatch.total > 0 ? (videoBatch.completed / videoBatch.total) * 100 : 0}%` }}
+                />
+              </div>
+            </div>
+          </div>
+        ) : shotsWithVideoPrompts.length > 0 && (
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => generateAllVideos()}
+              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-purple-600 hover:bg-purple-700 text-white transition-colors"
+            >
+              <Video className="w-4 h-4" />
+              {t('generation.generateAllVideos')} ({shotsWithVideoPrompts.length})
+            </button>
+            {/* Audio toggle */}
+            <button
+              onClick={() => setEnableAudio(!enableAudio)}
+              className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors border ${
+                enableAudio
+                  ? 'bg-amber-600/20 border-amber-500/40 text-amber-300 hover:bg-amber-600/30'
+                  : 'bg-surface-lighter border-border text-text-muted hover:bg-surface-light'
+              }`}
+              title={enableAudio ? t('generation.audioOn') : t('generation.audioOff')}
+            >
+              {enableAudio ? (
+                <Volume2 className="w-4 h-4" />
+              ) : (
+                <VolumeX className="w-4 h-4" />
+              )}
+              <span className="text-xs">
+                {enableAudio ? t('generation.audioOn') : t('generation.audioOff')}
+              </span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Scrollable timeline tracks */}
@@ -269,7 +335,7 @@ export function TimelineView() {
 
           {/* Music track placeholder */}
           <div className="h-8 bg-surface-lighter rounded-lg flex items-center px-3 text-xs text-text-muted">
-            Music Track
+            {t('timeline.musicTrack', 'Music Track')}
           </div>
 
           {/* Total duration */}

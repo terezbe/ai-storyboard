@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import {
-  X, Sparkles, Loader2, ImagePlus, RefreshCw, Video, AlertCircle,
+  X, Sparkles, Loader2, ImagePlus, RefreshCw, Video, AlertCircle, Link2, Scissors,
 } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useSettingsStore } from '../../store/settings-store';
@@ -125,7 +125,7 @@ export function TimelineInlineEditor({ shot }: { shot: Shot }) {
             ) : (
               <div className="p-3 flex items-center justify-between bg-surface-lighter">
                 <span className="text-xs text-text-muted">
-                  {settings.language === 'he' ? 'וידאו' : 'Video'}
+                  {t('shot.video', 'Video')}
                 </span>
                 {isGeneratingVideo ? (
                   <span className="flex items-center gap-1.5 text-xs text-purple-300">
@@ -142,6 +142,45 @@ export function TimelineInlineEditor({ shot }: { shot: Shot }) {
                     {t('generation.generateVideo')}
                   </button>
                 )}
+              </div>
+            )}
+            {/* Auto model indicator */}
+            <div className="px-3 py-1 text-[10px] text-text-muted">
+              {shot.dialogue?.text?.trim()
+                ? `🗣️ ${t('generation.autoModelDialogue')}`
+                : shot.imageUrl
+                  ? `🎬 ${t('generation.autoModelImage')}`
+                  : `📝 ${t('generation.autoModelText')}`
+              }
+            </div>
+            {/* Per-shot continuity mode (only for non-first shots) */}
+            {shot.orderIndex > 0 && (
+              <div className="px-3 py-1.5 border-t border-border flex items-center gap-2">
+                <span className="text-[10px] text-text-muted">{t('shot.continuityMode')}</span>
+                <div className="flex rounded-md overflow-hidden border border-border">
+                  <button
+                    onClick={() => update({ continuityMode: 'cut' })}
+                    className={`flex items-center gap-1 px-2 py-0.5 text-[10px] transition-colors ${
+                      (shot.continuityMode || 'cut') === 'cut'
+                        ? 'bg-primary-600/30 text-primary-300'
+                        : 'text-text-muted hover:bg-surface-lighter'
+                    }`}
+                  >
+                    <Scissors className="w-3 h-3" />
+                    {t('shot.continuityMode.cut')}
+                  </button>
+                  <button
+                    onClick={() => update({ continuityMode: 'continuity' })}
+                    className={`flex items-center gap-1 px-2 py-0.5 text-[10px] transition-colors ${
+                      shot.continuityMode === 'continuity'
+                        ? 'bg-purple-600/30 text-purple-300'
+                        : 'text-text-muted hover:bg-surface-lighter'
+                    }`}
+                  >
+                    <Link2 className="w-3 h-3" />
+                    {t('shot.continuityMode.continuity')}
+                  </button>
+                </div>
               </div>
             )}
             {videoError && (

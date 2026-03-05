@@ -1,14 +1,15 @@
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import type { EnvironmentDefinition } from '../../types/environment-builder';
+import type { ReferenceImage } from '../../types/project';
 import {
   ENVIRONMENT_CATEGORIES,
-  ENVIRONMENT_SETTINGS,
   TIME_OF_DAY_OPTIONS,
   WEATHER_OPTIONS,
   LIGHTING_OPTIONS,
   getSettingsForCategory,
 } from '../../config/environment-presets';
+import { StepReferenceUpload } from './step-reference-upload';
 
 interface EnvironmentBuilderStepProps {
   data: EnvironmentDefinition;
@@ -16,6 +17,8 @@ interface EnvironmentBuilderStepProps {
   onNext: () => void;
   onBack: () => void;
   promptPreview: string;
+  referenceImages: ReferenceImage[];
+  onReferenceChange: (imgs: ReferenceImage[]) => void;
 }
 
 export function EnvironmentBuilderStep({
@@ -24,6 +27,8 @@ export function EnvironmentBuilderStep({
   onNext,
   onBack,
   promptPreview,
+  referenceImages,
+  onReferenceChange,
 }: EnvironmentBuilderStepProps) {
   const { t } = useTranslation();
 
@@ -157,7 +162,6 @@ export function EnvironmentBuilderStep({
                   : 'bg-surface border border-border text-text-muted hover:border-primary-500/50'
               }`}
             >
-              {opt.emoji && <span className="me-1">{opt.emoji}</span>}
               {t(opt.labelKey)}
             </button>
           ))}
@@ -187,6 +191,13 @@ export function EnvironmentBuilderStep({
           {promptPreview || '...'}
         </p>
       </div>
+
+      {/* ── Reference Images ──────────────────────────────────────────── */}
+      <StepReferenceUpload
+        images={referenceImages}
+        onChange={onReferenceChange}
+        stepId="environment-builder"
+      />
 
       {/* ── Action buttons ────────────────────────────────────────────── */}
       <div className="flex gap-3">

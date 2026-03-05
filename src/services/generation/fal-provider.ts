@@ -97,12 +97,20 @@ export class FalProvider implements GenerationProvider {
       }
     }
 
+    // Enable audio generation for models that support it (Kling v2.6+, v3+)
+    // Only when the user has audio generation enabled in settings
+    const audioEnabled = useSettingsStore.getState().enableAudioGeneration;
+    if (audioEnabled && (request.modelId.includes('v2.6') || request.modelId.includes('v3'))) {
+      body.generate_audio = true;
+    }
+
     // Debug: log the request being sent to FAL
     console.log('[FAL Video Request]', {
       model: request.modelId,
       hasImageUrl: !!body.image_url,
       imageUrl: body.image_url,
       duration: body.duration,
+      generateAudio: !!body.generate_audio,
       prompt: (body.prompt as string)?.substring(0, 80) + '...',
     });
 
@@ -120,7 +128,7 @@ export class FalProvider implements GenerationProvider {
     const data = await res.json();
 
     // Check if this is an async/queued response
-    if (data.request_id && !data.video) {
+    if (data.request_id && !extractVideoUrl(data)) {
       const timeout = isImg2Vid ? POLL_TIMEOUT_KLING : POLL_TIMEOUT_DEFAULT;
       return this.pollForVideo(data.request_id, request.modelId, timeout);
     }

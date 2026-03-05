@@ -1,44 +1,33 @@
 import { useTranslation } from 'react-i18next';
 import { Sparkles, ArrowRight } from 'lucide-react';
-import { VISUAL_STYLE_PRESETS, SHOT_COUNT_OPTIONS } from '../../config/style-presets';
-import { MOODS, MOOD_COLORS } from '../storyboard/shot-constants';
-import type { StoryInputData } from '../../types/idea-wizard';
-import type { Mood, ReferenceImage } from '../../types/project';
-import { StepReferenceUpload } from './step-reference-upload';
+import { VISUAL_STYLE_PRESETS, SHOT_COUNT_OPTIONS } from '../../../config/style-presets';
+import { MOODS, MOOD_COLORS } from '../../storyboard/shot-constants';
+import type { CustomData } from '../../../types/wizard-data';
+import type { Mood } from '../../../types/project';
+import type { ShotCountRange } from '../../../config/style-presets';
 
-interface StoryInputStepProps {
-  data: StoryInputData;
-  onChange: (data: StoryInputData) => void;
+interface CustomStyleStepProps {
+  data: CustomData;
+  onChange: (d: CustomData) => void;
   onGenerate: () => void;
   onBack: () => void;
   claudeApiKey: string | null;
-  referenceImages: ReferenceImage[];
-  onReferenceChange: (imgs: ReferenceImage[]) => void;
 }
 
-export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKey, referenceImages, onReferenceChange }: StoryInputStepProps) {
+export function CustomStyleStep({ data, onChange, onGenerate, onBack, claudeApiKey }: CustomStyleStepProps) {
   const { t } = useTranslation();
 
-  const update = (partial: Partial<StoryInputData>) => {
+  const update = (partial: Partial<CustomData>) => {
     onChange({ ...data, ...partial });
   };
 
-  const canGenerate = data.idea.trim().length > 0 && !!claudeApiKey;
+  const canGenerate = !!claudeApiKey;
 
   return (
     <div className="space-y-5">
-      {/* Story / Script */}
+      {/* Title */}
       <div>
-        <label className="block text-sm font-medium text-text mb-2">
-          {t('wizard.ideaLabel')}
-        </label>
-        <textarea
-          value={data.idea}
-          onChange={(e) => update({ idea: e.target.value })}
-          placeholder={t('wizard.ideaPlaceholder')}
-          rows={4}
-          className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-text placeholder-text-muted/50 focus:outline-none focus:border-primary-500/50 resize-none"
-        />
+        <h3 className="text-lg font-bold text-text">{t('custom.style.title')}</h3>
       </div>
 
       {/* Visual Style */}
@@ -93,13 +82,13 @@ export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKe
       {/* Shot Count */}
       <div>
         <label className="block text-sm font-medium text-text mb-2">
-          {t('wizard.shotCountLabel')}
+          {t('custom.style.shotCount')}
         </label>
         <div className="flex gap-2">
           {SHOT_COUNT_OPTIONS.map((opt) => (
             <button
               key={opt.id}
-              onClick={() => update({ shotCountRange: opt.id })}
+              onClick={() => update({ shotCountRange: opt.id as ShotCountRange })}
               className={`flex-1 px-3 py-2 rounded-lg text-xs text-center transition-all ${
                 data.shotCountRange === opt.id
                   ? 'bg-primary-600/20 border border-primary-500 text-primary-300'
@@ -111,13 +100,6 @@ export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKe
           ))}
         </div>
       </div>
-
-      {/* Reference Images */}
-      <StepReferenceUpload
-        images={referenceImages}
-        onChange={onReferenceChange}
-        stepId="story-input"
-      />
 
       {/* Action buttons */}
       <div className="flex gap-3 pt-2">
@@ -137,7 +119,7 @@ export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKe
           className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-500 hover:to-purple-500 text-white px-6 py-2.5 rounded-xl font-medium transition-all disabled:opacity-40 disabled:cursor-not-allowed"
         >
           <Sparkles className="w-5 h-5" />
-          {t('wizard.generate')}
+          {t('wizard.generateBtn')}
         </button>
       </div>
     </div>

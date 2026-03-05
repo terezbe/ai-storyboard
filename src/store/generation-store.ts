@@ -19,10 +19,14 @@ interface BatchProgress {
 interface GenerationState {
   shots: Record<string, ShotGenerationState>;
   batch: BatchProgress;
+  videoBatch: BatchProgress;
   setImageStatus: (shotId: string, status: GenerationStatus, error?: string) => void;
   setVideoStatus: (shotId: string, status: GenerationStatus, error?: string) => void;
   setBatch: (batch: Partial<BatchProgress>) => void;
   resetBatch: () => void;
+  setVideoBatch: (batch: Partial<BatchProgress>) => void;
+  resetVideoBatch: () => void;
+  clearAllShots: () => void;
 }
 
 const defaultBatch: BatchProgress = {
@@ -35,6 +39,7 @@ const defaultBatch: BatchProgress = {
 export const useGenerationStore = create<GenerationState>()((set) => ({
   shots: {},
   batch: { ...defaultBatch },
+  videoBatch: { ...defaultBatch },
 
   setImageStatus: (shotId, status, error) => {
     set((state) => ({
@@ -70,6 +75,18 @@ export const useGenerationStore = create<GenerationState>()((set) => ({
 
   resetBatch: () => {
     set({ batch: { ...defaultBatch } });
+  },
+
+  setVideoBatch: (batch) => {
+    set((state) => ({ videoBatch: { ...state.videoBatch, ...batch } }));
+  },
+
+  resetVideoBatch: () => {
+    set({ videoBatch: { ...defaultBatch } });
+  },
+
+  clearAllShots: () => {
+    set({ shots: {} });
   },
 }));
 

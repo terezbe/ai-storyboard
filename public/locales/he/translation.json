@@ -26,6 +26,7 @@
       "event-promo": "פרומו לאירוע",
       "invitation": "הזמנה",
       "recap-video": "סרטון סיכום",
+      "brand-reveal": "חשיפת מותג",
       "custom": "מותאם אישית"
     },
     "statuses": {
@@ -104,7 +105,25 @@
       "slide": "החלקה",
       "zoom": "זום",
       "none": "ללא"
-    }
+    },
+    "video": "וידאו",
+    "createVideo": "צור וידאו",
+    "copied": "הועתק!",
+    "continuityMode": "מעבר",
+    "continuityMode.cut": "חיתוך",
+    "continuityMode.continuity": "רצף",
+    "continuityMode.hint": "השתמש בפריים אחרון של הסרטון הקודם כפריים ראשון"
+  },
+  "shotCard": {
+    "done": "הושלם",
+    "regenerateImage": "צור תמונה מחדש",
+    "editFrame": "עריכה מהירה",
+    "botPrompt": "שאל בוט",
+    "botPlaceholder": "תאר מה אתה רוצה...",
+    "sendToBot": "שלח"
+  },
+  "shotEditor": {
+    "imagePromptLabel": "פרומפט לתמונה"
   },
   "prompt": {
     "generate": "צור פרומפט",
@@ -118,6 +137,9 @@
     "music": "פרומפט מוזיקה",
     "video": "פרומפט וידאו",
     "quality": "איכות",
+    "selectShot": "בחר שוט לצפייה בפרומפטים",
+    "imageReady": "תמונה מוכנה",
+    "videoReady": "וידאו מוכן",
     "qualities": {
       "draft": "טיוטה",
       "standard": "סטנדרט",
@@ -214,7 +236,18 @@
     "batchProgress": "{{completed}}/{{total}} הושלמו",
     "testConnection": "בדוק חיבור",
     "connected": "מחובר!",
-    "connectionFailed": "החיבור נכשל"
+    "connectionFailed": "החיבור נכשל",
+    "generateAllVideos": "יצירת כל הסרטונים",
+    "frameContinuity": "המשכיות פריימים (אחרון→ראשון)",
+    "autoModelDialogue": "Kling v2.6 (דיאלוג + אודיו)",
+    "autoModelImage": "Kling img2vid (שומר פריים)",
+    "autoModelText": "טקסט לוידאו",
+    "done": "הושלם",
+    "audioOn": "עם אודיו",
+    "audioOff": "בלי אודיו (חוסך קרדיטים)"
+  },
+  "timeline": {
+    "musicTrack": "רצועת מוזיקה"
   },
   "wizard": {
     "title": "צור דמות מדברת",
@@ -231,12 +264,40 @@
     "generating": "יוצר את הסטוריבורד שלך...",
     "analyzingCharacter": "מנתח דמות וסגנון...",
     "buildingShots": "בונה שוטים ותיאורים...",
+    "next": "הבא",
+    "videoType": {
+      "next": "הבא"
+    },
     "steps": {
+      "videoType": "סוג",
       "character": "דמות",
       "environment": "סביבה",
       "story": "סיפור",
-      "preview": "תצוגה מקדימה"
+      "preview": "תצוגה מקדימה",
+      "adPlatform": "פלטפורמה",
+      "product": "מוצר",
+      "brand": "מותג",
+      "marketing": "תוכן",
+      "eventType": "אירוע",
+      "eventDetails": "פרטים",
+      "photo": "תמונה",
+      "message": "הודעה",
+      "music": "מוזיקה",
+      "structure": "מבנה",
+      "lyrics": "מילים",
+      "concept": "קונספט",
+      "photos": "תמונות",
+      "curate": "אוצרות",
+      "narrative": "נרטיב",
+      "logo": "לוגו",
+      "brandColors": "צבעים",
+      "industry": "תעשייה",
+      "reveal": "חשיפה",
+      "customOverview": "סקירה",
+      "customAssets": "נכסים",
+      "customStyle": "סגנון"
     },
+    "generateBtn": "צור סטוריבורד",
     "styles": {
       "cinematic": "קולנועי",
       "fantasyEpic": "פנטזיה אפית",
@@ -516,7 +577,304 @@
     "delete": "מחק",
     "create": "צור",
     "back": "חזרה",
+    "next": "הבא",
     "loading": "טוען...",
     "error": "שגיאה"
+  },
+  "videoTypes": {
+    "talking-character": {
+      "name": "דמות מדברת",
+      "description": "דמות מדברת ישירות למצלמה, מספרת סיפור או מעבירה מסר"
+    },
+    "event-promo": {
+      "name": "פרומו לאירוע",
+      "description": "קדם מוצר, שירות או אירוע עם ויזואליות משכנעת"
+    },
+    "invitation": {
+      "name": "הזמנה",
+      "description": "צור הזמנת וידאו חמה ואישית לכל אירוע"
+    },
+    "music-video": {
+      "name": "קליפ",
+      "description": "סיפור ויזואלי מסונכרן למוזיקה עם כיוון אמנותי"
+    },
+    "recap-video": {
+      "name": "סרטון סיכום",
+      "description": "מונטאז' היילייטים אנרגטי מתמונות ורגעי אירוע"
+    },
+    "brand-reveal": {
+      "name": "חשיפת מותג",
+      "description": "חשיפת לוגו ומותג קולנועית עם בנייה אטמוספרית"
+    },
+    "custom": {
+      "name": "מותאם אישית",
+      "description": "וידאו חופשי — תאר את החזון שלך והעלה נכסים משלך"
+    }
+  },
+  "eventPromo": {
+    "adType": {
+      "title": "מה אתה מקדם?",
+      "product": "מוצר",
+      "productDesc": "תצוגת מוצר פיזי או דיגיטלי",
+      "service": "שירות",
+      "serviceDesc": "שירות או הצעה מקצועית",
+      "event": "אירוע",
+      "eventDesc": "אירוע, כנס או מפגש",
+      "restaurant": "מסעדה",
+      "restaurantDesc": "מסעדה, בית קפה או עסק מזון",
+      "real-estate": "נדל\"ן",
+      "real-estateDesc": "נכס, דירה או רישום נדל\"ן",
+      "app": "אפליקציה",
+      "appDesc": "אפליקציית מובייל או ווב"
+    },
+    "platform": {
+      "title": "פלטפורמת יעד",
+      "instagram-reel": "Instagram Reel",
+      "instagram-reelDesc": "אנכי 9:16, 15-90 שניות",
+      "tiktok": "TikTok",
+      "tiktokDesc": "אנכי 9:16, עריכה מהירה",
+      "youtube-short": "YouTube Short",
+      "youtube-shortDesc": "אנכי 9:16, עד 60 שניות",
+      "facebook": "Facebook",
+      "facebookDesc": "מרובע או אופקי, 15-60 שניות",
+      "linkedin": "LinkedIn",
+      "linkedinDesc": "טון מקצועי, פורמט אופקי",
+      "general": "כללי",
+      "generalDesc": "מולטי-פלטפורמה, פורמט גמיש"
+    },
+    "product": {
+      "title": "תמונת מוצר / שירות",
+      "dropzone": "גרור תמונה לכאן או לחץ להעלאה",
+      "brandName": "שם המותג",
+      "brandNamePlaceholder": "הכנס את שם המותג..."
+    },
+    "brand": {
+      "logo": "לוגו",
+      "colors": "צבעי מותג",
+      "addColor": "לחץ להוספת צבע"
+    },
+    "marketing": {
+      "usps": "יתרונות ייחודיים",
+      "uspPlaceholder": "הוסף יתרון...",
+      "addUsp": "לחץ Enter להוספה",
+      "cta": "קריאה לפעולה",
+      "ctaPlaceholder": "למשל: קנה עכשיו, הזמן היום...",
+      "target": "קהל יעד",
+      "targetPlaceholder": "תאר את קהל היעד שלך...",
+      "pricing": "מחיר",
+      "pricingPlaceholder": "למשל: החל מ-₪99, 50% הנחה..."
+    }
+  },
+  "invitation": {
+    "eventType": {
+      "title": "מה האירוע?",
+      "next": "הבא",
+      "types": {
+        "birthday": "יום הולדת",
+        "wedding": "חתונה",
+        "bar-mitzvah": "בר מצווה",
+        "bat-mitzvah": "בת מצווה",
+        "engagement": "אירוסין",
+        "baby-shower": "מסיבת לידה",
+        "anniversary": "יום נישואין",
+        "graduation": "סיום לימודים",
+        "conference": "כנס",
+        "custom": "אחר"
+      }
+    },
+    "details": {
+      "title": "פרטי האירוע",
+      "eventName": "שם האירוע",
+      "required": "שדה חובה",
+      "date": "תאריך",
+      "time": "שעה",
+      "location": "מיקום",
+      "rsvp": "איש קשר לאישור הגעה",
+      "next": "הבא"
+    },
+    "photo": {
+      "title": "תמונת החוגג/ת",
+      "dropzone": "גרור תמונה או לחץ להעלאה",
+      "next": "הבא",
+      "skip": "דלג"
+    },
+    "message": {
+      "title": "הודעה אישית",
+      "colors": "ערכת צבעים",
+      "addColor": "הוסף צבע",
+      "personalMessage": "הודעה אישית",
+      "placeholder": "כתוב הודעה אישית חמה לאורחים שלך..."
+    }
+  },
+  "musicVideo": {
+    "upload": {
+      "title": "העלאת מוזיקה",
+      "dropzone": "גרור קובץ שמע או לחץ להעלאה",
+      "duration": "משך",
+      "bpm": "BPM"
+    },
+    "structure": {
+      "title": "מבנה השיר",
+      "addSection": "הוסף חלק",
+      "sectionTypes": {
+        "intro": "אינטרו",
+        "verse": "בית",
+        "chorus": "פזמון",
+        "bridge": "גשר",
+        "outro": "אאוטרו",
+        "instrumental": "אינסטרומנטלי"
+      }
+    },
+    "lyrics": {
+      "title": "מילים",
+      "fullLyrics": "מילות השיר המלאות",
+      "placeholder": "הדבק כאן את מילות השיר...",
+      "autoSplit": "חלוקה אוטומטית לחלקים",
+      "sectionPlaceholder": "מילות החלק..."
+    },
+    "concept": {
+      "title": "קונספט ויזואלי",
+      "photos": "תמונות אמן / מבצע",
+      "visualConcept": "קונספט ויזואלי",
+      "placeholder": "תאר את העולם הויזואלי של הקליפ..."
+    }
+  },
+  "recapVideo": {
+    "upload": {
+      "title": "העלאת תמונות",
+      "dropzone": "גרור תמונות לכאן או לחץ להעלאה",
+      "count": "{{count}}/{{max}} תמונות"
+    },
+    "morePhotosNeeded": "נדרשות עוד {{count}} תמונות",
+    "curate": {
+      "title": "אצור את התמונות",
+      "selected": "{{selected}}/{{total}} נבחרו",
+      "tags": {
+        "highlight": "היילייט",
+        "crowd": "קהל",
+        "detail": "פרט",
+        "emotion": "רגש",
+        "speaker": "דובר",
+        "general": "כללי"
+      },
+      "captionPlaceholder": "הוסף כיתוב..."
+    },
+    "narrative": {
+      "title": "נרטיב האירוע",
+      "eventName": "שם האירוע",
+      "eventNamePlaceholder": "שם האירוע...",
+      "voiceover": "קריינות / נרטיב",
+      "voiceoverPlaceholder": "תאר את נרטיב האירוע או טקסט הקריינות...",
+      "musicMood": "אווירת מוזיקה",
+      "musicMoods": {
+        "upbeat": "עליז",
+        "emotional": "רגשי",
+        "dramatic": "דרמטי",
+        "calm": "רגוע",
+        "festive": "חגיגי",
+        "energetic": "אנרגטי"
+      },
+      "generateStoryboard": "צור סטוריבורד"
+    }
+  },
+  "brandReveal": {
+    "logo": {
+      "title": "העלאת לוגו",
+      "dropzone": "גרור תמונת לוגו או לחץ להעלאה",
+      "brandName": "שם המותג",
+      "tagline": "סלוגן"
+    },
+    "colors": {
+      "title": "צבעי מותג",
+      "autoExtract": "הצבעים יחולצו מהלוגו אם הועלה"
+    },
+    "industry": {
+      "title": "תעשייה",
+      "types": {
+        "technology": "טכנולוגיה",
+        "fashion": "אופנה",
+        "food": "מזון ומשקאות",
+        "health": "בריאות",
+        "finance": "פיננסים",
+        "education": "חינוך",
+        "entertainment": "בידור",
+        "real-estate": "נדל\"ן",
+        "automotive": "רכב",
+        "sports": "ספורט",
+        "creative": "עיצוב ויצירה",
+        "other": "אחר"
+      }
+    },
+    "reveal": {
+      "title": "סגנון חשיפה",
+      "style": "סגנון חשיפה",
+      "styles": {
+        "particles": { "label": "חלקיקים", "desc": "הלוגו צומח מחלקיקים מרחפים" },
+        "liquid": { "label": "נוזלי", "desc": "חשיפה אורגנית וזורמת" },
+        "geometric": { "label": "גיאומטרי", "desc": "צורות גיאומטריות חדות מתרכבות" },
+        "nature": { "label": "טבע", "desc": "אלמנטים טבעיים אורגניים" },
+        "minimal": { "label": "מינימלי", "desc": "פייד-אין נקי ופשוט" },
+        "explosive": { "label": "נפיצה", "desc": "חשיפה נועזת ואנרגטית" },
+        "elegant": { "label": "אלגנטי", "desc": "חשיפה מתוחכמת בהילוך איטי" },
+        "glitch": { "label": "גליץ'", "desc": "אפקט גליץ' דיגיטלי" }
+      },
+      "animation": "אנימציית לוגו",
+      "animationTypes": {
+        "fade-in": "הופעה הדרגתית",
+        "scale-up": "הגדלה",
+        "assemble": "הרכבה",
+        "emerge": "צמיחה",
+        "unfold": "פריסה",
+        "dissolve-in": "המסה"
+      },
+      "sound": "עיצוב סאונד",
+      "soundTypes": {
+        "cinematic": "קולנועי",
+        "minimal": "מינימלי",
+        "epic": "אפי",
+        "electronic": "אלקטרוני",
+        "organic": "אורגני"
+      },
+      "atmosphere": "אטמוספרת רקע"
+    }
+  },
+  "custom": {
+    "overview": {
+      "title": "סקירת פרויקט",
+      "projectTitle": "שם הפרויקט",
+      "projectTitlePlaceholder": "תן שם לפרויקט שלך...",
+      "description": "תיאור הפרויקט",
+      "descriptionPlaceholder": "תאר מה אתה רוצה ליצור...",
+      "sections": "כלול חלקים",
+      "character": "דמות",
+      "characterDesc": "הגדר דמות לוידאו שלך",
+      "logo": "לוגו / מותג",
+      "logoDesc": "העלה לוגו או סמל מותג",
+      "photos": "תמונות",
+      "photosDesc": "העלה תמונות ייחוס",
+      "videoRef": "וידאו ייחוס",
+      "videoRefDesc": "קישור לוידאו ייחוס"
+    },
+    "assets": {
+      "title": "העלאת נכסים",
+      "noSections": "הפעל לפחות חלק אחד בשלב הקודם",
+      "characterSection": "דמות",
+      "logoSection": "לוגו",
+      "logoDropHint": "גרור תמונת לוגו או לחץ להעלאה",
+      "photosSection": "תמונות",
+      "photosDropHint": "גרור תמונות לכאן או לחץ להעלאה",
+      "photosCount": "{{count}} תמונות",
+      "videoRefSection": "וידאו ייחוס",
+      "videoRefPlaceholder": "הדבק כתובת וידאו..."
+    },
+    "style": {
+      "title": "סגנון והעדפות",
+      "shotCount": "אורך הוידאו"
+    }
+  },
+  "referenceUpload": {
+    "title": "תמונות ייחוס",
+    "dropHint": "גרור תמונות או לחץ להעלאה",
+    "hint": "תמונות ייחוס עוזרות ל-AI להבין את הכוונה הויזואלית שלך"
   }
 }

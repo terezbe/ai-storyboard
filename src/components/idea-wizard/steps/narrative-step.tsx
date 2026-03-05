@@ -1,44 +1,86 @@
 import { useTranslation } from 'react-i18next';
 import { Sparkles, ArrowRight } from 'lucide-react';
-import { VISUAL_STYLE_PRESETS, SHOT_COUNT_OPTIONS } from '../../config/style-presets';
-import { MOODS, MOOD_COLORS } from '../storyboard/shot-constants';
-import type { StoryInputData } from '../../types/idea-wizard';
-import type { Mood, ReferenceImage } from '../../types/project';
-import { StepReferenceUpload } from './step-reference-upload';
+import { VISUAL_STYLE_PRESETS } from '../../../config/style-presets';
+import { MOODS, MOOD_COLORS } from '../../storyboard/shot-constants';
+import { MUSIC_MOODS } from '../../../types/wizard-data';
+import type { RecapVideoData } from '../../../types/wizard-data';
+import type { Mood, ReferenceImage } from '../../../types/project';
+import { StepReferenceUpload } from '../step-reference-upload';
 
-interface StoryInputStepProps {
-  data: StoryInputData;
-  onChange: (data: StoryInputData) => void;
-  onGenerate: () => void;
+interface NarrativeStepProps {
+  data: RecapVideoData;
+  onChange: (d: RecapVideoData) => void;
   onBack: () => void;
+  onGenerate: () => void;
   claudeApiKey: string | null;
   referenceImages: ReferenceImage[];
   onReferenceChange: (imgs: ReferenceImage[]) => void;
 }
 
-export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKey, referenceImages, onReferenceChange }: StoryInputStepProps) {
+export function NarrativeStep({ data, onChange, onBack, onGenerate, claudeApiKey, referenceImages, onReferenceChange }: NarrativeStepProps) {
   const { t } = useTranslation();
 
-  const update = (partial: Partial<StoryInputData>) => {
+  const update = (partial: Partial<RecapVideoData>) => {
     onChange({ ...data, ...partial });
   };
 
-  const canGenerate = data.idea.trim().length > 0 && !!claudeApiKey;
+  const canGenerate = data.eventName.trim().length > 0 && !!claudeApiKey;
 
   return (
     <div className="space-y-5">
-      {/* Story / Script */}
+      {/* Title */}
+      <div>
+        <h3 className="text-lg font-semibold text-text">{t('recapVideo.narrative.title')}</h3>
+      </div>
+
+      {/* Event Name */}
       <div>
         <label className="block text-sm font-medium text-text mb-2">
-          {t('wizard.ideaLabel')}
+          {t('recapVideo.narrative.eventName')}
+        </label>
+        <input
+          type="text"
+          value={data.eventName}
+          onChange={(e) => update({ eventName: e.target.value })}
+          placeholder={t('recapVideo.narrative.eventNamePlaceholder')}
+          className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-text placeholder-text-muted/50 focus:outline-none focus:border-primary-500/50"
+        />
+      </div>
+
+      {/* Voiceover / Narrative */}
+      <div>
+        <label className="block text-sm font-medium text-text mb-2">
+          {t('recapVideo.narrative.voiceover')}
         </label>
         <textarea
-          value={data.idea}
-          onChange={(e) => update({ idea: e.target.value })}
-          placeholder={t('wizard.ideaPlaceholder')}
-          rows={4}
+          value={data.voiceoverText}
+          onChange={(e) => update({ voiceoverText: e.target.value })}
+          placeholder={t('recapVideo.narrative.voiceoverPlaceholder')}
+          rows={6}
           className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-text placeholder-text-muted/50 focus:outline-none focus:border-primary-500/50 resize-none"
         />
+      </div>
+
+      {/* Music Mood */}
+      <div>
+        <label className="block text-sm font-medium text-text mb-2">
+          {t('recapVideo.narrative.musicMood')}
+        </label>
+        <div className="flex flex-wrap gap-2">
+          {MUSIC_MOODS.map((mood) => (
+            <button
+              key={mood}
+              onClick={() => update({ musicMood: mood })}
+              className={`px-3 py-1.5 rounded-full text-xs transition-all ${
+                data.musicMood === mood
+                  ? 'bg-primary-600/20 border border-primary-500 text-primary-300'
+                  : 'bg-surface border border-border text-text-muted hover:border-primary-500/50'
+              }`}
+            >
+              {t(`recapVideo.narrative.musicMoods.${mood}`)}
+            </button>
+          ))}
+        </div>
       </div>
 
       {/* Visual Style */}
@@ -90,33 +132,11 @@ export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKe
         </div>
       </div>
 
-      {/* Shot Count */}
-      <div>
-        <label className="block text-sm font-medium text-text mb-2">
-          {t('wizard.shotCountLabel')}
-        </label>
-        <div className="flex gap-2">
-          {SHOT_COUNT_OPTIONS.map((opt) => (
-            <button
-              key={opt.id}
-              onClick={() => update({ shotCountRange: opt.id })}
-              className={`flex-1 px-3 py-2 rounded-lg text-xs text-center transition-all ${
-                data.shotCountRange === opt.id
-                  ? 'bg-primary-600/20 border border-primary-500 text-primary-300'
-                  : 'bg-surface border border-border text-text-muted hover:border-primary-500/50'
-              }`}
-            >
-              {t(opt.labelKey)}
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Reference Images */}
       <StepReferenceUpload
         images={referenceImages}
         onChange={onReferenceChange}
-        stepId="story-input"
+        stepId="narrative"
       />
 
       {/* Action buttons */}
@@ -134,10 +154,10 @@ export function StoryInputStep({ data, onChange, onGenerate, onBack, claudeApiKe
         <button
           onClick={onGenerate}
           disabled={!canGenerate}
-          className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-500 hover:to-purple-500 text-white px-6 py-2.5 rounded-xl font-medium transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+          className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-500 hover:to-purple-500 text-white px-6 py-3.5 rounded-xl font-medium transition-all disabled:opacity-40 disabled:cursor-not-allowed"
         >
           <Sparkles className="w-5 h-5" />
-          {t('wizard.generate')}
+          {t('recapVideo.narrative.generateStoryboard')}
         </button>
       </div>
     </div>

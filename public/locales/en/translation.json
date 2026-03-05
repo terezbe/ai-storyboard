@@ -26,6 +26,7 @@
       "event-promo": "Event Promo",
       "invitation": "Invitation",
       "recap-video": "Recap Video",
+      "brand-reveal": "Brand Reveal",
       "custom": "Custom"
     },
     "statuses": {
@@ -104,7 +105,25 @@
       "slide": "Slide",
       "zoom": "Zoom",
       "none": "None"
-    }
+    },
+    "video": "Video",
+    "createVideo": "Create Video",
+    "copied": "Copied!",
+    "continuityMode": "Transition",
+    "continuityMode.cut": "Cut",
+    "continuityMode.continuity": "Continuity",
+    "continuityMode.hint": "Use last frame of previous video as first frame"
+  },
+  "shotCard": {
+    "done": "Done",
+    "regenerateImage": "Regenerate Image",
+    "editFrame": "Quick Edit",
+    "botPrompt": "Ask Bot",
+    "botPlaceholder": "Describe what you want...",
+    "sendToBot": "Send"
+  },
+  "shotEditor": {
+    "imagePromptLabel": "Image Prompt"
   },
   "prompt": {
     "generate": "Generate Prompt",
@@ -118,6 +137,9 @@
     "music": "Music Prompt",
     "video": "Video Prompt",
     "quality": "Quality",
+    "selectShot": "Select a shot to view prompts",
+    "imageReady": "Image ready",
+    "videoReady": "Video ready",
     "qualities": {
       "draft": "Draft",
       "standard": "Standard",
@@ -214,7 +236,18 @@
     "batchProgress": "{{completed}}/{{total}} completed",
     "testConnection": "Test Connection",
     "connected": "Connected!",
-    "connectionFailed": "Connection Failed"
+    "connectionFailed": "Connection Failed",
+    "generateAllVideos": "Generate All Videos",
+    "frameContinuity": "Frame continuity (last→first)",
+    "autoModelDialogue": "Kling v2.6 (dialogue + audio)",
+    "autoModelImage": "Kling img2vid (preserves frame)",
+    "autoModelText": "Text-to-video",
+    "done": "Done",
+    "audioOn": "With Audio",
+    "audioOff": "No Audio (saves credits)"
+  },
+  "timeline": {
+    "musicTrack": "Music Track"
   },
   "wizard": {
     "title": "Create Talking Character",
@@ -231,11 +264,38 @@
     "generating": "Creating your storyboard...",
     "analyzingCharacter": "Analyzing character and style...",
     "buildingShots": "Building shots and descriptions...",
+    "next": "Next",
+    "videoType": {
+      "next": "Next"
+    },
     "steps": {
+      "videoType": "Type",
       "character": "Character",
       "environment": "Environment",
       "story": "Story",
-      "preview": "Preview"
+      "preview": "Preview",
+      "adPlatform": "Platform",
+      "product": "Product",
+      "brand": "Brand",
+      "marketing": "Content",
+      "eventType": "Event",
+      "eventDetails": "Details",
+      "photo": "Photo",
+      "message": "Message",
+      "music": "Music",
+      "structure": "Structure",
+      "lyrics": "Lyrics",
+      "concept": "Concept",
+      "photos": "Photos",
+      "curate": "Curate",
+      "narrative": "Narrative",
+      "logo": "Logo",
+      "brandColors": "Colors",
+      "industry": "Industry",
+      "reveal": "Reveal",
+      "customOverview": "Overview",
+      "customAssets": "Assets",
+      "customStyle": "Style"
     },
     "generateBtn": "Generate Storyboard",
     "styles": {
@@ -517,7 +577,304 @@
     "delete": "Delete",
     "create": "Create",
     "back": "Back",
+    "next": "Next",
     "loading": "Loading...",
     "error": "Error"
+  },
+  "videoTypes": {
+    "talking-character": {
+      "name": "Talking Character",
+      "description": "A character speaks directly to camera, telling a story or delivering a message"
+    },
+    "event-promo": {
+      "name": "Event Promo",
+      "description": "Promote a product, service, or event with persuasive visuals"
+    },
+    "invitation": {
+      "name": "Invitation",
+      "description": "Create a warm, personal video invitation for any event"
+    },
+    "music-video": {
+      "name": "Music Video",
+      "description": "Visual storytelling synced to music with creative direction"
+    },
+    "recap-video": {
+      "name": "Recap Video",
+      "description": "Energetic highlight montage from photos and event moments"
+    },
+    "brand-reveal": {
+      "name": "Brand Reveal",
+      "description": "Cinematic logo and brand reveal with atmospheric buildup"
+    },
+    "custom": {
+      "name": "Custom",
+      "description": "Freeform video — describe your vision and upload your own assets"
+    }
+  },
+  "eventPromo": {
+    "adType": {
+      "title": "What are you promoting?",
+      "product": "Product",
+      "productDesc": "Physical or digital product showcase",
+      "service": "Service",
+      "serviceDesc": "Service or professional offering",
+      "event": "Event",
+      "eventDesc": "Event, conference, or gathering",
+      "restaurant": "Restaurant",
+      "restaurantDesc": "Restaurant, cafe, or food business",
+      "real-estate": "Real Estate",
+      "real-estateDesc": "Property, apartment, or real estate listing",
+      "app": "App",
+      "appDesc": "Mobile or web application"
+    },
+    "platform": {
+      "title": "Target Platform",
+      "instagram-reel": "Instagram Reel",
+      "instagram-reelDesc": "Vertical 9:16, 15-90 seconds",
+      "tiktok": "TikTok",
+      "tiktokDesc": "Vertical 9:16, fast-paced editing",
+      "youtube-short": "YouTube Short",
+      "youtube-shortDesc": "Vertical 9:16, up to 60 seconds",
+      "facebook": "Facebook",
+      "facebookDesc": "Square or horizontal, 15-60 seconds",
+      "linkedin": "LinkedIn",
+      "linkedinDesc": "Professional tone, horizontal format",
+      "general": "General",
+      "generalDesc": "Multi-platform, flexible format"
+    },
+    "product": {
+      "title": "Product / Service Image",
+      "dropzone": "Drop image here or click to upload",
+      "brandName": "Brand Name",
+      "brandNamePlaceholder": "Enter your brand name..."
+    },
+    "brand": {
+      "logo": "Logo",
+      "colors": "Brand Colors",
+      "addColor": "Click to add a color"
+    },
+    "marketing": {
+      "usps": "Unique Selling Points",
+      "uspPlaceholder": "Add a selling point...",
+      "addUsp": "Press Enter to add",
+      "cta": "Call to Action",
+      "ctaPlaceholder": "e.g., Shop Now, Book Today...",
+      "target": "Target Audience",
+      "targetPlaceholder": "Describe your target audience...",
+      "pricing": "Pricing Info",
+      "pricingPlaceholder": "e.g., From $99, 50% off..."
+    }
+  },
+  "invitation": {
+    "eventType": {
+      "title": "What's the occasion?",
+      "next": "Next",
+      "types": {
+        "birthday": "Birthday",
+        "wedding": "Wedding",
+        "bar-mitzvah": "Bar Mitzvah",
+        "bat-mitzvah": "Bat Mitzvah",
+        "engagement": "Engagement",
+        "baby-shower": "Baby Shower",
+        "anniversary": "Anniversary",
+        "graduation": "Graduation",
+        "conference": "Conference",
+        "custom": "Other"
+      }
+    },
+    "details": {
+      "title": "Event Details",
+      "eventName": "Event Name",
+      "required": "Required",
+      "date": "Date",
+      "time": "Time",
+      "location": "Location",
+      "rsvp": "RSVP Contact",
+      "next": "Next"
+    },
+    "photo": {
+      "title": "Celebrant Photo",
+      "dropzone": "Drop a photo or click to upload",
+      "next": "Next",
+      "skip": "Skip"
+    },
+    "message": {
+      "title": "Personal Message",
+      "colors": "Color Scheme",
+      "addColor": "Add color",
+      "personalMessage": "Personal Message",
+      "placeholder": "Write a warm personal message for your guests..."
+    }
+  },
+  "musicVideo": {
+    "upload": {
+      "title": "Upload Music",
+      "dropzone": "Drop audio file or click to upload",
+      "duration": "Duration",
+      "bpm": "BPM"
+    },
+    "structure": {
+      "title": "Song Structure",
+      "addSection": "Add Section",
+      "sectionTypes": {
+        "intro": "Intro",
+        "verse": "Verse",
+        "chorus": "Chorus",
+        "bridge": "Bridge",
+        "outro": "Outro",
+        "instrumental": "Instrumental"
+      }
+    },
+    "lyrics": {
+      "title": "Lyrics",
+      "fullLyrics": "Full Lyrics",
+      "placeholder": "Paste the full song lyrics here...",
+      "autoSplit": "Auto-Split to Sections",
+      "sectionPlaceholder": "Section lyrics..."
+    },
+    "concept": {
+      "title": "Visual Concept",
+      "photos": "Artist / Performer Photos",
+      "visualConcept": "Visual Concept",
+      "placeholder": "Describe the visual world of this music video..."
+    }
+  },
+  "recapVideo": {
+    "upload": {
+      "title": "Upload Photos",
+      "dropzone": "Drop photos here or click to upload",
+      "count": "{{count}}/{{max}} photos"
+    },
+    "morePhotosNeeded": "{{count}} more needed",
+    "curate": {
+      "title": "Curate Your Photos",
+      "selected": "{{selected}}/{{total}} selected",
+      "tags": {
+        "highlight": "Highlight",
+        "crowd": "Crowd",
+        "detail": "Detail",
+        "emotion": "Emotion",
+        "speaker": "Speaker",
+        "general": "General"
+      },
+      "captionPlaceholder": "Add caption..."
+    },
+    "narrative": {
+      "title": "Event Narrative",
+      "eventName": "Event Name",
+      "eventNamePlaceholder": "Name of the event...",
+      "voiceover": "Voiceover / Narrative",
+      "voiceoverPlaceholder": "Describe the event narrative or voiceover text...",
+      "musicMood": "Music Mood",
+      "musicMoods": {
+        "upbeat": "Upbeat",
+        "emotional": "Emotional",
+        "dramatic": "Dramatic",
+        "calm": "Calm",
+        "festive": "Festive",
+        "energetic": "Energetic"
+      },
+      "generateStoryboard": "Generate Storyboard"
+    }
+  },
+  "brandReveal": {
+    "logo": {
+      "title": "Upload Logo",
+      "dropzone": "Drop logo image or click to upload",
+      "brandName": "Brand Name",
+      "tagline": "Tagline"
+    },
+    "colors": {
+      "title": "Brand Colors",
+      "autoExtract": "Colors will be extracted from your logo if uploaded"
+    },
+    "industry": {
+      "title": "Industry",
+      "types": {
+        "technology": "Technology",
+        "fashion": "Fashion",
+        "food": "Food & Beverage",
+        "health": "Health & Wellness",
+        "finance": "Finance",
+        "education": "Education",
+        "entertainment": "Entertainment",
+        "real-estate": "Real Estate",
+        "automotive": "Automotive",
+        "sports": "Sports",
+        "creative": "Creative & Design",
+        "other": "Other"
+      }
+    },
+    "reveal": {
+      "title": "Reveal Style",
+      "style": "Reveal Style",
+      "styles": {
+        "particles": { "label": "Particles", "desc": "Logo emerges from floating particles" },
+        "liquid": { "label": "Liquid", "desc": "Fluid, organic reveal animation" },
+        "geometric": { "label": "Geometric", "desc": "Sharp geometric shapes assemble" },
+        "nature": { "label": "Nature", "desc": "Organic natural elements reveal" },
+        "minimal": { "label": "Minimal", "desc": "Clean, simple fade or slide" },
+        "explosive": { "label": "Explosive", "desc": "Bold, high-energy burst reveal" },
+        "elegant": { "label": "Elegant", "desc": "Sophisticated, slow-motion reveal" },
+        "glitch": { "label": "Glitch", "desc": "Digital glitch effect reveal" }
+      },
+      "animation": "Logo Animation",
+      "animationTypes": {
+        "fade-in": "Fade In",
+        "scale-up": "Scale Up",
+        "assemble": "Assemble",
+        "emerge": "Emerge",
+        "unfold": "Unfold",
+        "dissolve-in": "Dissolve In"
+      },
+      "sound": "Sound Design",
+      "soundTypes": {
+        "cinematic": "Cinematic",
+        "minimal": "Minimal",
+        "epic": "Epic",
+        "electronic": "Electronic",
+        "organic": "Organic"
+      },
+      "atmosphere": "Background Atmosphere"
+    }
+  },
+  "custom": {
+    "overview": {
+      "title": "Project Overview",
+      "projectTitle": "Project Title",
+      "projectTitlePlaceholder": "Give your project a name...",
+      "description": "Project Description",
+      "descriptionPlaceholder": "Describe what you want to create...",
+      "sections": "Include Sections",
+      "character": "Character",
+      "characterDesc": "Define a character for your video",
+      "logo": "Logo / Brand",
+      "logoDesc": "Upload a logo or brand mark",
+      "photos": "Photos",
+      "photosDesc": "Upload reference photos",
+      "videoRef": "Video Reference",
+      "videoRefDesc": "Link to a reference video"
+    },
+    "assets": {
+      "title": "Upload Assets",
+      "noSections": "Enable at least one section in the previous step",
+      "characterSection": "Character",
+      "logoSection": "Logo",
+      "logoDropHint": "Drop logo image or click to upload",
+      "photosSection": "Photos",
+      "photosDropHint": "Drop photos here or click to upload",
+      "photosCount": "{{count}} photos",
+      "videoRefSection": "Video Reference",
+      "videoRefPlaceholder": "Paste a video URL..."
+    },
+    "style": {
+      "title": "Style & Preferences",
+      "shotCount": "Video Length"
+    }
+  },
+  "referenceUpload": {
+    "title": "Reference Images",
+    "dropHint": "Drop images or click to upload",
+    "hint": "Reference images help the AI understand your visual intent"
   }
 }

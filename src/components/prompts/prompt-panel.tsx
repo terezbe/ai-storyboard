@@ -13,7 +13,7 @@ import {
   generateVideoPrompt,
   generateAllPromptsForShot,
 } from '../../lib/prompt-engine';
-import { KOLBO_MODELS } from '../../config/kolbo-models';
+import { getFalModel } from '../../config/fal-models';
 import type { Prompt, PromptType, Shot } from '../../types/project';
 
 function PromptCard({
@@ -128,15 +128,15 @@ function PromptCard({
           />
           <div className="mt-2 flex items-center gap-2 text-[10px] text-text-muted">
             <span className="bg-surface-lighter px-1.5 py-0.5 rounded">
-              {KOLBO_MODELS[prompt.targetModel]?.name || prompt.targetModel}
+              {getFalModel(prompt.targetModel)?.name || prompt.targetModel}
             </span>
             <span>{prompt.quality}</span>
             {/* Generation status indicator */}
             {(type === 'environment' || type === 'character') && imageStatus === 'completed' && (
-              <span className="text-green-400">image ready</span>
+              <span className="text-green-400">{t('prompt.imageReady')}</span>
             )}
             {type === 'video' && videoStatus === 'completed' && (
-              <span className="text-purple-400">video ready</span>
+              <span className="text-purple-400">{t('prompt.videoReady')}</span>
             )}
           </div>
         </>
@@ -171,7 +171,7 @@ export function PromptPanel() {
     return (
       <div className="p-6">
         <p className="text-text-muted text-center py-10">
-          {t('editor.noShots') === t('editor.noShots') ? 'Select a shot to view prompts' : t('editor.noShots')}
+          {t('prompt.selectShot')}
         </p>
         {/* Show all shots prompts overview */}
         <div className="space-y-4">

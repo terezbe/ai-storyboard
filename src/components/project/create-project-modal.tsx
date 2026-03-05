@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { X, Film, Music, Video, PartyPopper, Mail, Clapperboard } from 'lucide-react';
+import { X, Film, Music, Video, PartyPopper, Mail, Clapperboard, Sparkles } from 'lucide-react';
 import { useProjectStore } from '../../store/project-store';
 import { useSettingsStore } from '../../store/settings-store';
 import type { ProjectType } from '../../types/project';
@@ -12,6 +12,7 @@ const PROJECT_TYPE_ICONS: Record<ProjectType, React.ReactNode> = {
   'event-promo': <PartyPopper className="w-6 h-6" />,
   invitation: <Mail className="w-6 h-6" />,
   'recap-video': <Video className="w-6 h-6" />,
+  'brand-reveal': <Sparkles className="w-6 h-6" />,
   custom: <Clapperboard className="w-6 h-6" />,
 };
 
@@ -21,6 +22,7 @@ const PROJECT_TYPES: ProjectType[] = [
   'event-promo',
   'invitation',
   'recap-video',
+  'brand-reveal',
   'custom',
 ];
 

@@ -1,10 +1,17 @@
 import { useSettingsStore } from '../../store/settings-store';
 import { VISUAL_STYLE_PRESETS, SHOT_COUNT_OPTIONS } from '../../config/style-presets';
-import type { IdeaWizardInput } from '../../types/idea-wizard';
+import { VIDEO_TYPE_CONFIGS } from '../../config/video-type-configs';
+import type { IdeaWizardInput, WizardInput as WizardInputType } from '../../types/idea-wizard';
 import type { CharacterDefinition } from '../../types/character-builder';
 import type { EnvironmentDefinition } from '../../types/environment-builder';
-import type { Mood } from '../../types/project';
+import type { Mood, ProjectType, WizardMetadata } from '../../types/project';
 import type { ShotCountRange } from '../../config/style-presets';
+import type { EventPromoData, InvitationData, MusicVideoData, RecapVideoData, BrandRevealData, CustomData } from '../../types/wizard-data';
+import {
+  buildCharacterPrompt as _buildCharacterPrompt,
+  buildEnvironmentPrompt as _buildEnvironmentPrompt,
+} from '../../lib/prompt-builders';
+import { extractBase64Data } from '../../lib/image-utils';
 
 /* ── New WizardInput type (structured character/environment) ──────── */
 
@@ -26,80 +33,10 @@ function isWizardInput(input: IdeaWizardInput | WizardInput): input is WizardInp
   return 'character' in input && 'environment' in input && 'story' in input;
 }
 
-/* ── Prompt builders (inline fallbacks if external module not available) ── */
+/* ── Prompt builders ── */
 
-let buildCharacterPrompt: (char: CharacterDefinition) => string;
-let buildEnvironmentPrompt: (env: EnvironmentDefinition) => string;
-
-try {
-  // Try to import from the dedicated prompt-builders module (may be created by another agent)
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const builders = require('../../lib/prompt-builders');
-  buildCharacterPrompt = builders.buildCharacterPrompt;
-  buildEnvironmentPrompt = builders.buildEnvironmentPrompt;
-} catch {
-  // Fallback: build prompts inline from structured data
-  buildCharacterPrompt = (char: CharacterDefinition): string => {
-    const parts: string[] = [];
-
-    // Type / species
-    if (char.type !== 'human') parts.push(`${char.type} character`);
-
-    // Gender + age
-    const genderLabel = char.gender === 'neutral' ? '' : char.gender;
-    const ageLabel = char.ageRange.replace('-', ' ');
-    parts.push([genderLabel, ageLabel].filter(Boolean).join(' '));
-
-    // Body
-    if (char.bodyType !== 'average') parts.push(`${char.bodyType} build`);
-
-    // Skin
-    parts.push(`${char.skinTone.replace(/-/g, ' ')} skin tone`);
-
-    // Hair
-    parts.push(`${char.hairColor.replace(/-/g, ' ')} ${char.hairStyle.replace(/-/g, ' ')} hair`);
-
-    // Clothing
-    parts.push(`${char.clothingStyle} clothing`);
-    if (char.clothingDetails) parts.push(char.clothingDetails);
-
-    // Facial features
-    if (char.facialFeatures.length > 0) {
-      parts.push(`with ${char.facialFeatures.join(', ')}`);
-    }
-
-    // Custom notes
-    if (char.customNotes) parts.push(char.customNotes);
-
-    return parts.filter(Boolean).join(', ');
-  };
-
-  buildEnvironmentPrompt = (env: EnvironmentDefinition): string => {
-    const parts: string[] = [];
-
-    // Category + setting
-    parts.push(`${env.category} environment`);
-    if (env.customSetting) {
-      parts.push(env.customSetting);
-    } else {
-      parts.push(env.settingId.replace(/-/g, ' '));
-    }
-
-    // Time of day
-    parts.push(`${env.timeOfDay.replace(/-/g, ' ')} time`);
-
-    // Weather
-    if (env.weather !== 'clear') parts.push(`${env.weather} weather`);
-
-    // Lighting
-    parts.push(`${env.lighting.replace(/-/g, ' ')} lighting`);
-
-    // Custom notes
-    if (env.customNotes) parts.push(env.customNotes);
-
-    return parts.filter(Boolean).join(', ');
-  };
-}
+const buildCharacterPrompt = _buildCharacterPrompt;
+const buildEnvironmentPrompt = _buildEnvironmentPrompt;
 
 /* ══════════════════════════════════════════════════════════════════════
    STORYBOARD SYSTEM PROMPT
@@ -142,6 +79,29 @@ CLIMAX (Shot N-1): The peak moment. The most emotionally intense or visually str
 RESOLUTION (Shot N): Closure. Show the outcome, the new state, the final message. Leave the viewer with a lasting impression that connects back to the opening.
 
 CRITICAL RULE: "If a shot could be removed without breaking the narrative, it should not exist." Every shot must be a necessary link in the story chain.
+
+VISUAL CAUSE-AND-EFFECT:
+Every shot transition MUST show WHY the next shot happens:
+- Object continuity: character picks up item in Shot N → shown using it in Shot N+1
+- Location movement: character walks out → next shot is new location
+- Dialogue reference: character says "let's go to the beach" → next shot is beach
+- Emotional escalation: worried expression → next shot reveals the cause
+If two adjacent shots have no visual/narrative link, add a transition explanation in the notes field.
+
+CHARACTER EMOTIONAL PROGRESSION:
+The character MUST change across the story:
+- Early shots: curious, hopeful, uncertain
+- Middle shots: determined, discovering, struggling
+- Peak shots: triumphant, transformed, devastated
+- Final shots: satisfied, wise, renewed
+Do NOT use the same expression twice unless deliberately repeating for emphasis.
+
+VISUAL STYLE CONSISTENCY:
+The first shot establishes the visual language — ALL subsequent shots must maintain:
+- Same color palette (warm/cool/vibrant)
+- Same lighting approach (natural/dramatic/studio)
+- Same photography style (cinematic/photorealistic/painterly)
+- Same texture/finish (film grain/smooth digital)
 
 ═══════════════════════════════════════════════
 STEP 3: ENVIRONMENT CONSISTENCY
@@ -193,7 +153,7 @@ OUTPUT JSON SCHEMA
 ═══════════════════════════════════════════════
 {
   "projectName": "string — short descriptive project name derived from the story",
-  "projectType": "one of: talking-character, music-video, event-promo, invitation, recap-video, custom",
+  "projectType": "one of: talking-character, music-video, event-promo, invitation, recap-video, brand-reveal, custom",
   "language": "he or en — match the user's language",
   "intro": null or { "title": "Intro", "backgroundDescription": "visual description (English)", "textOverlay": "on-screen text", "duration": 5, "musicReference": "music description", "showLogo": true },
   "shots": [ ...shot objects... ],
@@ -352,7 +312,7 @@ function resolveWizardFields(input: IdeaWizardInput | WizardInput): {
   };
 }
 
-function buildWizardSystemPrompt(input: IdeaWizardInput | WizardInput): string {
+function buildWizardSystemPrompt(input: IdeaWizardInput | WizardInput, projectType: ProjectType = 'talking-character'): string {
   const fields = resolveWizardFields(input);
   const stylePreset = VISUAL_STYLE_PRESETS.find((s) => s.id === fields.visualStyle);
   const shotRange = SHOT_COUNT_OPTIONS.find((o) => o.id === fields.shotCountRange) ?? SHOT_COUNT_OPTIONS[1];
@@ -367,15 +327,28 @@ Use this as the BASELINE environment for most shots. You may adapt it (different
 DEFAULT ENVIRONMENT:
 Derive the primary location(s) from the user's story. Define 1-3 specific, visually detailed locations and reuse them consistently throughout the storyboard.`;
 
+  const config = VIDEO_TYPE_CONFIGS[projectType];
+
+  const typeSpecificSection = `
+═══════════════════════════════════════════════
+${projectType.toUpperCase().replace(/-/g, ' ')} PROJECT — TYPE-SPECIFIC RULES
+═══════════════════════════════════════════════
+
+PROJECT TYPE: "${projectType}". ALWAYS set projectType to "${projectType}".
+${config.hasIntroOutro ? 'INCLUDE intro and outro sections.' : 'Set intro and outro to null — do NOT create intro/outro for this type.'}
+
+NARRATIVE STRUCTURE FOR THIS TYPE (USE THIS INSTEAD of the default 5-act structure above):
+${config.claudeRules}
+
+CAMERA GUIDANCE:
+${config.cameraGuidance}
+
+SHOT MIX:
+${config.shotMixGuidance}
+`;
+
   return `${STORYBOARD_SYSTEM_PROMPT}
-
-═══════════════════════════════════════════════
-TALKING CHARACTER PROJECT — ADDITIONAL RULES
-═══════════════════════════════════════════════
-
-PROJECT TYPE: This is a "talking-character" project. ALWAYS set projectType to "talking-character".
-ALWAYS INCLUDE intro and outro sections.
-
+${typeSpecificSection}
 VISUAL STYLE (apply to EVERY shot consistently):
 ${stylePreset?.promptFragment ?? 'Cinematic photography style'}
 This style MUST influence: lighting setup, color palette, surface textures, clothing design, and environment design in EVERY shot. Do not mix styles between shots. The style is a visual language — it must be spoken consistently.
@@ -463,11 +436,22 @@ SHOT COUNT: Generate between ${shotRange.min} and ${shotRange.max} shots.
 Each shot should be 5-12 seconds. Intro/outro should be 3-7 seconds.`;
 }
 
-function buildWizardUserMessage(input: IdeaWizardInput | WizardInput, language: 'en' | 'he'): string {
+function buildWizardUserMessage(input: IdeaWizardInput | WizardInput, language: 'en' | 'he', projectType: ProjectType = 'talking-character'): string {
+  // Check for type-specific data on new WizardInput format
+  if (isWizardInput(input) && 'videoType' in input) {
+    const wizInput = input as WizardInputType;
+    if (wizInput.customData) return buildCustomUserMessage(wizInput.customData, language);
+    if (wizInput.eventPromo) return buildEventPromoUserMessage(wizInput.eventPromo, language);
+    if (wizInput.invitation) return buildInvitationUserMessage(wizInput.invitation, language);
+    if (wizInput.musicVideo) return buildMusicVideoUserMessage(wizInput.musicVideo, language);
+    if (wizInput.recapVideo) return buildRecapVideoUserMessage(wizInput.recapVideo, language);
+    if (wizInput.brandReveal) return buildBrandRevealUserMessage(wizInput.brandReveal, language);
+  }
+
+  // Default: talking-character flow
   const fields = resolveWizardFields(input);
   const stylePreset = VISUAL_STYLE_PRESETS.find((s) => s.id === fields.visualStyle);
 
-  // Build the structured content sections
   const storySection = fields.idea;
   const characterSection = fields.characterPromptText;
   const environmentSection = fields.environmentPromptText || '(derive from story context)';
@@ -475,7 +459,7 @@ function buildWizardUserMessage(input: IdeaWizardInput | WizardInput, language: 
   const styleId = stylePreset?.id ?? 'cinematic';
 
   if (language === 'he') {
-    return `צור סטוריבורד לדמות מדברת שמספרת את הסיפור הבא. כתוב את כל התיאורים הויזואליים (environment, character, props) באנגלית לצורך יצירת תמונות AI. כתוב את כל הדיאלוגים בעברית.
+    return `צור סטוריבורד מסוג "${projectType}" שמספר את הסיפור הבא. כתוב את כל התיאורים הויזואליים (environment, character, props) באנגלית לצורך יצירת תמונות AI. כתוב את כל הדיאלוגים בעברית.
 
 ═══ הסיפור / התסריט ═══
 ${storySection}
@@ -500,7 +484,7 @@ ${environmentSection}
 6. הדמות חייבת להופיע בשוט 1 או 2 — הצופה צריך לראות מי מדבר כבר בהתחלה`;
   }
 
-  return `Create a talking character storyboard that tells the following story. Write all visual descriptions (environment, character, props) in English for AI image generation. Write all dialogue in English.
+  return `Create a "${projectType}" storyboard that tells the following story. Write all visual descriptions (environment, character, props) in English for AI image generation. Write all dialogue in English.
 
 ═══ STORY / SCRIPT ═══
 ${storySection}
@@ -525,9 +509,274 @@ Shot Count: ${fields.shotCountRange}
 6. The character must appear in shot 1 or 2 — the viewer needs to see who is speaking early`;
 }
 
+/* ── Per-type user message builders ──────────────────────────────────── */
+
+function buildCustomUserMessage(data: CustomData, language: 'en' | 'he'): string {
+  const stylePreset = VISUAL_STYLE_PRESETS.find((s) => s.id === data.visualStyle);
+  const shotRange = SHOT_COUNT_OPTIONS.find((o) => o.id === data.shotCountRange) ?? SHOT_COUNT_OPTIONS[1];
+
+  const sections: string[] = [];
+
+  if (data.projectTitle) sections.push(`Project Title: ${data.projectTitle}`);
+  sections.push(`Project Description:\n${data.projectDescription}`);
+
+  if (data.sections.character && data.character) {
+    const char = data.character;
+    const charParts: string[] = [];
+    if (char.type !== 'human') charParts.push(`Type: ${char.type}`);
+    charParts.push(`Gender: ${char.gender}`);
+    charParts.push(`Age: ${char.ageRange.replace('-', ' ')}`);
+    if (char.bodyType !== 'average') charParts.push(`Build: ${char.bodyType}`);
+    if (char.customNotes) charParts.push(`Notes: ${char.customNotes}`);
+    sections.push(`Character:\n${charParts.join('\n')}`);
+  }
+
+  if (data.sections.logo && data.logoDataUrl) {
+    sections.push('Logo: A brand logo has been provided (available as reference image).');
+  }
+
+  if (data.sections.photos && data.photos && data.photos.length > 0) {
+    sections.push(`Reference Photos: ${data.photos.length} reference photo(s) have been provided.`);
+  }
+
+  if (data.sections.videoRef && data.videoRefUrl) {
+    sections.push(`Video Reference URL: ${data.videoRefUrl}`);
+  }
+
+  const styleLabel = stylePreset?.labelKey ?? 'cinematic';
+  const styleId = stylePreset?.id ?? 'cinematic';
+  sections.push(`Visual Style: ${styleLabel} (${styleId})\nOverall Mood: ${data.mood}\nShot Count: ${shotRange.min}-${shotRange.max}`);
+
+  const contentBlock = sections.join('\n\n');
+
+  if (language === 'he') {
+    return `צור סטוריבורד לפרויקט הבא. כתוב את כל התיאורים הויזואליים (environment, character, props) באנגלית לצורך יצירת תמונות AI. כתוב את כל הדיאלוגים בעברית.
+
+סוג הפרויקט: custom (מותאם אישית)
+
+${contentBlock}
+
+═══ משימה ═══
+1. קרא את תיאור הפרויקט בעיון — הבן את הקונספט, המסר והחזון
+2. צור סטוריבורד שמגשים את החזון מתחילתו ועד סופו
+3. כל שוט צריך לקדם את הנרטיב — אם אפשר להסיר שוט בלי לפגוע בסיפור, הוא מיותר
+4. הגדר projectType כ-"custom"
+5. intro ו-outro יכולים להיות null אלא אם התוכן דורש אותם`;
+  }
+
+  return `Create a storyboard for the following project. Write all visual descriptions (environment, character, props) in English for AI image generation. Write all dialogue in English.
+
+Project Type: custom (freeform)
+
+${contentBlock}
+
+═══ YOUR TASK ═══
+1. Read the project description carefully — understand the concept, message, and vision
+2. Create a storyboard that brings this vision to life from beginning to end
+3. Every shot must advance the narrative — if a shot can be removed without breaking the story, it is unnecessary
+4. Set projectType to "custom"
+5. Intro and outro can be null unless the content specifically requires them`;
+}
+
+function buildEventPromoUserMessage(data: EventPromoData, language: 'en' | 'he'): string {
+  const style = VISUAL_STYLE_PRESETS.find(s => s.id === data.visualStyle);
+  const parts = [
+    `Ad Type: ${data.adType}`,
+    `Platform: ${data.platform}`,
+    `Brand: ${data.brandName || '(not specified)'}`,
+    data.productImageUrl ? `Product Image: provided (use as visual reference)` : '',
+    data.logoUrl ? `Logo: provided` : '',
+    data.brandColors.length > 0 ? `Brand Colors: ${data.brandColors.join(', ')}` : '',
+    data.usps.length > 0 ? `Selling Points:\n${data.usps.map(u => `- ${u}`).join('\n')}` : '',
+    data.cta ? `Call to Action: ${data.cta}` : '',
+    data.targetAudience ? `Target Audience: ${data.targetAudience}` : '',
+    data.pricing ? `Pricing: ${data.pricing}` : '',
+    `Visual Style: ${style?.labelKey ?? data.visualStyle}`,
+    `Mood: ${data.mood}`,
+  ].filter(Boolean);
+
+  const isHe = language === 'he';
+  return `${isHe ? 'צור סטוריבורד לפרסומת מוצר/שירות.' : 'Create an event-promo storyboard.'} ${isHe ? 'כתוב תיאורים ויזואליים באנגלית וטקסט שיווקי ב' + language + '.' : 'Write visual descriptions in English and marketing text in English.'}
+
+═══ ${isHe ? 'פרטי הפרסומת' : 'AD DETAILS'} ═══
+${parts.join('\n')}
+
+═══ ${isHe ? 'משימה' : 'TASK'} ═══
+${isHe
+  ? 'צור סטוריבורד קצר (4-8 שוטים) שמקדם את המוצר/שירות בצורה אטרקטיבית. התחל עם הוק ויזואלי, הצג את היתרונות, וסיים עם CTA חזק.'
+  : 'Create a short storyboard (4-8 shots) that promotes the product/service attractively. Open with a visual hook, showcase the benefits, and end with a strong CTA.'}`;
+}
+
+function buildInvitationUserMessage(data: InvitationData, language: 'en' | 'he'): string {
+  const style = VISUAL_STYLE_PRESETS.find(s => s.id === data.visualStyle);
+  const parts = [
+    `Event Type: ${data.eventType}`,
+    data.eventName ? `Event Name: ${data.eventName}` : '',
+    data.date ? `Date: ${data.date}` : '',
+    data.time ? `Time: ${data.time}` : '',
+    data.location ? `Location: ${data.location}` : '',
+    data.rsvpMethod ? `RSVP: ${data.rsvpMethod}` : '',
+    data.celebrantPhotoUrl ? `Celebrant Photo: provided` : '',
+    data.colorScheme.length > 0 ? `Color Scheme: ${data.colorScheme.join(', ')}` : '',
+    data.personalMessage ? `Personal Message: ${data.personalMessage}` : '',
+    `Visual Style: ${style?.labelKey ?? data.visualStyle}`,
+    `Mood: ${data.mood}`,
+  ].filter(Boolean);
+
+  const isHe = language === 'he';
+  return `${isHe ? 'צור סטוריבורד להזמנה לאירוע.' : 'Create an invitation storyboard.'}
+
+═══ ${isHe ? 'פרטי האירוע' : 'EVENT DETAILS'} ═══
+${parts.join('\n')}
+
+═══ ${isHe ? 'משימה' : 'TASK'} ═══
+${isHe
+  ? 'צור סטוריבורד מרגש (4-8 שוטים) שמזמין אנשים לאירוע. התחל עם הוק רגשי, הצג את הפרטים (תאריך, מיקום), וסיים עם ההודעה האישית וה-RSVP.'
+  : 'Create an emotionally engaging storyboard (4-8 shots) that invites people to the event. Open with an emotional hook, present the details (date, venue), and close with the personal message and RSVP.'}`;
+}
+
+function buildMusicVideoUserMessage(data: MusicVideoData, language: 'en' | 'he'): string {
+  const style = VISUAL_STYLE_PRESETS.find(s => s.id === data.visualStyle);
+  const sections = data.songSections.map(s => `  ${s.type}: "${s.label}" ${s.lyrics ? `— ${s.lyrics.substring(0, 80)}...` : ''}`).join('\n');
+  const parts = [
+    data.musicFileName ? `Song: ${data.musicFileName}` : '',
+    data.bpm ? `BPM: ${data.bpm}` : '',
+    data.duration ? `Duration: ${Math.floor(data.duration / 60)}:${String(Math.floor(data.duration % 60)).padStart(2, '0')}` : '',
+    data.songSections.length > 0 ? `Song Structure:\n${sections}` : '',
+    data.fullLyrics ? `Full Lyrics:\n${data.fullLyrics}` : '',
+    data.artistPhotoUrls.length > 0 ? `Artist Photos: ${data.artistPhotoUrls.length} provided` : '',
+    data.visualConcept ? `Visual Concept: ${data.visualConcept}` : '',
+    `Visual Style: ${style?.labelKey ?? data.visualStyle}`,
+    `Mood: ${data.mood}`,
+  ].filter(Boolean);
+
+  const isHe = language === 'he';
+  return `${isHe ? 'צור סטוריבורד לקליפ מוזיקלי.' : 'Create a music video storyboard.'}
+
+═══ ${isHe ? 'פרטי השיר' : 'SONG DETAILS'} ═══
+${parts.join('\n')}
+
+═══ ${isHe ? 'משימה' : 'TASK'} ═══
+${isHe
+  ? 'צור סטוריבורד (6-12 שוטים) שמספר סיפור ויזואלי מסונכרן למבנה השיר. כל חלק בשיר (בית, פזמון, גשר) צריך תמונה ויזואלית ייחודית. בנה מתח ויזואלי שמגיע לשיא בפזמון.'
+  : 'Create a storyboard (6-12 shots) telling a visual story synced to the song structure. Each section (verse, chorus, bridge) needs unique visuals. Build visual tension peaking at the chorus.'}`;
+}
+
+function buildRecapVideoUserMessage(data: RecapVideoData, language: 'en' | 'he'): string {
+  const style = VISUAL_STYLE_PRESETS.find(s => s.id === data.visualStyle);
+  const selectedPhotos = data.photos.filter(p => p.selected);
+  const tagSummary = selectedPhotos.reduce((acc, p) => { acc[p.tag] = (acc[p.tag] || 0) + 1; return acc; }, {} as Record<string, number>);
+  const parts = [
+    data.eventName ? `Event: ${data.eventName}` : '',
+    `Photos: ${selectedPhotos.length} selected out of ${data.photos.length}`,
+    Object.keys(tagSummary).length > 0 ? `Photo Tags: ${Object.entries(tagSummary).map(([k, v]) => `${k}(${v})`).join(', ')}` : '',
+    data.voiceoverText ? `Voiceover/Narrative: ${data.voiceoverText}` : '',
+    `Music Mood: ${data.musicMood}`,
+    `Visual Style: ${style?.labelKey ?? data.visualStyle}`,
+    `Mood: ${data.mood}`,
+  ].filter(Boolean);
+
+  const isHe = language === 'he';
+  return `${isHe ? 'צור סטוריבורד לסרטון סיכום אירוע.' : 'Create a recap video storyboard.'}
+
+═══ ${isHe ? 'פרטי הסיכום' : 'RECAP DETAILS'} ═══
+${parts.join('\n')}
+
+═══ ${isHe ? 'משימה' : 'TASK'} ═══
+${isHe
+  ? 'צור סטוריבורד קצב מהיר (4-8 שוטים) שמציג את היילייטים מהאירוע. פתח עם תמונה חזקה, הצג רגעים מגוונים (קהל, פרטים, רגשות), וסיים עם רגע מסכם.'
+  : 'Create a fast-paced storyboard (4-8 shots) showcasing event highlights. Open with a strong shot, show varied moments (crowd, details, emotions), and close with a summary moment.'}`;
+}
+
+function buildBrandRevealUserMessage(data: BrandRevealData, language: 'en' | 'he'): string {
+  const style = VISUAL_STYLE_PRESETS.find(s => s.id === data.visualStyle);
+  const parts = [
+    data.brandName ? `Brand: ${data.brandName}` : '',
+    data.tagline ? `Tagline: ${data.tagline}` : '',
+    data.logoUrl ? `Logo: provided` : '',
+    data.brandColors.length > 0 ? `Brand Colors: ${data.brandColors.join(', ')}` : '',
+    `Industry: ${data.industry}`,
+    `Reveal Style: ${data.revealStyle}`,
+    `Logo Animation: ${data.animationStyle}`,
+    `Sound Design: ${data.soundDesign}`,
+    data.backgroundAtmosphere ? `Background Atmosphere: ${data.backgroundAtmosphere}` : '',
+    `Visual Style: ${style?.labelKey ?? data.visualStyle}`,
+    `Mood: ${data.mood}`,
+  ].filter(Boolean);
+
+  const isHe = language === 'he';
+  return `${isHe ? 'צור סטוריבורד לחשיפת מותג/לוגו.' : 'Create a brand/logo reveal storyboard.'}
+
+═══ ${isHe ? 'פרטי המותג' : 'BRAND DETAILS'} ═══
+${parts.join('\n')}
+
+═══ ${isHe ? 'משימה' : 'TASK'} ═══
+${isHe
+  ? 'צור סטוריבורד קצר (3-6 שוטים) שחושף את הלוגו/מותג בצורה קולנועית. בנה מתח עם אלמנטים מופשטים, חשוף את הלוגו בשיא, וסיים עם הסלוגן.'
+  : 'Create a short storyboard (3-6 shots) with a cinematic brand reveal. Build tension with abstract elements, reveal the logo at the climax, and close with the tagline.'}`;
+}
+
+/**
+ * Collect all uploaded images from wizard data for multimodal Claude request.
+ * Returns labeled image blocks for logos, product images, celebrant photos, etc.
+ */
+function collectWizardImages(input: IdeaWizardInput | WizardInput): Array<{ label: string; dataUrl: string }> {
+  const images: Array<{ label: string; dataUrl: string }> = [];
+
+  if (!isWizardInput(input) || !('videoType' in input)) return images;
+  const wizInput = input as WizardInputType;
+
+  // Custom flow: logo + photos
+  if (wizInput.customData) {
+    if (wizInput.customData.logoDataUrl) {
+      images.push({ label: 'Brand Logo', dataUrl: wizInput.customData.logoDataUrl });
+    }
+    if (wizInput.customData.photos) {
+      wizInput.customData.photos.forEach((photo, i) => {
+        images.push({ label: `Reference Photo ${i + 1}`, dataUrl: photo.dataUrl });
+      });
+    }
+  }
+
+  // Event Promo: product image + logo
+  if (wizInput.eventPromo) {
+    if (wizInput.eventPromo.productImageUrl?.startsWith('data:')) {
+      images.push({ label: 'Product Image', dataUrl: wizInput.eventPromo.productImageUrl });
+    }
+    if (wizInput.eventPromo.logoUrl?.startsWith('data:')) {
+      images.push({ label: 'Brand Logo', dataUrl: wizInput.eventPromo.logoUrl });
+    }
+  }
+
+  // Invitation: celebrant photo
+  if (wizInput.invitation?.celebrantPhotoUrl?.startsWith('data:')) {
+    images.push({ label: 'Celebrant Photo', dataUrl: wizInput.invitation.celebrantPhotoUrl });
+  }
+
+  // Brand Reveal: logo
+  if (wizInput.brandReveal?.logoUrl?.startsWith('data:')) {
+    images.push({ label: 'Brand Logo', dataUrl: wizInput.brandReveal.logoUrl });
+  }
+
+  // Recap Video: selected photos (limit to first 5 to avoid huge requests)
+  if (wizInput.recapVideo?.photos) {
+    const selected = wizInput.recapVideo.photos
+      .filter(p => p.selected !== false)
+      .slice(0, 5);
+    selected.forEach((photo, i) => {
+      if (photo.url?.startsWith('data:')) {
+        images.push({ label: `Event Photo ${i + 1}`, dataUrl: photo.url });
+      }
+    });
+  }
+
+  return images;
+}
+
 export async function generateStoryboardFromWizard(
   input: IdeaWizardInput | WizardInput,
-  language: 'en' | 'he'
+  language: 'en' | 'he',
+  projectType: ProjectType = 'talking-character'
 ): Promise<ClaudeStoryboardResult> {
   const claudeApiKey = useSettingsStore.getState().claudeApiKey;
   if (!claudeApiKey) {
@@ -537,8 +786,38 @@ export async function generateStoryboardFromWizard(
     };
   }
 
-  const systemPrompt = buildWizardSystemPrompt(input);
-  const userMessage = buildWizardUserMessage(input, language);
+  const systemPrompt = buildWizardSystemPrompt(input, projectType);
+  const userMessage = buildWizardUserMessage(input, language, projectType);
+
+  // Collect uploaded images for multimodal request
+  const wizardImages = collectWizardImages(input);
+
+  // Build content blocks: text + images
+  const contentBlocks: Array<Record<string, unknown>> = [];
+
+  // Add text prompt first
+  contentBlocks.push({ type: 'text', text: userMessage });
+
+  // Add images as vision content blocks (Claude multimodal API)
+  for (const img of wizardImages) {
+    try {
+      const { data: base64Data, mediaType } = extractBase64Data(img.dataUrl);
+      if (base64Data) {
+        // Add label before image so Claude knows what it's looking at
+        contentBlocks.push({ type: 'text', text: `[Attached: ${img.label}]` });
+        contentBlocks.push({
+          type: 'image',
+          source: {
+            type: 'base64',
+            media_type: mediaType,
+            data: base64Data,
+          },
+        });
+      }
+    } catch {
+      console.warn(`Failed to process image: ${img.label}`);
+    }
+  }
 
   try {
     const res = await fetch('/api/claude/v1/messages', {
@@ -551,7 +830,7 @@ export async function generateStoryboardFromWizard(
         model: 'claude-sonnet-4-20250514',
         max_tokens: 4096,
         system: systemPrompt,
-        messages: [{ role: 'user', content: userMessage }],
+        messages: [{ role: 'user', content: contentBlocks.length > 1 ? contentBlocks : userMessage }],
       }),
     });
 
@@ -578,6 +857,183 @@ export async function generateStoryboardFromWizard(
     }
 
     return { success: true, data: jsonString };
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error';
+    return { success: false, error: message };
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   Bot Prompt → Image Prompt conversion
+   User describes what they want in natural language, Claude converts
+   it to a professional AI image generation prompt.
+   ══════════════════════════════════════════════════════════════════════ */
+
+const BOT_PROMPT_SYSTEM = `You are an expert AI image prompt engineer. The user will describe what they want for a video frame in natural language (possibly in Hebrew). Your job is to convert their description into a professional, detailed image generation prompt in ENGLISH.
+
+RULES:
+- Output ONLY the image prompt text — no explanations, no quotes, no markdown
+- Write in English regardless of input language
+- Include: scene composition, lighting, colors, textures, camera angle, mood
+- Describe a STATIC moment (photograph) — no motion or action verbs
+- Be specific about visual details: surfaces, materials, light direction, color palette
+- If the user mentions a character, describe their pose, expression, and position in the scene
+- Keep the prompt between 50-150 words — detailed but focused
+- Match the style/mood context provided
+- If project context is provided, use it to maintain consistency with the overall video concept
+- If reference images are attached, use them as visual inspiration for style, colors, and composition
+- Consider the shot's position in the sequence (shot index / total) for narrative progression`;
+
+export interface BotPromptContext {
+  shotTitle?: string;
+  character?: { appearance: string; outfit: string };
+  environment?: { setting: string; lighting: string; atmosphere: string };
+  mood?: string;
+  cameraAngle?: string;
+  visualStyle?: string;
+  // Enriched context
+  shotIndex?: number;
+  totalShots?: number;
+  projectType?: string;
+  projectDescription?: string;
+  wizardSummary?: string;
+  referenceImages?: { dataUrl: string; label: string }[];
+}
+
+export interface BotPromptResult {
+  success: boolean;
+  prompt?: string;
+  error?: string;
+}
+
+/**
+ * Build a compact summary of wizard metadata for bot prompt context.
+ */
+export function buildWizardSummary(metadata?: WizardMetadata): string {
+  if (!metadata) return '';
+  const parts: string[] = [];
+  const d = metadata.data;
+
+  if (d.character && typeof d.character === 'object') {
+    const c = d.character as Record<string, unknown>;
+    if (c.type) parts.push(`Character: ${c.type} ${c.gender || ''} ${c.ageRange || ''}`);
+  }
+  if (d.eventPromo && typeof d.eventPromo === 'object') {
+    const ep = d.eventPromo as Record<string, unknown>;
+    if (ep.brandName) parts.push(`Brand: ${ep.brandName}`);
+    if (ep.cta) parts.push(`CTA: ${ep.cta}`);
+    if (ep.targetAudience) parts.push(`Audience: ${ep.targetAudience}`);
+  }
+  if (d.invitation && typeof d.invitation === 'object') {
+    const inv = d.invitation as Record<string, unknown>;
+    if (inv.eventType) parts.push(`Event: ${inv.eventType}`);
+    if (inv.eventName) parts.push(`Name: ${inv.eventName}`);
+    if (inv.date) parts.push(`Date: ${inv.date}`);
+    if (inv.location) parts.push(`Location: ${inv.location}`);
+  }
+  if (d.musicVideo && typeof d.musicVideo === 'object') {
+    const mv = d.musicVideo as Record<string, unknown>;
+    if (mv.musicFileName) parts.push(`Song: ${mv.musicFileName}`);
+    if (mv.bpm) parts.push(`BPM: ${mv.bpm}`);
+    if (mv.visualConcept) parts.push(`Concept: ${String(mv.visualConcept).slice(0, 100)}`);
+  }
+  if (d.recapVideo && typeof d.recapVideo === 'object') {
+    const rv = d.recapVideo as Record<string, unknown>;
+    if (rv.eventName) parts.push(`Event: ${rv.eventName}`);
+    if (rv.musicMood) parts.push(`Music mood: ${rv.musicMood}`);
+  }
+  if (d.brandReveal && typeof d.brandReveal === 'object') {
+    const br = d.brandReveal as Record<string, unknown>;
+    if (br.brandName) parts.push(`Brand: ${br.brandName}`);
+    if (br.tagline) parts.push(`Tagline: ${br.tagline}`);
+    if (br.industry) parts.push(`Industry: ${br.industry}`);
+    if (br.revealStyle) parts.push(`Reveal: ${br.revealStyle}`);
+  }
+  if (d.story && typeof d.story === 'object') {
+    const s = d.story as Record<string, unknown>;
+    if (s.idea && typeof s.idea === 'string' && s.idea.trim()) {
+      parts.push(`Story: ${s.idea.slice(0, 150)}`);
+    }
+  }
+
+  return parts.join('\n');
+}
+
+export async function convertBotPromptToImagePrompt(
+  userInstruction: string,
+  context: BotPromptContext
+): Promise<BotPromptResult> {
+  const claudeApiKey = useSettingsStore.getState().claudeApiKey;
+
+  const contextParts: string[] = [];
+  if (context.shotTitle) contextParts.push(`Shot: ${context.shotTitle}`);
+  if (context.shotIndex != null && context.totalShots) {
+    contextParts.push(`Position: Shot ${context.shotIndex + 1} of ${context.totalShots}`);
+  }
+  if (context.projectType) contextParts.push(`Video type: ${context.projectType}`);
+  if (context.character?.appearance) contextParts.push(`Character: ${context.character.appearance}, ${context.character.outfit}`);
+  if (context.environment?.setting) contextParts.push(`Environment: ${context.environment.setting}`);
+  if (context.environment?.lighting) contextParts.push(`Lighting: ${context.environment.lighting}`);
+  if (context.environment?.atmosphere) contextParts.push(`Atmosphere: ${context.environment.atmosphere}`);
+  if (context.mood) contextParts.push(`Mood: ${context.mood}`);
+  if (context.cameraAngle) contextParts.push(`Camera: ${context.cameraAngle}`);
+  if (context.visualStyle) contextParts.push(`Style: ${context.visualStyle}`);
+  if (context.projectDescription) contextParts.push(`Project: ${context.projectDescription.slice(0, 200)}`);
+  if (context.wizardSummary) contextParts.push(`--- Project details ---\n${context.wizardSummary}`);
+
+  const contextBlock = contextParts.length > 0
+    ? `\n\nCurrent shot context:\n${contextParts.join('\n')}`
+    : '';
+
+  // Build message content — text or multimodal with reference images
+  const hasRefImages = context.referenceImages && context.referenceImages.length > 0;
+  let messageContent: unknown;
+
+  if (hasRefImages) {
+    const imageBlocks = context.referenceImages!.slice(0, 3).map((img) => {
+      const match = img.dataUrl.match(/^data:([^;]+);base64,(.+)$/);
+      if (!match) return null;
+      return {
+        type: 'image',
+        source: { type: 'base64', media_type: match[1], data: match[2] },
+      };
+    }).filter(Boolean);
+
+    messageContent = [
+      ...imageBlocks,
+      { type: 'text', text: `${userInstruction}${contextBlock}\n\n(The images above are visual references — use them as style/composition inspiration)` },
+    ];
+  } else {
+    messageContent = `${userInstruction}${contextBlock}`;
+  }
+
+  try {
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (claudeApiKey) headers['x-claude-key'] = claudeApiKey;
+
+    const res = await fetch('/api/claude/v1/messages', {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 300,
+        system: BOT_PROMPT_SYSTEM,
+        messages: [{ role: 'user', content: messageContent }],
+      }),
+    });
+
+    if (!res.ok) {
+      const text = await res.text();
+      return { success: false, error: `Claude API error (${res.status}): ${text}` };
+    }
+
+    const data = await res.json();
+    const prompt = data.content?.[0]?.text?.trim();
+    if (!prompt) {
+      return { success: false, error: 'Empty response from Claude' };
+    }
+
+    return { success: true, prompt };
   } catch (err) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     return { success: false, error: message };
