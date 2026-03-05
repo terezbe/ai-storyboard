@@ -14,10 +14,12 @@ export async function generateVideoForShot(
   prompt: string,
   modelId: string,
   imageUrl?: string,
-  duration?: number
+  duration?: number,
+  dialogueText?: string,
+  voiceDescription?: string,
 ): Promise<VideoGenerationResult> {
   const provider = getProviderForModel(modelId);
-  return provider.generateVideo({ prompt, modelId, imageUrl, duration });
+  return provider.generateVideo({ prompt, modelId, imageUrl, duration, dialogueText, voiceDescription });
 }
 
 /**

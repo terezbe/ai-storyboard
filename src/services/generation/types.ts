@@ -9,6 +9,10 @@ export interface VideoGenerationRequest {
   modelId: string;
   imageUrl?: string;
   duration?: number;
+  /** Dialogue text for TTS-based talking head models (e.g. VEED Fabric text) */
+  dialogueText?: string;
+  /** Voice description for TTS (e.g. "warm female voice, mid-30s") */
+  voiceDescription?: string;
   params?: Record<string, unknown>;
 }
 

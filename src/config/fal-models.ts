@@ -85,6 +85,18 @@ export const FAL_VIDEO_MODELS: FalModelConfig[] = [
   },
 ];
 
+/** VEED Fabric — TTS + lip-sync talking head model (image + text → talking video) */
+export const FAL_DIALOGUE_MODEL: FalModelConfig = {
+  id: 'veed/fabric-1.0/text',
+  name: 'VEED Fabric (Talking Head + TTS)',
+  category: 'video',
+  cost: '~$0.15/sec @720p',
+  defaultParams: { resolution: '720p' },
+  isImg2Vid: true,
+  supportsDialogue: true,
+  supportsAudio: true,
+};
+
 /** Angle variation model — takes existing image and changes camera perspective */
 export const FAL_ANGLE_MODEL: FalModelConfig = {
   id: 'fal-ai/qwen-image-edit-2511-multiple-angles',
@@ -128,7 +140,7 @@ export const FAL_IMG2IMG_MODEL: FalModelConfig = {
   },
 };
 
-export const ALL_FAL_MODELS = [...FAL_IMAGE_MODELS, ...FAL_VIDEO_MODELS, FAL_ANGLE_MODEL, FAL_KONTEXT_MODEL, FAL_IMG2IMG_MODEL];
+export const ALL_FAL_MODELS = [...FAL_IMAGE_MODELS, ...FAL_VIDEO_MODELS, FAL_DIALOGUE_MODEL, FAL_ANGLE_MODEL, FAL_KONTEXT_MODEL, FAL_IMG2IMG_MODEL];
 
 export function getFalModel(id: string): FalModelConfig | undefined {
   return ALL_FAL_MODELS.find((m) => m.id === id);

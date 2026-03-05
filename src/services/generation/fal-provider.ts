@@ -77,41 +77,61 @@ export class FalProvider implements GenerationProvider {
   async generateVideo(request: VideoGenerationRequest): Promise<VideoGenerationResult> {
     const model = getFalModel(request.modelId);
     const isImg2Vid = request.modelId.includes('image-to-video');
+    const isVeedFabric = request.modelId.startsWith('veed/fabric');
 
-    const body: Record<string, unknown> = {
-      prompt: request.prompt,
-      ...model?.defaultParams,
-      ...request.params,
-    };
+    let body: Record<string, unknown>;
 
-    if (request.imageUrl) {
-      body.image_url = request.imageUrl;
-    }
-    if (request.duration) {
-      // Kling image-to-video only accepts '5' or '10' — snap to nearest valid value
-      // eslint-disable-next-line no-console
-      if (isImg2Vid) {
-        body.duration = request.duration <= 7 ? '5' : '10';
-      } else {
-        body.duration = String(request.duration);
+    if (isVeedFabric) {
+      // VEED Fabric text mode: image + text → talking video with TTS + lip-sync
+      // API: { image_url, text, resolution, voice_description? }
+      body = {
+        image_url: request.imageUrl,
+        text: request.dialogueText || request.prompt,
+        resolution: '720p',
+        ...request.params,
+      };
+      if (request.voiceDescription) {
+        body.voice_description = request.voiceDescription;
       }
-    }
+    } else {
+      // Standard video generation (Kling, Minimax, etc.)
+      body = {
+        prompt: request.prompt,
+        ...model?.defaultParams,
+        ...request.params,
+      };
 
-    // Enable audio generation for models that support it (Kling v2.6+, v3+)
-    // Only when the user has audio generation enabled in settings
-    const audioEnabled = useSettingsStore.getState().enableAudioGeneration;
-    if (audioEnabled && (request.modelId.includes('v2.6') || request.modelId.includes('v3'))) {
-      body.generate_audio = true;
+      if (request.imageUrl) {
+        body.image_url = request.imageUrl;
+      }
+      if (request.duration) {
+        // Kling image-to-video only accepts '5' or '10' — snap to nearest valid value
+        if (isImg2Vid) {
+          body.duration = request.duration <= 7 ? '5' : '10';
+        } else {
+          body.duration = String(request.duration);
+        }
+      }
+
+      // Enable audio generation for models that support it (Kling v2.6+, v3+)
+      // Only when the user has audio generation enabled in settings
+      const audioEnabled = useSettingsStore.getState().enableAudioGeneration;
+      if (audioEnabled && (request.modelId.includes('v2.6') || request.modelId.includes('v3'))) {
+        body.generate_audio = true;
+      }
     }
 
     // Debug: log the request being sent to FAL
     console.log('[FAL Video Request]', {
       model: request.modelId,
+      isVeedFabric,
       hasImageUrl: !!body.image_url,
-      imageUrl: body.image_url,
+      imageUrl: typeof body.image_url === 'string' ? (body.image_url as string).substring(0, 60) + '...' : undefined,
       duration: body.duration,
       generateAudio: !!body.generate_audio,
-      prompt: (body.prompt as string)?.substring(0, 80) + '...',
+      dialogueText: isVeedFabric ? (body.text as string)?.substring(0, 60) + '...' : undefined,
+      voiceDescription: body.voice_description,
+      prompt: !isVeedFabric ? (body.prompt as string)?.substring(0, 80) + '...' : undefined,
     });
 
     const res = await fetch(`/api/fal/${request.modelId}`, {
@@ -129,7 +149,8 @@ export class FalProvider implements GenerationProvider {
 
     // Check if this is an async/queued response
     if (data.request_id && !extractVideoUrl(data)) {
-      const timeout = isImg2Vid ? POLL_TIMEOUT_KLING : POLL_TIMEOUT_DEFAULT;
+      // VEED Fabric and Kling both need longer timeouts for video generation
+      const timeout = (isImg2Vid || isVeedFabric) ? POLL_TIMEOUT_KLING : POLL_TIMEOUT_DEFAULT;
       return this.pollForVideo(data.request_id, request.modelId, timeout);
     }
 

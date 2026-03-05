@@ -243,8 +243,8 @@
     "autoModelImage": "Kling img2vid (שומר פריים)",
     "autoModelText": "טקסט לוידאו",
     "done": "הושלם",
-    "audioOn": "עם אודיו",
-    "audioOff": "בלי אודיו (חוסך קרדיטים)"
+    "audioOn": "עם דיבור (TTS + ליפ-סינק)",
+    "audioOff": "בלי דיבור (חוסך קרדיטים)"
   },
   "timeline": {
     "musicTrack": "רצועת מוזיקה"

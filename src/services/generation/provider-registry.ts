@@ -4,8 +4,8 @@ import { FalProvider } from './fal-provider';
 const providers: GenerationProvider[] = [new FalProvider()];
 
 export function getProviderForModel(modelId: string): GenerationProvider {
-  // All fal-ai models go to FalProvider
-  if (modelId.startsWith('fal-ai/')) {
+  // All fal-ai and veed models go to FalProvider (same FAL.ai platform)
+  if (modelId.startsWith('fal-ai/') || modelId.startsWith('veed/')) {
     return providers.find((p) => p.id === 'fal')!;
   }
   throw new Error(`No provider found for model: ${modelId}`);

@@ -243,8 +243,8 @@
     "autoModelImage": "Kling img2vid (preserves frame)",
     "autoModelText": "Text-to-video",
     "done": "Done",
-    "audioOn": "With Audio",
-    "audioOff": "No Audio (saves credits)"
+    "audioOn": "With Speech (TTS + Lip-sync)",
+    "audioOff": "No Speech (saves credits)"
   },
   "timeline": {
     "musicTrack": "Music Track"

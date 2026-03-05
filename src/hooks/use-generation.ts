@@ -15,8 +15,8 @@ import type { Shot } from '../types/project';
 
 /**
  * Smart model selection: picks the right video model based on shot properties.
- * - Dialogue shots with audio enabled → Kling v2.6 Pro (img2vid with built-in audio generation)
- * - Dialogue shots with audio disabled → Kling v2.1 (cheaper, no audio)
+ * - Dialogue shots with audio + image → VEED Fabric (real TTS + lip-sync)
+ * - Dialogue shots with audio disabled → Kling v2.1 (motion only, no speech)
  * - Image shots without dialogue → Kling v2.1 img2vid (preserves first frame)
  * - Otherwise → user's preferred model
  */
@@ -24,18 +24,27 @@ function pickVideoModel(shot: Shot, preferredVideoModel: string, enableAudio: bo
   const hasDialogue = !!(shot.dialogue?.text?.trim());
   const hasImage = !!shot.imageUrl;
 
-  if (hasDialogue && enableAudio) {
-    // Dialogue shots with audio → use Kling v2.6 Pro (img2vid with generate_audio=true)
-    return 'fal-ai/kling-video/v2.6/pro/image-to-video';
+  if (hasDialogue && enableAudio && hasImage) {
+    // Dialogue shots with audio + image → VEED Fabric (TTS + lip-sync talking head)
+    return 'veed/fabric-1.0/text';
   }
 
   if (hasImage) {
-    // Has image (with or without dialogue but audio off) → use Kling img2vid (preserves first frame)
+    // Has image (no dialogue, or audio off) → use Kling img2vid (preserves first frame)
     return 'fal-ai/kling-video/v2.1/master/image-to-video';
   }
 
   // No image → use user's preferred model
   return preferredVideoModel;
+}
+
+/** Build a natural voice description from the shot's voiceStyle for VEED Fabric TTS */
+function buildVoiceDescription(voiceStyle?: string): string | undefined {
+  if (!voiceStyle?.trim()) return undefined;
+  const style = voiceStyle.trim();
+  // Convert single-word style like "warm" → "A warm voice"
+  // Multi-word style like "warm and confident" → "A warm and confident voice"
+  return `A ${style} voice`;
 }
 
 export function useGeneration() {
@@ -116,11 +125,15 @@ export function useGeneration() {
       const audioEnabled = useSettingsStore.getState().enableAudioGeneration;
       let videoModel: string;
       let imageUrl: string | undefined;
+      let dialogueText: string | undefined;
+      let voiceDescription: string | undefined;
 
-      if (hasDialogue && audioEnabled) {
-        // Dialogue with audio enabled → Kling v2.6 Pro img2vid with audio generation
-        videoModel = 'fal-ai/kling-video/v2.6/pro/image-to-video';
-        imageUrl = shot.imageUrl;
+      if (hasDialogue && audioEnabled && (shot.imageUrl || firstFrameOverride)) {
+        // Dialogue with audio enabled + image → VEED Fabric (real TTS + lip-sync)
+        videoModel = 'veed/fabric-1.0/text';
+        imageUrl = firstFrameOverride || shot.imageUrl;
+        dialogueText = shot.dialogue.text;
+        voiceDescription = buildVoiceDescription(shot.dialogue.voiceStyle);
       } else if (firstFrameOverride) {
         // Frame continuity: use the provided frame as first frame → Kling img2vid
         videoModel = 'fal-ai/kling-video/v2.1/master/image-to-video';
@@ -136,7 +149,10 @@ export function useGeneration() {
 
       setVideoStatus(shot.id, 'generating');
       try {
-        const result = await generateVideoForShot(prompt, videoModel, imageUrl, shot.duration);
+        const result = await generateVideoForShot(
+          prompt, videoModel, imageUrl, shot.duration,
+          dialogueText, voiceDescription,
+        );
         updateShot(shot.id, { videoUrl: result.videoUrl });
         setVideoStatus(shot.id, 'completed');
         saveProject();
@@ -176,7 +192,12 @@ export function useGeneration() {
 
       const videoModel = pickVideoModel(shot, preferredVideoModel, useSettingsStore.getState().enableAudioGeneration);
       const isTextOnly = videoModel.includes('minimax');
+      const isVeedFabric = videoModel.startsWith('veed/fabric');
       const imageUrl = isTextOnly ? undefined : shot.imageUrl;
+
+      // For VEED Fabric, pass dialogue text and voice description separately
+      const dialogueText = isVeedFabric ? shot.dialogue?.text : undefined;
+      const voiceDescription = isVeedFabric ? buildVoiceDescription(shot.dialogue?.voiceStyle) : undefined;
 
       setVideoStatus(shot.id, 'generating');
       try {
@@ -184,7 +205,9 @@ export function useGeneration() {
           prompt,
           videoModel,
           imageUrl,
-          shot.duration
+          shot.duration,
+          dialogueText,
+          voiceDescription,
         );
         updateShot(shot.id, { videoUrl: result.videoUrl });
         setVideoStatus(shot.id, 'completed');
