@@ -16,37 +16,62 @@ Pass 2: xfade-join slides into chunks of 14 with amorphous transitions
 Pass 3: xfade-join the chunks; add soft bloom glow + fine film grain.
 
 Usage:
-    python3 build.py <workspace_dir> [total_seconds]   (default 600)
+    python3 build.py <workspace_dir> [total_seconds] [--crf N] [--no-grain]
 
 Output: <workspace_dir>/slideshow_9x16.mp4  (1080x1920, 30 fps, H.264)
+
+Intermediates are cached under <workspace_dir>/clips and /chunks, so a
+re-run only redoes what is missing. Delete those folders to start over.
 """
-import os, subprocess, sys, glob
+import os, subprocess, sys, glob, shutil
+from concurrent.futures import ThreadPoolExecutor
 
 if len(sys.argv) < 2:
     sys.exit(__doc__)
+
+FFMPEG = shutil.which("ffmpeg")
+FFPROBE = shutil.which("ffprobe")
+if not FFMPEG or not FFPROBE:
+    sys.exit("ffmpeg/ffprobe not found on PATH. Install ffmpeg first "
+             "(Windows: winget install Gyan.FFmpeg — then reopen the terminal).")
+
 WS = os.path.abspath(sys.argv[1])
-PREP = f"{WS}/prep"
-CLIPS, CHUNKS = f"{WS}/clips", f"{WS}/chunks"
+PREP = os.path.join(WS, "prep")
+CLIPS, CHUNKS = os.path.join(WS, "clips"), os.path.join(WS, "chunks")
 os.makedirs(CLIPS, exist_ok=True); os.makedirs(CHUNKS, exist_ok=True)
+
+GRAIN, CRF, TOTAL = True, 21, 600.0
+argv, i = sys.argv[2:], 0
+while i < len(argv):
+    a = argv[i]
+    if a == "--no-grain":
+        GRAIN = False
+    elif a == "--crf":
+        i += 1                       # consume the value so it is never
+        CRF = int(argv[i])           # mistaken for the duration
+    else:
+        TOTAL = float(a)
+    i += 1
 
 FPS = 30
 FADE = 2.6            # transition length, slow + dreamy
 CHUNK = 14
-TOTAL = float(sys.argv[2]) if len(sys.argv) > 2 else 600.0
 
 # amorphous transition cycle — heavy on blur-smear and pixel-morph
 TRANS = ["hblur", "dissolve", "distance", "smoothup", "zoomin",
          "dissolve", "hblur", "radial", "distance", "circleopen",
          "smoothdown", "fadegrays"]
 
-slides = sorted(glob.glob(f"{PREP}/*.jpg"))
+slides = sorted(glob.glob(os.path.join(PREP, "*.jpg")))
 N = len(slides)
 if N < 2:
-    sys.exit("not enough slides")
+    sys.exit(f"not enough slides in {PREP} — run prep.py first")
 
 feature = set()
-if os.path.exists(f"{WS}/feature.txt"):
-    feature = {int(l) for l in open(f"{WS}/feature.txt") if l.strip()}
+feature_path = os.path.join(WS, "feature.txt")
+if os.path.exists(feature_path):
+    with open(feature_path) as f:
+        feature = {int(l) for l in f if l.strip()}
 
 # per-slide durations: featured slides get 2.4x. Solve base D so that
 # sum(D_i) - (N-1)*FADE == TOTAL
@@ -55,11 +80,13 @@ D = (TOTAL + (N - 1) * FADE) / sum(weights)
 frames = [int(round(w * D * FPS)) for w in weights]
 durs = [f / FPS for f in frames]          # exact, matches encoded frames
 
-def run(cmd):
-    r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+def run(args):
+    """Run a command given as a list — no shell, so paths with spaces
+    and filter strings with quotes survive on every platform."""
+    r = subprocess.run(args, capture_output=True, text=True)
     if r.returncode != 0:
-        print(r.stderr[-1200:], file=sys.stderr)
-        raise SystemExit(f"FAILED: {cmd[:160]}")
+        print(r.stderr[-1500:], file=sys.stderr)
+        raise SystemExit(f"FAILED: {' '.join(args[:6])} ...")
 
 def motion_recipe(i, F):
     """Ken Burns base + rotating trail/smear treatment."""
@@ -88,20 +115,25 @@ def motion_recipe(i, F):
     return f"{zp},{fx}"
 
 def render_clip(i):
-    out = f"{CLIPS}/{i:03d}.mp4"
+    out = os.path.join(CLIPS, f"{i:03d}.mp4")
     if os.path.exists(out):
         return
     F = frames[i]
     vf = (f"{motion_recipe(i, F)},"
           f"eq=saturation=1.07:contrast=1.03,vignette=a=PI/5.5,format=yuv420p")
+    args = [FFMPEG, "-y", "-loglevel", "error", "-hide_banner"]
     # feature slides animate via crop over t -> need a looped video input;
     # zoompan slides duplicate the single frame themselves
-    inflags = f"-loop 1 -framerate {FPS} -t {F / FPS:.3f}" if i in feature else ""
-    run(f"ffmpeg -y -loglevel error {inflags} -i '{slides[i]}' -vf \"{vf}\" "
-        f"-frames:v {F} -c:v libx264 -preset veryfast -crf 16 '{out}'")
+    if i in feature:
+        args += ["-loop", "1", "-framerate", str(FPS), "-t", f"{F / FPS:.3f}"]
+    args += ["-i", slides[i], "-vf", vf, "-frames:v", str(F),
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "16", out]
+    run(args)
 
 def xfade_join(inputs, durations, offset_base, out, crf, preset, post=""):
-    ins = " ".join(f"-i '{p}'" for p in inputs)
+    args = [FFMPEG, "-y", "-loglevel", "error", "-hide_banner"]
+    for p in inputs:
+        args += ["-i", p]
     fc, prev, total = [], "[0:v]", durations[0]
     for k in range(1, len(inputs)):
         t = TRANS[(offset_base + k - 1) % len(TRANS)]
@@ -110,24 +142,30 @@ def xfade_join(inputs, durations, offset_base, out, crf, preset, post=""):
         fc.append(f"{prev}[{k}:v]xfade=transition={t}:duration={FADE}:offset={off}{lbl}")
         prev = lbl
         total = off + durations[k]
-    fc.append(f"[vj]{post}[vout]" if post else "[vj]null[vout]")
-    run(f"ffmpeg -y -loglevel error {ins} -filter_complex \"{';'.join(fc)}\" "
-        f"-map '[vout]' -c:v libx264 -preset {preset} -crf {crf} "
-        f"-movflags +faststart -r {FPS} '{out}'")
+    # with a single input no xfade ran, so [vj] never exists — chain the
+    # post-processing straight onto the input instead
+    fc.append(f"{prev}{post}[vout]" if post else f"{prev}null[vout]")
+    args += ["-filter_complex", ";".join(fc), "-map", "[vout]",
+             "-c:v", "libx264", "-preset", preset, "-crf", str(crf),
+             "-movflags", "+faststart", "-r", str(FPS), out]
+    run(args)
 
 def probe_dur(p):
-    r = subprocess.run(f"ffprobe -v error -show_entries format=duration -of csv=p=0 '{p}'",
-                       shell=True, capture_output=True, text=True)
+    r = subprocess.run([FFPROBE, "-v", "error", "-show_entries",
+                        "format=duration", "-of", "csv=p=0", p],
+                       capture_output=True, text=True)
     return float(r.stdout.strip())
 
-if __name__ == "__main__":
-    import multiprocessing as mp
-    print(f"{N} slides, base {D:.2f}s, fade {FADE}s, target {TOTAL:.0f}s, "
+def main():
+    workers = max(2, (os.cpu_count() or 4) - 1)
+    print(f"{N} slides, base {D:.2f}s each, fade {FADE}s, target {TOTAL:.0f}s, "
           f"feature at {sorted(feature)}")
+    print(f"pass 1/3 — rendering {N} clips ({workers} at a time)...")
 
-    with mp.Pool(max(2, os.cpu_count() - 1)) as pool:
-        pool.map(render_clip, range(N))
-    print("pass 1 done (clips)")
+    # threads, not processes: every worker just waits on an ffmpeg
+    # subprocess, and this stays portable across Windows/macOS/Linux
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        list(pool.map(render_clip, range(N)))
 
     groups = [list(range(i, min(i + CHUNK, N))) for i in range(0, N, CHUNK)]
     if len(groups) > 1 and len(groups[-1]) == 1:      # avoid 1-clip chunk
@@ -135,20 +173,25 @@ if __name__ == "__main__":
 
     def render_chunk(gi):
         g = groups[gi]
-        out = f"{CHUNKS}/{gi:02d}.mp4"
+        out = os.path.join(CHUNKS, f"{gi:02d}.mp4")
         if not os.path.exists(out):
-            xfade_join([f"{CLIPS}/{i:03d}.mp4" for i in g],
+            xfade_join([os.path.join(CLIPS, f"{i:03d}.mp4") for i in g],
                        [durs[i] for i in g], g[0], out, 16, "veryfast")
 
-    with mp.Pool(3) as pool:
-        pool.map(render_chunk, range(len(groups)))
-    print("pass 2 done (chunks)")
+    print(f"pass 2/3 — joining into {len(groups)} chunks...")
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        list(pool.map(render_chunk, range(len(groups))))
 
-    chunk_files = [f"{CHUNKS}/{i:02d}.mp4" for i in range(len(groups))]
+    print("pass 3/3 — final join + bloom" + (" + grain" if GRAIN else "") + "...")
+    chunk_files = [os.path.join(CHUNKS, f"{i:02d}.mp4") for i in range(len(groups))]
     chunk_durs = [probe_dur(p) for p in chunk_files]
-    final = f"{WS}/slideshow_9x16.mp4"
+    final = os.path.join(WS, "slideshow_9x16.mp4")
     post = ("split[fm][fg];[fg]gblur=sigma=20[fb];"
-            "[fm][fb]blend=all_mode=screen:all_opacity=0.16,"
-            "noise=alls=4:allf=t+u,format=yuv420p")
-    xfade_join(chunk_files, chunk_durs, 3, final, 21, "medium", post=post)
-    print(f"final: {final} ({probe_dur(final):.1f}s)")
+            "[fm][fb]blend=all_mode=screen:all_opacity=0.16"
+            + (",noise=alls=4:allf=t+u" if GRAIN else "") + ",format=yuv420p")
+    xfade_join(chunk_files, chunk_durs, 3, final, CRF, "medium", post=post)
+    size_mb = os.path.getsize(final) / 1048576
+    print(f"\ndone: {final}  ({probe_dur(final):.1f}s, {size_mb:.0f} MB)")
+
+if __name__ == "__main__":
+    main()
