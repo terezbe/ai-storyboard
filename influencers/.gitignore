@@ -1,0 +1,10 @@
+# Python cache from the tools
+tools/__pycache__/
+# Scratch renders from the product builds (audit page images, sample builds)
+*/product/build/out/
+*/product/build/*.pdf
+*/product/build/*.png
+*/product/build/node_modules/
+# Generated media is delivered outside git (see HANDOFF.md)
+*/videos/
+*/final/
