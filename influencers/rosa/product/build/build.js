@@ -23,12 +23,12 @@ bodyHtml = T.smart(bodyHtml);
 // ---------- text hygiene gate ----------
 const textOnly = bodyHtml.replace(/<[^>]*>/g, ' ').replace(/&[a-z]+;/g, ' ');
 const forbidden = [
-  [/—/g, 'em dash U+2014'],
-  [/–/g, 'en dash U+2013'],
-  [/[←-⇿]/g, 'arrow'],
-  [/[✀-➿]/g, 'dingbat (tick/star)'],
-  [/[■-◿]/g, 'geometric/box glyph'],
-  [/[★☆☐-☒✓✔]/g, 'star/ballot/check glyph'],
+  [/\u2014/g, 'em dash U+2014'],
+  [/\u2013/g, 'en dash U+2013'],
+  [/[\u2190-\u21FF]/g, 'arrow'],
+  [/[\u2700-\u27BF]/g, 'dingbat (tick/star)'],
+  [/[\u25A0-\u25FF]/g, 'geometric/box glyph'],
+  [/[\u2605\u2606\u2610-\u2612\u2713\u2714]/g, 'star/ballot/check glyph'],
   [/\s-\s/g, 'spaced hyphen used as a dash (review)'],
 ];
 let hard = 0;
@@ -128,6 +128,7 @@ fs.writeFileSync(htmlPath, html);
   }
   const pdfPath = SAMPLE ? path.join(ROOT, 'sample.pdf') : path.join(OUT_DIR, 'The-30-Day-Morning-Reset.pdf');
   await page.pdf({ path: pdfPath, preferCSSPageSize: true, printBackground: true });
+  if (!SAMPLE) fs.writeFileSync(path.join(ROOT, 'book-final.html'), await page.content());
   fs.writeFileSync(path.join(ROOT, SAMPLE ? 'sample-map.json' : 'page-map.json'), JSON.stringify(pages.map((p, i) => ({ page: i + 1, id: p.id, title: p.title })), null, 1));
   await browser.close();
   console.log(`${bad ? 'WITH OVERFLOW ' : ''}PDF written: ${pdfPath} (${pages.length} pages)`);

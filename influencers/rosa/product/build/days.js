@@ -146,7 +146,7 @@ Balance is like the dialect my mother spoke. I still have it because I use it ev
 { n: 13, week: W2, rule: 'The Stool Rule',
   line: 'Stand up slowly, and let your legs do the work.',
   story: `
-Concetta uses the wall to get up from her chair. I see her do it. I don't say anything. (I say it to everybody else.)
+Concetta uses the wall to get up from her chair. I see her do it. I don't say anything. (I&nbsp;say it to everybody else.)
 
 When I get up from my stool by the door, I put my feet flat, lean forward until my nose is over my toes, and stand up with my legs. Then I sit down again slowly, as if there's an egg on the stool and I don't want to break it. Five times, while the alley watches. Concetta pretends not to look.
 

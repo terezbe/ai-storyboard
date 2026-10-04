@@ -79,7 +79,7 @@ People see Rosa in the sea at 94 and say "lucky genes, lucky sea." The letter tu
 | 46 | Divider with a line of copy and the bonus index |
 | 47 | Bonus 1: The 7-Morning Quickstart |
 | 48 | Bonus 2: The Fridge Sheet (all 30 rules on one printable page) |
-| 49 to 51 | Bonus 3: Rosa's Kitchen Cards (6 dishes, 2 per page) |
+| 49 to 51 | Bonus 3: Rosa's Kitchen Cards (6 dishes, 2 per page, plus a small "Rosa's breakfast" card on the first page) |
 | 52 | Bonus 4: The 112 Steps Card (printable walking card and 4-week log) |
 | 53 | Bonus 5: Five Things I Won't Have in My House (printable kitchen poster) |
 | 54 | The honest small print |
@@ -139,7 +139,7 @@ People see Rosa in the sea at 94 and say "lucky genes, lucky sea." The letter tu
 2. The named rule (large display serif), then the rule in one italic line.
 3. Rosa's story or teaching in her voice. It runs 130 to 190 words and uses one specific detail from her bible.
 4. The task box: a drawn tick-box, "Today", the tiny task in one or two sentences, then "Too much today?" with a smaller version.
-5. "What I noticed:" with three ruled lines.
+5. "What I noticed:" with at least three ruled lines, extended to fill the page.
 6. A running footer, "THE 30-DAY MORNING RESET · NONNA ROSA", and the page number.
 
 ## Bonus stack (mined from the bible's details bank)
@@ -148,7 +148,7 @@ People see Rosa in the sea at 94 and say "lucky genes, lucky sea." The letter tu
 |---|---|---|
 | The 7-Morning Quickstart | the buyer who won't do 30 | condenses: 7 rules stacked one per morning, with a tracker |
 | The Fridge Sheet | the tick-box on every day | prints: all 30 rules and boxes on one page |
-| Rosa's Kitchen Cards | "What she eats": bread, oil, tomatoes, lentils, beans, greens, wild fennel, fish, the moka, Concetta's caponata | adds: 6 home recipes (The Moka, Pane Cunzato, Monday Lentils, Beans and Greens, Salvatore's Fish, Caponata Not Concetta's) |
+| Rosa's Kitchen Cards | "What she eats": bread, oil, tomatoes, lentils, beans, greens, wild fennel, fish, an orange or a fig, the moka, Concetta's caponata | adds: 6 home recipes (The Moka, Pane Cunzato, Monday Lentils, Beans and Greens, Salvatore's Fish, Caponata Not Concetta's) and Rosa's own breakfast (no recipe: moka, bread with oil, an orange or a fig, at the table) |
 | The 112 Steps Card | the 112 steps | adds: "find your 112", Rosa's walking rules and a 4-week log for after Day 30 |
 | Five Things I Won't Have in My House | "Things she hates" | prints: annotated kitchen poster |
 
@@ -163,6 +163,8 @@ The honest small print is the final page. It is not counted as a bonus.
   - navy from her trousers and Sunday dress `#1E2C47` (text)
   - a touch of lemon yellow from the bowl on her table `#F2CC55` (tint `#FBF0CC`)
 - **Type:** Fraunces for display (soft, slightly wonky old-style serif: mischievous, warm) and Lora for body (warm, readable book serif). Both are local TTFs, so nothing depends on system fonts.
+- **Numerals:** small navigation numbers (day numbers, page numbers, the contents, week maps, the Fridge Sheet) are set in Lora. Fraunces' flat-topped 3 reads like a 5 at small sizes.
+- **Write-in space:** every day page has at least three "What I noticed" lines. The build then extends the ruled lines into whatever space the page has left, so every day page ends on the same baseline.
 - **Page furniture:**
   - a thin navy frame inset on every interior page
   - a running footer, "THE 30-DAY MORNING RESET · NONNA ROSA", with the page number on every page except the cover
@@ -234,3 +236,18 @@ The `[ ]` above is only a placeholder in this spec. In the PDF it is a drawn bor
 - **Text hygiene:**
   - No em or en dashes, no unicode arrows, ticks or boxes.
   - The build script greps the source and refuses to build if any appear.
+
+## Production and rebuild
+
+- **Content:**
+  - `build/days.js`: the 30 days
+  - `build/front.js`: the front matter, week openers and midpoint letter
+  - `build/back.js`: the ending, bonuses and small print
+- **Templates and style:**
+  - `build/templates.js`
+  - `build/style.css`
+  - `build/book.js`: the page order and contents groups
+- **Build commands**, run from `build/` with `PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers`:
+  1. `node build.js` renders the PDF to `../The-30-Day-Morning-Reset.pdf` and reports overflow and fill for every page. It refuses to build if an em dash, en dash, arrow, tick or box glyph is in the text.
+  2. `python3 verify-toc.py` (run from `product/`) checks every contents entry and every printed page reference against the real PDF text.
+  3. `node images.js` renders `cover.png` and the two store images from the final book HTML.

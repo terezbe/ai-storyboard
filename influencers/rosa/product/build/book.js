@@ -62,7 +62,7 @@ function tocGroups(ctx) {
       { t: 'Make it fit your life', p: p('fit') },
     ] },
     { col: 1, head: 'Week One &middot; Light and water', page: p('week1'), rows: dayRows(1, 7) },
-    { col: 1, head: 'Week Two &middot; Gentle movement', page: p('week2'), rows: [...dayRows(8, 14), { t: 'Halfway: a letter for Day 15', p: p('midpoint') }] },
+    { col: 1, head: 'Week Two &middot; Gentle movement', page: p('week2'), rows: [...dayRows(8, 14), { t: 'A letter for Day 15', p: p('midpoint') }] },
     { col: 2, head: 'Week Three &middot; Eating like Nonna', page: p('week3'), rows: dayRows(15, 21) },
     { col: 2, head: 'Week Four &middot; People and rest', page: p('week4'), rows: dayRows(22, 28) },
     { col: 2, head: 'The last two mornings', rows: dayRows(29, 30) },
