@@ -37,6 +37,28 @@
 4. Show the user the estimate in Hebrew **before** spending. If credits don't cover 30 videos, start with **one character, all 10 videos**. Ask which character; default to Rosa.
 5. **Test before batch.** Run a single test video first (Rosa R2), show it to the user, and get a yes before running the batch.
 
+## Step 0.5: extra profile pictures for Rosa (the user asked)
+
+Make 3 alternative 1:1 Instagram profile pictures of Rosa:
+- **Model:** an image model with `influencers/rosa/sheet.jpg` as the identity reference.
+- **Comparison:** her current one is `influencers/rosa/profile-picture.jpg`.
+- **Delivery:** show all of them to the user and let them pick. Save the pick as `profile-picture.jpg` and keep the old one as `profile-picture-v1.jpg`.
+
+Use this prompt and swap in the scene line:
+
+```text
+Use the reference image as the identity reference: it is a character sheet of one woman (full body on the left, close-up on the right). Create ONE new photo of this exact same woman, keeping her face, bone structure, skin, wrinkles, hair and features identical to the close-up. She is 94, deeply sun-browned olive skin, short cropped silver-white hair, a small pale scar through the outer end of her left eyebrow, a single strand of red coral beads, wearing her oversized faded white linen shirt.
+
+Scene: a square Instagram profile picture. Head and shoulders, her face fills most of the frame, her trademark sly closed-lip smile and bright amused dark brown eyes looking into the lens. [SCENE]
+
+Style: authentic candid iPhone photo taken by her great-granddaughter, casual slightly imperfect framing, mild HDR, true-to-life colors, natural aged skin with visible pores and deep wrinkles, subtle sensor grain, no retouching, no beauty filter. One person only, fully clothed, no text, no logos, not a character sheet, a single photo.
+```
+
+Scenes:
+1. She sits at a tiny whitewashed Sicilian kitchen table by a small open window with the blue sea outside, low morning sun from the left, blue-and-white tiles softly blurred behind her.
+2. She sits on a low wooden stool by a weathered blue front door in a narrow ochre alley, pots of red geraniums beside her, warm bounced light, the alley softly blurred.
+3. She sits on pale limestone rocks just after a swim, wet slicked-back silver hair, a faded striped towel round her shoulders, the turquoise sea softly blurred behind her, soft early light.
+
 ## Step 1: the three voices
 
 For each character:
