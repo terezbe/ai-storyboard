@@ -26,7 +26,7 @@ Before the moka, a glass of water. A big one, amore. Not one of those little gla
 
 My mother did it, and her mother, and nobody ever told them why. They just knew that a body that has been all night without a drink is like the hill behind the church in August. It doesn't need a speech. It needs water.
 
-I keep my glass upside down on the little table by the bed, so the dust stays out. In the morning I turn it over, fill it at the kitchen tap and drink it slowly, looking out of the window I just opened. Then I light the gas under the moka. Not before.
+I keep my glass upside down on the little table by the bed, so the dust stays out. In the morning I turn it over, fill it at the kitchen sink and drink it slowly, looking out of the window I just opened. Then I light the gas under the moka. Not before.
 
 I'm not telling you water is magic. Giulia would make a face. I'm telling you it's the easiest win of the whole day, and a day likes to start with a win.`,
   task: `Before your coffee or tea, drink one big glass of water, full to the top. Tonight, put the glass out so it's waiting for you.`,
@@ -39,18 +39,18 @@ You want to know about the sea. Everybody does. Yes: every morning since I was n
 
 But I'm telling you this so you won't do it. The sea is my story, amore, not your homework. What you want isn't the sea. It's the moment: the first cool touch that says, awake now.
 
-So. The tap. Cool water on the face, three times. Then on the inside of the wrists. My little anchor gets wet every morning. I got it at seventeen, on a dare from a sailor's sister, and my mother didn't speak to me for a month. Worth it.`,
+So. The kitchen sink. Cool water on the face, three times. Then on the inside of the wrists. My little anchor gets wet every morning. I got it at seventeen, on a dare from a sailor's sister, and my mother didn't speak to me for a month. Worth it.`,
   task: `Splash cool tap water on your face three times, then let it run over the insides of your wrists for a few seconds. Cool, not icy.`,
   small: `Hold a cool, wet washcloth against your face for ten seconds.` },
 
 { n: 4, week: W1, rule: 'The Doorstep Rule',
   line: 'Outside in the first hour, even for five minutes.',
   story: `
-My stool lives by the front door. Low, wooden, with one leg that wobbles if you sit on it wrong. In the morning, before the town is properly awake, I sit there between my geraniums and my basil and watch the alley wake up. The baker's boy going down. The cats going up. The washing on the line, deciding whether to dry.
+My stool lives by the front door. Low, wooden, with one leg that wobbles if you sit on it wrong. In the morning, before the town is properly awake, I sit there between my geraniums and my basil and watch the alley wake up. The baker's boy going down. The cats going up. The laundry on the line, deciding whether to dry.
 
 Five minutes. I'm not doing anything, and that's the point. I'm outside, in the real light. Not the light from a screen, not the light through glass. Giulia read me something that says even a cloudy morning outside is much brighter than a lamp indoors. I said: I know, amore. I have eyes.
 
-You have a doorstep too. A balcony. A bus stop. The walk to the car, if you take it slowly and look up.`,
+You have a doorstep too, or a balcony. If you have neither, you have the walk to the car. Take it slowly and look up.`,
   task: `Get outside within an hour of waking, for at least five minutes: the doorstep, the balcony, or the slow way to the car.`,
   small: `Stand in your open front door for one minute and look at the sky.` },
 
@@ -61,7 +61,7 @@ Every morning, after my own glass, I water the pots by the door. Two of basil, t
 
 People think the plants need me. Ha. I need the plants. They're the reason I open the door at seven instead of sitting at the table looking at nothing. Something alive is waiting out there, and it's thirsty, and it doesn't care how I slept.
 
-So give something alive a drink this morning. A pot on the windowsill. The cheap herbs from the market. A cutting in a jar of water. It takes one minute, and it puts you at the window, in the light, before the day starts shouting at you.`,
+So give something alive a drink this morning: a pot on the windowsill, or the cheap herbs from the market standing in a jar of water. It takes one minute, and it puts you at the window, in the light, before the day starts shouting at you.`,
   task: `Water a plant this morning. No plant? Today, put a cheap pot of herbs, or a green cutting in a jar of water, on your brightest windowsill.`,
   small: `Put any green stem in a glass of water and stand it by the window you opened on Day 1.` },
 
@@ -126,7 +126,7 @@ So today you go yourself. Something small: bread, milk, a lemon, a newspaper. On
   story: `
 When the boats were late, the wives stood on the harbor wall and watched the water. Nobody slouched. You don't slouch when you're looking for your husband's boat. You stand tall, chin level, eyes far out. I stood like that for years, and now my back does it by itself.
 
-Giulia sits like a question mark. Over the telephone, over the computer, over her coffee. She's twenty and she walks like an old man mending nets.
+Giulia sits like a question mark. Over the telephone, over the computer, over her coffee. She's twenty and she's bent over like an old man mending nets.
 
 Here is my mother's trick. Stand with your back against a wall: heels, bottom, shoulders and the back of your head, all touching it. Not pushing. Just touching. Thirty seconds. That's what tall feels like. Then step away from the wall and try to keep it, like you're carrying a full glass across the room.`,
   task: `Three times today, stand with your back against a wall for thirty seconds: heels, bottom, shoulders and head gently touching.`,
@@ -159,10 +159,10 @@ Getting up from a chair is something you do every day of your life, so practice 
   story: `
 I ran my house like a boat. Everything has its place, everything gets done, and nobody waits for somebody else to do it. On a boat there's no machine for anything. You do it with your hands.
 
-So every morning I sweep. The kitchen, then my step, then a bit of the alley that isn't mine, because if I don't, who will? Ten minutes with the broom and my arms and my back have said good morning. Then I hang the washing on the line across the alley, arms up, clothespins in my mouth like my mother.
+So every morning I sweep. The kitchen, then my step, then a bit of the alley that isn't mine, because if I don't, who will? Ten minutes with the broom and my arms and my back have said good morning. Then I hang the laundry on the line across the alley, arms up, clothespins in my mouth like my mother.
 
-You have machines for everything. Good. Keep them. But pick one job today and give it to your body: sweep a floor, hang the laundry, carry the shopping in from the car with one bag in each hand, like a sensible person. Slowly. Properly. Then stand back and look at it, done.`,
-  task: `Do one household job by hand today, slowly and properly: sweep a floor, hang laundry, or carry the shopping in with one bag in each hand.`,
+You have machines for everything. Good. Keep them. But pick one job today and give it to your body. Sweep a floor, or carry the groceries in from the car with one bag in each hand, like a sensible person. Slowly. Properly. Then stand back and look at it, done.`,
+  task: `Do one household job by hand today, slowly and properly: sweep a floor, hang laundry, or carry the groceries in with one bag in each hand.`,
   small: `Five minutes tidying one table or counter, standing up.` },
 
 // ======================= WEEK THREE: EATING LIKE NONNA =======================
@@ -206,7 +206,7 @@ When I was a girl I sold lemons at the harbor, from a basket nearly as big as me
 
 There's always a bowl of lemons on my table, and almost nothing in my kitchen comes in a box with a picture on it. Not because a doctor told me. Because my mother cooked what the hill and the boats gave her, and so do I.
 
-I'm not going to tell you what to eat. That's between you and your doctor. I'm only sending you shopping. Buy one thing today that grew in the ground or on a tree, something you'll have to wash, or peel, or cut. A lemon. A bunch of greens. An orange that actually smells like an orange. Then put it where you can see it.`,
+I'm not going to tell you what to eat. That's between you and your doctor. I'm only sending you shopping. Buy one thing today that grew in the ground or on a tree, something you'll have to wash, or peel, or cut. A lemon, maybe, or an orange that actually smells like an orange. Then put it where you can see it.`,
   task: `Buy one fresh thing today that you'll have to wash, peel or cut, and put it out where you can see it.`,
   small: `Use something fresh you already have. Wash it, cut it, and eat it sitting down.` },
 
@@ -217,7 +217,7 @@ On Mondays I make lentils. One big pot: an onion, a carrot, a stick of celery, a
 
 Young people think cooking is a show. Thirty ingredients, a video, a mess, a photograph. No, amore. Cooking is one pot, a few things, and patience. My mother fed eight people on two rings of gas.
 
-Today you cook one thing from scratch. It can be the lentils on my card at the back of this book. It can be two eggs. It can be a tomato cut over bread, with oil and salt. If your hands made it, it counts.`,
+Today you cook one thing from scratch. It can be the lentils on my card at the back of this book, or it can be a tomato cut over bread, with oil and salt. If your hands made it, it counts.`,
   task: `Cook one simple thing from scratch today. The Monday Lentils card on page {{p:kitchen2}} is a good first pot.`,
   small: `Toast, a cut tomato, a little olive oil and salt. Put together by you, it counts.` },
 
@@ -262,7 +262,7 @@ Concetta lives two doors down. She's ninety-one, and she thinks she makes better
 
 But every afternoon she brings her chair out, and I bring my stool, and we talk. About the caponata, about the priest, about whose grandchildren are worse. If one morning her shutters don't open, I knock on her door. If mine don't, she knocks on mine. That's what a neighbor is, amore. Not exactly a friend. Something better: somebody who notices.
 
-Today, have one real conversation of five minutes with somebody you don't live with. A neighbor, someone at work, the man at the newsstand. Not about work. Ask them one thing and listen to the whole answer.`,
+Today, have one real conversation of five minutes with somebody you don't live with. A neighbor, or the man at the newsstand. Not about work. Ask them one thing and listen to the whole answer.`,
   task: `Have one real five-minute conversation today with someone you don't live with, about anything except work.`,
   small: `Ask one person one real question today, and listen to the whole answer.` },
 
@@ -271,7 +271,7 @@ Today, have one real conversation of five minutes with somebody you don't live w
   story: `
 After lunch the whole town lies down. The shops close, the dogs find some shade, and the alley goes so quiet you can hear the sea. Riposo. I take off my shoes, half close the shutters and lie on my bed for about forty minutes. Sometimes I sleep, sometimes I just listen to the town breathing. Then I get up, drink a glass of water, and the afternoon is new.
 
-Giulia says some offices now have a little room for resting, with an English name, as if somebody just invented it. My grandmother was doing it before there were offices.
+The old men at the bar sleep for two hours and call it riposo. That isn't riposo, that's hibernation. Forty minutes, then up.
 
 I know your boss doesn't believe in riposo. Fine. Your boss doesn't have to know. After lunch today, find a quiet place: your bed if you're home, the car with the radio off, a bench in the shade. Close your eyes. No screen. Forty minutes if your day allows it, ten if it doesn't. This isn't laziness, amore. It's the middle of the day taking a breath.`,
   task: `After lunch today, rest with no screen: lie down, or sit with your eyes closed. Forty minutes if your day allows it, ten if it doesn't.`,
@@ -295,7 +295,7 @@ Every Sunday at six, Carmela calls me from the north. Every Sunday for thirty ye
 
 Giulia sends me those all week. Little hearts, little faces. I call her back and I say: Giulietta, I don't want a picture of a heart. I want to hear you.
 
-So today, a voice. Call one person instead of sending a message: your mother, your brother, the friend you keep meaning to write to. Five minutes is enough. You'll be surprised how much a voice carries, and how much yours needed using. The telephone is for voices, amore. That's what it was invented for.`,
+So today, a voice. Call one person instead of sending a message: your mother, or the friend you keep meaning to write to. Five minutes is enough. You'll be surprised how much a voice carries, and how much yours needed using. The telephone is for voices, amore. That's what it was invented for.`,
   task: `Call one person today instead of messaging them. Five minutes is enough.`,
   small: `Send a voice message instead of a written one.` },
 
@@ -327,7 +327,7 @@ Pick your last boat tonight. A time when the screens go off and the lights go lo
   story: `
 Twenty-eight mornings, twenty-eight small things. Today we put them all on one table.
 
-My whole morning takes about an hour, and I've had eighty-five years to practice it. The window. The big glass. A stretch like the cat. Down the steps to the sea, when it's kind, with somebody on the rocks. Up again, counting. The moka I filled last night. Breakfast at the table, sitting down, with the radio. Then the broom. It isn't a routine, amore. It's just my morning. It feels like work about as much as combing my hair does.
+My whole morning takes about an hour, and I've been practicing it since I was nine. The window. The big glass. A stretch like the cat. Down the steps to the sea, when it's kind, with somebody on the rocks. Up again, counting. The moka I filled last night. Breakfast at the table, sitting down, with the radio. Then the broom. It isn't a routine, amore. It's just my morning. It feels like work about as much as combing my hair does.
 
 Today, do your whole morning. Choose four or five of the rules you liked best and do them one after another, in the order that makes sense in your house. Don't add anything new. Don't make it a show. Just see how it feels to have a morning that belongs to you from the first minute.`,
   task: `Do your whole morning: four or five of your favorite rules, one after another, in your own order. Write the order under "What I noticed."`,
@@ -338,7 +338,7 @@ Today, do your whole morning. Choose four or five of the rules you liked best an
   story: `
 There are three words I don't allow in my house. At my age.
 
-Last summer a woman on holiday watched me come up the ladder, and she said, "At my age, I could never do that." She was forty-five. I'm old enough to be her grandmother. I didn't tell her to swim, amore; the sea isn't for everybody. I told her to stop saying those three words, because every time you say them you make yourself a little older, for nothing.
+Last summer a woman on vacation watched me come up the ladder, and she said, "At my age, I could never do that." She was forty-five. I'm old enough to be her grandmother. I didn't tell her to swim, amore; the sea isn't for everybody. I told her to stop saying those three words, because every time you say them you make yourself a little older, for nothing.
 
 You came to this book feeling old before nine in the morning. Look at you now: thirty mornings. Your age was never the problem. The words were. So today, catch them. "At my age." "I'm too old for that." "It's too late for me." Every time you hear yourself say one, stop, and do one small piece of the thing instead. One minute of it. Then come and tell me who's old.`,
   task: `Today, catch every "at my age," "I'm too old for this" and "it's too late for me." Each time, stop and do one small piece of the thing instead, even for one minute.`,

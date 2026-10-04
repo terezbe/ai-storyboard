@@ -27,7 +27,7 @@ function fmt(s) {
 function smartQuotes(html) {
   let prev = ' ';
   return html.split(/(<[^>]+>)/).map(seg => {
-    if (seg.startsWith('<')) return seg;
+    if (seg.startsWith('<')) { if (/^<\/?(div|p|li|ol|ul|h\d|section|footer|br|header)\b/i.test(seg)) prev = ' '; return seg; }
     let out = '';
     for (let i = 0; i < seg.length; i++) {
       const ch = seg[i];

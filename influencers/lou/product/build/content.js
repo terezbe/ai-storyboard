@@ -5,10 +5,10 @@
 const groups = [
   { n: 1, name: "I'm nervous to ask", line: "You want to start something and your stomach says no." },
   { n: 2, name: 'They went quiet', line: 'The phone is quiet and your head is loud.' },
-  { n: 3, name: 'I want more than this', line: 'It is something. You want it to be something real.' },
+  { n: 3, name: 'I want more than this', line: "It's something. You want it to be something real." },
   { n: 4, name: 'I need to say no, or end it', line: 'You know the answer. You need the words.' },
   { n: 5, name: 'I messed up', line: 'You said it, sent it or missed it. Now you fix it.' },
-  { n: 6, name: 'They crossed a line', line: 'Something they did is not okay with you.' },
+  { n: 6, name: 'They crossed a line', line: "Something they did isn't okay with you." },
 ];
 
 const cards = [
@@ -37,7 +37,7 @@ const cards = [
     take: 'You can only buy so much bread before you have to say something.',
     note: "In 1955 I bought a loaf every morning for three weeks from a girl I was too scared to talk to. I ate so much bread my mother thought I was sick. Weeks of messages back and forth? Same bread, kid. It's nice, it's safe, and it's going nowhere. The next step is a voice, and then a face.",
     say: [
-      "Hi, it's [your name], from all the messages. Is this an okay time? ((Wait.))",
+      "Hi, it's [your name], from all the messages. Is this an okay time? ((Let them answer.))",
       "I figured after [three weeks] of typing, I'd like to actually talk to you. I've really liked getting to know you, and I'd love to meet in person. Are you free [Thursday] after work for a coffee? Somewhere easy, like [place].",
     ],
     text: "I've really liked talking to you. Could I call you tomorrow around seven? I'd love to know what you sound like.",
@@ -87,12 +87,12 @@ const cards = [
     title: "I can't tell if it's a date or just hanging out.",
     rule: 'The Say-the-Word Rule',
     take: "If it's a date, call it a date.",
-    note: "In my day, nobody had to wonder. You said the word \"date,\" you put on your one good shirt, and everybody knew where they stood. Now it's all \"hanging out,\" and half of you are sitting across a table not knowing if it counts. One word fixes it, and you're allowed to be the one who says it.",
+    note: "In my day, nobody had to wonder. You said the word \"date,\" you put on your one good shirt, and everybody knew where they stood. Now it's all \"hanging out,\" and half of you are sitting across a table not knowing if it counts. One word fixes it, and you can be the one who says it first.",
     say: [
       "Hey, before [Friday], can I ask you something so I'm not guessing? ((Wait.))",
       "I'd like it to be a date. A real one. Is that how you see it too? Either answer is okay. I'd just like us to be on the same page.",
     ],
-    text: "Looking forward to Friday. Can I call you tonight for two minutes? Quick question about it, nothing bad.",
+    text: "Looking forward to [Friday]. Can I call you tonight for two minutes? Quick question about it, nothing bad.",
     dont: { said: 'So is this, like, a date or whatever, haha?', why: "Don't ask with a laugh to hide behind. Ask it straight." },
     ifno: [
       "If they say yes, a date: wonderful. Now you both know, and you can stop reading tea leaves.",
@@ -144,7 +144,7 @@ const cards = [
     take: "If somebody only texts you after eleven, you're not a plan.",
     note: "I was in bed by ten most of my life. Bus drivers start early. So I'm no expert on eleven o'clock, but I know this much: if somebody only remembers you when the lights are off, you're the late show, not the plan. If that's what you both want, that's your business. If you want more, ask for a Saturday afternoon.",
     say: [
-      "Hi, it's [your name]. Can I be straight with you? ((Wait.))",
+      "Hey, it's [your name]. Can I be straight with you about something? ((Let them answer.))",
       "I like you, and I've noticed we only really talk late at night. I'd like more than that. I'd like to see you in the daytime, on an actual date. Are you free [Saturday] around [noon]?",
     ],
     text: "I'm not up for late-night texting anymore, but I'd love to see you in the daytime. Free [Saturday] around [noon]?",
@@ -161,13 +161,13 @@ const cards = [
     take: "When somebody turns the lights down slow, you're allowed to ask if the party's over.",
     note: "In my bus mirror I watched a lot of couples go quiet a little more each week. Same two people, a little farther apart on the seat. Usually one of them already knew, and the other one was waiting to be told. You don't have to wait to be told. You can ask.",
     say: [
-      "Hi, it's [your name]. I want to ask you something, and any answer is okay. ((Breathe.))",
+      "Hey, I'm glad you picked up. I want to ask you something, and any answer is okay. ((Breathe.))",
       "It feels like things have slowed down between us. Are you still interested in this? If you're not, I'd honestly rather know. I won't make it weird.",
     ],
     text: 'Free for a quick call tonight? Five minutes. I want to ask you something simple, and any answer is fine.',
     dont: { said: 'No worries if you\'re busy!! :)', why: "The fourth time you send it, you're turning the dimmer down too." },
     ifno: [
-      "If they say they're not interested: \"Thanks for telling me. I mean it.\" That stings, and it's still a gift ({page:fail}).",
+      "If they say they're not interested: \"Okay. I appreciate you telling me.\" That stings, and it's still a gift ({page:fail}).",
       "If they say \"I'm just busy,\" ask for a day and a time. Busy people who want to see you find one. If they don't answer at all, the dimmer just clicked off. Let it be off, and don't rattle the switch.",
     ],
   },
@@ -176,9 +176,9 @@ const cards = [
     title: 'They vanished, and now they\'re back with "hey."',
     rule: 'The Front Door Rule',
     take: 'If you left by the back door, you come back by the front, with an explanation.',
-    note: "Ghosting. Like the movie? No, Nicky says, it's when somebody disappears without a word. Then one day they're back with one word, like nothing happened. You don't owe them a party. You don't owe them a fight, either. You're allowed to ask what happened before you open the door.",
+    note: "Ghosting. Like the movie? No, Nicky says, it's when somebody disappears without a word. Then one day they're back with one word, like nothing happened. You don't owe them a party. You don't owe them a fight, either. But before you open the door, you get to ask what happened.",
     say: [
-      "Hi, it's [your name]. I got your message. ((Keep it calm. Nobody's on trial.))",
+      "Hey. I got your message. ((Keep it calm. Nobody's on trial.))",
       "Honestly, you disappeared for [three weeks], and I'm not going to pretend that didn't happen. If you want to see me, I'd need to hear what happened, and I'd want a real plan. If not, I understand.",
     ],
     text: 'Good to hear from you. If you want to catch up properly, call me this week.',
@@ -195,7 +195,7 @@ const cards = [
     take: 'Sauce is better the next day. So is "I had a really good time."',
     note: "Angie's sauce was good on Sunday and better on Monday. The recipe's in Rosemarie's head now, and she won't tell Joey. Anyway. You had a nice time? Don't play it cool for three days. Playing it cool is how good things go cold. Call the next day and say so.",
     say: [
-      "Hi, it's [your name]. I just wanted to say I had a really good time last night. Really.",
+      "Hey, it's me. I just wanted to say I had a really good time last night. Really.",
       "I'd love to see you again. Are you free [Friday] at [seven]? I was thinking we could try [that place you said you'd never been to].",
     ],
     text: 'Had a really good time last night. Free [Friday] at [seven]? I\'d love to see you again.',
@@ -212,13 +212,13 @@ const cards = [
     take: 'A boat with no captain just goes in circles.',
     note: "A situation-ship. Nicky had to say it three times. I tapped my hearing aid, I thought it was broken. A ship? With no captain and no map? Listen. If you've been on that boat for months and you want to know where it's going, you're allowed to ask the other passenger.",
     say: [
-      "Can I ask you something real? ((Wait.)) I like what we have, and I've been wondering where it's going.",
-      "For me, I'd like [us to be exclusive / us to be together, for real]. What do you want? Whatever it is, I'd rather know than guess.",
+      "Can I ask you something real? ((Pause.)) I like what we have, and I've been wondering where it's going.",
+      "For me, I'd like [us to be exclusive / us to be together, for real]. What do you want? Whatever it is, I can handle it. I just want to know.",
     ],
-    text: "Can we talk on the phone tonight? There's something about us I'd rather say than type.",
+    text: "Can we talk on the phone tonight? I want to ask you something about us, and it's nothing scary.",
     dont: { said: "I'm chill with whatever.", why: 'If you\'re not. Pretending to be chill is how you spend a year on that boat.' },
     ifno: [
-      "If they want the same thing, wonderful. Now it has a name. If they say \"I don't want labels,\" that's an answer too, and you get to decide whether it's enough for you. If it isn't, you're allowed to get off the boat. {card:18} has the words.",
+      "If they want the same thing, wonderful. Now it has a name. If they say \"I don't want labels,\" that's an answer too, and you get to decide whether it's enough for you. If it isn't, you can get off the boat. The words for that are on {card:18}.",
       "If they say \"I don't know,\" give it a little time, then ask once more. If \"I don't know\" turns into a whole season, it's a no.",
     ],
   },
@@ -229,14 +229,14 @@ const cards = [
     take: 'Somebody has to say it first. Might as well be the brave one.',
     note: "Every week somebody in the comments asks, \"What if they don't feel the same?\" Then you'll know, and you'll be okay. But what if they do, and you both just sat there? Like two kids on the phone at night: \"You hang up first.\" \"No, you hang up first.\" Somebody's gotta go first, sweetheart.",
     say: [
-      "Can I tell you something? ((Wait.)) I really like you. Not in a casual way. I like how you [remember every little thing I tell you].",
+      "Can I tell you something? ((Let them say yes.)) I really like you. Not in a casual way. I like how you [remember every little thing I tell you].",
       "You don't have to say anything back right now. I just didn't want to keep it to myself anymore. ((Then stop, and let it land.))",
     ],
     text: "Free for a call at nine? I've got something nice to tell you, and I want to say it out loud.",
     dont: { said: "I think I like you, but whatever, it's dumb.", why: "Don't take it back in the same breath." },
     ifno: [
       "If they feel the same, enjoy that, kid. That's the best phone call there is.",
-      "If they say they're not there yet, that's not a no. Don't push, don't ask again next week, and let it breathe. If they say they don't feel that way, say \"Thank you for being honest,\" and give yourself some room. You were brave. Brave is never the mistake.",
+      "If they say they're not there yet, that's not a no. Don't push, don't ask again next week, and let it breathe. If they say they don't feel that way: \"Thank you for telling me. I'm still glad I said it.\" Then give yourself some room. You were brave. Brave is never the mistake.",
     ],
   },
 
@@ -248,7 +248,7 @@ const cards = [
     take: 'On a date, the phone goes face down.',
     note: "Sunday lunch at my house, eight grandkids, and you'd think half of them were expecting a call from the President. So at my table, phones go in the bread basket. On a date, face down is enough. Listen, wanting somebody's attention isn't needy. It's the whole point of sitting across from them.",
     say: [
-      "Can I bring something up? It's small, but it matters to me. ((Wait.))",
+      "Can I bring something up? It's small, but it matters to me. ((Pause.))",
       "When we're out, it feels like your phone gets more of you than I do. I don't think you mean anything by it. I just miss you when you're sitting right there. Could we keep our phones face down when we're together?",
     ],
     text: "Can I call you later? There's a small thing I want to bring up. Nothing dramatic.",
@@ -265,7 +265,7 @@ const cards = [
     take: 'Once is bad luck. Every week is a schedule.',
     note: "When I was courting Angie, I called her every night at seven. Not seven-ish. Seven. One cancel is just life. But when it's every time, they're telling you something they won't say out loud. If they wanted to, they'd call. You can ask them to say the rest.",
     say: [
-      "Hi, it's [your name]. Can I be honest about something? ((Wait.))",
+      "Hey, have you got a few minutes? I want to be honest about something. ((Wait.))",
       "The last [three] times we made plans, they fell through, and I'm starting to feel like I'm not a priority. If things are hard for you right now, I get it, and I'd rather you just tell me. Do you want to keep doing this?",
     ],
     text: "Can I call you tomorrow at [seven]? I'd like to talk about our plans, and not over text.",
@@ -299,7 +299,7 @@ const cards = [
     take: "You don't owe anybody a speech. You owe them one sentence.",
     note: "On my bus, when you wanted off, you pulled the cord. The bell rang, I pulled over, you got off. Nobody jumped out the window. Disappearing on somebody after a few dates is jumping out the window. Pull the cord instead, the same week you know. After a date or two, a kind text counts as pulling the cord.",
     say: [
-      "Hi, it's [your name]. Have you got a minute? ((Wait.))",
+      "Hi, [their name]. Have you got a minute? ((Let them answer.))",
       "I've really enjoyed meeting you, and I didn't want to just disappear on you. I'm not feeling it, I wish you well. ((That's it. You can stop there.))",
     ],
     text: "I've enjoyed our dates, and I want to be straight with you instead of disappearing. I'm not feeling it, I wish you well.",
@@ -316,10 +316,10 @@ const cards = [
     take: 'Short is kind. The long version is for you, not for them.',
     note: "Time to get off the boat from {card:12}. Do it on the phone, or better, in person. Not with a meme. You say the true thing in one breath, you wish them well, and then you stop talking. That's the hard part. Most people keep going because the quiet scares them. Let it be quiet.",
     say: [
-      "Hi, it's [your name]. Have you got a few minutes? I want to be honest with you.",
+      "Hey. Have you got a few minutes? I want to be honest with you.",
       "I've realized I want something more serious, and I don't think it's going to be us. I wish you well. ((Then stop.))",
     ],
-    text: "Can I call you tonight? I want to talk about us, and I'd rather say it than type it.",
+    text: "Can I call you tonight? I want to talk about us, and it's not a text kind of thing.",
     dont: { said: "I'm so sorry, I'm sorry, okay, so basically, the thing is...", why: "Don't explain for twenty minutes or apologize six times." },
     ifno: [
       "If they ask, \"Can we still hang out?\" that's your call. If hanging out is how you got on this boat, \"No thanks\" is a whole answer. If they promise to change now that you're leaving, you can listen, and still go.",
@@ -352,7 +352,7 @@ const cards = [
     take: '"I was wrong. I\'m sorry." Then stop talking.',
     note: "Sixty-five years of marriage, I said plenty of dumb things. The fix was never a big speech. It was \"I was wrong, I'm sorry,\" and then closing my mouth, which for me was always the hard part. A long sorry turns into a speech about you. A short one is about them.",
     say: [
-      "Hi, it's [your name]. I said something dumb the other night about [the thing].",
+      "Hey, it's me. I said something dumb the other night about [the thing].",
       "It was thoughtless, and I'm sorry. You didn't deserve that. That's all. I just didn't want it sitting there between us.",
     ],
     text: 'I said something dumb, and I want to apologize properly, not by text. Can I call you tonight?',
@@ -369,7 +369,7 @@ const cards = [
     take: 'What you sent at midnight, you fix by noon.',
     note: "My grandkids tell me people send things at two in the morning they'd never say at two in the afternoon. In my day the phone was on the kitchen wall, and my mother was in the kitchen. That kept things short. So: sleep, coffee, then one plain apology before lunch.",
     say: [
-      "Hi, it's [your name]. About the message I sent last night. That was too much, it was late, and I'm sorry.",
+      "Hi. So, about the message I sent last night. That was too much, it was late, and I'm sorry.",
       "You don't need to answer it. I just wanted to say so out loud, instead of pretending it didn't happen.",
     ],
     text: "Last night's message was too much. I'm sorry. Can I call you at lunch and say it properly?",
@@ -403,14 +403,14 @@ const cards = [
     take: 'If it stung, say "ouch" out loud. What they do next is your answer.',
     note: "Everybody says a dumb thing sometimes. I've said a few hundred. So the first time, you figure it was dumb, not mean, and you tell them. Not in a text with three paragraphs. Out loud, once, plain. It's never the dumb thing that does the damage. It's the dumb thing nobody mentions, sitting there for a year.",
     say: [
-      "Can I tell you something? ((Wait.)) When you said [what they said], it stung.",
-      "I don't think you meant it that way, but I wanted you to know, because I'd rather tell you than sit on it.",
+      "Can I mention something from the other night? ((Wait for the okay.)) When you said [what they said], it stung.",
+      "I don't think you meant it that way, but I wanted you to know. I don't want to sit on it and let it get bigger.",
     ],
-    text: "Something from the other night is still bugging me, and I'd rather say it than text it. Can I call you tonight at [eight]?",
+    text: "Can I call you at [eight]? Something from the other night is still on my mind, and I want to clear it up.",
     dont: { said: "It's fine.", why: 'When it isn\'t. "It\'s fine" is how small things get big.' },
     ifno: [
       "A good person says \"I'm sorry, I didn't think.\" A not-so-good one tells you you're too sensitive. Now you know which one you've got.",
-      "If it keeps happening after you said it plain, it's not a slip anymore, it's a habit, and you're allowed to leave ({card:18} or {card:19}). If what they say makes you feel scared or small all the time, go to {card:25}.",
+      "If it keeps happening after you said it plain, it's not a slip anymore. It's a habit, and you can leave: the words are on {card:18} and {card:19}. If what they say makes you feel scared or small all the time, go to {card:25}.",
     ],
   },
   {
@@ -438,7 +438,7 @@ const cards = [
     take: "The bravest call in this whole file isn't to them.",
     note: "Listen to me, sweetheart. If you're scared of how they'll react, if they check your phone, decide who you can see, control your money, threaten you or hurt you, no card in here is for that. That's when you call somebody whose whole job is to help. It isn't weak. It's the strongest call you'll ever make.",
     say: [
-      "((To a helpline. It's free and private, and somebody answers day and night.))",
+      "((To a helpline. It's free and confidential, and somebody answers day and night.))",
       "Hi. I'm not sure if this counts, but I'm scared of the person I'm with. [One thing that happened.] I don't know what to do next.",
     ],
     helpline: [
@@ -450,7 +450,7 @@ const cards = [
     text: "Can you call me? I'm not okay, and I need to talk.",
     dont: { said: "Maybe I'm overreacting.", why: "If you're scared, you're not overreacting. It counts." },
     ifno: [
-      "If the line is busy, try again, or use the text line. If you think they check your phone, call from a friend's phone or a work phone.",
+      "If the line is busy, try again, or use the text line. If you think they check your phone, call from a phone they can't check, like a friend's.",
       "Don't use the breakup cards in this file on someone who scares you. The people on those lines can help you plan how to leave safely. And you call them. I mean it.",
     ],
   },

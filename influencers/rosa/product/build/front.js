@@ -90,7 +90,7 @@ failure: {
   body: `
 Salvatore fished all his life. Some mornings the sea said no, and the boats stayed in the harbor. Did he go out twice the next day to make up for it? Of course not. He'd have sunk the boat. He went out once, like always, and in his little book he wrote one word for the day he missed: storm. Then he forgot about it.
 
-You will miss mornings, amore. Children get sick, buses don't come, you sleep through everything. When it happens:`,
+You will miss mornings, amore. Children get sick. Some mornings you sleep through everything. When it happens:`,
   list: [
     "Don't go back to Day 1. You haven't lost anything.",
     "Don't do two pages tomorrow to catch up.",

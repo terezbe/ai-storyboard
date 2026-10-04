@@ -233,9 +233,10 @@ function card(c) {
   <div class="kc-tip"><b>${c.tip[0]}.</b> ${c.tip[1]}</div>
 </div>`;
 }
-function kitchen(pair, num, first, note, title) {
+function kitchen(pair, num, extra, note, title) {
+  const bk = extra ? `<div class="kbreak"><div class="kc-head"><span class="kc-name sm">${extra.name}</span><span class="kc-tag">${extra.tag}</span></div><p>${refs(extra.text)}</p></div>` : '';
   return wrap(`<div class="kc-pagehead"><span class="kicker">Bonus three</span><span class="kc-title">Rosa's Kitchen Cards</span><span class="kc-note">${note}</span></div>
-${pair.map(card).join('')}`, num, { title });
+${pair.map(card).join('')}${bk}`, num, { title });
 }
 
 // ---------------- 112 steps ----------------

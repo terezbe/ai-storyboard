@@ -20,9 +20,9 @@ keep: {
   kicker: 'The ritual is yours now',
   title: 'Keep Five',
   body: `
-Thirty rules is too many to carry forever. Even I don't do all of them every day. (I do. Don't tell Giulia I said I didn't.)
+Thirty rules is too many to carry forever. Even I don't do all thirty every day, and they're my rules.
 
-Choose five: the ones that made the biggest difference, the ones you'd miss. Write them on the card, cut it out, and put it where your morning starts: by the kettle, on the bathroom mirror, inside the cupboard with the cups. Habits take longer than thirty days to really settle, so keep the card up for at least another month. After that you won't need it. It will just be your morning.`,
+Choose five: the ones that made the biggest difference, the ones you'd miss. Write them on the card, cut it out, and put it where your morning starts: by the kettle, on the bathroom mirror, inside the cabinet with the cups. Habits take longer than thirty days to really settle, so keep the card up for at least another month. After that you won't need it. It will just be your morning.`,
   catchphrase: "The sea doesn't care how old you are.",
 },
 
@@ -33,7 +33,7 @@ drawer: {
   items: [
     ['quick', 'The 7-Morning Quickstart', 'For a week when thirty is too many.'],
     ['fridge', 'The Fridge Sheet', 'All thirty rules on one page, to print and tick.'],
-    ['kitchen1', "Rosa's Kitchen Cards", 'Six dishes from my table, simple enough for a Tuesday.'],
+    ['kitchen1', "Rosa's Kitchen Cards", 'Six dishes and my own breakfast, simple enough for a Tuesday.'],
     ['steps', 'The 112 Steps Card', 'Your own walking habit, for after Day 30.'],
     ['poster', "Five Things I Won't Have in My House", 'For the kitchen wall.'],
     ['smallprint', 'The honest small print', 'Read it. It matters.'],
@@ -95,6 +95,9 @@ fridge: {
   },
   foot: `Missed a box? Leave it empty and do the next one. That's Salvatore's Rule, page {{p:failure}}.`,
 },
+
+breakfast: { name: "Rosa's breakfast", tag: 'No recipe needed',
+  text: "A cup from the moka. A slice of yesterday's bread with olive oil. An orange or a fig, depending on the month. All of it on a plate, at the table, with the radio on. That has been my breakfast for as long as I can remember. Yours can be anything at all. Just sit down for it: the Chair Rule, page {{p:day15}}." },
 
 kitchenNote: 'Ordinary home cooking for an ordinary kitchen. Allergies, special diets and your doctor\'s advice come first.',
 kitchen: [

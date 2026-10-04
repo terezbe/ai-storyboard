@@ -347,3 +347,7 @@ ul.donts li:last-child { font-weight: 600; }
 .dayhead .dn b { font-weight: 700; font-size: 16pt; }
 .toc-d { font-weight: 700; font-size: 9.4pt; }
 .toc-p, .toc-hp, .map-p, .dl-p { font-weight: 700; }
+
+.kbreak { background: var(--lemon-tint); border-radius: 4px; padding: 0.13in 0.22in 0.06in 0.22in; }
+.kbreak p { font-size: 10.6pt; line-height: 1.45; margin: 0.04in 0 0.06in 0; }
+.kc-name.sm { font-size: 16pt; }
