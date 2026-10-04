@@ -19,8 +19,8 @@ const quick = page({
       ${qstep('0 to 2 min', 'Kettle on.', 'Open the bank app at last month. Set a timer for twenty minutes.')}
       ${qstep('2 to 8 min', 'Count what repeats.', 'Scroll last month and count every payment that comes back: direct debits, subscriptions, anything with the same name twice.', `<div class="two">${lline('Regular payments:', 'short')}${lline('Of those, subscriptions:', 'short')}</div>`)}
       ${qstep('8 to 12 min', 'Ask the question.', `For every subscription: ${Q}`, `<div class="two">${lline('How many got a No:', 'short')}${lline('The biggest No:')}</div>`)}
-      ${qstep('12 to 16 min', 'Count one small leak.', 'Pick one kind, like coffees, takeaways, taxis or snacks, and count them for the month.', `<div class="four">${lline('My leak:')}${lline('Times:', 'short')}${lline('Amount:', 'short')}${lline('Times twelve:', 'short')}</div>`)}
-      ${qstep('16 to 18 min', 'Open one envelope.', 'The one you&rsquo;ve been leaving. Score it before you open it, and again after.', `<div class="three-q">${lline('It was:')}${lline('Before:', 'short')}${lline('After:', 'short')}</div>`)}
+      ${qstep('12 to 16 min', 'Count one small leak.', 'Pick one kind, like coffees, takeaways, taxis or snacks, and count them for the month.', `<div class="four">${lline('My leak:')}${lline('Times:')}${lline('Amount:')}${lline('Times twelve:')}</div>`)}
+      ${qstep('16 to 18 min', 'Open one envelope.', 'The one you&rsquo;ve been leaving. Score it before you open it, and again after.', `<div class="three-q">${lline('It was:')}${lline('Before:')}${lline('After:')}</div>`)}
       ${qstep('18 to 20 min', 'Book your first Sunday.', 'Write it in, and put the book somewhere you&rsquo;ll see it.', `${lline('My first Sunday Sums:')}`)}
     </div>
     <div class="panel green qfix">
@@ -96,7 +96,7 @@ const shed = page({
         { h: 'Can pay', w: '20mm', cls: 'c', box: true },
       ],
       groups: [null, null, null, null, { label: 'On day thirty', span: 2 }, {}],
-      rows: 15,
+      rows: 17,
     })}
     <p class="shednote">Cross things off when you stop wanting them. Mine&rsquo;s mostly crossings-out, and that&rsquo;s the point.</p>`,
 });
@@ -123,7 +123,7 @@ const never = page({
           ${nv('A subscription I forgot about.', 'I&rsquo;ve had about four. I could name them all.')}
           ${nv('An extended warranty.', 'I am the warranty.')}
           ${nv('A plumber.', 'Obviously.')}
-          ${nv('Delivery on a takeaway.', 'The chip shop&rsquo;s a ten-minute walk. That&rsquo;s the delivery.')}
+          ${nv('Delivery on a takeaway.', 'The chip shop&rsquo;s a <span class="nw">ten-minute</span> walk. That&rsquo;s the delivery.')}
         </ul>
       </div>
       <div class="nv-col always">
@@ -138,8 +138,8 @@ const never = page({
       </div>
     </div>
     <div class="two mine">
-      <div><h3>Mine: things I&rsquo;m done paying for</h3>${lines(5)}</div>
-      <div><h3>Mine: things I&rsquo;ll gladly keep paying for</h3>${lines(5)}</div>
+      <div><h3>Mine: things I&rsquo;m done paying for</h3>${lines(6)}</div>
+      <div><h3>Mine: things I&rsquo;ll gladly keep paying for</h3>${lines(6)}</div>
     </div>`,
 });
 
@@ -158,7 +158,7 @@ const notebook = page({
         <div class="nb-holes">${'<span></span>'.repeat(14)}</div>
         <div class="nb-lines">
           ${nb('<span class="hd">Sun 15th March 87</span>')}
-          ${nb('<span class="c1">IN</span> wages <span class="am">141.20</span>')}
+          ${nb('<span class="c1">In</span> wages <span class="am">141.20</span>')}
           ${nb('<span class="c1"></span> Sat o/t <span class="am">18.00</span>')}
           ${nb('<span class="c1">Future</span> <span class="am">5.00</span>', 'clear', '1')}
           ${nb('<span class="c1">Gas</span> qtr, pd same day <span class="am">38.40</span>', 'clear', '2')}
@@ -174,6 +174,8 @@ const notebook = page({
           ${nb('<span class="c1">LEFT</span> <span class="am dbl">61.91</span>')}
           ${nb('<span class="c1">mon</span> tea bags .32 milk .44 brd .48', 'scrawl small')}
           ${nb('<span class="c1">tue</span> nails, M&rsquo;s mum bday card .35', 'scrawl small')}
+          ${nb('<span class="c1">wed</span> bread .48 eggs .62 bus .50', 'scrawl small')}
+          ${nb('<span class="c1">thu</span> fuse wire .29, milk .22', 'scrawl small')}
         </div>
         <div class="nb-sums">38.40<br>34.85<br>9.99<br>5.00<br>2.60<br>2.40<br>2.40<br>1.20<br>.45<br><span class="sl">97.29</span><span class="mk">7</span></div>
       </div>

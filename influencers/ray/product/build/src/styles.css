@@ -644,3 +644,31 @@ table.ledger.score.first td { height: 11mm; font-size: 10.4pt; }
 .helpgrid div { display: flex; flex-direction: column; gap: 1mm; font-size: 9pt; line-height: 1.36; }
 .helpgrid b { color: var(--navy); font-size: 9.6pt; }
 .lastline { margin-top: auto; border-top: 0.75pt solid var(--navy); padding-top: 4mm; font-family: 'Young Serif', serif; font-size: 17pt; color: var(--navy); }
+/* back matter balance */
+.qs { padding: 3.1mm 0 2.6mm; }
+.qs-b p { font-size: 10.6pt; line-height: 1.45; }
+.qs-b .lline { height: 8.6mm; }
+.qs-t { font-size: 10.8pt; }
+.quickpg .voice p { font-size: 11pt; }
+.qfix { margin-top: 5mm; }
+.rc-grid { grid-template-columns: 1.65fr 1fr; }
+.cardsteps li { font-size: 10.8pt; line-height: 1.58; }
+.rulelist li { font-size: 10.1pt; line-height: 1.6; }
+.card-q { font-size: 13.4pt; }
+.card.big { padding: 4.2mm 5.4mm 4.4mm; }
+.wallet { height: 56mm; }
+.wq { font-size: 16.5pt; }
+.ws { font-size: 9.4pt; }
+.shedpg table.ledger td { height: 8.5mm; }
+.nvl li { font-size: 10.7pt; line-height: 1.45; padding: 1.9mm 0 1.9mm 5.4mm; }
+.nvl li::before { top: 3.7mm; }
+.always .nvl li::before { top: 3.2mm; }
+.neverpg .voice p { font-size: 11pt; }
+.nb-lines { top: 15.3mm; }
+.spb p { font-size: 10.7pt; line-height: 1.5; }
+.helpgrid div { font-size: 9.6pt; line-height: 1.4; }
+.helpgrid b { font-size: 10pt; }
+.spb { padding: 3.6mm 0; }
+.nb-page { height: 190mm; }
+.nb-notes { gap: 3.6mm; padding-top: 4mm; }
+.nb-notes .en p { font-size: 9.4pt; line-height: 1.4; }
