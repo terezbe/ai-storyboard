@@ -127,9 +127,9 @@ const opener = page({
       <h3>Good to know</h3>
       <div class="gk">
         <p><b>Paid monthly, or every four weeks?</b> Either write it in the week it lands, or write a week&rsquo;s share every Sunday: monthly pay times 12, divided by 52. Pick one and stick to it.</p>
-        <p><b>Share money with someone?</b> Split the rows between you. In our house the shopping row is Maureen&rsquo;s. See page ${toc('fit-1')}.</p>
+        <p><b>Share money with someone?</b> Split the rows between you. Page ${toc('fit-1')} has the rest.</p>
         <p><b>Sunday doesn&rsquo;t suit?</b> Pick any day you never miss. Sunday&rsquo;s a name, not a law.</p>
-        <p><b>After Week 12?</b> Any cheap notebook will do. Rule it up like these pages and carry on. Page ${toc('wk-end')} shows you how.</p>
+        <p><b>After Week 12?</b> You carry on in any cheap notebook. Page ${toc('wk-end')} shows you how.</p>
       </div>
     </div>
   `,
@@ -175,11 +175,11 @@ const example = page({
     ${strip('Part Three &middot; Sunday Sums', 'A worked example')}
     <h1>One I Did Earlier</h1>
     <div class="deck">Ray&rsquo;s Sunday Sums from last week, copied out of the notebook.</div>
-    <div class="voice"><p>Kelly asked me to fill one of these in, so you could see what it looks like once it&rsquo;s been used. This is last Sunday&rsquo;s, copied out of my notebook and a bit neater than usual. It took twelve minutes. I had a second brew.</p></div>
+    <div class="voice"><p>Kelly asked me to fill one of these in, so you could see what it looks like once it&rsquo;s been used. This is last Sunday&rsquo;s, copied out of my notebook and a bit neater than usual. It took twelve minutes, thirteen with the seven on the calculator, which sticks. I had a second brew.</p></div>
     <div class="ex-wrap">
       <div class="ex-sheet">${sheet(4, rayData).replace('<h1 class="wk-title">Week 4</h1>', '<h1 class="wk-title">Ray&rsquo;s week</h1>')}</div>
       <div class="ex-notes">
-        <div class="en"><span class="mk">1</span><p><b>Maureen&rsquo;s column.</b> She does the shopping row and I do the rest. Split it however suits your house.</p></div>
+        <div class="en"><span class="mk">1</span><p><b>Maureen&rsquo;s column.</b> Her row, her total, every Sunday since 1983. Split yours however suits your house.</p></div>
         <div class="en"><span class="mk">2</span><p><b>Owed: nowt.</b> I still write the line every week. A line with a nought in it is a line you&rsquo;re watching.</p></div>
         <div class="en"><span class="mk">3</span><p><b>The future.</b> It sits sixth on the page, but it&rsquo;s the first money out, on the day it lands.</p></div>
         <div class="en"><span class="mk">4</span><p><b>Next week&rsquo;s money.</b> The bit most people skip. It&rsquo;s why the MOT on Thursday isn&rsquo;t a surprise.</p></div>
@@ -196,10 +196,10 @@ const boring = page({
   body: `
     ${strip('Part Three &middot; Sunday Sums', 'Read this before Week 4')}
     <h1>The Boring Bit</h1>
-    <div class="deck">A letter for the end of Week 3, which is where most people stop.</div>
+    <div class="deck">A letter for the end of Week 3. Read it before you turn the page.</div>
     <div class="letter">
       <p class="salute">Now then,</p>
-      <p>Three Sundays done. I&rsquo;d put money on it having gone boring by now. Same chair, same brew, same rows. Week one felt like a fresh start. Week three felt like the washing-up.</p>
+      <p>Three Sundays done. I&rsquo;d put money on it having gone boring by now. The same chair and the same rows as last week. Week one felt like a fresh start. Week three felt like the washing-up.</p>
       <p>Good. That&rsquo;s what it&rsquo;s supposed to feel like.</p>
       <p>Nobody gets a thrill from bleeding the radiators. You do it because the house stays warm. Sunday Sums is the same. The Leak Hunt was the hard bit, the bit with all the feelings in it. This is maintenance now, and maintenance is meant to be dull. If it was exciting, something would be broken.</p>
       <p>Here&rsquo;s what I&rsquo;ve seen, forty-odd years of it. Most people stop right here. Not because it&rsquo;s hard. Because it&rsquo;s boring, and they think boring means it isn&rsquo;t working. It means it is. This exact Sunday is the whole game.</p>

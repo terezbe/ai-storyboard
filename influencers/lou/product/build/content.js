@@ -331,7 +331,7 @@ const cards = [
     title: 'I need to end a real relationship.',
     rule: 'The No-Trial Rule',
     take: "A breakup is a decision, not a trial. You don't need to win the case.",
-    note: "After a long time together, you tell them face to face if it's safe, on the phone if face to face isn't possible, and never by text. And leave the list of everything they did wrong at home. You're not a lawyer, and they're not on trial. You decided. That's enough. If you're scared of how they'll take it, skip this card and go to {card:25}.",
+    note: "I saw a few hundred breakups in my bus mirror. The worst ones were always a trial: one listing, the other listing, the whole bus listening. After a long time together, you tell them face to face if it's safe, on the phone if you can't, and never by text. Leave the list at home. You decided. That's enough. If you're scared of how they'll take it, skip this card and go to {card:25}.",
     say: [
       "I need to tell you something hard, and I've thought about it for a long time. ((Breathe.))",
       "I'm ending our relationship. This isn't a fight, and it isn't something we can fix. I've decided. I care about you, and I'm sorry this hurts.",
@@ -418,7 +418,7 @@ const cards = [
     title: 'They keep pushing after I said no.',
     rule: 'The One-Word Rule',
     take: "No is one word. It doesn't need an explanation, and it doesn't get a recount.",
-    note: "Pushing comes in a lot of flavors: \"come on,\" \"just one more drink,\" \"you said maybe last time,\" \"if you really liked me.\" Doesn't matter the flavor. You said no, to coming over, to moving faster, to whatever it was, and that's the whole conversation. Anybody worth your time hears it the first time.",
+    note: "Pushing comes in a lot of flavors: \"come on,\" \"just one more drink,\" \"you said maybe last time,\" \"if you really liked me.\" Doesn't matter the flavor. You said no, to coming over, to moving faster, to whatever it was, and that's the end of it. When Angie said no, that was the whole sentence, and I never once asked twice. Not because I was a saint. Because I liked being married.",
     say: [
       "I want to say something clearly, so there's no confusion. ((Slow down. Say it like a fact, because it is one.))",
       "I said no to [staying over / moving faster / that], and I meant it. I'm not going to keep explaining. If we're going to keep seeing each other, I need you to stop asking.",
@@ -436,7 +436,7 @@ const cards = [
     title: "If they scare you, this isn't a dating problem.",
     rule: 'The Bravest Call Rule',
     take: "The bravest call in this whole file isn't to them.",
-    note: "Listen to me, sweetheart. If you're scared of how they'll react, if they check your phone, decide who you can see, control your money, threaten you or hurt you, no card in here is for that. That's when you call somebody whose whole job is to help. It isn't weak. It's the strongest call you'll ever make.",
+    note: "Listen to me, sweetheart. In all those years, Angie was never once afraid of me. That's the floor, not the ceiling. If you're scared of how they'll react, if they check your phone, decide who you can see, control your money, threaten you or hurt you, no card in here is for that. Call somebody whose whole job is to help. It isn't weak. It's the strongest call you'll ever make.",
     say: [
       "((To a helpline. It's free and confidential, and somebody answers day and night.))",
       "Hi. I'm not sure if this counts, but I'm scared of the person I'm with. [One thing that happened.] I don't know what to do next.",

@@ -68,9 +68,9 @@ const envelope = rulePage({
   story: `
     <p>In 1988 I went to a job two streets over. The lady said there was a brown patch on her kitchen ceiling, could I have a look. I had a look. There was a drip behind the bath panel upstairs, a little one, a washer, and it had been going the best part of two years. She&rsquo;d heard it. She&rsquo;d mentioned it to her husband. They just never took the panel off, because they didn&rsquo;t want to know what was behind it.</p>
     <p>A washer in 1986 is pennies and ten minutes. By the time I got there it was two joists, a ceiling and most of a week. Same drip. Same water. The only thing that changed was how long nobody looked.</p>
-    <p>Money&rsquo;s no different. The letter on the mantelpiece doesn&rsquo;t sit still. It grows interest, and late fees, and a second letter in a different colour.</p>`,
+    <p>Money&rsquo;s no different. The letter you leave unopened doesn&rsquo;t sit still. It grows interest, and late fees, and a second letter in a different colour.</p>`,
   how: [
-    'Give the post one home: a tray, a peg, a corner of the mantelpiece. Everything lands there and nowhere else.',
+    'Give the post one home: a tray, a peg, a corner of the sideboard. Everything lands there and nowhere else.',
     'Open it the day it comes. If you can&rsquo;t deal with it today, write on the front the day you will, and keep that day.',
     'Look at the bank app at least once a week, on Sunday if nowhere else. Looking isn&rsquo;t the same as worrying. It&rsquo;s a lot cheaper.',
     'The one you most want to leave is the one to open first. Same trick as Step 1: score it before, score it after.',
@@ -149,7 +149,7 @@ const fish = rulePage({
   rule: 'Budget for joy, on purpose, every week. A budget with no joy in it doesn&rsquo;t last.',
   story: `
     <p>Every Friday, fish and chips. Budgeted, written down, enjoyed. In that order. Maureen and I have had it most Fridays since before the notebooks, and once the notebooks started, it got its own line. It&rsquo;s still got its own line.</p>
-    <p>I&rsquo;ll be honest with you: it&rsquo;s the most important line in there. Every pipe that carries hot water needs a bit of room to move. Clip it in tight with nowhere to go and it&rsquo;ll creak and tick every time the heating comes on, and one day a joint gives. Money&rsquo;s the same. A budget with no give in it lasts about three weeks, then you crack, spend the lot in one go, and feel worse than before you started.</p>
+    <p>I&rsquo;ll be honest with you: it&rsquo;s the most important line in there. Every pipe that carries hot water needs a bit of room to move. Clip it in tight with nowhere to go and it&rsquo;ll creak and tick every time the heating comes on, and one day a joint gives. Money&rsquo;s the same. A budget with no give in it holds for a few weeks, then you crack, spend the lot in one go, and feel worse than before you started.</p>
     <p>So you build the give in. You choose it, you write it down, and then you enjoy it properly, because it&rsquo;s planned and it&rsquo;s paid for and nobody can make you feel bad about it. Not even you.</p>`,
   how: [
     'Pick your Friday Fish: one small, regular treat you actually look forward to. A takeaway, a film, a coffee you&rsquo;ll remember drinking.',
@@ -190,7 +190,7 @@ const future = rulePage({
   name: 'Pay the Future First',
   rule: 'When money comes in, the first bit goes to the future, before the week gets its hands on it.',
   story: `
-    <p>Christmas 1990 went on the never-never. We were still paying for it in March, and every payment was for a Christmas we&rsquo;d already had. So in June 1991 I put an envelope at the back of the kitchen drawer and put ten pound in it every month, before anything else went out. That Christmas our Gary got a bike. Sixty-two pound, paid for, done. There&rsquo;s a little star in the margin of that notebook. I don&rsquo;t do stars.</p>
+    <p>Christmas 1990 went on the never-never. We were still paying for it in March, and every payment was for a Christmas we&rsquo;d already had. So in June 1991 I put an envelope at the back of the kitchen drawer, and every month, before anything else went out, ten pound went in it. That Christmas our Gary got a bike. Sixty-two pound, paid for, done. There&rsquo;s a little star in the margin of that notebook. I don&rsquo;t do stars.</p>
     <p>That&rsquo;s the rule. When money comes in, the first line in the book is the future. Before the gas, before the shop, before Friday. Some weeks it was a fiver. Some weeks it was nowt, and I wrote the nowt down. You lag your pipes in October, not when they&rsquo;ve frozen.</p>`,
   how: [
     'Choose an amount, however small, and make it the first thing out on the day the money lands. A pound counts. The habit matters more than the amount.',

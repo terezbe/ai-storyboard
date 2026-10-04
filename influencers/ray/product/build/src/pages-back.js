@@ -84,7 +84,7 @@ const shed = page({
     <div class="deck">The Thirty-Day Wait, ready to pin up. Mine&rsquo;s on the shed door. Yours can go on the fridge.</div>
     <div class="panel myline">
       <div class="ml">My line: anything over <span class="fill mlf"></span> that&rsquo;s a want, not a need, goes on here and waits thirty days.</div>
-      <div class="ml2">On day thirty, two questions: do I still want it, and can I pay for it outright? Two yeses and it&rsquo;s yours. No guilt, no fuss.</div>
+      <div class="ml2">Both boxes ticked on day thirty? It&rsquo;s yours, with a clear conscience. Still want it, but can&rsquo;t pay outright yet? Leave it on. Gone off it? Cross it off.</div>
     </div>
     ${ledger({
       cols: [
@@ -129,7 +129,7 @@ const never = page({
       <div class="nv-col always">
         <h3>Always paid for, gladly</h3>
         <ul class="nvl">
-          ${nv('Good boots.', 'My feet have done forty-six years of other people&rsquo;s stairs.')}
+          ${nv('Good boots.', 'My feet have climbed a lot of other people&rsquo;s stairs.')}
           ${nv('Proper tools.', 'A spanner that slips costs you a knuckle.')}
           ${nv('Fish and chips on a Friday.', 'You know about that.')}
           ${nv('A card for every grandchild, with a tenner in.', 'Kelly says it&rsquo;s not kept up with inflation. Kelly can write her own card.')}

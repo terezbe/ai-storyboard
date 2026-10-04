@@ -83,7 +83,7 @@ function why(page, fmt) {
   <div class="eyebrow">Before you dial</div>
   <h1 class="page-title">Why this works</h1>
   <p class="lede">${fmt("Most of the pain in dating isn't the no. It's the guessing.")}</p>
-  <p class="intro">${fmt('Lemme tell you what you paid for, because you should know.')}</p>
+  <p class="intro">${fmt("Here's what you paid for, because you should know.")}</p>
   ${items.map(([h, b]) => `<div class="why-item"><div class="why-h">${fmt(h)}</div><p>${fmt(b)}</p></div>`).join('')}
   <div class="isnt">
     <div class="isnt-h">What this isn't</div>
@@ -136,7 +136,7 @@ function fail(page, fmt) {
     <div class="rname">The Gift Rule</div>
     <div class="big-take">${fmt('A no is an answer. An answer is a gift.')}</div>
   </div>
-  <p>${fmt("In my bus mirror I saw plenty of people get a no. Lemme tell you who did fine: the ones who got an answer. The ones who suffered were the ones still standing at the stop, waiting on a bus that was never coming.")}</p>
+  <p>${fmt("From the driver's seat I saw plenty of people get a no. And you know who did fine? The ones who got an answer. The ones who suffered were the ones still standing at the stop, waiting on a bus that was never coming.")}</p>
   <p>${fmt("So when it goes wrong, and sometimes it will, here's what you do.")}</p>
   <ul class="dolist">${list.map(([h, b]) => `<li><strong>${fmt(h)}</strong> ${fmt(b)}</li>`).join('')}</ul>
   <p>${fmt("And when you fumble it? You said \"um\" nine times, you forgot to say the day, you texted when you meant to call. No do-overs. You don't redo a call, you don't apologize for being nervous, and you don't make up for it with three extra texts. You just make the next call, whenever the next one comes.")}</p>

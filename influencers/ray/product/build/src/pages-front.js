@@ -106,7 +106,7 @@ const letter = page({
       <p>I&rsquo;ll tell you something I don&rsquo;t tell many people. In January 1983 we couldn&rsquo;t pay the gas bill. And I was a plumber. I spent all day keeping other people&rsquo;s heating going, and I came home to a house where we couldn&rsquo;t pay for ours.</p>
       <p>That bill sat on the mantelpiece for a fortnight. I didn&rsquo;t open it. I think I thought if I didn&rsquo;t look, it wasn&rsquo;t real. It was real. It was also, when Maureen finally opened it, smaller than the thing I&rsquo;d built up in my head. They always are.</p>
       <p>So if you&rsquo;ve got envelopes you&rsquo;re not opening, or an app you can&rsquo;t look at, or you get to the end of every month and think, where did it all go: you&rsquo;re not daft, and you&rsquo;re not the worst. Everyone thinks their mess is the worst one. Everyone&rsquo;s wrong. Skint isn&rsquo;t a character flaw. It&rsquo;s a maths problem, and maths problems can be done.</p>
-      <p>Here&rsquo;s what this book is. One honest sitting, done once, where we find out where it all goes. I call it the Leak Hunt. Then fifteen minutes every Sunday, with a brew, for good. That&rsquo;s Sunday Sums. In between there are seven rules I picked up in forty-six years under other people&rsquo;s sinks.</p>
+      <p>Here&rsquo;s what this book is. One honest sitting, done once, where we find out where it all goes. I call it the Leak Hunt. Then fifteen minutes every Sunday, with a brew, for good. That&rsquo;s Sunday Sums. In between, there are seven rules that have kept me right ever since.</p>
       <p>There&rsquo;s no secret in here, and no lads in gilets telling you what to buy. Maureen and I paid off a two-up two-down by the time I was forty-one, on a plumber&rsquo;s wage, and the only clever thing I ever did was write it all down and look at it every Sunday.</p>
       <p>Kettle on. Let&rsquo;s have a look.</p>
       <p class="cp-moment">Rich is quiet.</p>
@@ -128,7 +128,7 @@ const why = page({
     <div class="mech">
       <div class="m"><div class="mn">1</div><div><h2>Looking, instead of not looking</h2><p>Economists have a name for not checking your money when you suspect the news is bad: the ostrich effect. Research has found people really do tend to look at their accounts less when they&rsquo;re worried. So if you&rsquo;ve been avoiding the bank app, you&rsquo;re not daft. You&rsquo;re normal. The Leak Hunt gets you looking once, properly, with a brew, so it stops being a thing you dread.</p></div></div>
       <div class="m"><div class="mn">2</div><div><h2>Writing it down</h2><p>Research on habits keeps finding that people who keep track of something, whether it&rsquo;s food, steps or spending, tend to notice more and change more than people who don&rsquo;t. Nobody&rsquo;s quite sure how much is the writing and how much is the noticing it forces. I don&rsquo;t mind which. In my house it&rsquo;s both.</p></div></div>
-      <div class="m"><div class="mn">3</div><div><h2>Same time, same place</h2><p>Habits tend to stick when they&rsquo;re tied to something you already do, at the same time and in the same place. That&rsquo;s why Sunday Sums comes after Sunday dinner. One well-known study found new habits took most people around two months to start feeling automatic, and some a lot longer. Twelve weeks gives you a fair run at it.</p></div></div>
+      <div class="m"><div class="mn">3</div><div><h2>Same time, same place</h2><p>Habits tend to stick when they&rsquo;re tied to something you already do, at the same time and in the same place. That&rsquo;s why Sunday Sums comes after Sunday dinner. One well-known study found new habits took around two months, on average, to start feeling automatic, and some people a lot longer. Twelve weeks gives you a fair run at it.</p></div></div>
       <div class="m"><div class="mn">4</div><div><h2>A gap before buying</h2><p>A good deal of research suggests that when paying feels effortless, by a tap or a saved card, people tend to spend more than when they have to stop and count it out, though how much more varies from study to study. The Thirty-Day Wait puts the stopping back in.</p></div></div>
     </div>
     <div class="panel line isnt">
@@ -183,7 +183,7 @@ const expect = page({
     <div class="timeline">
       ${tl('The first forty minutes of the sitting', '<b>Awful, probably.</b> Opening the envelopes is the worst bit. It always looks worse in the envelope than it does on the table.')}
       ${tl('The rest of the sitting', '<b>Better, once you&rsquo;re adding up.</b> Numbers are calmer than worries. You might feel daft about a drip or two. Don&rsquo;t. Write it down and move on.')}
-      ${tl('The day after', '<b>Lighter.</b> Maybe a bit cross with yourself. Let that go. You did the hard bit, and most people never do.')}
+      ${tl('The day after', '<b>Lighter.</b> Maybe a bit cross with yourself. Let that go. You did the hard bit, and plenty of people never get that far.')}
       ${tl('Sundays one and two', '<b>New, and a bit fiddly.</b> You&rsquo;ll not know which row something goes in. Pick one and stick with it. Nobody&rsquo;s marking it.')}
       ${tl('Week three', `<b>Boring.</b> This is where most people stop. Boring is the point: boring means nothing&rsquo;s leaking. There&rsquo;s a letter waiting for you after Week 3, on page ${toc('p3-boring')}.`, 'dip')}
       ${tl('Weeks four to eleven', `<b>Mostly quiet.</b> You&rsquo;ll miss one at some point, and page ${toc('miss')} covers that. You&rsquo;ll start noticing things before Sunday too: at the till, in the app, at the coffee you were about to buy without thinking.`)}
@@ -233,7 +233,7 @@ const fit1 = page({
     <div class="deck">The book&rsquo;s built one way, and your life might be built another. Here&rsquo;s how to bend it without breaking it.</div>
     <div class="fit">
       <h2>If you share money with someone</h2>
-      <p class="fv">Maureen and I have done Sunday Sums together since 1983. She does the shopping column, I do the rest and the adding up. It&rsquo;s lasted because it&rsquo;s a job for two, not a judgement on one.</p>
+      <p class="fv">Maureen and I have done Sunday Sums together since 1983, and it&rsquo;s lasted because it&rsquo;s a job for two, not a judgement on one.</p>
       <ul class="sq">
         <li>Do the Leak Hunt together if you can. Each of you brings your own statements, and your own drips are yours to own.</li>
         <li>Write amounts, not verdicts. Nobody&rsquo;s spending gets read out in a voice.</li>
@@ -248,10 +248,10 @@ const fit1 = page({
     </div>
     <div class="fit">
       <h2>If your income goes up and down</h2>
-      <p class="fv">Overtime and call-outs came in fits and starts for me. Gig work, commission, seasonal work and working for yourself are the same, only more so.</p>
+      <p class="fv">Plumbing work comes in lumps: three boilers one week, a washer the next. Gig work, commission, seasonal work and working for yourself are the same, only more so.</p>
       <ul class="sq">
         <li>In the Leak Hunt, plan on your lowest month. Not your average, and never your best.</li>
-        <li>On Sundays, &ldquo;came in&rdquo; means what actually landed. Not what you&rsquo;ve invoiced, not what you&rsquo;re owed.</li>
+        <li>On Sundays, &ldquo;came in&rdquo; means money that&rsquo;s in the account, not money that&rsquo;s on its way.</li>
         <li>In a good week, pay the future first, and pay it a bit more. The lean weeks are what it&rsquo;s for.</li>
         <li>Self-employed? Put a share of every payment aside for tax before it starts to feel like yours. Ask your tax office or a free advice service how much.</li>
       </ul>

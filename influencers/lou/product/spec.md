@@ -2,7 +2,7 @@
 
 Digital product: Lou, 90, relationships and dating (clarity, courage, manners, self-respect).
 
-This file locks the design before the build (method Phase 2a). The method has two "stop and ask the user" moments: the idea pick and the sample approval. There is no human approval step on this job, so the decisions are recorded here instead.
+**Status: built.** The PDF has 40 pages, as planned, with 25 cards. It was audited and verified; see `audit.md`. This file locked the design before the build (method Phase 2a) and has been updated to match what was built. The method has two "stop and ask the user" moments: the idea pick and the sample approval. There is no human approval step on this job, so the decisions are recorded here instead.
 
 ## Decisions made in place of the human gates
 
@@ -49,7 +49,7 @@ Situation-indexed cards, one card per page, identical structure, navigable BY FE
 
 1. **Header:** feeling group (gold ring numeral + group name), "Card N of 25", and a link back to the index.
 2. **Situation title.** The title IS the situation, in the buyer's own words.
-3. **Lou's take, as a named rule:** the rule name plus a one-line take in Lou's voice. Under it, a 2 to 4 sentence note in Lou's voice that carries one uselessly specific detail from his world.
+3. **Lou's take, as a named rule:** the rule name plus a one-line take in Lou's voice. Under it, a short note (about 45 to 75 words) in Lou's voice that carries one specific detail from his world.
 4. **"Say this (on the phone)":** word-for-word, in the BUYER's natural voice, with [brackets] for what they fill in. Written to be said aloud; it works face to face as well.
 5. **"If you have to text":** one short message. Its only job is to set up a call or a clear plan with a day and a time. On the "say no" cards, where a call could feel imposing, its job is a clear, kind answer. It never holds the conversation by text.
 6. **"Don't say":** one line, struck through, plus a few words on why.
@@ -59,12 +59,12 @@ Situation-indexed cards, one card per page, identical structure, navigable BY FE
 
 | Page | Part | Content |
 |---|---|---|
-| 1 | Cover | Portrait (profile-picture.jpg) in a gold "ring" frame, title, subtitle, promise line, byline |
-| 2 | Contents | **Find your feeling:** the 25 cards grouped by six feelings, plus the front and back matter |
+| 1 | Cover | Portrait (profile-picture.jpg) in a gold "ring" frame, title, subtitle, promise line, byline, and a factual contents line ("25 cards · a usage log · 5 bonuses") |
+| 2 | Contents | **Find your feeling:** a table with the feeling on the left and its cards on the right (one line each, with page numbers), plus a three-column strip: Before you dial / The bonus stack / At the back |
 | 3 | Front | A letter from Lou: removes the shame, tells the eleven-cents story, states the promise, ends on the catchphrase |
 | 4 | Front | Why this works: clarity beats guessing, why a voice carries tone better than text (hedged, no invented stats), what this is NOT, "no script makes anyone want you" |
 | 5 | Front | How to use this file: find your feeling > take the card > make it yours > call > log it; what it will feel like; the opening half of the measurement loop ("the conversation I've been putting off") |
-| 6 | Front | The failure page: **The Gift Rule**, "A no is an answer. An answer is a gift." No do-overs, just the next call |
+| 6 | Front | The failure page: **The Gift Rule**, "A no is an answer. An answer is a gift." What to do with a no; no do-overs, just the next call; a "How to read the answer" decoder (not-yet versus no); "The log in the back is a record, not a report card." |
 | 7 | Front | Make it fit your life: shy, anxiety, long-distance, deaf or hard of hearing (warm, from Lou's own hearing aid), plus the serious-case route |
 | 8-13 | Cards 1-6 | **1. I'm nervous to ask** |
 | 14-17 | Cards 7-10 | **2. They went quiet** |
@@ -73,7 +73,7 @@ Situation-indexed cards, one card per page, identical structure, navigable BY FE
 | 27-29 | Cards 20-22 | **5. I messed up** |
 | 30-32 | Cards 23-25 | **6. They crossed a line** |
 | 33-34 | Back | The Usage Log: date, card, what happened, how I felt (before > after), a "called" tick box; closes the loop with "read it back" |
-| 35 | Bonus 1 | The five cards to read tonight (quickstart) |
+| 35 | Bonus 1 | The five cards to read tonight (quickstart): each with its rule line, why to read it now, and a read-it box |
 | 36 | Bonus 2 | Lou's Rules on one page (printable fridge card) |
 | 37 | Bonus 3 | The first-call cheat card (fill in before you dial; the first 30 seconds) |
 | 38 | Bonus 4 | Angie's Goodnight Rule (for couples) |
@@ -176,7 +176,7 @@ Derived from the portrait (sampled from profile-picture.jpg) and the bible's war
 
 - Lou's voice (warm, gentle but blunt, "listen", "lemme tell you something", "kid", "sweetheart") lives in the rule, the note and the "if they say no" advice.
 - The scripts are in the BUYER's natural modern voice, gender-neutral, using "they".
-- Every card note carries one detail from Lou's world. The details are spread out so none repeats: "riz? like rice?" (card 1), bakery (2), kitchen phone cord (3), eleven cents (4), "you wore your one good shirt" (5), bus mirror (9), "like the movie?" (10), Angie's sauce and Rosemarie (11), hearing-aid tap and "situation-ship" (12), "you hang up first" (13), Sunday lunch bread basket (14), seven o'clock calls (15), meatball-sized knot (16), the bus stop cord (17), mother in the kitchen (21), bus driver (22).
+- Every card note carries one detail from Lou's world. The details are spread out so none repeats: "riz? like rice?" (card 1), bakery (2), kitchen phone cord (3), eleven cents (4), "you wore your one good shirt" (5), bus mirror (9), "like the movie?" (10), Angie's sauce and Rosemarie (11), hearing-aid tap and "situation-ship" (12), "you hang up first" (13), Sunday lunch bread basket (14), seven o'clock calls (15), meatball-sized knot (16), the bus stop cord (17), breakups as trials in the bus mirror (19), sixty-five years of dumb things (20), mother in the kitchen (21), bus driver (22), when Angie said no he never asked twice (24), and Angie was never once afraid of him, "the floor, not the ceiling" (25, kept serious). Card 7 uses the red light he couldn't stare green; cards 6 and 18 call back to the bakery and the situation-ship boat.
 - The first-date story (letter) is fixed by the videos: Saturday, two o'clock, one soda, two straws, a dime and a penny, the penny left as a tip.
 - The ring touch (the rationed Angie moment) appears once, in the letter.
 - American English. No em dashes, no en dashes as dashes, no unicode arrows or ticks, no brands.
@@ -196,15 +196,24 @@ Derived from the portrait (sampled from profile-picture.jpg) and the bible's war
 
 ## Details added beyond the bible (flag for the bible owner)
 
-These don't contradict the bible. They're small embellishments the main session may want to add to the details bank:
-- Lou says he was "in bed by ten for most of my life" (bus shifts) (card 8).
-- At Sunday lunch, "phones go in the bread basket" (card 14), from the phone-at-the-table pet peeve.
+These don't contradict the bible. They're small embellishments the main session may want to add to the details bank, so future scripts stay consistent with the product:
+- "Thirty-eight years I drove a bus, I tried" to turn a red light green by staring at it (card 7).
+- "I had a reason: Saturday, or a picture I wanted to see" when he called Angie (card 3).
+- "You put on your one good shirt" for a date in his day (card 5).
+- He was "in bed by ten most of my life. Bus drivers start early." (card 8).
+- At his Sunday lunch table, "phones go in the bread basket" (card 14), from the phone-at-the-table pet peeve.
 - "A knot in my stomach the size of a meatball" when he asked Angie out (card 16).
+- On his bus you "pulled the cord" to get off, and "nobody jumped out the window" (card 17).
 - His mother was in the kitchen when he used the wall phone (card 21).
-- He keeps "a pencil by the phone" (Bonus 3).
-- Angie said "Goodnight, Louie" through the door (Bonus 4), using the bible's nickname.
+- "My grandson turned the captions on for me, and now I read faster than I hear" (Make it fit your life). The grandson is unnamed, so it's compatible with Nicky.
+- He kept "a pencil by my phone for sixty years" (Bonus 3).
+- The night Angie "shut herself in the bathroom, too mad to come out"; she said "Goodnight, Louie" through the door (Bonus 4, built on the bible's nickname and the coordinator's bathroom-door line).
+
+The first-date details (Saturday, two o'clock, one soda, two straws, a dime and a penny, the penny left as a tip) came from the coordinator's alignment notes, not from invention.
 
 ## Production
 
-- Source: `build/content.js` (all copy), `build/build.js` (HTML generation, an overflow check per page, page-number resolution, PDF). `build/styles.css`. `build/mockups.js` (cover.png and store images).
+- Source: `build/content.js` (the 25 cards and the six feeling groups), `build/pages.js` (cover, front matter, back matter and bonuses), `build/build.js` (HTML generation, smart quotes, an overflow and fill check per page, page-number resolution, PDF with clickable links and bookmarks), `build/styles.css`, `build/mockups.js` (cover.png and store images), and `build/verify.py` (automated audit checks).
+- Rebuild: `cd build && PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers node build.js && PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers node mockups.js && python3 verify.py`
+- `build/package.json` only marks the folder as CommonJS, because the repo root is an ES module package.
 - Output: `Dont-Text-Call-Grandpa-Lou.pdf`, `cover.png` (1275x1650, US Letter at 150 dpi), `store-checkout-1920x1080.png`, `store-thumbnail-1080x1080.png`.

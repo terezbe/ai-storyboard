@@ -178,7 +178,7 @@ Content plan for Lou, 90, the Brooklyn widower who was married 65 years. His nic
 
 ## Batch 2: product videos (from day 5, if Lou wins)
 
-Add to every batch-2 caption: **"The exact words for 20+ moments like this are in my bio 📞"**. Swap in the real card count from the product.
+Add to every batch-2 caption: **"The exact words for 25 moments like this are in my bio 📞"**.
 
 ### L11: They went quiet
 - **Format:** A, talking clip, Nicky handheld
@@ -188,7 +188,7 @@ Add to every batch-2 caption: **"The exact words for 20+ moments like this are i
 - **Script:**
   > They went quiet. Two days, three days, nothing. Don't send fifteen question marks. Call once. No answer? You send one message, exactly this. Hey, I've enjoyed getting to know you. If you're still interested, I'd love to see you Thursday. If not, no hard feelings. Then the phone goes in a drawer. An answer, or no answer... both are answers, sweetheart. I wrote you the exact words for the rest. Link in my bio.
 - **Length:** ~74 words (~30 s)
-- **Post caption:** One call. One message. Then the drawer. 📞 The exact words for 20+ moments like this are in my bio #datingadvice #textingtips #relationshipadvice
+- **Post caption:** One call. One message. Then the drawer. 📞 The exact words for 25 moments like this are in my bio #datingadvice #textingtips #relationshipadvice
 
 ### L12: How to ask somebody out
 - **Format:** A, talking clip, Nicky handheld
@@ -198,7 +198,7 @@ Add to every batch-2 caption: **"The exact words for 20+ moments like this are i
 - **Script:**
   > How to ask somebody out. Word for word, from a man who did it with eleven cents. You don't say, we should hang out sometime. Sometime is never, kid. You say... I like talking to you. Would you like to get a coffee with me on Tuesday, around six? A day and a time. If they say yes, great. If they say no, you say, no problem, thanks for being straight with me. And you mean it.
 - **Length:** ~77 words (~31 s)
-- **Post caption:** A day and a time. That's the whole trick. ☕ The exact words for 20+ moments like this are in my bio #datingadvice #howtoaskout #firstdate
+- **Post caption:** A day and a time. That's the whole trick. ☕ The exact words for 25 moments like this are in my bio #datingadvice #howtoaskout #firstdate
 
 ### L13: Ask Grandpa Lou: how do I end a situationship?
 - **Format:** A, talking clip, propped against books on the side table
@@ -208,7 +208,7 @@ Add to every batch-2 caption: **"The exact words for 20+ moments like this are i
 - **Script:**
   > How do I end a situationship? Like a grown-up, kid. On the phone, or better, in person. Not with a meme. You say... I've realized I want something more serious, and I don't think it's going to be us. I wish you well. Then you stop. Don't explain for twenty minutes, don't apologize six times. Short is kind. Angie ended it with a fella before me in one sentence. He sent her a Christmas card for forty years.
 - **Length:** ~78 words (~31 s)
-- **Post caption:** Short is kind. (If you don't feel safe, a message is fine, and so is blocking.) The exact words for 20+ moments like this are in my bio #situationship #breakupadvice #datingadvice
+- **Post caption:** Short is kind. (If you don't feel safe, a message is fine, and so is blocking.) The exact words for 25 moments like this are in my bio #situationship #breakupadvice #datingadvice
 
 ### L14: The first phone call
 - **Format:** A, talking clip, Nicky handheld
@@ -218,7 +218,7 @@ Add to every batch-2 caption: **"The exact words for 20+ moments like this are i
 - **Script:**
   > You kids are scared of the phone. Nicky's scared of the phone. Nicky, you are. Here's the first thirty seconds, word for word. Hi, it's Lou... no, your name, use your own name. Is now a good time? I was thinking about Saturday and I wanted to hear your voice. You don't need a speech, you need a reason. Bad time? No problem, when's better? I wrote down the rest. Link's in my bio.
 - **Length:** ~74 words (~30 s)
-- **Post caption:** You don't need a speech. You need a reason. 📞 The exact words for 20+ moments like this are in my bio #phoneanxiety #datingadvice #relationshipadvice
+- **Post caption:** You don't need a speech. You need a reason. 📞 The exact words for 25 moments like this are in my bio #phoneanxiety #datingadvice #relationshipadvice
 
 ### L15: Lou's Rules #3, the phone goes face down
 - **Format:** A, talking clip, propped against the sugar bowl
@@ -228,7 +228,7 @@ Add to every batch-2 caption: **"The exact words for 20+ moments like this are i
 - **Script:**
   > Lou's rule number three. On a date, the phone goes face down. Not on the table screen up like a little TV. Face down, or in the pocket. Nicky brought a girl to Sunday lunch, and she put her phone in her bag the whole time. She asked my sister about her hip! I took Nicky in the kitchen and I said, kid, don't mess this up. He messed it up. Rule number four next week.
 - **Length:** ~76 words (~31 s)
-- **Post caption:** Face down. Always. 📵 The exact words for 20+ moments like this are in my bio #datingadvice #datingetiquette #grandpaadvice
+- **Post caption:** Face down. Always. 📵 The exact words for 25 moments like this are in my bio #datingadvice #datingetiquette #grandpaadvice
 
 ## Rules every script was checked against
 

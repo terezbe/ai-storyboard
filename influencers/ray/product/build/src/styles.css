@@ -672,3 +672,4 @@ table.ledger.score.first td { height: 11mm; font-size: 10.4pt; }
 .nb-page { height: 190mm; }
 .nb-notes { gap: 3.6mm; padding-top: 4mm; }
 .nb-notes .en p { font-size: 9.4pt; line-height: 1.4; }
+.rc-grid { grid-template-columns: 1.9fr 1fr; }

@@ -58,8 +58,7 @@ The grid shows the newest first, so the order ends with the strongest:
 
 1. Open the store (see `../SELLING-GUIDE.md`) and put the link in the bio.
 2. Post batch 2 (L11 to L15), one a day.
-   - Each caption ends with "The exact words for 20+ moments like this are in my bio 📞".
-   - Use the real card count from the product.
+   - Each caption ends with "The exact words for 25 moments like this are in my bio 📞".
 3. Post a story with a link sticker, and keep it in a highlight called "What to say".
 4. The Q&A series is Lou's engine. Collect questions in a question box and send me the best ones. I'll write "Ask Grandpa Lou" scripts from them.
 

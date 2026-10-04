@@ -39,7 +39,7 @@ const opener = page({
         <h3>How the sitting works</h3>
         <ul class="plain">
           <li><b>Give it an evening.</b> Two to three hours for most people, with a brew at half time. If you have to stop, stop at the end of a step, and finish the same day if you can.</li>
-          <li><b>Pencil, not pen.</b> You&rsquo;ll get things wrong. Everyone does. A rubber&rsquo;s cheaper than starting again.</li>
+          <li><b>Pencil, not pen.</b> You&rsquo;ll get things wrong. Everyone does.</li>
           <li><b>Write amounts, not verdicts.</b> Nobody gets told off in this book. Not even you.</li>
           <li><b>Nothing new goes out tonight.</b> No shopping, no &ldquo;just having a look&rdquo;. That&rsquo;s the stopcock.</li>
         </ul>
@@ -109,7 +109,7 @@ const mains = leakStep({
   title: 'The Mains',
   deck: 'What comes in, how often, and how steady it really is.',
   voice: `
-    <p>The mains is where the water comes into the house. Before you go looking for leaks, you want to know what&rsquo;s coming through the pipe, and how steady the pressure is. Some people get one wage on the same day every month. Some get bits from all over. In my trade, overtime and call-outs came in fits and starts, and it took me years to stop counting money I hadn&rsquo;t been paid yet.</p>
+    <p>The mains is where the water comes into the house. Before you look for leaks, you want to know what&rsquo;s coming through the pipe, and how steady it is. Some people get one wage on the same day every month. Some get bits from all over. In my trade, overtime and <span class="nw">call-outs</span> came in fits and starts, and it took me years to stop counting money I hadn&rsquo;t been paid yet.</p>
     <p>So write down what actually landed. Not what you were promised, not what you invoiced, not what you&rsquo;re owed by your brother-in-law. What landed.</p>`,
   steps: [
     'Go through three months of statements and write down every amount that came in: wages, benefits, pensions, side jobs, money from family, refunds.',

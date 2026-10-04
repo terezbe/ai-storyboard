@@ -57,8 +57,8 @@ This spec was locked before any page copy was written. The method normally stops
 | 5 | Your Money Calm Score: calm opening the bank app, knowing where it goes, sleeping without money on your mind (each out of 10), plus a note to your future self. Re-scored on page 42. |
 | 6 | What to Expect: the sitting (awful), the day after, Sundays 1 and 2, week three (boring, and boring is the point), the middle weeks, week twelve |
 | 7 | If You Miss a Sunday: no catching up, no doubling up, just do this Sunday. "A missed Sunday is a drip, not a burst pipe." |
-| 8 | Make It Fit Your Life (1 of 2): shared money and couples (with an economic-abuse safety box and real helplines), income that goes up and down |
-| 9 | Make It Fit Your Life (2 of 2): debts (priority debts first, then both schools named honestly, the reader picks), very little coming in, and "When it's got teeth": free impartial debt help as the strong move (UK: MoneyHelper, StepChange, Citizens Advice; US: a nonprofit credit counsellor via the NFCC; elsewhere: free local debt advice) |
+| 8 | Make It Fit Your Life (1 of 2): shared money and couples (with an economic-abuse safety box and real helplines), income that goes up and down, very little coming in |
+| 9 | Make It Fit Your Life (2 of 2): debts (priority debts first, then both schools named honestly, and the reader ticks their choice), and "When it's got teeth": free impartial debt help as the strong move (UK: MoneyHelper, StepChange, Citizens Advice; US: a nonprofit credit counsellor via the NFCC; elsewhere: free local debt advice) |
 
 ### Part One: The Leak Hunt (one sitting, done once)
 | Page | Unit |
@@ -109,9 +109,9 @@ This spec was locked before any page copy was written. The method normally stops
 
 **Leak Hunt step:** a header strip ("The Leak Hunt" plus "Step N of 8") with an eight-segment progress bar; the title; a one-line deck; Ray's paragraph in voice with one specific detail; "Do this" as short numbered instructions; the fill-in (table or lines; outgoings tables carry the "Would I buy this again today?" Yes/No column); a "What I noticed:" line at the foot.
 
-**Rule page:** a header strip ("Ray's Rules" plus "No. N of 7"); the rule's name; the rule in one sentence (large italic); "The story" (from the details bank); "How it works" (practical, a varied number of points); "Try it this week:" fill-in line plus a "Tried it" tick-box.
+**Rule page:** a header strip ("Ray's Rules" plus "Rule N of 7") with a seven-segment progress bar; the rule's name; the rule in one sentence (large italic); "The story" (from the details bank); "How it works" (practical, a varied number of points); "The honest bit" (where the rule doesn't fit, added during the build); "Try it this week" (fill-in lines plus a tick-box).
 
-**Sunday Sums week:** a header strip ("Sunday Sums" plus "Week N of 12") with a twelve-segment progress bar; the date line and a kettle-on tick-box; **Last week's money** (came in; went out by row: pipework, the shopping, getting about, small leaks, what's owed, the future, the Friday Fish, anything else; total out; in minus out); **Next week's money** (coming up: what, which day, how much; next week's Friday Fish); three checks as tick-boxes (envelopes opened, new drips written down, Thirty-Day list looked at); calm this week out of 10; "What I noticed:"; the "Sunday Sums done" tick-box.
+**Sunday Sums week:** a header strip ("Sunday Sums" plus "Week N of 12") with a twelve-segment progress bar; the date line and a kettle-on tick-box; **Last week's money** (came in; went out by row: pipework, the shopping, getting about, small leaks, what's owed, the future, the Friday Fish, anything else; total out; in minus out); **Next week's money** (coming up: what, which day, how much; next week's Friday Fish); three checks as tick-boxes (every envelope opened, new drips written down, Shed Door List looked at); calm this week out of 10; "What I noticed:"; the "Sunday Sums done" tick-box.
 
 ## Visual identity
 
@@ -170,3 +170,20 @@ Second render: it fits, with no overflow, and no glyph or header-wrap problems.
 - **Weight:** two paragraphs of voice, four numbered instructions, one ledger fill-in, one small tally line, and "What I noticed:".
 - **Structure:** the Leak Hunt step template described above. Every outgoings table carries the Again column.
 - **Facts:** only plain, checkable statements ("some things only charge once a year"). No numbers that aren't the reader's own.
+
+## Build notes (decisions made after the sample)
+
+- **Rule pages gained "The honest bit".** Every rule page was left with 40 to 60 mm of dead space. Rather than stretch the type, each rule got a fifth element, "The honest bit", which says plainly where that rule doesn't fit (for example "Don't mend what can hurt you", or "Cheap isn't always cheaper"). It is the same element on all seven pages.
+- **"Very little coming in" moved from page 9 to page 8** to balance the two Make It Fit pages. Page 9 gained an interactive choice: "My school" with two tick-boxes, plus a line for any priority debts.
+- **The midpoint letter sits after Week 3**, not after Week 6. The book's own "What to Expect" page names week three as the dip, so the letter goes where motivation actually dies.
+- **The weekly page's "Came in" accepts "what landed, or a week's share"**, so monthly-paid and four-weekly-paid readers aren't left with a meaningless weekly sum. The ritual page explains both options.
+- **Final page count: 48**, as planned. Contents numbers are generated from the real page order and checked against the PDF text by `build/verify.py`.
+
+## Source map
+
+- `build/build.js` assembles the HTML, numbers the pages, fills the contents, checks every page for overflow and low fill, and prints the PDF.
+- `build/verify.py` checks every unit's title against its real PDF page and every contents number against the real page. It also confirms there are no unresolved references and no banned characters.
+- `build/src/*.js` holds the content in batches: front matter, Leak Hunt, Rules, Sunday Sums, and the back.
+- `build/src/styles.css` holds the palette and typography.
+- `build/fonts/` holds the local font files (Young Serif, Source Serif 4, Reenie Beanie, Zeyada).
+- `build/mockups/render.js` renders the two store images.
