@@ -10,6 +10,7 @@ Writes:
   <c>/final/instagram-package/ and <c>/final/<handle>-instagram-package.zip  (videos, not in git)
 """
 import csv
+import json
 import os
 import zipfile
 import re
@@ -120,6 +121,11 @@ def instructions(c, kit, posts):
              f"{n} Reels, manage the launch and help me sell. You have the {n} video files (`01-...mp4` to `{n:02d}-...mp4`) and a zip "
              f"with this file, `posts.csv`, {folders}. Follow these steps in order, "
              "tell me when each step is done, and ask me before doing anything not listed here.")
+    if any(p.get("url") for p in posts):
+        L.append("")
+        L.append("**Every video is also online.** If you don't have the attached files (for example in Agent mode), download "
+                 "each video from its link in the table in step 2. The same links are in `VIDEO-LINKS.txt`. Post the "
+                 "downloaded file as it is.")
     L.append("")
     L.append("## 0. Ground rules (always)")
     L.append("")
@@ -154,7 +160,7 @@ def instructions(c, kit, posts):
     L.append("")
     L.append("**For every Reel:**")
     L.append("")
-    L.append("1. New post > Reel > upload the video file for that number (table below).")
+    L.append("1. New post > Reel > upload the video file for that number (table below; no file? download it from its link first).")
     L.append("2. Cover: upload its cover image from `covers/` (or pick the first frame, where the white title text shows).")
     L.append("3. Caption: paste the full text of its caption file from `captions/` (also shown in the table).")
     L.append("4. **Turn ON the AI label:** Advanced settings > \"Add AI label\" (Instagram may call it \"AI info\"). Required for every post.")
@@ -162,10 +168,16 @@ def instructions(c, kit, posts):
     L.append("6. \"Also share to feed\": ON. Comments: ON.")
     L.append("7. Share (or schedule), then tick the post off in `posts.csv`.")
     L.append("")
-    L.append("| # | Video file | Cover | Caption (paste exactly) |")
-    L.append("|---|---|---|---|")
-    for p in posts:
-        L.append(f"| {p['n']} | `{p['video']}` | `{p['cover_file']}` | {p['caption']} |")
+    if any(p.get("url") for p in posts):
+        L.append("| # | Video file | Download link | Cover | Caption (paste exactly) |")
+        L.append("|---|---|---|---|---|")
+        for p in posts:
+            L.append(f"| {p['n']} | `{p['video']}` | {p.get('url') or '-'} | `{p['cover_file']}` | {p['caption']} |")
+    else:
+        L.append("| # | Video file | Cover | Caption (paste exactly) |")
+        L.append("|---|---|---|---|")
+        for p in posts:
+            L.append(f"| {p['n']} | `{p['video']}` | `{p['cover_file']}` | {p['caption']} |")
     L.append("")
     L.append("## 3. Pin the best 3 (after all posts are live)")
     L.append("")
@@ -202,7 +214,8 @@ def instructions(c, kit, posts):
     L.append(f"- **Story with a link sticker, once a day:** new story > sticker > Link > paste the URL > sticker text `{ch['link_title']}`. Save the first one to a highlight called \"{ch['highlight']}\".")
     later = [p for p in posts if p.get("later")]
     if later:
-        L.append(f"- For the first link story, use `later/{later[0]['later']}`: the full version of {later[0]['vid']}, which ends with the line about the link. Add the link sticker on top of it.")
+        link = f" (download: {later[0]['later_url']})" if later[0].get("later_url") else ""
+        L.append(f"- For the first link story, use `later/{later[0]['later']}`{link}: the full version of {later[0]['vid']}, which ends with the line about the link. Add the link sticker on top of it.")
     L.append(f"- When someone comments asking for it, reply: \"{ch['dm'][0][1].split(' Tap')[0]}\" (never paste the URL in a comment).")
     L.append("")
     L.append("## 6. Sales strategy (how this account makes money)")
@@ -269,7 +282,8 @@ def readme_he(c, kit, n, has_later):
 - covers: תמונת קאבר לכל סרטון, באותו מספר.
 - GPT-INSTRUCTIONS.md: ההוראות המלאות ל-ChatGPT, לפי הסדר: פרופיל, העלאה, הצמדה, סטוריז ותגובות, הלינק לחנות,
   אסטרטגיית המכירות (סעיף 6) ודוחות (סעיף 7).
-- posts.csv: טבלה של כל הפוסטים (סדר, קובץ, כיתוב, הצמדה).
+- posts.csv: טבלה של כל הפוסטים (סדר, קובץ, קישור, כיתוב, הצמדה).
+- VIDEO-LINKS.txt: קישור הורדה לכל סרטון. אם GPT לא מקבל את הקבצים, הוא מוריד אותם מהקישורים.
 - profile: תמונת הפרופיל והביו.
 {later}
 איך עובדים עם GPT:
@@ -302,6 +316,8 @@ def build(c):
     os.makedirs(os.path.join(pkg, "profile"))
     tracked = os.path.join(ROOT, c, "instagram")
     os.makedirs(os.path.join(tracked, "captions"), exist_ok=True)
+    links_path = os.path.join(tracked, "video-links.json")   # ID -> public URL of the final video (uploaded to Kolbo)
+    links = json.load(open(links_path)) if os.path.exists(links_path) else {}
     posts = []
     for n, vid, title in kit["order"]:
         name = DAY4_VARIANT.get(vid, vid)
@@ -318,10 +334,11 @@ def build(c):
             with open(path, "w", encoding="utf-8") as fh:
                 fh.write(cap + "\n")
         p = dict(n=n, vid=vid, video=video, caption_file=f"captions/{n:02d}-{vid}.txt", cover_file=f"covers/{n:02d}-{vid}.jpg",
-                 title=plan[vid]["title"], caption=cap, pin=vid in kit["pins"])
+                 title=plan[vid]["title"], caption=cap, pin=vid in kit["pins"], url=links.get(vid))
         if vid in LATER and os.path.exists(os.path.join(fdir, f"{vid}.mp4")) and name != vid:
             os.makedirs(os.path.join(pkg, "later"), exist_ok=True)
             p["later"] = f"{vid}-full.mp4"
+            p["later_url"] = links.get(f"{vid}-full")
             shutil.copy(os.path.join(fdir, f"{vid}.mp4"), os.path.join(pkg, "later", p["later"]))
             with open(os.path.join(pkg, "later", "README.txt"), "a", encoding="utf-8") as fh:
                 fh.write(LATER[vid] + "\n")
@@ -337,10 +354,16 @@ def build(c):
     for path in (os.path.join(pkg, "posts.csv"), os.path.join(tracked, "posts.csv")):
         with open(path, "w", encoding="utf-8", newline="") as fh:
             w = csv.writer(fh)
-            w.writerow(["order", "video_file", "caption_file", "cover_file", "title", "caption", "pin", "posted"])
+            w.writerow(["order", "video_file", "video_url", "caption_file", "cover_file", "title", "caption", "pin", "posted"])
             for p in posts:
-                w.writerow([p["n"], p["video"], p["caption_file"], p["cover_file"], p["title"], p["caption"],
+                w.writerow([p["n"], p["video"], p.get("url") or "", p["caption_file"], p["cover_file"], p["title"], p["caption"],
                             "yes" if p["pin"] else "", ""])
+    if links:
+        lines = [f"{p['n']:02d}  {p['video']}  {p.get('url') or '(no link)'}" for p in posts]
+        lines += [f"later  {p['later']}  {p['later_url']}" for p in posts if p.get("later_url")]
+        for path in (os.path.join(pkg, "VIDEO-LINKS.txt"), os.path.join(tracked, "VIDEO-LINKS.txt")):
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(f"@{kit['handle']}: download links for the videos, in posting order (01 first)\n\n" + "\n".join(lines) + "\n")
     with open(os.path.join(pkg, "READ-ME-FIRST-HE.txt"), "w", encoding="utf-8") as fh:
         fh.write(readme_he(c, kit, len(posts), any(p.get("later") for p in posts)))
     small = os.path.join(fdir, f"{kit['handle']}-instructions-captions-covers.zip")

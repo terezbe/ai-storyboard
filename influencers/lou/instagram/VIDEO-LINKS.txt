@@ -1,0 +1,12 @@
+@askgrandpalou: download links for the videos, in posting order (01 first)
+
+01  01-lou-L9.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204524985-01-lou-L9.mp4
+02  02-lou-L4.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204531698-02-lou-L4.mp4
+03  03-lou-L7.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204539923-03-lou-L7.mp4
+04  04-lou-L6.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204548658-04-lou-L6.mp4
+05  05-lou-L10.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204557486-05-lou-L10.mp4
+06  06-lou-L8.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204565575-06-lou-L8.mp4
+07  07-lou-L3.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204573709-07-lou-L3.mp4
+08  08-lou-L5.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204582552-08-lou-L5.mp4
+09  09-lou-L1.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204591344-09-lou-L1.mp4
+10  10-lou-L2.mp4  https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204600355-10-lou-L2.mp4

@@ -2,6 +2,8 @@
 
 You are my Instagram assistant. I run an AI influencer account and I want you to post its first 10 Reels, manage the launch and help me sell. You have the 10 video files (`01-...mp4` to `10-...mp4`) and a zip with this file, `posts.csv`, `captions/`, `covers/`, `profile/` and `later/`. Follow these steps in order, tell me when each step is done, and ask me before doing anything not listed here.
 
+**Every video is also online.** If you don't have the attached files (for example in Agent mode), download each video from its link in the table in step 2. The same links are in `VIDEO-LINKS.txt`. Post the downloaded file as it is.
+
 ## 0. Ground rules (always)
 
 - The account is an openly AI-generated character. Never hide it and never claim Nonna Rosa is a real person.
@@ -38,7 +40,7 @@ Your AI nonna · not medical advice
 
 **For every Reel:**
 
-1. New post > Reel > upload the video file for that number (table below).
+1. New post > Reel > upload the video file for that number (table below; no file? download it from its link first).
 2. Cover: upload its cover image from `covers/` (or pick the first frame, where the white title text shows).
 3. Caption: paste the full text of its caption file from `captions/` (also shown in the table).
 4. **Turn ON the AI label:** Advanced settings > "Add AI label" (Instagram may call it "AI info"). Required for every post.
@@ -46,18 +48,18 @@ Your AI nonna · not medical advice
 6. "Also share to feed": ON. Comments: ON.
 7. Share (or schedule), then tick the post off in `posts.csv`.
 
-| # | Video file | Cover | Caption (paste exactly) |
-|---|---|---|---|
-| 1 | `01-rosa-R6.mp4` | `covers/01-R6.jpg` | Not advice. Just my plate. Giulia says people want to know 🍅 #whatieatinaday #healthyaging #nonna #mediterraneandiet |
-| 2 | `02-rosa-R8.mp4` | `covers/02-R8.jpg` | 40 minutes. Not three hours. I'm not a cat. 😴 #riposo #healthyaging #nonna #slowliving |
-| 3 | `03-rosa-R9.mp4` | `covers/03-R9.jpg` | Part two. Concetta, if you're watching, I'm sorry. I'm not sorry. 🍋 #healthyaging #nonna #oldways #sicily |
-| 4 | `04-rosa-R5.mp4` | `covers/04-R5.jpg` | Two red flags and one green one. Which one are you? 🚩🍋 #morningroutine #healthyaging #nonna |
-| 5 | `05-rosa-R10.mp4` | `covers/05-R10.jpg` | Brave is not the same as clever. 🌊 Calm days only, and never alone. #seaswimming #watersafety #healthyaging #nonna |
-| 6 | `06-rosa-R4.mp4` | `covers/06-R4.jpg` | The window first. The telephone can wait. ☀️ #morningroutine #healthyaging #nonna #oldways |
-| 7 | `07-rosa-R7.mp4` | `covers/07-R7.jpg` | Sixty-nine years married. One fish. ❤️ #lovestory #nonna #sicily #grandmalove |
-| 8 | `08-rosa-R3.mp4` | `covers/08-R3.jpg` | I bring him lemons. He brings me papers. 🍋 #healthyaging #nonna #longevity #sicily |
-| 9 | `09-rosa-R1.mp4` | `covers/09-R1.jpg` | Giulia says I must post. Fine. Part one 🍋 #healthyaging #nonna #morningroutine #sicily #oldways |
-| 10 | `10-rosa-R2.mp4` | `covers/10-R2.jpg` | 85 years of mornings. Still cold. Still going. 🌊 (Only swim where it's safe, and never alone.) #seaswimming #healthyaging #nonna #morningroutine |
+| # | Video file | Download link | Cover | Caption (paste exactly) |
+|---|---|---|---|---|
+| 1 | `01-rosa-R6.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204346100-01-rosa-R6.mp4 | `covers/01-R6.jpg` | Not advice. Just my plate. Giulia says people want to know 🍅 #whatieatinaday #healthyaging #nonna #mediterraneandiet |
+| 2 | `02-rosa-R8.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204355800-02-rosa-R8.mp4 | `covers/02-R8.jpg` | 40 minutes. Not three hours. I'm not a cat. 😴 #riposo #healthyaging #nonna #slowliving |
+| 3 | `03-rosa-R9.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204364388-03-rosa-R9.mp4 | `covers/03-R9.jpg` | Part two. Concetta, if you're watching, I'm sorry. I'm not sorry. 🍋 #healthyaging #nonna #oldways #sicily |
+| 4 | `04-rosa-R5.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204372368-04-rosa-R5.mp4 | `covers/04-R5.jpg` | Two red flags and one green one. Which one are you? 🚩🍋 #morningroutine #healthyaging #nonna |
+| 5 | `05-rosa-R10.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204382659-05-rosa-R10.mp4 | `covers/05-R10.jpg` | Brave is not the same as clever. 🌊 Calm days only, and never alone. #seaswimming #watersafety #healthyaging #nonna |
+| 6 | `06-rosa-R4.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204393878-06-rosa-R4.mp4 | `covers/06-R4.jpg` | The window first. The telephone can wait. ☀️ #morningroutine #healthyaging #nonna #oldways |
+| 7 | `07-rosa-R7.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204401306-07-rosa-R7.mp4 | `covers/07-R7.jpg` | Sixty-nine years married. One fish. ❤️ #lovestory #nonna #sicily #grandmalove |
+| 8 | `08-rosa-R3.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204409040-08-rosa-R3.mp4 | `covers/08-R3.jpg` | I bring him lemons. He brings me papers. 🍋 #healthyaging #nonna #longevity #sicily |
+| 9 | `09-rosa-R1.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204417818-09-rosa-R1.mp4 | `covers/09-R1.jpg` | Giulia says I must post. Fine. Part one 🍋 #healthyaging #nonna #morningroutine #sicily #oldways |
+| 10 | `10-rosa-R2.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204425171-10-rosa-R2.mp4 | `covers/10-R2.jpg` | 85 years of mornings. Still cold. Still going. 🌊 (Only swim where it's safe, and never alone.) #seaswimming #healthyaging #nonna #morningroutine |
 
 ## 3. Pin the best 3 (after all posts are live)
 
@@ -107,7 +109,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 - **Do NOT add the link to the videos or type the URL into captions.** Links in Reels and captions aren't clickable and can lower reach. The videos are finished as they are.
 - In captions and comment replies, say **"it's in my bio"** instead.
 - **Story with a link sticker, once a day:** new story > sticker > Link > paste the URL > sticker text `My 30-Day Morning Reset`. Save the first one to a highlight called "Reset".
-- For the first link story, use `later/R4-full.mp4`: the full version of R4, which ends with the line about the link. Add the link sticker on top of it.
+- For the first link story, use `later/R4-full.mp4` (download: https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791204663388-R4-full.mp4): the full version of R4, which ends with the line about the link. Add the link sticker on top of it.
 - When someone comments asking for it, reply: "It's in my bio, amore 🍋" (never paste the URL in a comment).
 
 ## 6. Sales strategy (how this account makes money)

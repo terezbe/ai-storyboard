@@ -2,6 +2,8 @@
 
 You are my Instagram assistant. I run an AI influencer account and I want you to post its first 10 Reels, manage the launch and help me sell. You have the 10 video files (`01-...mp4` to `10-...mp4`) and a zip with this file, `posts.csv`, `captions/`, `covers/` and `profile/`. Follow these steps in order, tell me when each step is done, and ask me before doing anything not listed here.
 
+**Every video is also online.** If you don't have the attached files (for example in Agent mode), download each video from its link in the table in step 2. The same links are in `VIDEO-LINKS.txt`. Post the downloaded file as it is.
+
 ## 0. Ground rules (always)
 
 - The account is an openly AI-generated character. Never hide it and never claim Grandpa Lou is a real person.
@@ -38,7 +40,7 @@ Your AI grandpa · not a therapist
 
 **For every Reel:**
 
-1. New post > Reel > upload the video file for that number (table below).
+1. New post > Reel > upload the video file for that number (table below; no file? download it from its link first).
 2. Cover: upload its cover image from `covers/` (or pick the first frame, where the white title text shows).
 3. Caption: paste the full text of its caption file from `captions/` (also shown in the table).
 4. **Turn ON the AI label:** Advanced settings > "Add AI label" (Instagram may call it "AI info"). Required for every post.
@@ -46,18 +48,18 @@ Your AI grandpa · not a therapist
 6. "Also share to feed": ON. Comments: ON.
 7. Share (or schedule), then tick the post off in `posts.csv`.
 
-| # | Video file | Cover | Caption (paste exactly) |
-|---|---|---|---|
-| 1 | `01-lou-L9.mp4` | `covers/01-L9.jpg` | Tuesday. Trust me. ☕ #firstdate #datingadvice #datingtips #grandpaadvice |
-| 2 | `02-lou-L4.mp4` | `covers/02-L4.jpg` | Two red, one green. Timeless. 🚩💚 #redflags #datingadvice #relationshipadvice #grandpaadvice |
-| 3 | `03-lou-L7.mp4` | `covers/03-L7.jpg` | One sentence. That's all it takes. 🚌 (If someone makes you feel unsafe, you owe them nothing: block and go.) #ghosting #datingadvice #relationshipadvice #grandpa |
-| 4 | `04-lou-L6.mp4` | `covers/04-L6.jpg` | The original rizz: showing up and shutting up. 😎 #rizz #datingadvice #grandpa #genz |
-| 5 | `05-lou-L10.mp4` | `covers/05-L10.jpg` | Go first. Ask me anything in the comments. 👇 #askgrandpa #datingadvice #relationshipadvice #textingtips |
-| 6 | `06-lou-L8.mp4` | `covers/06-L8.jpg` | Sixty-five years of goodnights. 💍 #lovestory #marriage #grandpa #relationshipadvice |
-| 7 | `07-lou-L3.mp4` | `covers/07-L3.jpg` | Eleven cents. Sixty-five years. ❤️ #lovestory #datingadvice #grandpa #oldschoolromance |
-| 8 | `08-lou-L5.mp4` | `covers/08-L5.jpg` | Don't text. Call. 📞 #ifhewantedtohewould #datingadvice #relationshipadvice #grandpa |
-| 9 | `09-lou-L1.mp4` | `covers/09-L1.jpg` | Hey is not a question. 📞 #datingadvice #relationshipadvice #grandpaadvice #moderndating |
-| 10 | `10-lou-L2.mp4` | `covers/10-L2.jpg` | Grandpa has notes. 😂 #situationship #datingadvice #grandpa #relationshipadvice |
+| # | Video file | Download link | Cover | Caption (paste exactly) |
+|---|---|---|---|---|
+| 1 | `01-lou-L9.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204524985-01-lou-L9.mp4 | `covers/01-L9.jpg` | Tuesday. Trust me. ☕ #firstdate #datingadvice #datingtips #grandpaadvice |
+| 2 | `02-lou-L4.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204531698-02-lou-L4.mp4 | `covers/02-L4.jpg` | Two red, one green. Timeless. 🚩💚 #redflags #datingadvice #relationshipadvice #grandpaadvice |
+| 3 | `03-lou-L7.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204539923-03-lou-L7.mp4 | `covers/03-L7.jpg` | One sentence. That's all it takes. 🚌 (If someone makes you feel unsafe, you owe them nothing: block and go.) #ghosting #datingadvice #relationshipadvice #grandpa |
+| 4 | `04-lou-L6.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204548658-04-lou-L6.mp4 | `covers/04-L6.jpg` | The original rizz: showing up and shutting up. 😎 #rizz #datingadvice #grandpa #genz |
+| 5 | `05-lou-L10.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204557486-05-lou-L10.mp4 | `covers/05-L10.jpg` | Go first. Ask me anything in the comments. 👇 #askgrandpa #datingadvice #relationshipadvice #textingtips |
+| 6 | `06-lou-L8.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204565575-06-lou-L8.mp4 | `covers/06-L8.jpg` | Sixty-five years of goodnights. 💍 #lovestory #marriage #grandpa #relationshipadvice |
+| 7 | `07-lou-L3.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204573709-07-lou-L3.mp4 | `covers/07-L3.jpg` | Eleven cents. Sixty-five years. ❤️ #lovestory #datingadvice #grandpa #oldschoolromance |
+| 8 | `08-lou-L5.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204582552-08-lou-L5.mp4 | `covers/08-L5.jpg` | Don't text. Call. 📞 #ifhewantedtohewould #datingadvice #relationshipadvice #grandpa |
+| 9 | `09-lou-L1.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204591344-09-lou-L1.mp4 | `covers/09-L1.jpg` | Hey is not a question. 📞 #datingadvice #relationshipadvice #grandpaadvice #moderndating |
+| 10 | `10-lou-L2.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fce5192f3f8c014330b/1791204600355-10-lou-L2.mp4 | `covers/10-L2.jpg` | Grandpa has notes. 😂 #situationship #datingadvice #grandpa #relationshipadvice |
 
 ## 3. Pin the best 3 (after all posts are live)
 

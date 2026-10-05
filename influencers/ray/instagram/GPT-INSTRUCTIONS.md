@@ -2,6 +2,8 @@
 
 You are my Instagram assistant. I run an AI influencer account and I want you to post its first 10 Reels, manage the launch and help me sell. You have the 10 video files (`01-...mp4` to `10-...mp4`) and a zip with this file, `posts.csv`, `captions/`, `covers/` and `profile/`. Follow these steps in order, tell me when each step is done, and ask me before doing anything not listed here.
 
+**Every video is also online.** If you don't have the attached files (for example in Agent mode), download each video from its link in the table in step 2. The same links are in `VIDEO-LINKS.txt`. Post the downloaded file as it is.
+
 ## 0. Ground rules (always)
 
 - The account is an openly AI-generated character. Never hide it and never claim Ray is a real person.
@@ -38,7 +40,7 @@ Your AI grandad · not financial advice
 
 **For every Reel:**
 
-1. New post > Reel > upload the video file for that number (table below).
+1. New post > Reel > upload the video file for that number (table below; no file? download it from its link first).
 2. Cover: upload its cover image from `covers/` (or pick the first frame, where the white title text shows).
 3. Caption: paste the full text of its caption file from `captions/` (also shown in the table).
 4. **Turn ON the AI label:** Advanced settings > "Add AI label" (Instagram may call it "AI info"). Required for every post.
@@ -46,18 +48,18 @@ Your AI grandad · not financial advice
 6. "Also share to feed": ON. Comments: ON.
 7. Share (or schedule), then tick the post off in `posts.csv`.
 
-| # | Video file | Cover | Caption (paste exactly) |
-|---|---|---|---|
-| 1 | `01-ray-Y10.mp4` | `covers/01-Y10.jpg` | Fifteen minutes a week. Forty-three years. 📓☕ #sundayreset #budgeting #frugalliving #moneyhabits |
-| 2 | `02-ray-Y9.mp4` | `covers/02-Y9.jpg` | I am the warranty. 🔧 #frugalliving #moneyhabits #savingmoney #budgeting |
-| 3 | `03-ray-Y3.mp4` | `covers/03-Y3.jpg` | No is free. 🔧 #loudbudgeting #frugalliving #moneytips #savingmoney |
-| 4 | `04-ray-Y6.mp4` | `covers/04-Y6.jpg` | 191,000 miles. Zero payments. 🚐 #frugalliving #debtfree #savingmoney #moneytips |
-| 5 | `05-ray-Y5.mp4` | `covers/05-Y5.jpg` | Forty-one notebooks since 1983. This is episode one. 📓 #frugalliving #moneyhabits #spendingtracker #budgeting |
-| 6 | `06-ray-Y8.mp4` | `covers/06-Y8.jpg` | Ten pence notebook. Best money I ever spent. 📓 #moneytips #budgeting #frugalliving #savingmoney |
-| 7 | `07-ray-Y4.mp4` | `covers/07-Y4.jpg` | Kelly asked. I answered. Boring works. 🏠 #debtfree #frugalliving #moneyhabits #mortgagefree |
-| 8 | `08-ray-Y7.mp4` | `covers/08-Y7.jpg` | You'd never guess. That's the point. 🧢 #richisquiet #frugalliving #quietluxury #moneyhabits |
-| 9 | `09-ray-Y2.mp4` | `covers/09-Y2.jpg` | Seventy-one years. One bucket. 🪣 #frugalliving #moneyhabits #savingmoney #budgeting |
-| 10 | `10-ray-Y1.mp4` | `covers/10-Y1.jpg` | Forty-six years fixing leaks. The money ones are the same. 🔧 #frugalliving #moneytips #budgeting #savingmoney |
+| # | Video file | Download link | Cover | Caption (paste exactly) |
+|---|---|---|---|---|
+| 1 | `01-ray-Y10.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204432304-01-ray-Y10.mp4 | `covers/01-Y10.jpg` | Fifteen minutes a week. Forty-three years. 📓☕ #sundayreset #budgeting #frugalliving #moneyhabits |
+| 2 | `02-ray-Y9.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204439444-02-ray-Y9.mp4 | `covers/02-Y9.jpg` | I am the warranty. 🔧 #frugalliving #moneyhabits #savingmoney #budgeting |
+| 3 | `03-ray-Y3.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204447649-03-ray-Y3.mp4 | `covers/03-Y3.jpg` | No is free. 🔧 #loudbudgeting #frugalliving #moneytips #savingmoney |
+| 4 | `04-ray-Y6.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204460980-04-ray-Y6.mp4 | `covers/04-Y6.jpg` | 191,000 miles. Zero payments. 🚐 #frugalliving #debtfree #savingmoney #moneytips |
+| 5 | `05-ray-Y5.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204471394-05-ray-Y5.mp4 | `covers/05-Y5.jpg` | Forty-one notebooks since 1983. This is episode one. 📓 #frugalliving #moneyhabits #spendingtracker #budgeting |
+| 6 | `06-ray-Y8.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204481099-06-ray-Y8.mp4 | `covers/06-Y8.jpg` | Ten pence notebook. Best money I ever spent. 📓 #moneytips #budgeting #frugalliving #savingmoney |
+| 7 | `07-ray-Y4.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204491711-07-ray-Y4.mp4 | `covers/07-Y4.jpg` | Kelly asked. I answered. Boring works. 🏠 #debtfree #frugalliving #moneyhabits #mortgagefree |
+| 8 | `08-ray-Y7.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204502647-08-ray-Y7.mp4 | `covers/08-Y7.jpg` | You'd never guess. That's the point. 🧢 #richisquiet #frugalliving #quietluxury #moneyhabits |
+| 9 | `09-ray-Y2.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204512165-09-ray-Y2.mp4 | `covers/09-Y2.jpg` | Seventy-one years. One bucket. 🪣 #frugalliving #moneyhabits #savingmoney #budgeting |
+| 10 | `10-ray-Y1.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac35fcdafec4543d7adcaef/1791204518293-10-ray-Y1.mp4 | `covers/10-Y1.jpg` | Forty-six years fixing leaks. The money ones are the same. 🔧 #frugalliving #moneytips #budgeting #savingmoney |
 
 ## 3. Pin the best 3 (after all posts are live)
 

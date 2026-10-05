@@ -78,6 +78,7 @@ influencers/
 ├── README.md              ← הקובץ הזה
 ├── SELLING-GUIDE.md       ← איך פותחים חנות ומוכרים
 ├── HANDOFF.md             ← הוראות לסשן הבא (Kolbo): קולות וסרטונים
+├── ALL-VIDEO-LINKS.txt    ← קישורי הורדה לכל 30 הסרטונים, לפי סדר ההעלאה (בשביל GPT)
 ├── setup/gpt-prompt-accounts.md   ← הפרומפט ל-ChatGPT לפתיחת החשבונות
 ├── candidates/            ← 6 המועמדים מהסבב הראשון
 ├── rosa/ ray/ lou/        ← לכל דמות:
@@ -87,7 +88,7 @@ influencers/
 │   ├── kolbo-prompts.md   ← הפרומפטים ל-Kolbo (Seedance 2.5), הגרסה שבשימוש
 │   ├── launch-kit.md      ← פרופיל, סדר פרסום, תשובות לתגובות, סטוריז
 │   ├── product/           ← המוצר (PDF), תמונות לחנות, טקסטים למכירה
-│   ├── instagram/         ← ההוראות ל-GPT (כולל אסטרטגיית מכירות), posts.csv והכיתובים
+│   ├── instagram/         ← ההוראות ל-GPT (כולל אסטרטגיית מכירות), posts.csv, הכיתובים וקישורי הסרטונים
 │   ├── captions/          ← כתוביות הדיבור (SRT) שנצרבות בסרטונים
 │   ├── videos/ final/     ← הסרטונים (לא נשמרים ב-git, נשלחו אליך)
 │   ├── sheet.jpg  profile-picture.jpg  locations/
