@@ -48,7 +48,7 @@ Workflow:
 
 | ID | Video | Format | Location | ~Length |
 |---|---|---|---|---|
-| Y1 | Red flags your money's got a leak | Talking clip | `locations/1-kitchen-table.jpg` | 36 s |
+| Y1 | Red flags your money's got a leak | Talking clip | `locations/1-kitchen-table.jpg` | 35 s |
 | Y2 | Ray's Rules, things I've never paid for (part one) | Talking clip | `locations/1-kitchen-table.jpg` | 34 s |
 | Y3 | You lot call it loud budgeting | Talking clip | `locations/2-shed.jpg` | 34 s |
 | Y4 | How I paid off my house at forty-one | Interview | `locations/1-kitchen-table.jpg` | 33 s |
@@ -66,9 +66,9 @@ Workflow:
 
 ## Y1: Red flags your money's got a leak
 
-- **Format:** Talking clip · **~Length:** 36 s · **Attach:** @image1 `sheet.jpg` · @image2 `locations/1-kitchen-table.jpg` · @audio1 `Y1.mp3`
+- **Format:** Talking clip · **~Length:** 35 s · **Attach:** @image1 `sheet.jpg` · @image2 `locations/1-kitchen-table.jpg` · @audio1 `Y1.mp3`
 - **On-screen text (add in post):** "Red flags your money has a leak 🚩"
-- **Length:** ~36 s, over the 30 s cap. Use the TWO-PART version below, or the lip-sync route.
+- **Length:** ~35 s, over the 30 s cap. Use the TWO-PART version below, or the lip-sync route.
 
 **FIRST FRAME (image model: attach `sheet.jpg` first, then the location still):**
 
@@ -103,7 +103,7 @@ MOTIVE (fuel): forty-six years of finding leaks people swore weren't there.
 GOAL: the viewer realises they have the leak.
 OBSTACLE: he refuses to raise his voice, so it has to land deadpan.
 TACTIC: he diagnoses calmly, pauses, and lets the viewer convict themselves; eyes check the lens after each flag.
-Moment to moment: «Red flags your money's got a leak» — a level look at the lens, almost bored; «From a plumber.» — a tiny nod, as if showing his ID; «that's a horror film» — deadpan, one eyebrow lifts; «Your subscriptions have got subscriptions» — a slow blink; «no, this one's not a flag» — he stops himself and leans in: the register breaks; «Not roughly. Not at all.» — a small headshake; «It's just in the wall» — he taps the wall beside the table twice with a knuckle.
+Moment to moment: «Red flags your money's got a leak» — a level look at the lens, almost bored; «From a plumber.» — a tiny nod, as if showing his ID; «that's a horror film» — deadpan, one eyebrow lifts; «Your subscriptions have got subscriptions» — a slow blink; «no, this one's not a flag» — he stops himself and leans in: the register breaks; «Not even roughly.» — a small headshake; «It's just in the wall» — he taps the wall beside the table twice with a knuckle.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 PROPS: the open spiral notebook (illegible pencil columns), the old calculator and a mug of tea on the table (static until the final beat). PROP RULE: every prop exists from frame one; it does not appear, disappear or change design, and it moves only in the scripted beat(s).
@@ -113,7 +113,7 @@ Physics: the cosy's wool flattening where the phone leans, steam curling off the
 
 Consistency: Ray matches @image1 exactly (relit) for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
-Editing: none — one continuous take, clean finish at ~36 s.
+Editing: none — one continuous take, clean finish at ~35 s.
 
 Technical: 9:16 vertical, 1080x1920, older-phone (around 2016) video as described, honest casual framing.
 
@@ -121,22 +121,22 @@ ON-SCREEN TEXT: none. (Added in post by the team.)
 
 Audio (English ONLY):
 - Dialogue: Ray's voice is @audio1 exactly as recorded — precise lip-sync to every syllable; lips completely still when the audio is silent; no added words, no other voices, no humming. Verbatim:
-RAY: "Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday because you don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions. Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not roughly. Not at all. A leak you can't see is still a leak. It's just in the wall."
+RAY: "Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday. You don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions. Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not even roughly. A leak you can't see is still a leak. It's just in the wall."
 - Sound design: a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools, quiet and ducked under the voice.
 - Music: none. Fully original.
 
-Mood & tempo: dry, deadpan, quietly devastating; ~36 seconds, 9:16, one take, no subtitles.
+Mood & tempo: dry, deadpan, quietly devastating; ~35 seconds, 9:16, one take, no subtitles.
 
-SHOT BREAKDOWN (one take, ~36 s, 9:16, no subtitles; timings approximate — follow @audio1):
+SHOT BREAKDOWN (one take, ~35 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.8s — the soft settle-wobble as the propped phone finds its lean; the frame locks, slightly tilted.
 0.8–3.6s — «Red flags your money's got a leak…» a level look at the lens, almost bored.
-3.6–13.6s — «From a plumber.…» a tiny nod, as if showing his ID.
-13.6–16.1s — «that's a horror film…» deadpan, one eyebrow lifts.
-16.1–19.2s — «Your subscriptions have got subscriptions…» a slow blink.
-19.2–26.4s — «no, this one's not a flag…» he stops himself and leans in: the register breaks.
-26.4–32.1s — «Not roughly. Not at all.…» a small headshake.
-32.1–34.1s — «It's just in the wall…» he taps the wall beside the table twice with a knuckle (THE CENTERPIECE).
-34.1–36.0s — FINAL BEAT (audio has ended, lips still): he picks up the mug and sips, eyes on the lens over the rim. End.
+3.6–13.3s — «From a plumber.…» a tiny nod, as if showing his ID.
+13.3–15.8s — «that's a horror film…» deadpan, one eyebrow lifts.
+15.8–18.9s — «Your subscriptions have got subscriptions…» a slow blink.
+18.9–26.1s — «no, this one's not a flag…» he stops himself and leans in: the register breaks.
+26.1–30.9s — «Not even roughly.…» a small headshake.
+30.9–33.0s — «It's just in the wall…» he taps the wall beside the table twice with a knuckle (THE CENTERPIECE).
+33.0–35.0s — FINAL BEAT (audio has ended, lips still): he picks up the mug and sips, eyes on the lens over the rim. End.
 ```
 
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
@@ -149,8 +149,8 @@ Ray talks to the camera with natural, invested delivery that matches the voice e
 
 Record the voice as two files: `Y1-1.mp3` and `Y1-2.mp3`.
 
-- **Part 1 audio (~19 s):** Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday because you don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions.
-- **Part 2 audio (~18 s):** Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not roughly. Not at all. A leak you can't see is still a leak. It's just in the wall.
+- **Part 1 audio (~19 s):** Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday. You don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions.
+- **Part 2 audio (~17 s):** Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not even roughly. A leak you can't see is still a leak. It's just in the wall.
 
 Join the two clips with a straight jump cut in CapCut or Edits.
 Part 2 frames a touch closer, so the cut looks intentional.
@@ -200,7 +200,7 @@ ON-SCREEN TEXT: none. (Added in post by the team.)
 
 Audio (English ONLY):
 - Dialogue: Ray's voice is @audio1 exactly as recorded — precise lip-sync to every syllable; lips completely still when the audio is silent; no added words, no other voices, no humming. Verbatim:
-RAY: "Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday because you don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions."
+RAY: "Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday. You don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions."
 - Sound design: a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools, quiet and ducked under the voice.
 - Music: none. Fully original.
 
@@ -209,10 +209,10 @@ Mood & tempo: dry, deadpan, quietly devastating; ~19 seconds, 9:16, one take, no
 SHOT BREAKDOWN (one take, ~19 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.8s — the soft settle-wobble as the propped phone finds its lean; the frame locks, slightly tilted.
 0.8–3.6s — «Red flags your money's got a leak…» a level look at the lens, almost bored.
-3.6–13.6s — «From a plumber.…» a tiny nod, as if showing his ID.
-13.6–16.1s — «that's a horror film…» deadpan, one eyebrow lifts.
-16.1–18.1s — «Your subscriptions have got subscriptions…» a slow blink.
-18.1–19.0s — he holds the last expression, mid-thought, lips still (the jump cut to Part 2 comes here). End.
+3.6–13.3s — «From a plumber.…» a tiny nod, as if showing his ID.
+13.3–15.8s — «that's a horror film…» deadpan, one eyebrow lifts.
+15.8–17.9s — «Your subscriptions have got subscriptions…» a slow blink.
+17.9–19.0s — he holds the last expression, mid-thought, lips still (the jump cut to Part 2 comes here). End.
 ```
 
 **PART 2 PROMPT:**
@@ -242,7 +242,7 @@ MOTIVE (fuel): forty-six years of finding leaks people swore weren't there.
 GOAL: the viewer realises they have the leak.
 OBSTACLE: he refuses to raise his voice, so it has to land deadpan.
 TACTIC: he diagnoses calmly, pauses, and lets the viewer convict themselves; eyes check the lens after each flag.
-Moment to moment: «no, this one's not a flag» — he stops himself and leans in: the register breaks; «Not roughly. Not at all.» — a small headshake; «It's just in the wall» — he taps the wall beside the table twice with a knuckle.
+Moment to moment: «no, this one's not a flag» — he stops himself and leans in: the register breaks; «Not even roughly.» — a small headshake; «It's just in the wall» — he taps the wall beside the table twice with a knuckle.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 PROPS: the open spiral notebook (illegible pencil columns), the old calculator and a mug of tea on the table (static until the final beat). PROP RULE: every prop exists from frame one; it does not appear, disappear or change design, and it moves only in the scripted beat(s).
@@ -252,7 +252,7 @@ Physics: the cosy's wool flattening where the phone leans, steam curling off the
 
 Consistency: Ray matches @image1 exactly (relit) for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
-Editing: none — one continuous take, clean finish at ~18 s.
+Editing: none — one continuous take, clean finish at ~17 s.
 
 Technical: 9:16 vertical, 1080x1920, older-phone (around 2016) video as described, honest casual framing.
 
@@ -260,18 +260,18 @@ ON-SCREEN TEXT: none. (Added in post by the team.)
 
 Audio (English ONLY):
 - Dialogue: Ray's voice is @audio1 exactly as recorded — precise lip-sync to every syllable; lips completely still when the audio is silent; no added words, no other voices, no humming. Verbatim:
-RAY: "Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not roughly. Not at all. A leak you can't see is still a leak. It's just in the wall."
+RAY: "Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not even roughly. A leak you can't see is still a leak. It's just in the wall."
 - Sound design: a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools, quiet and ducked under the voice.
 - Music: none. Fully original.
 
-Mood & tempo: dry, deadpan, quietly devastating; ~18 seconds, 9:16, one take, no subtitles.
+Mood & tempo: dry, deadpan, quietly devastating; ~17 seconds, 9:16, one take, no subtitles.
 
-SHOT BREAKDOWN (one take, ~18 s, 9:16, no subtitles; timings approximate — follow @audio1):
+SHOT BREAKDOWN (one take, ~17 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.3s — a natural jump cut from Part 1: the same set-up, framing a touch closer; Ray is already mid-energy.
 0.3–8.5s — «no, this one's not a flag…» he stops himself and leans in: the register breaks.
-8.5–14.3s — «Not roughly. Not at all.…» a small headshake.
-14.3–16.3s — «It's just in the wall…» he taps the wall beside the table twice with a knuckle (THE CENTERPIECE).
-16.3–18.0s — FINAL BEAT (audio has ended, lips still): he picks up the mug and sips, eyes on the lens over the rim. End.
+8.5–13.4s — «Not even roughly.…» a small headshake.
+13.4–15.4s — «It's just in the wall…» he taps the wall beside the table twice with a knuckle (THE CENTERPIECE).
+15.4–17.0s — FINAL BEAT (audio has ended, lips still): he picks up the mug and sips, eyes on the lens over the rim. End.
 ```
 
 </details>

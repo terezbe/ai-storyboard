@@ -22,10 +22,60 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 from build_video_prompts import parse_plan  # noqa: E402
 
-PRODUCT = {"rosa": "The 30-Day Morning Reset", "ray": "The Quiet Money Workbook", "lou": "Don't Text. Call."}
-PRODUCT_SHORT = {"rosa": "My 30-Day Morning Reset", "ray": "The Quiet Money Workbook", "lou": "Don't Text. Call."}
 DAY4_VARIANT = {"R4": "R4-day4"}   # finals cut for day 4, before the store link exists
 LATER = {"R4": "R4 full version: ends with 'Giulia put it in the link.' Use it from day 5, as a story with the link sticker."}
+
+# Per-character selling details for the GPT instructions. Product facts come from <c>/product/sales-kit.md.
+CHAR = {
+    "rosa": dict(
+        product="The 30-Day Morning Reset", link_title="My 30-Day Morning Reset", highlight="Reset",
+        what="a 54-page printable PDF: 30 small morning habits, one a day, each with a short story, a tick-box and a line "
+             "to write, plus a Day 1 and Day 30 self-score and five bonuses",
+        caption_line="My 30-Day Morning Reset is in my bio 🍋", batch2="R11 to R15",
+        no_advice="No medical advice in captions or replies.",
+        serious="If someone seems in danger or asks something medical or serious, reply only with the line above and tell me.",
+        no_promises="younger, healthier, cured, or any health result",
+        dm=[("\"How do I get it?\" / \"Where's the book?\"", "It's in my bio, amore 🍋 Tap it, pay, and the book comes to your email straight away."),
+            ("\"I paid but didn't get it\"", "Scusa, amore! Look in your spam folder first. Not there? Send me the email you used and Giulia fixes it today."),
+            ("\"Can I get a discount?\"", "It's already the launch price, amore. That's as low as it goes."),
+            ("\"Is it worth it?\"", "Thirty small mornings, one page a day. If it's not for you, write to me."),
+            ("\"Is the book AI too?\"", "I'm an AI nonna, it says so on my page. The habits are old and real, and the book is a real PDF you keep."),
+            ("\"I have a health condition, is it safe?\"", "It's small daily habits, not medicine, amore. Ask your doctor before you change anything."),
+            ("\"I want a refund\"", "Of course, amore. Send me the email you used and it's done.")]),
+    "ray": dict(
+        product="The Quiet Money Workbook", link_title="The Quiet Money Workbook", highlight="Workbook",
+        what="a 48-page printable PDF workbook: one guided evening to find where the money goes (the Leak Hunt), Ray's "
+             "seven rules, and twelve weeks of fifteen-minute Sunday pages. General information, not financial advice",
+        caption_line="The Quiet Money Workbook is in my bio 📓", batch2="Y11 to Y15",
+        no_advice="No financial advice in captions or replies: Ray never says what to invest in and never recommends a bank, "
+                  "app, card, loan or any money product.",
+        serious="If someone seems in real money trouble (bailiffs, can't pay rent, gambling) or in danger, reply only with "
+                "the debt line above (free debt charity) and tell me.",
+        no_promises="savings, a debt-free date, or any money result",
+        dm=[("\"How do I get it?\" / \"Where's the workbook?\"", "It's in my bio, love 📓 Tap it, pay, and it lands in your email straight after."),
+            ("\"I paid but didn't get it\"", "Sorry about that, love. Check your spam first. Not there? Send me the email you used and I'll sort it today."),
+            ("\"Can I get a discount?\"", "It's already on launch price, love. That's as low as it goes."),
+            ("\"Is it worth it?\"", "It's a pencil and one evening with a brew. If it's not for you, message me."),
+            ("\"Is the workbook AI too?\"", "Aye, I'm an AI grandad, it's on me page. The habits are real, and the workbook's a real PDF you keep."),
+            ("\"Will it tell me what to invest in?\"", "No, love. It shows you where your money goes. Investing's for a proper adviser."),
+            ("\"I'm in serious debt\"", "Then your first call is a free debt charity, love, not a book. The workbook lists where to find free help too."),
+            ("\"I want a refund\"", "No bother, love. Send me the email you used and it's done.")]),
+    "lou": dict(
+        product="Don't Text. Call.", link_title="What to say, word for word", highlight="What to say",
+        what="a 40-page PDF swipe file: 25 dating moments, each with the exact words to say on the phone, the one text "
+             "to send, the line not to say, and what to do if they say no. General advice, not therapy",
+        caption_line="The exact words for 25 moments like this are in my bio 📞", batch2="L11 to L15",
+        no_advice="No therapy, medical or legal advice in captions or replies.",
+        serious="If someone mentions abuse, fear or danger, reply only with the safety line above and tell me.",
+        no_promises="that someone will call back, come back, fall in love or say yes",
+        dm=[("\"How do I get it?\" / \"Where are the words?\"", "It's in my bio, sweetheart 📞 Tap it, pay, and it's in your email right after."),
+            ("\"I paid but didn't get it\"", "Sorry, kid! Check your spam. Not there? Send me the email you used and Nicky sorts it today."),
+            ("\"Can I get a discount?\"", "It's already the launch price, kid. Cheaper than the dinner you'd text your way out of."),
+            ("\"Is it worth it?\"", "Twenty-five moments, the exact words for each. If it's not for you, tell me."),
+            ("\"Is the file AI too?\"", "Yeah, I'm an AI grandpa, it says so on my page. The advice is old-school real, and the file is a real PDF you keep."),
+            ("\"Will it make him/her come back?\"", "No script makes anybody want you, sweetheart. It gets the words out so you get a real answer."),
+            ("\"I want a refund\"", "Sure, kid. Send me the email you used and it's done.")]),
+}
 
 
 def launch_kit(c):
@@ -57,15 +107,18 @@ def cover(src, out, t=1.0):
 
 
 def instructions(c, kit, posts):
+    ch = CHAR[c]
+    who = kit['name'].split('|')[0].strip()
     n = len(posts)
     pins = kit["pins"]
     pin_order = list(reversed(pins))  # the last one pinned shows first
     L = []
     L.append(f"# Instructions for ChatGPT: launch the Instagram account @{kit['handle']}")
     L.append("")
+    folders = "`captions/`, `covers/`, `profile/` and `later/`" if any(p.get("later") for p in posts) else "`captions/`, `covers/` and `profile/`"
     L.append("You are my Instagram assistant. I run an AI influencer account and I want you to post its first "
-             f"{n} Reels and manage the launch. You have the {n} video files (`01-...mp4` to `{n:02d}-...mp4`) and a zip "
-             "with this file, `posts.csv`, `captions/`, `covers/`, `profile/` and `later/`. Follow these steps in order, "
+             f"{n} Reels, manage the launch and help me sell. You have the {n} video files (`01-...mp4` to `{n:02d}-...mp4`) and a zip "
+             f"with this file, `posts.csv`, {folders}. Follow these steps in order, "
              "tell me when each step is done, and ask me before doing anything not listed here.")
     L.append("")
     L.append("## 0. Ground rules (always)")
@@ -75,7 +128,7 @@ def instructions(c, kit, posts):
     L.append("- Do not edit the videos: no filters, no trimming, no stickers and no music. The voice is the audio.")
     L.append("- Paste each caption exactly as written in its caption file. The hashtags are already included (3 to 5 is the right number).")
     L.append("- No location tags, no tagging people, no product tags.")
-    L.append("- No medical advice in captions or replies. No buying followers, no follow/unfollow tricks, no giveaways.")
+    L.append(f"- {ch['no_advice']} No buying followers, no follow/unfollow tricks, no giveaways.")
     L.append("- Go slowly on a new account: no mass liking or following. If Instagram shows a warning or a limit, stop and tell me.")
     L.append("")
     L.append("## 1. Check the profile (before the first post)")
@@ -137,30 +190,76 @@ def instructions(c, kit, posts):
     for a, b in kit["replies"]:
         L.append(f"| {a} | {b} |")
     L.append("")
-    L.append("Never argue. Delete abusive comments. If someone seems in danger or asks something medical or serious, reply only with the line above and tell me.")
+    L.append(f"Never argue. Delete abusive comments. {ch['serious']}")
     L.append("")
     L.append("## 5. The store link (day 5, when I send it)")
     L.append("")
-    L.append(f"I sell a digital product: **{PRODUCT[c]}** ($12, regular $15.99) on Stan Store. When I send you the link (it looks like `https://stan.store/...`):")
+    L.append(f"I sell a digital product: **{ch['product']}** ($12, regular $15.99) in a link-in-bio store (Stan Store or Payhip). When I send you the link:")
     L.append("")
-    L.append(f"- **Put it in the bio, and only there.** Edit profile > Links > Add external link > paste the URL > title `{PRODUCT_SHORT[c]}`. The bio's last line (\"{kit['bio'].splitlines()[-1]}\") points at it.")
+    L.append(f"- **Put it in the bio, and only there.** Edit profile > Links > Add external link > paste the URL > title `{ch['link_title']}`. The bio's last line (\"{kit['bio'].splitlines()[-1]}\") points at it.")
     L.append("- **Do NOT add the link to the videos or type the URL into captions.** Links in Reels and captions aren't clickable and can lower reach. The videos are finished as they are.")
     L.append("- In captions and comment replies, say **\"it's in my bio\"** instead.")
-    L.append(f"- **Story with a link sticker, once a day:** new story > sticker > Link > paste the URL > sticker text `{PRODUCT_SHORT[c]}`. Save the first one to a highlight called \"Reset\".")
+    L.append(f"- **Story with a link sticker, once a day:** new story > sticker > Link > paste the URL > sticker text `{ch['link_title']}`. Save the first one to a highlight called \"{ch['highlight']}\".")
     later = [p for p in posts if p.get("later")]
     if later:
         L.append(f"- For the first link story, use `later/{later[0]['later']}`: the full version of {later[0]['vid']}, which ends with the line about the link. Add the link sticker on top of it.")
-    L.append("- When someone comments or DMs asking for the book, reply: \"It's in my bio, amore 🍋\" (never paste the URL in a comment).")
-    L.append("- From then on I will send you 5 more Reels (batch 2), one a day. Their captions already end with the \"in my bio\" line.")
+    L.append(f"- When someone comments asking for it, reply: \"{ch['dm'][0][1].split(' Tap')[0]}\" (never paste the URL in a comment).")
     L.append("")
-    L.append("## 6. Report back (day 5 morning)")
+    L.append("## 6. Sales strategy (how this account makes money)")
     L.append("")
-    L.append("For each of the 10 Reels, open Insights and send me a table: views, likes, comments, **saves**, **shares**, and follows from the post. Saves and shares matter most; tell me which video clearly won.")
+    L.append(f"**The product:** \"{ch['product']}\": {ch['what']}. $12 (regular $15.99), delivered by email right after payment. "
+             f"Describe it only with these facts. Never promise results ({ch['no_promises']}).")
+    L.append("")
+    L.append("**The plan:**")
+    L.append("")
+    L.append("| When | What happens | Your job |")
+    L.append("|---|---|---|")
+    L.append(f"| Day 4 | Batch 1: the {n} Reels in this folder. No selling at all: they build trust and followers. | Steps 1 to 4 |")
+    L.append("| Day 5 | I read your report, choose which account gets the store first, and open the store. | Step 7, then step 5 when I send the link |")
+    L.append(f"| Days 6 to 10 | Batch 2: 5 Reels made to sell ({ch['batch2']}), one a day, sent by me. Each caption ends with \"{ch['caption_line']}\". | Post them like step 2. Daily link story. |")
+    L.append("| Day 11 on | One Reel a day, new scripts from me. | The one-in-three rule below |")
+    L.append("")
+    L.append("**Rules for selling:**")
+    L.append("")
+    L.append("- **One in three:** after batch 2, at most one post in three mentions the product. The other two are pure value, with no product line. That is what keeps people following.")
+    L.append("- **The link lives in two places only:** the bio and the daily link-sticker story (saved in the highlight). Never in comments, captions or videos.")
+    L.append(f"- **Answer every buyer question within a day,** in {who}'s voice, with the replies below.")
+    L.append("- **No pressure tricks:** no fake scarcity (\"last copies\", \"today only\"), no countdowns, no fake reviews or testimonials.")
+    L.append("- **No extra discounts:** $12 is already the launch price. No coupon codes unless I give you one.")
+    L.append("- **Never message people first.** Only answer people who wrote to us. No paid ads or boosting unless I say so.")
+    L.append("")
+    L.append("**Replies about the product (comments and DMs):**")
+    L.append("")
+    L.append("| They write | You reply |")
+    L.append("|---|---|")
+    for a, b in ch["dm"]:
+        L.append(f"| {a} | {b} |")
+    L.append("")
+    L.append("**Refunds and delivery problems:** reply with the line above, then send me the email they gave you, so I fix it the same day in the store. "
+             "Never argue and never ask why. A refund is $12; a payment dispute costs much more.")
+    L.append("")
+    L.append("**If nothing sells in the first week,** check these in order and tell me what you found:")
+    L.append("")
+    L.append("1. The bio link opens the store, and the price shows $12 with $15.99 crossed out.")
+    L.append(f"2. Every batch-2 caption ends with \"{ch['caption_line']}\".")
+    L.append(f"3. The link story is posted every day and saved in the \"{ch['highlight']}\" highlight.")
+    L.append("4. Which Reels bring the most profile visits (Insights > the Reel > Profile activity). Tell me, and I'll write the next product video in that format.")
+    L.append("5. Keep posting. Don't delete videos and don't change the bio or the link without asking me. Results are judged after a full week, not after two days.")
+    L.append("")
+    L.append("## 7. Report back")
+    L.append("")
+    L.append(f"**Day 5 morning:** for each of the {n} Reels, open Insights and send me a table: views, likes, comments, **saves**, **shares**, and follows from the post. Saves and shares matter most; tell me which video clearly won.")
+    L.append("")
+    L.append("**Every Monday after that:** followers, total views, the top 3 Reels by saves plus shares, profile visits, "
+             "external link taps (Insights > Profile activity), link-sticker taps on stories, and how many people asked about the product. "
+             "I check the sales myself in the store.")
     L.append("")
     return "\n".join(L) + "\n"
 
 
-def readme_he(kit, n):
+def readme_he(c, kit, n, has_later):
+    ch = CHAR[c]
+    later = "- later: סרטון לשימוש מיום 5, אחרי שהחנות פתוחה.\n" if has_later else ""
     return f"""תיקיית העלאה ל-@{kit['handle']}
 ====================================
 
@@ -168,22 +267,28 @@ def readme_he(kit, n):
 - {n} הסרטונים (videos/, ונשלחו אליך גם כקבצים נפרדים). המספר בתחילת השם הוא סדר ההעלאה, 01 עד {n:02d}.
 - captions: הכיתוב עם ההאשטגים לכל סרטון, באותו מספר.
 - covers: תמונת קאבר לכל סרטון, באותו מספר.
-- GPT-INSTRUCTIONS.md: ההוראות המלאות ל-ChatGPT. שם כתוב לו מה לעשות, לפי הסדר.
+- GPT-INSTRUCTIONS.md: ההוראות המלאות ל-ChatGPT, לפי הסדר: פרופיל, העלאה, הצמדה, סטוריז ותגובות, הלינק לחנות,
+  אסטרטגיית המכירות (סעיף 6) ודוחות (סעיף 7).
 - posts.csv: טבלה של כל הפוסטים (סדר, קובץ, כיתוב, הצמדה).
 - profile: תמונת הפרופיל והביו.
-- later: סרטון לשימוש מיום 5, אחרי שהחנות פתוחה.
-
+{later}
 איך עובדים עם GPT:
 1. פותחים צ'אט חדש ב-ChatGPT. אם יש לך Agent mode, מפעילים אותו.
-2. מעלים לצ'אט את 10 הסרטונים ואת קובץ ה-ZIP הקטן (ההוראות, הכיתובים והקאברים).
+2. מעלים לצ'אט את {n} הסרטונים ואת קובץ ה-ZIP הקטן (ההוראות, הכיתובים והקאברים).
 3. כותבים לו: "Read GPT-INSTRUCTIONS.md in the zip and do it step by step".
 4. כשהוא צריך להתחבר לאינסטגרם, הוא אמור להעביר לך את הדפדפן כדי שתתחבר בעצמך. לא נותנים לו סיסמה בצ'אט.
 5. אם GPT לא מצליח להעלות קבצים לאינסטגרם בעצמו, מעלים מהטלפון לפי אותן הוראות: לכל מספר יש סרטון, כיתוב להעתקה וקאבר.
 
-הלינק לחנות:
-- שמים אותו רק בביו של הפרופיל, ביום 5, אחרי שפתחת את Stan Store.
+הלינק לחנות ({ch['product']}, $12 במקום $15.99):
+- שמים אותו רק בביו של הפרופיל, ביום 5, אחרי שפתחת את החנות (Stan Store לדמות המנצחת, או Payhip). ההסבר המלא ב-SELLING-GUIDE.md.
 - לא מוסיפים אותו לסרטונים ולא כותבים אותו בכיתובים.
-- כשיש לך את הלינק, שלח אותו ל-GPT. ההוראות מסבירות לו בדיוק מה לעשות איתו (ביו, סטורי עם מדבקת לינק, הייליט).
+- כשיש לך את הלינק, שלח אותו ל-GPT. ההוראות מסבירות לו בדיוק מה לעשות איתו: ביו, סטורי יומי עם מדבקת לינק, והייליט בשם "{ch['highlight']}".
+
+מה נשאר עליך:
+- ביום 5: לקרוא את הדוח של GPT, לבחור דמות מנצחת ולפתוח את החנות.
+- לשלוח ל-GPT את 5 הסרטונים של הגל השני ({ch['batch2'].replace(' to ', '–')}) כשהם מוכנים, אחד ליום.
+- החזרים ובעיות משלוח: GPT ישלח לך את המייל של הקונה, ואתה מטפל בזה באותו יום בחנות.
+- המכירות עצמן: בודקים בחנות. GPT שולח לך כל יום שני דוח של אינסטגרם.
 """
 
 
@@ -237,7 +342,7 @@ def build(c):
                 w.writerow([p["n"], p["video"], p["caption_file"], p["cover_file"], p["title"], p["caption"],
                             "yes" if p["pin"] else "", ""])
     with open(os.path.join(pkg, "READ-ME-FIRST-HE.txt"), "w", encoding="utf-8") as fh:
-        fh.write(readme_he(kit, len(posts)))
+        fh.write(readme_he(c, kit, len(posts), any(p.get("later") for p in posts)))
     small = os.path.join(fdir, f"{kit['handle']}-instructions-captions-covers.zip")
     with zipfile.ZipFile(small, "w", zipfile.ZIP_DEFLATED) as z:
         for root, _, files in os.walk(pkg):
@@ -246,7 +351,8 @@ def build(c):
                     continue
                 full = os.path.join(root, f)
                 z.write(full, os.path.relpath(full, fdir))
-    print(f"wrote {pkg} (videos/, captions/, covers/, profile/, later/) and {small} "
+    subs = ", ".join(f"{d}/" for d in ("videos", "captions", "covers", "profile", "later") if os.path.isdir(os.path.join(pkg, d)))
+    print(f"wrote {pkg} ({subs}) and {small} "
           f"({os.path.getsize(small) / 1e6:.1f} MB, everything except the videos); texts also in {tracked}")
 
 

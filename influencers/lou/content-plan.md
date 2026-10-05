@@ -171,8 +171,8 @@ Content plan for Lou, 90, the Brooklyn widower who was married 65 years. His nic
 - **Outfit:** default
 - **On-screen text:** "Ask Grandpa Lou: should I text first?"
 - **Script:**
-  > Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. The person who goes first isn't the loser, they're the one with the guts. Angie went first once. She called the garage where I worked and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones.
-- **Length:** ~80 words (~32 s; speed the audio up to 1.05x if needed)
+  > Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. Whoever goes first isn't the loser, they're the one with the guts. Angie went first once. She called the garage and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones.
+- **Length:** ~77 words (~30 s)
 - **CTA:** "Send your questions, I'll answer the good ones." This starts the Q&A series.
 - **Post caption:** Go first. Ask me anything in the comments. 👇 #askgrandpa #datingadvice #relationshipadvice #textingtips
 

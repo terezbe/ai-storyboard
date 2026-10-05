@@ -25,15 +25,15 @@
 | `influencers/tools/build_video_prompts.py --print <ID> [--part 1\|2]` | Prints one paste-ready prompt |
 | `influencers/tools/finish_video.py <ID>\|all` | Joins two parts, burns the on-screen hook / b-roll overlay text, exports 1080x1920 to `<c>/final/` |
 
-## The proven Kolbo pipeline (used for Rosa batch 1, 2026-10-05)
+## The proven Kolbo pipeline (used for all 30 batch-1 videos, 2026-10-05)
 
-Steps 0–3 below were the original plan. This is what actually worked; use it for Ray and Lou.
+Steps 0–3 below were the original plan. This is what actually worked for Rosa, Ray and Lou; use it for batch 2.
 
 1. **Prompts:** `python3 influencers/tools/kolbo_prompts.py <c>` writes `<c>/kolbo-prompts.md` and `.json`.
    - The prompts use Seedance 2.5 Locked Intro: one continuous 9:16 take, ≤30 s.
    - The model performs the English dialogue natively, so there's no TTS, no audio file and no lip-sync step.
 2. **Assets:** upload `sheet.jpg`, `profile-picture.jpg` and the 3 location stills once with `create_upload_ticket`, in this order: @Image 1 = sheet, @Image 2 = profile picture, @Image 3 = location.
-   - Kolbo project for Rosa: `AI Influencers – Nonna Rosa` (find it with `list_projects`). Make one project per character.
+   - One Kolbo project per character: Rosa `AI Influencers – Nonna Rosa`; Ray `6ac35fcdafec4543d7adcaef`; Lou `6ac35fce5192f3f8c014330b` (find them with `list_projects`).
 3. **Generate:** `generate_elements` with these settings:
    - model `seedance-2-5`, resolution `480p-draft`, aspect 9:16, `multi_shots` false;
    - `duration` = the Total line.
@@ -46,15 +46,22 @@ Steps 0–3 below were the original plan. This is what actually worked; use it f
      - a selfie arm when someone else should hold the phone: "NOT a selfie" line and a camera distance of about 1.5 m;
      - a finger in front of the lens: clear-lens line, and the interviewer sits out of frame;
      - the outfit falling back to the sheet's linen shirt: "This replaces her usual …" line (`outfit_not` in chars.py);
-     - a fisheye low angle on a propped phone: set the phone at chest height, about 1.5 m away.
+     - a fisheye low angle on a propped phone: set the phone at chest height, about 1.5 m away;
+     - an object "in the foreground" that the phone leans on: the phone's prop is behind the phone, so never describe it in front of the lens (removed from Y8);
+     - a selfie described as "in both hands" while the free hand gestures: one hand holds the phone (fixed in L7);
+     - Lou's wedding ring on his finger and a medallion on the chain (L1, L3, L6, L9, L10 in batch 1): his AVOID line now forbids both;
+     - quiet relatives' voices at Lou's Sunday lunch (L2, L5): about 15 dB under Lou, kept as room sound, dropped from the captions.
 5. **Upscale:** `edit_video` with `upscale` and model `bytedance-upscaler/upscale/video` at 1080p, about 30 credits. Save the result to `<c>/videos/<ID>.mp4`.
 6. **Captions:** save the transcript SRT (5 words per cue) as `<c>/captions/<ID>.srt`.
+   - Fix misheard names there or in `FIXES` in finish_video.py (Giulia, Concetta, Nicky, Angie, "Lou's rule"), and remove other speakers' lines.
 7. **Finish:** `python3 influencers/tools/finish_video.py <ID>` burns the captions and the hook text and writes `<c>/final/<ID>.mp4`.
+8. **Package:** `python3 influencers/tools/make_instagram_package.py <c>` builds the upload folder and the small zip for ChatGPT: instructions (profile, posting, pins, comments, store link, sales strategy, reports), captions, covers, profile and posts.csv. Send the zip and each video separately (the file limit is 30 MiB).
 
-**Real cost for Rosa's 10 videos:** 6,757 credits in total.
-- This covers 2 test takes of R2, 9 drafts, 2 retakes, 10 upscales (30–120 each), 3 profile pictures and the transcripts.
-- Expect about 5,500–6,500 per character.
-- **Ray and Lou:** most of their scripts run over 30 s at their slow pace. `kolbo-prompts.json` marks those as `compressed`. Either trim the script or split it into two takes joined with a jump cut.
+**Real cost:**
+- Rosa's 10 videos: 6,757 credits (2 test takes of R2, 9 drafts, 2 retakes, 10 upscales, 3 profile pictures, transcripts).
+- Ray's and Lou's 20 videos: 10,445 credits (20 drafts with no retakes, 20 upscales at about 31 each, 19 transcripts). About 5,200 per character.
+- Balance after batch 1: 7,334.
+- **Slow speakers:** the builder compresses the beat timing (PACE 0.94) so Ray's and Lou's scripts fit 30 s; Y1 and L10 were trimmed. Keep new scripts to about 75–80 words.
 
 ## Step 0: find out what Kolbo can do, then budget
 

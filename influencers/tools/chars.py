@@ -125,6 +125,10 @@ CHARS = {
         "gender_lock": "His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven.",
         "avoid_extra": "a beard or stubble on his chin; a missing or trimmed moustache",
         "phone_owner": "filmed on his own old phone from around 2016",
+        "outfit_not": {
+            "sunday": "This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.",
+            "shed": "This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.",
+        },
     },
     "lou": {
         "name": "Lou",
@@ -174,8 +178,12 @@ CHARS = {
         ),
         "accent_short": "warm Brooklyn accent",
         "gender_lock": "He is clean-shaven, with very bushy white eyebrows exactly as in @Image 1 and @Image 2.",
-        "avoid_extra": "a beard or moustache; thin or missing eyebrows",
+        "avoid_extra": "a beard or moustache; thin or missing eyebrows; a ring on any finger (his wedding band no longer fits and only hangs on the chain); a coin or medallion pendant instead of the plain ring",
         "phone_owner": "filmed by his grandson on a new phone",
+        "outfit_not": {
+            "sunday": "This replaces his usual moss-green cardigan: he is NOT wearing it in this video.",
+            "evening": "This replaces his usual moss-green cardigan: he is NOT wearing it in this video.",
+        },
     },
 }
 

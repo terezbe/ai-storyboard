@@ -72,8 +72,8 @@ Ray, 71, is the retired Yorkshire plumber who paid off his house at 41. His nich
 - **Outfit:** default, navy work jacket and cream jumper
 - **On-screen text:** "Red flags your money has a leak 🚩"
 - **Script:**
-  > Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday because you don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions. Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not roughly. Not at all. A leak you can't see is still a leak. It's just in the wall.
-- **Length:** ~82 words (~30 s; trim the pauses to fit)
+  > Red flags your money's got a leak. From a plumber. Red flag. You don't open the bank app on a Friday. You don't want to know. That's not a budget, love, that's a horror film. Red flag. Your subscriptions have got subscriptions. Red flag... no, this one's not a flag, it's the whole flood. You can't say where last month's money went. Not even roughly. A leak you can't see is still a leak. It's just in the wall.
+- **Length:** ~78 words (~29 s)
 - **Post caption:** Forty-six years fixing leaks. The money ones are the same. 🔧 #frugalliving #moneytips #budgeting #savingmoney
 
 ### Y2: Ray's Rules, things I've never paid for (part one)

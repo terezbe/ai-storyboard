@@ -57,7 +57,7 @@ Workflow:
 | L7 | Ghosting | Talking clip | `locations/3-stoop.jpg` | 34 s |
 | L8 | The ring on the chain | Talking clip | `locations/1-armchair.jpg` | 33 s |
 | L9 | Lou's Rules #2, first date on a Tuesday | Talking clip | `locations/3-stoop.jpg` | 34 s |
-| L10 | Ask Grandpa Lou: should I text first? | Talking clip | `locations/1-armchair.jpg` | 37 s |
+| L10 | Ask Grandpa Lou: should I text first? | Talking clip | `locations/1-armchair.jpg` | 35 s |
 | L11 | They went quiet | Talking clip | `locations/2-sunday-lunch.jpg` | 33 s |
 | L12 | How to ask somebody out | Talking clip | `locations/3-stoop.jpg` | 34 s |
 | L13 | Ask Grandpa Lou: how do I end a situationship? | Talking clip | `locations/1-armchair.jpg` | 35 s |
@@ -1998,9 +1998,9 @@ SHOT BREAKDOWN (one take, ~24 s, 9:16, no subtitles; timings approximate — fol
 
 ## L10: Ask Grandpa Lou: should I text first?
 
-- **Format:** Talking clip · **~Length:** 37 s · **Attach:** @image1 `sheet.jpg` · @image2 `locations/1-armchair.jpg` · @audio1 `L10.mp3`
+- **Format:** Talking clip · **~Length:** 35 s · **Attach:** @image1 `sheet.jpg` · @image2 `locations/1-armchair.jpg` · @audio1 `L10.mp3`
 - **On-screen text (add in post):** "Ask Grandpa Lou: should I text first?"
-- **Length:** ~37 s, over the 30 s cap. Use the TWO-PART version below, or the lip-sync route.
+- **Length:** ~35 s, over the 30 s cap. Use the TWO-PART version below, or the lip-sync route.
 
 **FIRST FRAME (image model: attach `sheet.jpg` first, then the location still):**
 
@@ -2046,7 +2046,7 @@ Physics: the paper crinkling, the leather creaking; true weight where he sits; f
 
 Consistency: Lou matches @image1 exactly (relit) for the entire take; the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
-Editing: none — one continuous take, clean finish at ~37 s.
+Editing: none — one continuous take, clean finish at ~35 s.
 
 Technical: 9:16 vertical, 1080x1920, clean modern-phone video as described, honest casual framing.
 
@@ -2054,23 +2054,23 @@ ON-SCREEN TEXT: none. (Added in post by the team.)
 
 Audio (English ONLY):
 - Dialogue: Lou's voice is @audio1 exactly as recorded — precise lip-sync to every syllable; lips completely still when the audio is silent; no added words, no other voices, no humming. Verbatim:
-LOU: "Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. The person who goes first isn't the loser, they're the one with the guts. Angie went first once. She called the garage where I worked and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones."
+LOU: "Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. Whoever goes first isn't the loser, they're the one with the guts. Angie went first once. She called the garage and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones."
 - Sound design: a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue, quiet and ducked under the voice.
 - Music: none. Fully original.
 
-Mood & tempo: playful, encouraging; ~37 seconds, 9:16, one take, no subtitles.
+Mood & tempo: playful, encouraging; ~35 seconds, 9:16, one take, no subtitles.
 
-SHOT BREAKDOWN (one take, ~37 s, 9:16, no subtitles; timings approximate — follow @audio1):
+SHOT BREAKDOWN (one take, ~35 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.8s — the soft settle-wobble as the propped phone finds its lean; the frame locks, slightly tilted.
 0.8–4.9s — «Somebody wrote…» he lifts the folded paper and peers at it.
 4.9–7.1s — «will I look desperate?…» he lowers the paper, a pitying look over it.
 7.1–12.8s — «Desperate is waiting three days…» one finger up.
-12.8–18.7s — «Text first. Call first! Whatever.…» a self-correction, then a dismissive wave.
-18.7–25.7s — «the one with the guts…» a fist to his chest.
-25.7–30.3s — «left a message with my boss…» eyes wide, scandalised all over again (THE CENTERPIECE).
-30.3–32.8s — «I married her…» a soft, proud grin.
-32.8–34.9s — «I'll answer the good ones…» he waggles the paper.
-34.9–37.0s — FINAL BEAT (audio has ended, lips still): he folds the paper and tucks it into his cardigan pocket. End.
+12.8–17.9s — «Text first. Call first! Whatever.…» a self-correction, then a dismissive wave.
+17.9–23.7s — «the one with the guts…» a fist to his chest.
+23.7–28.3s — «left a message with my boss…» eyes wide, scandalised all over again (THE CENTERPIECE).
+28.3–30.8s — «I married her…» a soft, proud grin.
+30.8–32.9s — «I'll answer the good ones…» he waggles the paper.
+32.9–35.0s — FINAL BEAT (audio has ended, lips still): he folds the paper and tucks it into his cardigan pocket. End.
 ```
 
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
@@ -2083,8 +2083,8 @@ Lou talks to the camera with natural, invested delivery that matches the voice e
 
 Record the voice as two files: `L10-1.mp3` and `L10-2.mp3`.
 
-- **Part 1 audio (~22 s):** Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. The person who goes first isn't the loser, they're the one with the guts.
-- **Part 2 audio (~16 s):** Angie went first once. She called the garage where I worked and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones.
+- **Part 1 audio (~21 s):** Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. Whoever goes first isn't the loser, they're the one with the guts.
+- **Part 2 audio (~15 s):** Angie went first once. She called the garage and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones.
 
 Join the two clips with a straight jump cut in CapCut or Edits.
 Part 2 frames a touch closer, so the cut looks intentional.
@@ -2127,7 +2127,7 @@ Physics: the paper crinkling, the leather creaking; true weight where he sits; f
 
 Consistency: Lou matches @image1 exactly (relit) for the entire take; the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
-Editing: none — one continuous take, clean finish at ~22 s.
+Editing: none — one continuous take, clean finish at ~21 s.
 
 Technical: 9:16 vertical, 1080x1920, clean modern-phone video as described, honest casual framing.
 
@@ -2135,20 +2135,20 @@ ON-SCREEN TEXT: none. (Added in post by the team.)
 
 Audio (English ONLY):
 - Dialogue: Lou's voice is @audio1 exactly as recorded — precise lip-sync to every syllable; lips completely still when the audio is silent; no added words, no other voices, no humming. Verbatim:
-LOU: "Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. The person who goes first isn't the loser, they're the one with the guts."
+LOU: "Ask Grandpa Lou. Somebody wrote, should I text first, or will I look desperate? Sweetheart. Desperate is waiting three days to answer a message you read in three seconds. Text first. Call first! Whatever. Whoever goes first isn't the loser, they're the one with the guts."
 - Sound design: a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue, quiet and ducked under the voice.
 - Music: none. Fully original.
 
-Mood & tempo: playful, encouraging; ~22 seconds, 9:16, one take, no subtitles.
+Mood & tempo: playful, encouraging; ~21 seconds, 9:16, one take, no subtitles.
 
-SHOT BREAKDOWN (one take, ~22 s, 9:16, no subtitles; timings approximate — follow @audio1):
+SHOT BREAKDOWN (one take, ~21 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.8s — the soft settle-wobble as the propped phone finds its lean; the frame locks, slightly tilted.
 0.8–4.9s — «Somebody wrote…» he lifts the folded paper and peers at it.
 4.9–7.1s — «will I look desperate?…» he lowers the paper, a pitying look over it.
 7.1–12.8s — «Desperate is waiting three days…» one finger up.
-12.8–18.7s — «Text first. Call first! Whatever.…» a self-correction, then a dismissive wave.
-18.7–20.8s — «the one with the guts…» a fist to his chest.
-20.8–22.0s — he holds the last expression, mid-thought, lips still (the jump cut to Part 2 comes here). End.
+12.8–17.9s — «Text first. Call first! Whatever.…» a self-correction, then a dismissive wave.
+17.9–20.0s — «the one with the guts…» a fist to his chest.
+20.0–21.0s — he holds the last expression, mid-thought, lips still (the jump cut to Part 2 comes here). End.
 ```
 
 **PART 2 PROMPT:**
@@ -2189,7 +2189,7 @@ Physics: the paper crinkling, the leather creaking; true weight where he sits; f
 
 Consistency: Lou matches @image1 exactly (relit) for the entire take; the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
-Editing: none — one continuous take, clean finish at ~16 s.
+Editing: none — one continuous take, clean finish at ~15 s.
 
 Technical: 9:16 vertical, 1080x1920, clean modern-phone video as described, honest casual framing.
 
@@ -2197,18 +2197,18 @@ ON-SCREEN TEXT: none. (Added in post by the team.)
 
 Audio (English ONLY):
 - Dialogue: Lou's voice is @audio1 exactly as recorded — precise lip-sync to every syllable; lips completely still when the audio is silent; no added words, no other voices, no humming. Verbatim:
-LOU: "Angie went first once. She called the garage where I worked and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones."
+LOU: "Angie went first once. She called the garage and left a message with my boss. Biggest embarrassment of my life. I married her. Send your questions, I'll answer the good ones."
 - Sound design: a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue, quiet and ducked under the voice.
 - Music: none. Fully original.
 
-Mood & tempo: playful, encouraging; ~16 seconds, 9:16, one take, no subtitles.
+Mood & tempo: playful, encouraging; ~15 seconds, 9:16, one take, no subtitles.
 
-SHOT BREAKDOWN (one take, ~16 s, 9:16, no subtitles; timings approximate — follow @audio1):
+SHOT BREAKDOWN (one take, ~15 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.3s — a natural jump cut from Part 1: the same set-up, framing a touch closer; Lou is already mid-energy.
-0.3–9.8s — «left a message with my boss…» eyes wide, scandalised all over again (THE CENTERPIECE).
-9.8–12.3s — «I married her…» a soft, proud grin.
-12.3–14.4s — «I'll answer the good ones…» he waggles the paper.
-14.4–16.0s — FINAL BEAT (audio has ended, lips still): he folds the paper and tucks it into his cardigan pocket. End.
+0.3–8.6s — «left a message with my boss…» eyes wide, scandalised all over again (THE CENTERPIECE).
+8.6–11.1s — «I married her…» a soft, proud grin.
+11.1–13.2s — «I'll answer the good ones…» he waggles the paper.
+13.2–15.0s — FINAL BEAT (audio has ended, lips still): he folds the paper and tucks it into his cardigan pocket. End.
 ```
 
 </details>

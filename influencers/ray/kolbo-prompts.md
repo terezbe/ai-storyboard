@@ -29,7 +29,7 @@
 
 ## Y1: Red flags your money's got a leak
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7988 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7974 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -69,11 +69,11 @@ The cosy's wool flattening where the phone leans, steam curling off the mug, the
 
 SHOT 1 — 0:00–0:30 — Near-frontal medium close-up, chest-up, propped phone, one unbroken take, 9:16 vertical phone frame
 0:00–0:02 — Ray, a level look at the lens, almost bored: "Red flags your money's got a leak."
-0:02–0:11 — a tiny nod, as if showing his ID: "From a plumber. Red flag. You don't open the bank app on a Friday because you don't want to know. That's not a budget, love,"
+0:02–0:11 — a tiny nod, as if showing his ID: "From a plumber. Red flag. You don't open the bank app on a Friday. You don't want to know. That's not a budget, love,"
 0:11–0:13 — deadpan, one eyebrow lifts: "that's a horror film. Red flag."
-0:13–0:15 — a slow blink: "Your subscriptions have got subscriptions. Red flag..."
-0:15–0:21 — he stops himself and leans in: the register breaks: "no, this one's not a flag, it's the whole flood. You can't say where last month's money went."
-0:21–0:28 — a small headshake, then he taps the wall beside the table twice with a knuckle: "Not roughly. Not at all. A leak you can't see is still a leak. It's just in the wall."
+0:13–0:16 — a slow blink: "Your subscriptions have got subscriptions. Red flag..."
+0:16–0:22 — he stops himself and leans in: the register breaks: "no, this one's not a flag, it's the whole flood. You can't say where last month's money went."
+0:22–0:28 — a small headshake, then he taps the wall beside the table twice with a knuckle: "Not even roughly. A leak you can't see is still a leak. It's just in the wall."
 0:28–0:30 — silence, lips still: he picks up the mug and sips, eyes on the lens over the rim. Hold.
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
@@ -143,7 +143,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y3: You lot call it loud budgeting
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7471 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7568 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -165,7 +165,7 @@ Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in
 
 [CAST – IDENTICAL FOR THE WHOLE TAKE]
 Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build. Identity marks, always visible and unchanged: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest. His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven. His face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
-Wardrobe (this video): an old grey wool jumper with a small darned patch on the elbow, dark grey work trousers.
+Wardrobe (this video): an old grey wool jumper with a small darned patch on the elbow, dark grey work trousers. This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
 
@@ -200,7 +200,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y4: How I paid off my house at forty-one
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8171 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8268 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -222,7 +222,7 @@ Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in
 
 [CAST – IDENTICAL FOR THE WHOLE TAKE]
 Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build. Identity marks, always visible and unchanged: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest. His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven. His face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
-Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers.
+Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers. This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
 Off-screen: Kelly, his granddaughter, sits out of frame just to the right of the phone. Kelly is never seen and never heard.
@@ -432,7 +432,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y8: Twenty-five and skint
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7567 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7477 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -462,15 +462,15 @@ VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern E
 The place from @Image 3: a modest kitchen in an old English terraced house: a small Formica-topped table against the wall, a brown teapot under a knitted tea cosy, a chipped mug, an open spiral notebook with illegible handwritten columns, an old pocket calculator and a pencil, net curtains, pale green 1980s cupboards. No other people. No brands, no readable text, no signs.
 
 [LOCATION MAP]
-Medium close-up, he leans slightly toward the lens over the table; the tin's rim soft in the near foreground.
+Medium close-up, he leans slightly toward the lens over the table.
 
 [CONTINUITY – LOCKED]
 Nobody holds the phone: it is propped against a round biscuit tin on the kitchen table. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
-The biscuit tin lid catching the window light, his palms on the Formica; true body weight where he sits; fabric moves with his movement.
+The chipped mug catching the window light, his palms on the Formica; true body weight where he sits; fabric moves with his movement.
 
-SHOT 1 — 0:00–0:30 — Medium close-up, he leans slightly toward the lens over the table; the tin's rim soft in the near foreground, propped phone, one unbroken take, 9:16 vertical phone frame
+SHOT 1 — 0:00–0:30 — Medium close-up, he leans slightly toward the lens over the table, propped phone, one unbroken take, 9:16 vertical phone frame
 0:00–0:05 — Ray leans in slightly, kind: "If you're twenty-five and skint, listen to an old man for thirty seconds."
 0:05–0:09 — a small nod: a confession: "I was skint. January nineteen eighty-three, we couldn't pay the gas bill,"
 0:09–0:12 — a dry disbelieving look, the faint chuckle: "and I was a plumber. A plumber!"
@@ -490,7 +490,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y9: Ray's Rules (part two)
 
-- **Length:** 27 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7399 characters
+- **Length:** 27 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7496 characters
 
 ```text
 Single continuous shot, 27s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -512,7 +512,7 @@ Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in
 
 [CAST – IDENTICAL FOR THE WHOLE TAKE]
 Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build. Identity marks, always visible and unchanged: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest. His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven. His face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
-Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers.
+Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers. This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
 
@@ -547,7 +547,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y10: Sunday Sums (silent b-roll)
 
-- **Length:** 10 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 6898 characters
+- **Length:** 10 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 6995 characters
 
 ```text
 Single continuous shot, 10s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -568,7 +568,7 @@ Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in
 
 [CAST – IDENTICAL FOR THE WHOLE TAKE]
 Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build. Identity marks, always visible and unchanged: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest. His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven. His face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
-Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers.
+Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers. This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 Ray does not speak in this video.
 
@@ -658,7 +658,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y12: The Thirty-Day Wait
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7405 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7502 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -680,7 +680,7 @@ Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in
 
 [CAST – IDENTICAL FOR THE WHOLE TAKE]
 Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build. Identity marks, always visible and unchanged: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest. His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven. His face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
-Wardrobe (this video): an old grey wool jumper with a small darned patch on the elbow, dark grey work trousers.
+Wardrobe (this video): an old grey wool jumper with a small darned patch on the elbow, dark grey work trousers. This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
 
@@ -772,7 +772,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y14: Kelly asks what Sunday Sums is
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8209 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8306 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -794,7 +794,7 @@ Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in
 
 [CAST – IDENTICAL FOR THE WHOLE TAKE]
 Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build. Identity marks, always visible and unchanged: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest. His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven. His face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
-Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers.
+Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers. This replaces his usual navy work jacket and cream jumper: he is NOT wearing them in this video.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
 Off-screen: Kelly, his granddaughter, sits out of frame just to the right of the phone. Kelly is never seen and never heard.
