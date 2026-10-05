@@ -52,8 +52,25 @@ CHARS = {
         "signature": "two fingertips tap the red coral beads twice",
         "companion": "Giulia (her great-granddaughter)",
         "companion_short": "Giulia",
+        "companion_age": "Giulia (20), her great-granddaughter",
         "interviewer": "Giulia, her great-granddaughter, sitting just beside the lens",
         "speech_wpm": 170,
+        # Kolbo / Seedance 2.5 (native voice, Locked Intro). Approved in the R2 test on 2026-10-05.
+        "sex": "woman",
+        "persona": (
+            "warm, mischievous and blunt; quick and lively, never frail; upright and wiry, she sits square; she talks with "
+            "her hands in short, sharp gestures (a flat-hand chop, a finger wag, a pat of the air), sized small to medium, "
+            "never mugging; she laughs in the middle of her own sentences; her eyes check the viewer after each joke"
+        ),
+        "voice_kolbo": (
+            "An elderly woman in her mid-90s with a warm Sicilian Italian accent, soft and musical, natural, not a cartoon, "
+            "not heavy; a slightly husky timbre with a light rasp of age, strong and lively, never shaky; quick bursts of "
+            "words, then sudden pauses"
+        ),
+        "accent_short": "warm Sicilian accent",
+        "gender_lock": "She is a woman: a smooth upper lip and chin, NO moustache, no facial hair, no stubble.",
+        "avoid_extra": "a moustache, upper-lip hair or any facial hair; a masculine face",
+        "phone_owner": "filmed by her great-granddaughter on Rosa's old phone from around 2016",
     },
     "ray": {
         "name": "Ray",
@@ -87,8 +104,23 @@ CHARS = {
         "signature": "he unhooks the black-rimmed reading glasses from his jumper collar and puts them on",
         "companion": "Kelly (his granddaughter)",
         "companion_short": "Kelly",
+        "companion_age": "Kelly, his granddaughter",
         "interviewer": "Kelly, his granddaughter, sitting just beside the lens",
         "speech_wpm": 155,
+        "sex": "man",
+        "persona": (
+            "dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and "
+            "upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the "
+            "pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging"
+        ),
+        "voice_kolbo": (
+            "A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow "
+            "deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature"
+        ),
+        "accent_short": "dry Yorkshire accent",
+        "gender_lock": "His thick walrus moustache stays exactly as in @Image 1 and @Image 2; his chin is clean-shaven.",
+        "avoid_extra": "a beard or stubble on his chin; a missing or trimmed moustache",
+        "phone_owner": "filmed on his own old phone from around 2016",
     },
     "lou": {
         "name": "Lou",
@@ -122,8 +154,24 @@ CHARS = {
         "signature": "he touches the gold wedding band on the chain at his chest",
         "companion": "Nicky (his grandson)",
         "companion_short": "Nicky",
+        "companion_age": "Nicky (28), his grandson",
         "interviewer": "Nicky, his grandson, sitting across the table just beside the lens",
         "speech_wpm": 150,
+        "sex": "man",
+        "persona": (
+            "warm and twinkly, gentle but blunt; slow, with deliberate pauses; he leans forward a little when he means it; "
+            "small open-palm gestures, a finger raised for the lesson; a chuckle never far away; respectful of everyone, "
+            "never a caricature, never mugging"
+        ),
+        "voice_kolbo": (
+            "A 90-year-old man with a warm, natural Brooklyn Italian-American accent (not a mobster caricature), a soft "
+            "gravelly voice with an audible age rasp, strong enough and never frail; a slower pace with deliberate pauses; "
+            "a twinkle and a chuckle in the voice"
+        ),
+        "accent_short": "warm Brooklyn accent",
+        "gender_lock": "He is clean-shaven, with very bushy white eyebrows exactly as in @Image 1 and @Image 2.",
+        "avoid_extra": "a beard or moustache; thin or missing eyebrows",
+        "phone_owner": "filmed by his grandson on a new phone",
     },
 }
 
@@ -148,6 +196,7 @@ LOCS = {
                 "october": "A soft, clear autumn morning: low gentle sun from the LEFT, slightly softer and more golden than summer. A turquoise COLOR BOUNCE from the calm water, a warm bounce from the limestone, open-sky fill. True contact shadows where she sits.",
             },
             "sfx": "small waves lapping the rocks, light breeze on the phone mic, gulls, a distant boat engine",
+            "clutter": "her worn rubber sandals and a small faded canvas bag on the rock beside her",
         },
         "doorstep": {
             "file": "locations/3-doorstep.jpg",
@@ -158,6 +207,7 @@ LOCS = {
                 "evening": "Low evening light: a warm amber bounce from the ochre walls is the key from the RIGHT, the alley in soft deep shade, the sky above a pale glow. A faint blue from the door behind her. True contact shadows under the stool and her slippers.",
             },
             "sfx": "swallows, a neighbour's shutter creaking, a scooter far down the hill, the sheets on the washing line flapping softly",
+            "clutter": "a worn straw broom leaning on the wall and a chipped saucer of water for the cats by the step",
         },
     },
     "ray": {

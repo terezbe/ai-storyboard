@@ -311,7 +311,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock one step away and angled slightly down at her. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock about one and a half metres away and angled slightly down at her. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the flat rock beside the old metal ladder, the towel round her shoulders, the turquoise bay and the headland behind her, a touch off-center.
 
@@ -393,7 +393,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock one step away and angled slightly down at her. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock about one and a half metres away and angled slightly down at her. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the flat rock beside the old metal ladder, the towel round her shoulders, the turquoise bay and the headland behind her, a touch off-center.
 
@@ -454,7 +454,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock one step away and angled slightly down at her. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock about one and a half metres away and angled slightly down at her. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the flat rock beside the old metal ladder, the towel round her shoulders, the turquoise bay and the headland behind her, a touch off-center. Framing a touch closer than Part 1.
 
@@ -957,7 +957,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing in the alley one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing in the alley about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the low stool by the blue door, a touch off-center, geraniums beside her.
 
@@ -1038,7 +1038,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing in the alley one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing in the alley about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the low stool by the blue door, a touch off-center, geraniums beside her.
 
@@ -1098,7 +1098,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing in the alley one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing in the alley about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the low stool by the blue door, a touch off-center, geraniums beside her. Framing a touch closer than Part 1.
 
@@ -1673,7 +1673,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing a step down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing about one and a half metres down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the low stool by the blue door; the alley runs away behind her at frame right (Concetta's door is two doors down, off-frame).
 
@@ -1754,7 +1754,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing a step down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing about one and a half metres down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the low stool by the blue door; the alley runs away behind her at frame right (Concetta's door is two doors down, off-frame).
 
@@ -1816,7 +1816,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing a step down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing about one and a half metres down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the low stool by the blue door; the alley runs away behind her at frame right (Concetta's door is two doors down, off-frame). Framing a touch closer than Part 1.
 
@@ -1889,7 +1889,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing braced against the wind one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing braced against the wind about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the wet rock by the ladder; behind her the choppy grey-turquoise sea and small whitecaps.
 
@@ -1970,7 +1970,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing braced against the wind one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing braced against the wind about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the wet rock by the ladder; behind her the choppy grey-turquoise sea and small whitecaps.
 
@@ -2031,7 +2031,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing braced against the wind one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing braced against the wind about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot. She sits on the wet rock by the ladder; behind her the choppy grey-turquoise sea and small whitecaps. Framing a touch closer than Part 1.
 
@@ -2538,7 +2538,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the rock by the ladder, the calm empty bay behind her.
 
@@ -2619,7 +2619,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the rock by the ladder, the calm empty bay behind her.
 
@@ -2680,7 +2680,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock one step away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing on the rock about one and a half metres away. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the rock by the ladder, the calm empty bay behind her. Framing a touch closer than Part 1.
 
@@ -2974,7 +2974,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing a step down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing about one and a half metres down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the low stool, the alley running away at frame right toward Concetta's door (off-frame).
 
@@ -3053,7 +3053,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing a step down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing about one and a half metres down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the low stool, the alley running away at frame right toward Concetta's door (off-frame).
 
@@ -3111,7 +3111,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing a step down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, handheld by Giulia, alive): Giulia holds the phone at chest height, standing about one and a half metres down the alley. Natural standing or sitting micro-sway, one small human reframe mid-take, one tiny step-adjust. Giulia is never in frame and never heard. No gimbal smoothness, no zooms. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. Medium shot, she sits on the low stool, the alley running away at frame right toward Concetta's door (off-frame). Framing a touch closer than Part 1.
 

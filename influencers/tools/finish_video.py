@@ -82,7 +82,7 @@ def finish(vid, hook_seconds=3.5):
                 filters.append(text_filter(beat, i * span, (i + 1) * span, tmp, n, size=58, y="h*0.10"))
                 n += 1
         elif p["onscreen"] and hook_seconds > 0:
-            filters.append(text_filter(p["onscreen"], 0, min(hook_seconds, dur), tmp, n))
+            filters.append(text_filter(p["onscreen"], 0, min(hook_seconds, dur), tmp, n, y="h*0.07"))
         out = os.path.join(fdir, f"{vid}.mp4")
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", src, "-vf", ",".join(filters), "-c:v", "libx264", "-preset", "medium",
                         "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out], check=True)
