@@ -122,7 +122,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 |---|---|---|
 | Day 4 | Batch 1: the 10 Reels in this folder. No selling at all: they build trust and followers. | Steps 1 to 4 |
 | Day 5 | I read your report, choose which account gets the store first, and open the store. | Step 7, then step 5 when I send the link |
-| Days 6 to 10 | Batch 2: 5 Reels made to sell (R11 to R15), one a day, sent by me. Each caption ends with "My 30-Day Morning Reset is in my bio 🍋". | Post them like step 2. Daily link story. |
+| Days 6 to 10 | Batch 2: 5 new Reels (R11 to R15), one a day, sent by me with their own short instructions. A caption that mentions the product ends with "My 30-Day Morning Reset is in my bio 🍋". | Post them like step 2. Daily link story. |
 | Day 11 on | One Reel a day, new scripts from me. | The one-in-three rule below |
 
 **Rules for selling:**
@@ -151,7 +151,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 **If nothing sells in the first week,** check these in order and tell me what you found:
 
 1. The bio link opens the store, and the price shows $12 with $15.99 crossed out.
-2. Every batch-2 caption ends with "My 30-Day Morning Reset is in my bio 🍋".
+2. The batch-2 captions that mention the product end with "My 30-Day Morning Reset is in my bio 🍋", and the bio link works when they go live.
 3. The link story is posted every day and saved in the "Reset" highlight.
 4. Which Reels bring the most profile visits (Insights > the Reel > Profile activity). Tell me, and I'll write the next product video in that format.
 5. Keep posting. Don't delete videos and don't change the bio or the link without asking me. Results are judged after a full week, not after two days.

@@ -179,11 +179,98 @@ Content plan for Rosa, 94: health and healthy aging, the Sicilian widow who swim
 - **CTA:** none.
 - **Post caption:** Brave is not the same as clever. 🌊 Calm days only, and never alone. #seaswimming #watersafety #healthyaging #nonna
 
-## Batch 2: product videos (from day 5, if Rosa wins)
+## What batch 1 taught us (Instagram data, 2026-10-05, 3 to 12 hours after posting)
+
+Views from the public profile. It's early: views only, no saves or shares yet, and the youngest videos had the least time. These are hypotheses to test, not proven rules.
+
+| Post | Video | Hook (on-screen text) | Views |
+|---|---|---|---:|
+| 05 | R10 windy sea | "When the sea is angry, I stay by the ladder" | **1,365** |
+| 09 | R1 things I never do 1 | "Things I never do at 94" | 352 |
+| 03 | R9 things I never do 2 | "Things I never do at 94, part 2" | 326 |
+| 01 | R6 what I eat (b-roll) | "What I eat in a day at 94" (overlay) | 308 |
+| 02 | R8 riposo | "You call it lazy. We call it riposo." | 258 |
+| 10 | R2 swim, episode 1 | "94 and still swimming every morning" | 167 (youngest, 3.3 h) |
+| 04 | R5 morning red flags | "Red flags in your morning 🚩" | 158 |
+| 08 | R3 doctor | "My doctor is 60 years younger than me" | 157 |
+| 06 | R4 window before phone | "If you're 30 and wake up tired" | 147 |
+| 07 | R7 necklace | "Nonna, tell them about your necklace" | 93 |
+
+- **The winner (R10)** opens on visible tension: an angry sea and a 94-year-old next to it. The decision comes in the first seconds ("On days like this I don't swim"), then one short line she'd say again.
+- **Second place:** the "Things I never do at 94" series. The age, the word "never", and concrete, funny items.
+- **Weakest:** hooks that are a question someone asks her (R7), a generic trend label (R5), or the viewer's problem instead of hers (R4).
+
+## Hook rules (use for every new Rosa video)
+
+1. **Frame one shows the situation**: the sea, the fog, the scar, the object. Rosa is already mid-action, never a neutral talking head.
+2. **The first spoken sentence holds the tension** in about 8 words or fewer: a decision ("I'm not going in"), a contradiction ("The sea is perfect. I'm not going in."), or a surprising fact ("An octopus did this.").
+3. **The on-screen text is a statement, never a question someone asks her**: 8 words or fewer, with "94", a number or "never" when it fits, and the same idea as the first spoken line.
+4. **The reason lands by second 5.** Then one concrete detail, one line she'd say again, and a one-word close ("Ciao.").
+5. **One idea per video.** No set-up line ("Giulia says...", "Nonna, tell them...") before the hook.
+6. **The book is a character, not an ad.** At most two videos in five mention it, in Rosa's own words (a day number, a rule, her handwritten notebook, "it's in the bio"), never a price and never a URL. The product caption line goes only under those videos, and only once the store link is in the bio.
+
+## Batch 2: five data-led videos (from day 6, one a day)
+
+Built on the rules above. Each one tests a single idea:
+
+| Video | What it tests |
+|---|---|
+| R11 | The winner's shape (sea + decision) on a calm day: does the decision itself carry it? |
+| R12 | The winner's shape with dramatic weather again (fog), a new rule, and one soft line about the book at the end |
+| R13 | The second-best series, part 3, with the book in her own words: Day 6 and Day 1 of the book, the notebook, "in the bio" |
+| R14 | Hook test of R7: same story, set-up and length; only the opening line and on-screen text change |
+| R15 | A personal story that opens with the surprise, at the sea |
+
+Two of the five carry the book: R13 explicitly (she holds up her notebook and says it's in the bio) and R12 in one soft line (Salvatore's Rule: you miss one, you do the next). Their captions end with the product line; R11, R14 and R15 stay clean. The store sells through the bio link and the daily link story.
+
+### R11: The sea is perfect. I'm not going in.
+- **Format:** A, talking clip (her own phone propped on a stone; Giulia is late) · **Location:** `locations/2-sea-rocks.jpg`, a still morning with glassy water · **Outfit:** swimsuit under the open white shirt, dry hair, towel folded on her lap
+- **On-screen text:** "The sea is perfect. I'm not going in."
+- **Script:**
+  > The sea is perfect today. Look at it. Like oil. And I'm not going in. Why? Giulia is late. Eighty-five years I swim here, and I never go in alone. Never. Not at nine, not at ninety-four. Twenty minutes I sit on this rock like a seagull, waiting for a girl who can't find her shoes... The sea will wait. The sea always waits. Ah! There she is. Giulietta! Twenty minutes!
+- **Length:** ~72 words (~27 s)
+- **Post caption:** Never alone. Not at nine, not at 94. 🌊 (Only swim where it's safe, and never alone.) #seaswimming #watersafety #healthyaging #nonna
+
+### R12: If I can't see the rock, I don't swim
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/2-sea-rocks.jpg` in thick sea fog · **The book:** one soft line near the end (Salvatore's Rule from the failure page: you miss one, you do the next) · **Outfit:** swimsuit under the open white shirt, dry hair, towel folded on her lap
+- **On-screen text:** "If I can't see the rock, I don't swim"
+- **Script:**
+  > Fog. Today I don't swim. Where is the big rock? Every day it's there. Today, nothing. If I can't see the rock, I don't go in. Salvatore used to say, the fog is the sea closing the door. And you don't knock on a closed door. You're not the postman. So today, coffee. The door is closed, the morning is not. It's in my book, amore: you miss one, you do the next. Tomorrow the door opens. Ciao.
+- **Length:** ~79 words (~28 s)
+- **Post caption:** The fog is the sea closing the door. 🌫️ You miss one, you do the next. My 30-Day Morning Reset is in my bio 🍋 #seaswimming #watersafety #nonna #sicily
+
+### R13: Things I never do at 94 (part three)
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/1-kitchen.jpg` · **Outfit:** default white linen shirt · **The book:** explicit, in her own words. Her two 'nevers' are Day 6 (the Hallway Rule) and Day 1 (the Window Rule) of the book; she holds up her handwritten notebook and loses the word 'bio'
+- **On-screen text:** "Things I never do at 94, part 3"
+- **Script:**
+  > Things I never do at ninety-four. Part three. I never sleep with the telephone. Never. At night it sleeps here, next to the moka, like the cat. In my book, that's Day six. In the morning? First the window. That's Day one. Then the sea, then the coffee. The telephone? Maybe. Thirty mornings, one page each. Giulia typed it. It's in the... Giulia, where? The bio. In the bio, amore. Part four when Concetta does Day one.
+- **Length:** ~76 words (~28 s)
+- **Post caption:** Part three. The telephone sleeps in the kitchen. ☕ My 30-Day Morning Reset is in my bio 🍋 #healthyaging #nonna #oldways #morningroutine
+
+### R14: He bought this necklace with one fish (hook test of R7)
+- **Format:** B, interview (answers Giulia off camera), exactly like R7 · **Location:** `locations/3-doorstep.jpg` (evening) · **Outfit:** blue housedress, grey cardigan
+- **On-screen text:** "He bought this necklace with one fish"
+- **Script:**
+  > He bought this necklace with one fish. My husband, Salvatore. Nineteen fifty-two, he catches a swordfish so big it doesn't fit in the boat, he has to tie it on the side like a... like a second boat. He sells it, and he comes up all the steps with this in his pocket. Red coral. He lived to ninety-one, and every morning he walked me down to the sea. Now I walk myself. I still say good morning to him.
+- **Length:** ~80 words (~29 s)
+- **Test:** only the opening line and the on-screen text differ from R7. Compare both at the same age (24 h and 72 h).
+- **Post caption:** Sixty-nine years married. One fish. ❤️ #lovestory #nonna #sicily #grandmalove
+
+### R15: I lost a fight with an octopus at 11
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/2-sea-rocks.jpg`, calm morning · **Outfit:** after-swim (wet hair, striped towel over the open white shirt)
+- **On-screen text:** "I lost a fight with an octopus at 11"
+- **Script:**
+  > See this? An octopus. I was eleven. He lived under that rock, there... that one. Every day I put my hand in, every day he says no. One day I pull, he pulls, and I fall on my face on the rock. My mother cleaned it and called me stupid for a week. Eighty-three years later, I think his grandson is still under there. The octopus won. The sea always wins, amore. So you respect it.
+- **Length:** ~76 words (~29 s)
+- **Post caption:** The octopus won. The sea always wins. 🐙 #nonna #sicily #seaswimming #storytime
+
+## Parked: the first batch-2 drafts (product-led, not produced)
+
+Kept for later. To use one, rename it to the next free R number.
 
 Add this line to every batch-2 caption: **"My 30-Day Morning Reset is in my bio 🍋"**
 
-### R11: Day one of the Morning Reset
+#### P1: Day one of the Morning Reset
 - **Format:** A, talking clip (propped on the windowsill) · **Location:** `locations/1-kitchen.jpg` · **Outfit:** default white linen shirt
 - **On-screen text:** "Day 1: you only need a window"
 - **Script:**
@@ -191,7 +278,7 @@ Add this line to every batch-2 caption: **"My 30-Day Morning Reset is in my bio 
 - **Length:** ~80 words (~29 s)
 - **Post caption:** Day one costs nothing. Open the window. ☀️ My 30-Day Morning Reset is in my bio 🍋 #morningroutine #healthyaging #nonna
 
-### R12: Things I never do at 94 (part three)
+#### P2: Things I never do at 94 (part three)
 - **Format:** A, talking clip (propped against the moka pot) · **Location:** `locations/1-kitchen.jpg` · **Outfit:** Sunday navy dress with small white dots, black cardigan
 - **On-screen text:** "Things I never do at 94, part 3"
 - **Script:**
@@ -199,7 +286,7 @@ Add this line to every batch-2 caption: **"My 30-Day Morning Reset is in my bio 
 - **Length:** ~72 words (~26 s)
 - **Post caption:** Part three. Short, because Giulia says so. My 30-Day Morning Reset is in my bio 🍋 #healthyaging #nonna #oldways
 
-### R13: Swim with Rosa (episode 3, October)
+#### P3: Swim with Rosa (episode 3, October)
 - **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/2-sea-rocks.jpg`, soft autumn morning · **Outfit:** after-swim (wet hair, striped towel)
 - **On-screen text:** "The sea in October is the best sea"
 - **Script:**
@@ -207,7 +294,7 @@ Add this line to every batch-2 caption: **"My 30-Day Morning Reset is in my bio 
 - **Length:** ~80 words (~29 s)
 - **Post caption:** Find your sea. Even if it's a park. 🌊 My 30-Day Morning Reset is in my bio 🍋 #healthyaging #seaswimming #nonna
 
-### R14: What I tell Giulia every morning
+#### P4: What I tell Giulia every morning
 - **Format:** B, interview (answers Giulia off camera) · **Location:** `locations/1-kitchen.jpg` · **Outfit:** default white linen shirt
 - **On-screen text:** "Nonna, what do you tell me every morning?"
 - **Script:**
@@ -215,7 +302,7 @@ Add this line to every batch-2 caption: **"My 30-Day Morning Reset is in my bio 
 - **Length:** ~78 words (~28 s)
 - **Post caption:** She still doesn't listen. You can. My 30-Day Morning Reset is in my bio 🍋 #morningroutine #nonna #healthyaging
 
-### R15: Concetta tried my thirty mornings
+#### P5: Concetta tried my thirty mornings
 - **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/3-doorstep.jpg` (evening) · **Outfit:** blue housedress, grey cardigan
 - **On-screen text:** "My rival secretly tried my 30 mornings"
 - **Script:**

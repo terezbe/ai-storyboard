@@ -37,6 +37,7 @@ CHARS = {
         "outfits": {
             "default": "an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot",
             "swim": "a plain black modest one-piece swimsuit under the open oversized white linen shirt, wet slicked-back silver hair, a faded striped cotton towel round her shoulders, bare feet",
+            "swim_dry": "a plain black modest one-piece swimsuit under the open oversized white linen shirt, her short silver-white hair completely DRY (she has not been in the water today), a faded striped cotton towel folded on her lap, bare feet",
             "doorstep": "a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers",
             "sunday": "a navy dress with small white dots and a black cardigan",
         },
@@ -206,6 +207,8 @@ LOCS = {
                 "morning": "Soft low early-morning sun from the LEFT is the key, warm on her wet skin and hair. Open-sky fill from above. A turquoise COLOR BOUNCE from the water onto her chin and neck, and a pale warm bounce from the limestone. Water droplets catch tiny specular glints. True contact shadows where she sits on the rock and the towel presses down.",
                 "windy": "A windy overcast morning: soft, flat, cool daylight from the sky as a broad key from above-left. The sea is choppy, with small whitecaps slapping the rocks. A grey-turquoise COLOR BOUNCE from the water, and a pale bounce from the wet limestone. True contact shadows under her on the rock. Her wet hair and the towel edge move in the wind.",
                 "october": "A soft, clear autumn morning: low gentle sun from the LEFT, slightly softer and more golden than summer. A turquoise COLOR BOUNCE from the calm water, a warm bounce from the limestone, open-sky fill. True contact shadows where she sits.",
+                "glassy": "A still, clear early morning with no wind at all: low soft sun from the LEFT is the key, warm on her face. Behind her the sea is perfectly calm and glassy, a mirror of the pale sky, with only tiny ripples at the ladder. Open-sky fill from above. A turquoise COLOR BOUNCE from the water and a pale warm bounce from the dry limestone. True contact shadows where she sits.",
+                "fog": "A thick white sea fog: soft, shadowless, cool grey-white light from everywhere, the sun only a faint pale disc. The flat grey-green water vanishes into the fog a few metres out. A cool grey COLOR BOUNCE from the water and a pale bounce from the damp limestone. Tiny droplets of mist bead on her hair and the towel. Soft contact shadows under her. The fog stays exactly as thick for the whole take.",
             },
             "sfx": "small waves lapping the rocks, light breeze on the phone mic, gulls, a distant boat engine",
             "clutter": "her worn rubber sandals and a small faded canvas bag on the rock beside her",

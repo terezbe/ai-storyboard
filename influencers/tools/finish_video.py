@@ -46,7 +46,7 @@ def text_filter(txt, t0, t1, tmpdir, n, size=64, y="h*0.12"):
 
 
 # Spelling fixes for the automatic transcript (names the speech-to-text hears wrong).
-FIXES = {"Julia": "Giulia", "Conchita": "Concetta", "Nikki": "Nicky", "salaporia": "Salvatore", "Angia": "Angie",
+FIXES = {"Julia": "Giulia", "Conchita": "Concetta", "Nikki": "Nicky", "salaporia": "Salvatore", "Salaverio": "Salvatore", "Salvador": "Salvatore", "Angia": "Angie",
          "Lose rule": "Lou's rule"}
 
 

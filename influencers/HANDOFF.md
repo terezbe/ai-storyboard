@@ -25,7 +25,7 @@
 | `influencers/tools/build_video_prompts.py --print <ID> [--part 1\|2]` | Prints one paste-ready prompt |
 | `influencers/tools/finish_video.py <ID>\|all` | Joins two parts, burns the on-screen hook / b-roll overlay text, exports 1080x1920 to `<c>/final/` |
 
-## The proven Kolbo pipeline (used for all 30 batch-1 videos, 2026-10-05)
+## The proven Kolbo pipeline (used for all 30 batch-1 videos and Rosa's batch 2, 2026-10-05)
 
 Steps 0–3 below were the original plan. This is what actually worked for Rosa, Ray and Lou; use it for batch 2.
 
@@ -53,14 +53,16 @@ Steps 0–3 below were the original plan. This is what actually worked for Rosa,
      - quiet relatives' voices at Lou's Sunday lunch (L2, L5): about 15 dB under Lou, kept as room sound, dropped from the captions.
 5. **Upscale:** `edit_video` with `upscale` and model `bytedance-upscaler/upscale/video` at 1080p, about 30 credits. Save the result to `<c>/videos/<ID>.mp4`.
 6. **Captions:** save the transcript SRT (5 words per cue) as `<c>/captions/<ID>.srt`.
-   - Fix misheard names there or in `FIXES` in finish_video.py (Giulia, Concetta, Nicky, Angie, "Lou's rule"), and remove other speakers' lines.
+   - Fix misheard names there or in `FIXES` in finish_video.py (Giulia, Concetta, Salvatore, Nicky, Angie, "Lou's rule"), and remove other speakers' lines.
 7. **Finish:** `python3 influencers/tools/finish_video.py <ID>` burns the captions and the hook text and writes `<c>/final/<ID>.mp4`.
 8. **Package:** `python3 influencers/tools/make_instagram_package.py <c>` builds the upload folder and the small zip for ChatGPT: instructions (profile, posting, pins, comments, store link, sales strategy, reports), captions, covers, profile and posts.csv. Send the zip and each video separately (the file limit is 30 MiB).
+   - `--batch2 <c>` builds the batch-2 folder (`<c>/final/batch2-package/`, days 6–10 from `BATCH2` in the script), its own `GPT-INSTRUCTIONS-BATCH2.md` (what each video tests, the 24 h / 72 h measurements, the product-caption rule), the small zip and the tracked copy in `<c>/instagram/batch2/`.
 
 **Real cost:**
 - Rosa's 10 videos: 6,757 credits (2 test takes of R2, 9 drafts, 2 retakes, 10 upscales, 3 profile pictures, transcripts).
 - Ray's and Lou's 20 videos: 10,445 credits (20 drafts with no retakes, 20 upscales at about 31 each, 19 transcripts). About 5,200 per character.
 - Balance after batch 1: 7,334.
+- Rosa's batch 2 (R11–R15): 3,528 credits (7 drafts at 459–510 each: 5 plus retakes of R12 and R13 to put the book in; 5 upscales at about 30; 7 transcripts). Balance after: 3,806.
 - **Slow speakers:** the builder compresses the beat timing (PACE 0.94) so Ray's and Lou's scripts fit 30 s; Y1 and L10 were trimmed. Keep new scripts to about 75–80 words.
 
 ## Step 0: find out what Kolbo can do, then budget
@@ -169,7 +171,9 @@ For every route:
 
 ## After batch 1 (day 5 onward)
 
-- The winner gets batch 2 (5 product videos: #11–#15 in its content plan). Its store goes live per `influencers/SELLING-GUIDE.md`.
+- The winner gets batch 2 (5 videos: #11–#15 in its content plan). Its store goes live per `influencers/SELLING-GUIDE.md`.
+- **Rosa's batch 2 is done (R11–R15).** It was built from her batch-1 Instagram numbers: see `rosa/content-plan.md` ("What batch 1 taught us", "Hook rules", the batch-2 test table). Do the same for Ray or Lou when their numbers arrive: ask the user for views at 24 h and 72 h, saves and shares per post; write one hypothesis per video; keep the hook rules.
+- **The book in the videos (the user's rule, 2026-10-05):** the product must appear inside some videos, not only in captions. At most two videos in five mention it, in the character's own words and never as an ad: a day number or a rule from the book, a prop (Rosa's handwritten notebook), "it's in the bio". Never a price, never a URL. Only those videos get the product caption line. For Rosa this is R13 (explicit, the notebook, Day 1 and Day 6 of the book) and R12 (one soft line: Salvatore's Rule, "you miss one, you do the next"). R12 and R13 were retaken for this (the first takes had no book).
 - The products are in `influencers/<c>/product/`: PDF, store images and `sales-kit.md`.
 - **New scripts:** when the user sends a winning format or questions from comments, write new scripts:
   - same card format, same kill-list rules;

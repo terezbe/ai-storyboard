@@ -169,6 +169,11 @@ def scene_text(c, v):
     scene = LOCS[c][v["loc"]]["scene"]
     if v.get("light") == "windy":
         scene = scene.replace("calm turquoise water", "choppy grey-turquoise water with small whitecaps")
+    elif v.get("light") == "glassy":
+        scene = scene.replace("calm turquoise water", "perfectly calm, glassy turquoise water, flat as oil")
+    elif v.get("light") == "fog":
+        scene = scene.replace("calm turquoise water, an old metal ladder bolted into the rock, a mountain headland across the bay, small generic fishing boats",
+                              "flat grey-green water vanishing into thick white sea fog a few metres out, an old metal ladder bolted into the rock; the headland and the boats are hidden by the fog")
     return scene
 
 

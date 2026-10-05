@@ -229,7 +229,7 @@ def instructions(c, kit, posts):
     L.append("|---|---|---|")
     L.append(f"| Day 4 | Batch 1: the {n} Reels in this folder. No selling at all: they build trust and followers. | Steps 1 to 4 |")
     L.append("| Day 5 | I read your report, choose which account gets the store first, and open the store. | Step 7, then step 5 when I send the link |")
-    L.append(f"| Days 6 to 10 | Batch 2: 5 Reels made to sell ({ch['batch2']}), one a day, sent by me. Each caption ends with \"{ch['caption_line']}\". | Post them like step 2. Daily link story. |")
+    L.append(f"| Days 6 to 10 | Batch 2: 5 new Reels ({ch['batch2']}), one a day, sent by me with their own short instructions. A caption that mentions the product ends with \"{ch['caption_line']}\". | Post them like step 2. Daily link story. |")
     L.append("| Day 11 on | One Reel a day, new scripts from me. | The one-in-three rule below |")
     L.append("")
     L.append("**Rules for selling:**")
@@ -254,7 +254,7 @@ def instructions(c, kit, posts):
     L.append("**If nothing sells in the first week,** check these in order and tell me what you found:")
     L.append("")
     L.append("1. The bio link opens the store, and the price shows $12 with $15.99 crossed out.")
-    L.append(f"2. Every batch-2 caption ends with \"{ch['caption_line']}\".")
+    L.append(f"2. The batch-2 captions that mention the product end with \"{ch['caption_line']}\", and the bio link works when they go live.")
     L.append(f"3. The link story is posted every day and saved in the \"{ch['highlight']}\" highlight.")
     L.append("4. Which Reels bring the most profile visits (Insights > the Reel > Profile activity). Tell me, and I'll write the next product video in that format.")
     L.append("5. Keep posting. Don't delete videos and don't change the bio or the link without asking me. Results are judged after a full week, not after two days.")
@@ -379,6 +379,180 @@ def build(c):
           f"({os.path.getsize(small) / 1e6:.1f} MB, everything except the videos); texts also in {tracked}")
 
 
+# ---------------------------------------------------------------- batch 2
+# One Reel a day from day 6. "tests" is the single thing each video changes, so the results can be read.
+BATCH2 = {
+    "rosa": [
+        (6, "R11", "The winner's shape (the sea plus a clear decision) on a calm day: does the decision carry it?"),
+        (7, "R13", "Part 3 of the second-best series, with the book in Rosa's own words (Day 6 and Day 1 of the book, her notebook, 'in the bio'); product caption"),
+        (8, "R15", "A personal story that opens with the surprise, at the sea"),
+        (9, "R12", "The winner's shape again, with dramatic weather (fog), a new rule and one soft line about the book at the end; product caption"),
+        (10, "R14", "Hook test of R7 (post 07): same story and length; only the first line and the title text change"),
+    ],
+}
+
+
+def batch2_instructions(c, kit, posts):
+    ch = CHAR[c]
+    L = [f"# Batch 2 for @{kit['handle']}: {len(posts)} new Reels, one a day", ""]
+    L.append("Same account, same rules as `GPT-INSTRUCTIONS.md` from batch 1: AI label on every post, no music, no location, "
+             "captions pasted exactly, the store link only in the bio and the link story. This file replaces the batch-2 "
+             "line in that plan.")
+    L.append("")
+    L.append("Each video tests one thing, chosen from the batch-1 numbers. Don't change a caption, a cover or the order: "
+             "otherwise we can't tell what worked.")
+    L.append("")
+    L.append("## 1. Post one a day")
+    L.append("")
+    L.append("Post at about the same time each day: the hour batch 1 got the most views (Insights > Total followers > "
+             "Most active times, once it shows). Every video is attached, and also online at its link.")
+    L.append("")
+    L.append("| Day | Video file | Download link | Cover | Caption (paste exactly) |")
+    L.append("|---|---|---|---|---|")
+    for p in posts:
+        L.append(f"| {p['n']} | `{p['video']}` | {p.get('url') or '-'} | `{p['cover_file']}` | {p['caption']} |")
+    L.append("")
+    prod = [p for p in posts if ch["caption_line"] in p["caption"]]
+    if prod:
+        names = ", ".join(f"{p['vid']} (day {p['n']})" for p in prod)
+        L.append(f"**Product caption:** {names} ends with \"{ch['caption_line']}\". Post it only when the store link "
+                 "is already in the bio. If it isn't there yet, swap it with the next day's video and tell me.")
+        L.append("")
+    L.append("## 2. What each video tests")
+    L.append("")
+    L.append("| Day | Video | What it tests |")
+    L.append("|---|---|---|")
+    for p in posts:
+        L.append(f"| {p['n']} | {p['vid']}: {p['title']} | {p['tests']} |")
+    L.append("")
+    L.append("## 3. Keep doing every day")
+    L.append("")
+    L.append("- Repost the new Reel to your story, reply to comments in the first hour (replies table in `GPT-INSTRUCTIONS.md`).")
+    L.append(f"- Once the store is live: one story a day with the link sticker, saved to the \"{ch['highlight']}\" highlight.")
+    L.append("- Keep the batch-1 pins. If a batch-2 Reel clearly beats the pinned ones on saves plus shares after 72 hours, tell me before changing the pins.")
+    L.append("")
+    L.append("## 4. Measure it the same way for every video")
+    L.append("")
+    L.append("For each new Reel, open Insights **24 hours** after posting and again at **72 hours**, and write down:")
+    L.append("")
+    L.append("- views and accounts reached (viewers);")
+    L.append("- average watch time, and the retention graph's drop point if Instagram shows it;")
+    L.append("- likes, comments, saves, shares and follows from the post.")
+    L.append("")
+    L.append("Then work out **saves per 100 accounts reached** and **shares per 100 accounts reached**. If reach is missing, "
+             "use views and say so; never mix the two in one table.")
+    L.append("")
+    L.append("Send me one table per check, like this:")
+    L.append("")
+    L.append("| Video | Age (h) | Views | Reached | Avg watch (s) | Likes | Comments | Saves | Shares | Follows | Saves/100 | Shares/100 |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
+    L.append("")
+    L.append("Add the same row for the batch-1 videos they are compared with (R10 for R11 and R12, R1 and R9 for R13, R7 "
+             "for R14), from their insights now, with their age.")
+    L.append("")
+    L.append("**How we decide:** a format wins only if it repeats across videos and brings saves, shares or follows, not "
+             "views alone. Don't call a video a failure before 72 hours. Nothing here tells us which Reel made a sale; "
+             "I check sales in the store.")
+    L.append("")
+    return "\n".join(L) + "\n"
+
+
+def readme_he_batch2(c, kit, posts):
+    ch = CHAR[c]
+    rows = "\n".join(f"- יום {p['n']}: {p['video']} ({p['vid']})" for p in posts)
+    prod = [p for p in posts if ch["caption_line"] in p["caption"]]
+    if len(prod) == 1:
+        prod_line = (f"רק בכיתוב של סרטון אחד ({prod[0]['vid']}, יום {prod[0]['n']}) יש את שורת המוצר. "
+                     "GPT מעלה אותו רק אחרי שהלינק לחנות כבר בביו.")
+    elif prod:
+        names = " ו-".join(f"{p['vid']} (יום {p['n']})" for p in prod)
+        prod_line = (f"שורת המוצר נמצאת רק בכיתובים של {names}. GPT מעלה אותם רק אחרי שהלינק לחנות כבר בביו; "
+                     "שאר הכיתובים נקיים בכוונה.")
+    else:
+        prod_line = "באף כיתוב בגל הזה אין את שורת המוצר."
+    return f"""גל 2 ל-@{kit['handle']}: {len(posts)} סרטונים חדשים, אחד ליום
+==============================================
+
+מה יש כאן:
+- {len(posts)} הסרטונים (videos/, ונשלחו אליך גם בנפרד, וכל אחד גם בקישור ב-VIDEO-LINKS.txt).
+- captions ו-covers: כיתוב וקאבר לכל סרטון.
+- GPT-INSTRUCTIONS-BATCH2.md: ההוראות ל-GPT לגל הזה: לוח פרסום, מה כל סרטון בודק, ואיך מודדים אחרי 24 ו-72 שעות.
+- posts.csv: טבלת הפוסטים.
+
+סדר הפרסום:
+{rows}
+
+איך עובדים עם GPT:
+1. באותו צ'אט של החשבון (או צ'אט חדש עם Agent mode), מעלים את הזיפ הקטן של גל 2.
+2. כותבים: "Read GPT-INSTRUCTIONS-BATCH2.md in the zip and do it, one video a day."
+
+חשוב:
+- {prod_line}
+- לא משנים כיתובים או קאברים: כל סרטון בודק דבר אחד.
+- אחרי 24 ו-72 שעות GPT שולח טבלה. תעביר לי אותה ואני אגיד מה עבד ומה עושים בגל הבא.
+"""
+
+
+def build_batch2(c):
+    kit = launch_kit(c)
+    plan = parse_plan(c)
+    fdir = os.path.join(ROOT, c, "final")
+    pkg = os.path.join(fdir, "batch2-package")
+    if os.path.isdir(pkg):
+        shutil.rmtree(pkg)
+    for sub in ("videos", "captions", "covers"):
+        os.makedirs(os.path.join(pkg, sub))
+    tracked = os.path.join(ROOT, c, "instagram", "batch2")
+    os.makedirs(os.path.join(tracked, "captions"), exist_ok=True)
+    links_path = os.path.join(ROOT, c, "instagram", "video-links.json")
+    links = json.load(open(links_path)) if os.path.exists(links_path) else {}
+    posts = []
+    for day, vid, tests in BATCH2[c]:
+        src = os.path.join(fdir, f"{vid}.mp4")
+        if not os.path.exists(src):
+            sys.exit(f"missing {src}: run finish_video.py first")
+        video = f"day{day:02d}-{c}-{vid}.mp4"
+        shutil.copy(src, os.path.join(pkg, "videos", video))
+        cover(src, os.path.join(pkg, "covers", f"day{day:02d}-{vid}.jpg"))
+        cap = caption_for(plan, vid)
+        for path in (os.path.join(pkg, "captions", f"day{day:02d}-{vid}.txt"), os.path.join(tracked, "captions", f"day{day:02d}-{vid}.txt")):
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(cap + "\n")
+        posts.append(dict(n=day, vid=vid, video=video, caption_file=f"captions/day{day:02d}-{vid}.txt",
+                          cover_file=f"covers/day{day:02d}-{vid}.jpg", title=plan[vid]["title"], caption=cap,
+                          tests=tests, url=links.get(vid)))
+    ins = batch2_instructions(c, kit, posts)
+    for path in (os.path.join(pkg, "GPT-INSTRUCTIONS-BATCH2.md"), os.path.join(tracked, "GPT-INSTRUCTIONS-BATCH2.md")):
+        with open(path, "w", encoding="utf-8") as fh:
+            fh.write(ins)
+    for path in (os.path.join(pkg, "posts.csv"), os.path.join(tracked, "posts.csv")):
+        with open(path, "w", encoding="utf-8", newline="") as fh:
+            w = csv.writer(fh)
+            w.writerow(["day", "video_file", "video_url", "caption_file", "cover_file", "title", "tests", "caption", "posted"])
+            for p in posts:
+                w.writerow([p["n"], p["video"], p.get("url") or "", p["caption_file"], p["cover_file"], p["title"], p["tests"], p["caption"], ""])
+    if links:
+        lines = [f"day {p['n']:02d}  {p['video']}  {p.get('url') or '(no link)'}" for p in posts]
+        for path in (os.path.join(pkg, "VIDEO-LINKS.txt"), os.path.join(tracked, "VIDEO-LINKS.txt")):
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(f"@{kit['handle']} batch 2: download links, one video a day\n\n" + "\n".join(lines) + "\n")
+    with open(os.path.join(pkg, "READ-ME-FIRST-HE.txt"), "w", encoding="utf-8") as fh:
+        fh.write(readme_he_batch2(c, kit, posts))
+    small = os.path.join(fdir, f"{kit['handle']}-batch2-instructions-captions-covers.zip")
+    with zipfile.ZipFile(small, "w", zipfile.ZIP_DEFLATED) as z:
+        for root, _, files in os.walk(pkg):
+            for f in files:
+                if f.endswith(".mp4"):
+                    continue
+                full = os.path.join(root, f)
+                z.write(full, os.path.relpath(full, fdir))
+    print(f"wrote {pkg} and {small} ({os.path.getsize(small) / 1e6:.1f} MB); texts also in {tracked}")
+
+
 if __name__ == "__main__":
+    if sys.argv[1:2] == ["--batch2"]:
+        for ch in sys.argv[2:]:
+            build_batch2(ch)
+        sys.exit()
     for ch in sys.argv[1:] or ["rosa"]:
         build(ch)
