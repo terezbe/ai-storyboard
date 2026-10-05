@@ -25,6 +25,37 @@
 | `influencers/tools/build_video_prompts.py --print <ID> [--part 1\|2]` | Prints one paste-ready prompt |
 | `influencers/tools/finish_video.py <ID>\|all` | Joins two parts, burns the on-screen hook / b-roll overlay text, exports 1080x1920 to `<c>/final/` |
 
+## The proven Kolbo pipeline (used for Rosa batch 1, 2026-10-05)
+
+Steps 0–3 below were the original plan. This is what actually worked; use it for Ray and Lou.
+
+1. **Prompts:** `python3 influencers/tools/kolbo_prompts.py <c>` writes `<c>/kolbo-prompts.md` and `.json`.
+   - The prompts use Seedance 2.5 Locked Intro: one continuous 9:16 take, ≤30 s.
+   - The model performs the English dialogue natively, so there's no TTS, no audio file and no lip-sync step.
+2. **Assets:** upload `sheet.jpg`, `profile-picture.jpg` and the 3 location stills once with `create_upload_ticket`, in this order: @Image 1 = sheet, @Image 2 = profile picture, @Image 3 = location.
+   - Kolbo project for Rosa: `AI Influencers – Nonna Rosa` (find it with `list_projects`). Make one project per character.
+3. **Generate:** `generate_elements` with these settings:
+   - model `seedance-2-5`, resolution `480p-draft`, aspect 9:16, `multi_shots` false;
+   - `duration` = the Total line.
+   - Cost: about 17 credits per second, so about 500 for a 30 s clip.
+4. **QC every take:**
+   - Frames: check the face, the identity marks, the outfit, extra people or hands, and the framing.
+   - Words: `transcribe_audio` (language en). The transcript must match the script.
+   - Failures seen so far, and the fixes now built into the builder:
+     - a moustache or goatee on Rosa: gender lock in CAST and AVOID, and the "little beard" gesture is drawn in the air, away from her chin;
+     - a selfie arm when someone else should hold the phone: "NOT a selfie" line and a camera distance of about 1.5 m;
+     - a finger in front of the lens: clear-lens line, and the interviewer sits out of frame;
+     - the outfit falling back to the sheet's linen shirt: "This replaces her usual …" line (`outfit_not` in chars.py);
+     - a fisheye low angle on a propped phone: set the phone at chest height, about 1.5 m away.
+5. **Upscale:** `edit_video` with `upscale` and model `bytedance-upscaler/upscale/video` at 1080p, about 30 credits. Save the result to `<c>/videos/<ID>.mp4`.
+6. **Captions:** save the transcript SRT (5 words per cue) as `<c>/captions/<ID>.srt`.
+7. **Finish:** `python3 influencers/tools/finish_video.py <ID>` burns the captions and the hook text and writes `<c>/final/<ID>.mp4`.
+
+**Real cost for Rosa's 10 videos:** 6,757 credits in total.
+- This covers 2 test takes of R2, 9 drafts, 2 retakes, 10 upscales (30–120 each), 3 profile pictures and the transcripts.
+- Expect about 5,500–6,500 per character.
+- **Ray and Lou:** most of their scripts run over 30 s at their slow pace. `kolbo-prompts.json` marks those as `compressed`. Either trim the script or split it into two takes joined with a jump cut.
+
 ## Step 0: find out what Kolbo can do, then budget
 
 1. List Kolbo's tools and models. Find:
@@ -106,7 +137,7 @@ For every route:
 ## Step 4: finish and deliver
 
 1. Run `python3 influencers/tools/finish_video.py all`. It joins the parts, burns the on-screen hook text for 3.5 s (or the b-roll overlay beats), and exports to `influencers/<c>/final/<ID>.mp4`.
-2. **Spoken captions** are the user's job, because they need exact speech sync. Tell the user to add them free in CapCut ("Auto captions") or Instagram Edits. Big, clean captions: most people watch muted.
+2. **Spoken captions** are burned in automatically when `<c>/captions/<ID>.srt` exists (from `transcribe_audio`). The finals are ready to post.
 3. Deliver the finals to the user's phone:
    - send them with the file-sending tool;
    - and if Google Drive is connected, upload them to a folder "AI Influencers/<Character>/Batch 1" and share the link.

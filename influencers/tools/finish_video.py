@@ -7,8 +7,8 @@ Usage:
   python3 influencers/tools/finish_video.py all           # every clip found in */videos/
 
 Reads the on-screen text (hook) and b-roll overlay beats from <character>/content-plan.md.
-Writes <character>/final/<ID>.mp4. Needs ffmpeg with drawtext (installed system-wide here).
-Captions for the spoken words: use CapCut "Auto captions" or Instagram Edits (free); they sync to speech.
+Spoken captions: if <character>/captions/<ID>.srt exists (Kolbo transcribe_audio, 5 words per cue), they are burned in.
+Writes <character>/final/<ID>.mp4. Needs ffmpeg with drawtext and libass (installed system-wide here).
 """
 import os
 import re
@@ -45,6 +45,43 @@ def text_filter(txt, t0, t1, tmpdir, n, size=64, y="h*0.12"):
             f"line_spacing=14:text_align=C:x=(w-text_w)/2:y={y}:enable='between(t,{t0:.2f},{t1:.2f})'")
 
 
+# Spelling fixes for the automatic transcript (names the speech-to-text hears wrong).
+FIXES = {"Julia": "Giulia", "Conchita": "Concetta", "Nikki": "Nicky", "salaporia": "Salvatore"}
+
+
+def srt_to_ass(srt_path, ass_path):
+    """Spoken captions as ASS: big white bold text, black outline, in the lower-middle safe zone."""
+    blocks = re.split(r"\n\s*\n", open(srt_path, encoding="utf-8").read().strip())
+    events = []
+    for b in blocks:
+        lines = b.strip().splitlines()
+        if len(lines) < 3:
+            continue
+        m = re.match(r"(\d+):(\d+):(\d+),(\d+) --> (\d+):(\d+):(\d+),(\d+)", lines[1])
+        if not m:
+            continue
+        g = [int(x) for x in m.groups()]
+        t0 = g[0] * 3600 + g[1] * 60 + g[2] + g[3] / 1000
+        t1 = g[4] * 3600 + g[5] * 60 + g[6] + g[7] / 1000
+        text = " ".join(lines[2:])
+        for wrong, right in FIXES.items():
+            text = re.sub(rf"\b{wrong}\b", right, text, flags=re.I)
+        events.append((t0, t1, text.replace("{", "(").replace("}", ")")))
+
+    def ts(t):
+        cs = int(round(t * 100))
+        return f"{cs // 360000}:{cs // 6000 % 60:02d}:{cs // 100 % 60:02d}.{cs % 100:02d}"
+
+    head = ("[Script Info]\nScriptType: v4.00+\nPlayResX: 1080\nPlayResY: 1920\nWrapStyle: 0\n\n"
+            "[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, "
+            "Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, "
+            "MarginR, MarginV, Encoding\n"
+            "Style: Cap,DejaVu Sans,80,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,-1,0,0,0,100,100,0,0,1,6,1,2,80,80,540,1\n\n"
+            "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n")
+    with open(ass_path, "w", encoding="utf-8") as fh:
+        fh.write(head + "".join(f"Dialogue: 0,{ts(a)},{ts(b)},Cap,,0,0,0,,{t}\n" for a, b, t in events))
+
+
 def finish(vid, hook_seconds=3.5):
     c = PREFIX[vid[0]]
     vdir = os.path.join(ROOT, c, "videos")
@@ -75,6 +112,11 @@ def finish(vid, hook_seconds=3.5):
         p = parse_plan(c)[vid]
         dur = duration(src)
         filters = ["scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30"]
+        srt = os.path.join(ROOT, c, "captions", f"{vid}.srt")
+        if os.path.exists(srt):
+            ass = os.path.join(tmp, "captions.ass")
+            srt_to_ass(srt, ass)
+            filters.append(f"ass={ass}")
         n = 0
         if p["overlay"]:
             span = dur / len(p["overlay"])

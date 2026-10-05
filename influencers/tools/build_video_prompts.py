@@ -359,7 +359,7 @@ def lipsync_prompt(c, v):
     ch = CHARS[c]
     n, his = ch["name"], ch["his"]
     who = ("talks to the camera" if v["fmt"] == "A"
-           else f"answers {ch['companion_short']} just beside the lens, never looking into the camera")
+           else f"answers {ch['companion_short']} just off-lens, never looking into the camera")
     key = [b for b in v["beats"] if b[1].startswith("THE SIGNATURE") or b[1].startswith("COMIC")]
     picks = (key + [b for b in v["beats"] if b not in key])[:4]
     picks.sort(key=lambda b: v["beats"].index(b))

@@ -719,7 +719,7 @@ Use the first reference image (character sheet) for identity ONLY and the second
 **FULL PROMPT (single clip, Seedance 2.x multi-reference):**
 
 ```text
-TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting just beside the lens; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE CREDIT TO MAUREEN: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting out of frame just to the right of the phone; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE CREDIT TO MAUREEN: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE MAN (Ray, a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build; identity anchors: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest; in this video wearing a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -734,7 +734,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real retired plumber who films himself on his own old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no badges, no number plates, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it.
 
@@ -745,7 +745,7 @@ GOAL: make Kelly understand it was ordinary.
 OBSTACLE: the number impresses people, and he dislikes that.
 TACTIC: he underplays everything and gives Maureen the credit, eyes on Kelly.
 Moment to moment: «Nineteen seventy-nine» — eyes up to the ceiling, remembering; «We did it in seventeen» — a small shrug; «Boring, love.» — a fond look at Kelly; «One car, and it was old» — one finger; «we lived on the old wage» — he taps the table with a fingertip, steady; «Your gran's idea» — he nods toward the door; the register breaks, warm; «I just wrote it down» — a small modest gesture at the notebook; «Boring's underrated» — the faintest smile.
-The question was just asked by Kelly, his granddaughter, sitting just beside the lens (it appears as on-screen text in post): he answers Kelly, never the lens.
+The question was just asked by Kelly, his granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): he answers Kelly, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Kelly is never seen; nobody else is heard.
@@ -785,7 +785,7 @@ SHOT BREAKDOWN (one take, ~33 s, 9:16, no subtitles; timings approximate — fol
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
 
 ```text
-Ray answers Kelly just beside the lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “Nineteen seventy-nine” eyes up to the ceiling, remembering; on “We did it in seventeen” a small shrug; on “Boring, love.” a fond look at Kelly; on “One car, and it was old” one finger. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep his face, anchors, outfit and the lighting exactly as in the image.
+Ray answers Kelly just off-lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “Nineteen seventy-nine” eyes up to the ceiling, remembering; on “We did it in seventeen” a small shrug; on “Boring, love.” a fond look at Kelly; on “One car, and it was old” one finger. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep his face, anchors, outfit and the lighting exactly as in the image.
 ```
 
 <details><summary><b>TWO-PART version</b> (voice over 28 s, or a 15-second generator)</summary>
@@ -801,7 +801,7 @@ Part 2 frames a touch closer, so the cut looks intentional.
 **PART 1 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting just beside the lens; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) Keep the energy rising to the cut; the payoff comes in Part 2. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting out of frame just to the right of the phone; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) Keep the energy rising to the cut; the payoff comes in Part 2. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE MAN (Ray, a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build; identity anchors: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest; in this video wearing a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -816,7 +816,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real retired plumber who films himself on his own old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no badges, no number plates, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it.
 
@@ -827,7 +827,7 @@ GOAL: make Kelly understand it was ordinary.
 OBSTACLE: the number impresses people, and he dislikes that.
 TACTIC: he underplays everything and gives Maureen the credit, eyes on Kelly.
 Moment to moment: «Nineteen seventy-nine» — eyes up to the ceiling, remembering; «We did it in seventeen» — a small shrug; «Boring, love.» — a fond look at Kelly.
-The question was just asked by Kelly, his granddaughter, sitting just beside the lens (it appears as on-screen text in post): he answers Kelly, never the lens.
+The question was just asked by Kelly, his granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): he answers Kelly, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Kelly is never seen; nobody else is heard.
@@ -862,7 +862,7 @@ SHOT BREAKDOWN (one take, ~13 s, 9:16, no subtitles; timings approximate — fol
 **PART 2 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting just beside the lens; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE CREDIT TO MAUREEN: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting out of frame just to the right of the phone; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE CREDIT TO MAUREEN: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE MAN (Ray, a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build; identity anchors: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest; in this video wearing a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -877,7 +877,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real retired plumber who films himself on his own old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no badges, no number plates, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it. Framing a touch closer than Part 1.
 
@@ -888,7 +888,7 @@ GOAL: make Kelly understand it was ordinary.
 OBSTACLE: the number impresses people, and he dislikes that.
 TACTIC: he underplays everything and gives Maureen the credit, eyes on Kelly.
 Moment to moment: «One car, and it was old» — one finger; «we lived on the old wage» — he taps the table with a fingertip, steady; «Your gran's idea» — he nods toward the door; the register breaks, warm; «I just wrote it down» — a small modest gesture at the notebook; «Boring's underrated» — the faintest smile.
-The question was just asked by Kelly, his granddaughter, sitting just beside the lens (it appears as on-screen text in post): he answers Kelly, never the lens.
+The question was just asked by Kelly, his granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): he answers Kelly, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Kelly is never seen; nobody else is heard.
@@ -2709,7 +2709,7 @@ Use the first reference image (character sheet) for identity ONLY and the second
 **FULL PROMPT (single clip, Seedance 2.x multi-reference):**
 
 ```text
-TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting just beside the lens; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE MONSTER-VERSUS-DRIP gesture: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting out of frame just to the right of the phone; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE MONSTER-VERSUS-DRIP gesture: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE MAN (Ray, a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build; identity anchors: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest; in this video wearing a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -2724,7 +2724,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real retired plumber who films himself on his own old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no badges, no number plates, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it.
 
@@ -2735,7 +2735,7 @@ GOAL: make it sound small enough to start.
 OBSTACLE: Maureen's role: he wants the credit, but she checks it.
 TACTIC: gentle and teaching; he gestures at the notebook, eyes on Kelly.
 Moment to moment: «Sunday Sums.» — a fond look at Kelly; «a brew and the notebook» — he lifts the mug slightly; «Last week's money» — one hand to the left, then the other to the right: two piles; «well, I do everything else» — a self-correcting smirk; «but she checks it» — a glance toward the door; «a big monster» — hands wide; «It's a drip you never look at» — finger and thumb close together: tiny; «It's in my bio» — a nod.
-The question was just asked by Kelly, his granddaughter, sitting just beside the lens (it appears as on-screen text in post): he answers Kelly, never the lens.
+The question was just asked by Kelly, his granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): he answers Kelly, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 PROPS: a mug of tea in his hand from frame one. PROP RULE: every prop exists from frame one; it does not appear, disappear or change design, and it moves only in the scripted beat(s).
@@ -2776,7 +2776,7 @@ SHOT BREAKDOWN (one take, ~34 s, 9:16, no subtitles; timings approximate — fol
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
 
 ```text
-Ray answers Kelly just beside the lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “Sunday Sums.” a fond look at Kelly; on “a brew and the notebook” he lifts the mug slightly; on “Last week's money” one hand to the left, then the other to the right: two piles; on “well, I do everything else” a self-correcting smirk. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep his face, anchors, outfit and the lighting exactly as in the image.
+Ray answers Kelly just off-lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “Sunday Sums.” a fond look at Kelly; on “a brew and the notebook” he lifts the mug slightly; on “Last week's money” one hand to the left, then the other to the right: two piles; on “well, I do everything else” a self-correcting smirk. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep his face, anchors, outfit and the lighting exactly as in the image.
 ```
 
 <details><summary><b>TWO-PART version</b> (voice over 28 s, or a 15-second generator)</summary>
@@ -2792,7 +2792,7 @@ Part 2 frames a touch closer, so the cut looks intentional.
 **PART 1 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting just beside the lens; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) Keep the energy rising to the cut; the payoff comes in Part 2. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the brown teapot at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting out of frame just to the right of the phone; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) Keep the energy rising to the cut; the payoff comes in Part 2. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE MAN (Ray, a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build; identity anchors: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest; in this video wearing a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -2807,7 +2807,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real retired plumber who films himself on his own old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no badges, no number plates, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it.
 
@@ -2818,7 +2818,7 @@ GOAL: make it sound small enough to start.
 OBSTACLE: Maureen's role: he wants the credit, but she checks it.
 TACTIC: gentle and teaching; he gestures at the notebook, eyes on Kelly.
 Moment to moment: «Sunday Sums.» — a fond look at Kelly; «a brew and the notebook» — he lifts the mug slightly; «Last week's money» — one hand to the left, then the other to the right: two piles; «well, I do everything else» — a self-correcting smirk; «but she checks it» — a glance toward the door.
-The question was just asked by Kelly, his granddaughter, sitting just beside the lens (it appears as on-screen text in post): he answers Kelly, never the lens.
+The question was just asked by Kelly, his granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): he answers Kelly, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 PROPS: a mug of tea in his hand from frame one. PROP RULE: every prop exists from frame one; it does not appear, disappear or change design, and it moves only in the scripted beat(s).
@@ -2856,7 +2856,7 @@ SHOT BREAKDOWN (one take, ~17 s, 9:16, no subtitles; timings approximate — fol
 **PART 2 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting just beside the lens; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE MONSTER-VERSUS-DRIP gesture: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Ray speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: his eyeline stays on Kelly, his granddaughter, sitting out of frame just to the right of the phone; he NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE MONSTER-VERSUS-DRIP gesture: give it room. 6) Face and identity match @image1 100% for the entire take; the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE MAN (Ray, a genuinely elderly 71-year-old English working-class man, NOT young, NOT middle-aged, ruddy fair weathered skin with visible pores, deep forehead lines, a lean angular face (not round, no double chin), kind sceptical grey eyes, short grey hair at the sides, clean-shaven chin, a lean wiry build; identity anchors: a thick bushy grey walrus moustache covering his upper lip; a brown herringbone tweed flat cap; a pair of black-rimmed reading glasses folded and hooked into the collar of his jumper at the chest; in this video wearing a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -2871,7 +2871,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real retired plumber who films himself on his own old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no badges, no number plates, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it. Framing a touch closer than Part 1.
 
@@ -2882,7 +2882,7 @@ GOAL: make it sound small enough to start.
 OBSTACLE: Maureen's role: he wants the credit, but she checks it.
 TACTIC: gentle and teaching; he gestures at the notebook, eyes on Kelly.
 Moment to moment: «a big monster» — hands wide; «It's a drip you never look at» — finger and thumb close together: tiny; «It's in my bio» — a nod.
-The question was just asked by Kelly, his granddaughter, sitting just beside the lens (it appears as on-screen text in post): he answers Kelly, never the lens.
+The question was just asked by Kelly, his granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): he answers Kelly, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 PROPS: a mug of tea in his hand from frame one. PROP RULE: every prop exists from frame one; it does not appear, disappear or change design, and it moves only in the scripted beat(s).

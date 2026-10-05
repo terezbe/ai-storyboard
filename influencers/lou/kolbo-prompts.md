@@ -29,7 +29,7 @@
 
 ## L1: Lou's Rules #1, after eleven
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7671 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7797 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -62,7 +62,7 @@ The place from @Image 3: a 1970s-style living room in an old Brooklyn rowhouse: 
 45-degree medium shot, chest-up. He sits in the brown leather armchair; the lamp and the wall photos are soft behind him.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. No prop appears, disappears or changes.
+Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The leather creaking, the chain glinting, cardigan buttons catching the light; true body weight where he sits; fabric moves with his movement.
@@ -77,7 +77,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium shot, chest-up, propped phone, one u
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent, and he touches the gold wedding band on the chain at his chest only on "Hey is not a question".
@@ -85,7 +85,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L2: What's a situationship?
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7826 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7993 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -116,16 +116,16 @@ Off-screen: Nicky (28), his grandson, holds the phone. Nicky is never seen and n
 The place from @Image 3: an Italian-American family dining room at Sunday lunch: a long table with a white lace tablecloth, a big pot of red sauce, rigatoni, meatballs, crusty bread, a carafe of red wine, mismatched glasses, a china cabinet, indistinct framed photos. No other people. No brands, no readable text, no signs.
 
 [LOCATION MAP]
-Medium shot across the table. His eyeline goes to Nicky just beside the lens, never into it. The red sauce and rigatoni are soft in the foreground.
+Medium shot across the table. His eyeline goes to Nicky, just off-lens to the right, never into the lens. The red sauce and rigatoni are soft in the foreground.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. Framing constant after the opening second. Interview set-up: Lou answers Nicky, his grandson, sitting across the table just beside the lens; his eyeline stays on Nicky just beside the lens and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. Props: a fork held in his right hand from frame one. Every prop is there from the first frame and never appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Interview set-up: Lou answers Nicky, his grandson, sitting across the table, out of frame just to the right of the phone; his eyeline stays on Nicky, just off-lens to the right, and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. Props: a fork held in his right hand from frame one. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The paper napkin in his collar, the fork tines catching light, family murmur off-frame; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium shot across the table, phone handheld by Nicky, one unbroken take, 9:16 vertical phone frame
-0:00–0:04 — Lou, he taps his hearing aid and leans toward Nicky (once only), then a slow nod, processing: "A what-ship? A situation-ship. Okay. So you see each other,"
+0:00–0:04 — Lou taps his hearing aid and leans toward Nicky (once only), then a slow nod, processing: "A what-ship? A situation-ship. Okay. So you see each other,"
 0:04–0:08 — he counts on his fingers, puzzled: "you go to the sister's birthday... but you're not together."
 0:08–0:14 — eyebrows up, incredulous: "And nobody's allowed to ask. In my day we had a word for that, kid."
 0:14–0:16 — a flat, knowing look: "We called it, he's not serious."
@@ -135,7 +135,7 @@ SHOT 1 — 0:00–0:30 — Medium shot across the table, phone handheld by Nicky
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; cutlery on plates, a family murmur off-frame with no clear words, a chair scraping, a glass set down on the table. His lips move only when he speaks and stay still in every silence. No other voices. No interviewer voice: the question is added later as on-screen text.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; Lou looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; Lou looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -143,7 +143,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L3: Eleven cents
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7566 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7688 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -177,13 +177,13 @@ The place from @Image 3: the brownstone front stoop of an old Brooklyn rowhouse 
 Medium shot. He sits on the top step, a touch off-center; the iron handrail and the potted chrysanthemum are beside him.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone at his eye level, sitting two steps below him. Framing constant after the opening second. No prop appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone at his eye level, sitting two steps below him. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 Leaves skittering on the steps, the camel coat folding, long golden shadows; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium shot, phone handheld by Nicky, one unbroken take, 9:16 vertical phone frame
-0:00–0:04 — Lou, he pats his coat pocket: "I asked my wife out with eleven cents in my pocket."
+0:00–0:04 — Lou pats his coat pocket: "I asked my wife out with eleven cents in my pocket."
 0:04–0:06 — two fingers, then one: "A dime and a penny. Nineteen fifty-five,"
 0:06–0:13 — a nod down the street: "she works at the bakery. Three weeks, I buy bread every morning, I don't say a word."
 0:13–0:16 — a laugh: "My mother thought I was sick. Then one day..."
@@ -194,7 +194,7 @@ SHOT 1 — 0:00–0:30 — Medium shot, phone handheld by Nicky, one unbroken ta
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; dry leaves skittering on the pavement, a car door far down the street, a dog barking once, wind in the street trees. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent, and he touches the gold wedding band on the chain at his chest only on "Sixty-five years, kid".
@@ -202,7 +202,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L4: Red flags from 1955 that still work
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7337 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7463 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -235,7 +235,7 @@ The place from @Image 3: a 1970s-style living room in an old Brooklyn rowhouse: 
 45-degree medium shot; the framed wedding photo on the side table is visible from the side (no faces).
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. No prop appears, disappears or changes.
+Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The leather creaking, the chain glinting; true body weight where he sits; fabric moves with his movement.
@@ -250,7 +250,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium shot; the framed wedding photo on th
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -258,7 +258,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L5: If he wanted to, he'd call
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7610 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7732 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -292,13 +292,13 @@ The place from @Image 3: an Italian-American family dining room at Sunday lunch:
 Medium shot across the table, he speaks to the lens; plates and the sauce pot soft in the foreground.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. Framing constant after the opening second. Props: a piece of crusty bread on his plate (picked up only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: a piece of crusty bread on his plate (picked up only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The napkin in his collar, the cutlery, family murmur off-frame; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium shot across the table, he speaks to the lens; plates and the sauce pot soft in the foreground, phone handheld by Nicky, one unbroken take, 9:16 vertical phone frame
-0:00–0:04 — Lou, he repeats it slowly, testing it: "If he wanted to, he would. That's what you kids say, right?"
+0:00–0:04 — Lou repeats it slowly, testing it: "If he wanted to, he would. That's what you kids say, right?"
 0:04–0:09 — a so-so hand wobble: "It's close. Lemme fix it for you. If he wanted to, he'd call."
 0:09–0:12 — he taps the table on each word: "Not text. Call. A text you can send"
 0:12–0:16 — a disgusted little face: "from the bathroom while you're watching the game. A call,"
@@ -308,7 +308,7 @@ SHOT 1 — 0:00–0:30 — Medium shot across the table, he speaks to the lens; 
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; cutlery on plates, a family murmur off-frame with no clear words, a chair scraping, a glass set down on the table. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent, and he touches the gold wedding band on the chain at his chest only on "Don't text, sweetheart. Call.".
@@ -316,7 +316,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L6: Rizz in 1955
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7549 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7716 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -347,16 +347,16 @@ Off-screen: Nicky (28), his grandson, holds the phone. Nicky is never seen and n
 The place from @Image 3: an Italian-American family dining room at Sunday lunch: a long table with a white lace tablecloth, a big pot of red sauce, rigatoni, meatballs, crusty bread, a carafe of red wine, mismatched glasses, a china cabinet, indistinct framed photos. No other people. No brands, no readable text, no signs.
 
 [LOCATION MAP]
-Medium shot across the table. His eyeline goes to Nicky just beside the lens, never into it.
+Medium shot across the table. His eyeline goes to Nicky, just off-lens to the right, never into the lens.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. Framing constant after the opening second. Interview set-up: Lou answers Nicky, his grandson, sitting across the table just beside the lens; his eyeline stays on Nicky just beside the lens and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. No prop appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Interview set-up: Lou answers Nicky, his grandson, sitting across the table, out of frame just to the right of the phone; his eyeline stays on Nicky, just off-lens to the right, and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. No prop appears, disappears or changes.
 
 [PHYSICS]
 The napkin in his collar, the cardigan cables shifting; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium shot across the table, phone handheld by Nicky, one unbroken take, 9:16 vertical phone frame
-0:00–0:02 — Lou, he taps his hearing aid and leans toward Nicky (once only), then he points at the bowl of rigatoni: "My what? Riz? Like rice?"
+0:00–0:02 — Lou taps his hearing aid and leans toward Nicky (once only), then he points at the bowl of rigatoni: "My what? Riz? Like rice?"
 0:02–0:06 — a dawning, amused look: "Oh. Rizz. My rizz, kid. I showed up. On time."
 0:06–0:09 — he brushes his cardigan front proudly: "With my shoes shined, and my hair,"
 0:09–0:13 — a rueful pat of his thin hair: "I had hair then, with the comb in my back pocket"
@@ -366,7 +366,7 @@ SHOT 1 — 0:00–0:30 — Medium shot across the table, phone handheld by Nicky
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; cutlery on plates, a family murmur off-frame with no clear words, a chair scraping, a glass set down on the table. His lips move only when he speaks and stay still in every silence. No other voices. No interviewer voice: the question is added later as on-screen text.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; Lou looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; Lou looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -374,7 +374,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L7: Ghosting
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7323 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7445 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -407,13 +407,13 @@ The place from @Image 3: the brownstone front stoop of an old Brooklyn rowhouse 
 A too-close selfie: his face fills much of the frame, the stoop steps and golden street tilting behind.
 
 [CONTINUITY – LOCKED]
-Lou holds the phone close to his face in both hands, a little too close and slightly below his chin; his free hand does the gestures. Framing constant after the opening second. No prop appears, disappears or changes.
+Lou holds the phone close to his face in both hands, a little too close and slightly below his chin; his free hand does the gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 Close front-camera wide distortion, the phone shaking slightly in his hands, golden light flaring at the frame edge; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — A too-close selfie: his face fills much of the frame, the stoop steps and golden street tilting behind, Lou's handheld selfie, one unbroken take, 9:16 vertical phone frame
-0:00–0:02 — Lou, he squints into the too-close phone: "Ghosting. Nicky explained it to me."
+0:00–0:02 — Lou squints into the too-close phone: "Ghosting. Nicky explained it to me."
 0:02–0:06 — a wounded look: "I'm still upset. You go on three dates with somebody,"
 0:06–0:08 — eyebrows up, baffled: "and then you just... disappear? Kid,"
 0:08–0:16 — a proud chin lift: "I drove a bus for thirty-eight years. If I wasn't gonna make your stop, I told you. I said, sorry, folks,"
@@ -425,7 +425,7 @@ SHOT 1 — 0:00–0:30 — A too-close selfie: his face fills much of the frame,
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; dry leaves skittering on the pavement, a car door far down the street, a dog barking once, wind in the street trees. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -433,7 +433,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L8: The ring on the chain
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7348 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7470 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -466,13 +466,13 @@ The place from @Image 3: a 1970s-style living room in an old Brooklyn rowhouse: 
 45-degree medium close-up, chest-up, the ring and chain clearly visible on his cardigan.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the glass of water on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. No prop appears, disappears or changes.
+Nobody holds the phone: it is propped against the glass of water on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The thin gold chain catching the lamp light, the leather creaking; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — 45-degree medium close-up, chest-up, the ring and chain clearly visible on his cardigan, propped phone, one unbroken take, 9:16 vertical phone frame
-0:00–0:03 — Lou, he lifts the ring on the chain between two fingers (the signature move: the only time in the whole video): "This is my wedding ring. It doesn't fit anymore,"
+0:00–0:03 — Lou lifts the ring on the chain between two fingers (the signature move: the only time in the whole video): "This is my wedding ring. It doesn't fit anymore,"
 0:03–0:09 — he lets it rest back on his chest: "so it lives here. Twenty nineteen, my knuckles got big. The ring didn't get smaller,"
 0:09–0:16 — a self-deprecating chuckle, then a warm smile, eyes glistening but bright: "I got bigger. Angie laughed so hard. She said, Louie, now it's closer to your heart, like a..."
 0:16–0:22 — he searches for the words, then taps the ring like a badge, then the register breaks: quiet, eyes drop: "like a sheriff's badge. She passed two years later. Sixty-five years. People ask me the secret."
@@ -481,7 +481,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium close-up, chest-up, the ring and cha
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent, and he touches the gold wedding band on the chain at his chest only on "This is my wedding ring".
@@ -489,7 +489,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L9: Lou's Rules #2, first date on a Tuesday
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7234 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7360 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -523,7 +523,7 @@ The place from @Image 3: the brownstone front stoop of an old Brooklyn rowhouse 
 Medium shot, he sits on the top step, a touch off-center.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone at his eye level, sitting on the step below him. Framing constant after the opening second. No prop appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone at his eye level, sitting on the step below him. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 Leaves skittering, the coat folds, long golden shadows; true body weight where he sits; fabric moves with his movement.
@@ -539,7 +539,7 @@ SHOT 1 — 0:00–0:30 — Medium shot, he sits on the top step, a touch off-cen
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; dry leaves skittering on the pavement, a car door far down the street, a dog barking once, wind in the street trees. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -547,7 +547,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L10: Ask Grandpa Lou: should I text first?
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7520 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7642 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -580,13 +580,13 @@ The place from @Image 3: a 1970s-style living room in an old Brooklyn rowhouse: 
 45-degree medium shot, chest-up.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: a folded sheet of paper with illegible printed writing (Nicky printed the comment), held in his hand from frame one. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: a folded sheet of paper with illegible printed writing (Nicky printed the comment), held in his hand from frame one. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The paper crinkling, the leather creaking; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — 45-degree medium shot, chest-up, propped phone, one unbroken take, 9:16 vertical phone frame
-0:00–0:03 — Lou, he lifts the folded paper and peers at it: "Ask Grandpa Lou. Somebody wrote, should I text first,"
+0:00–0:03 — Lou lifts the folded paper and peers at it: "Ask Grandpa Lou. Somebody wrote, should I text first,"
 0:03–0:05 — he lowers the paper, a pitying look over it: "or will I look desperate? Sweetheart."
 0:05–0:10 — one finger up: "Desperate is waiting three days to answer a message you read in three seconds."
 0:10–0:14 — a self-correction, then a dismissive wave: "Text first. Call first! Whatever. The person who goes first isn't the loser,"
@@ -597,7 +597,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium shot, chest-up, propped phone, one u
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -605,7 +605,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L11: They went quiet
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7085 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7211 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -639,7 +639,7 @@ The place from @Image 3: an Italian-American family dining room at Sunday lunch:
 Medium shot across the table, he speaks to the lens.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. Framing constant after the opening second. No prop appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The napkin in his collar, family murmur off-frame; true body weight where he sits; fabric moves with his movement.
@@ -655,7 +655,7 @@ SHOT 1 — 0:00–0:30 — Medium shot across the table, he speaks to the lens, 
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; cutlery on plates, a family murmur off-frame with no clear words, a chair scraping, a glass set down on the table. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -663,7 +663,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L12: How to ask somebody out
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7117 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-stoop.jpg` · 7243 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -697,7 +697,7 @@ The place from @Image 3: the brownstone front stoop of an old Brooklyn rowhouse 
 Medium shot, he sits on the top step.
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone at his eye level, sitting on the step below him. Framing constant after the opening second. No prop appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone at his eye level, sitting on the step below him. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 Leaves skittering, the coat folds, long golden shadows; true body weight where he sits; fabric moves with his movement.
@@ -713,7 +713,7 @@ SHOT 1 — 0:00–0:30 — Medium shot, he sits on the top step, phone handheld 
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; dry leaves skittering on the pavement, a car door far down the street, a dog barking once, wind in the street trees. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -721,7 +721,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L13: Ask Grandpa Lou: how do I end a situationship?
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7173 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-armchair.jpg` · 7299 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -754,7 +754,7 @@ The place from @Image 3: a 1970s-style living room in an old Brooklyn rowhouse: 
 45-degree medium shot, chest-up; the glass of water on the side table at frame edge.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: a glass of water on the side table (lifted only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against a short stack of hardback books on the side table, at a 45-degree angle. Lou is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: a glass of water on the side table (lifted only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The lamp light on the chain, the leather creaking; true body weight where he sits; fabric moves with his movement.
@@ -770,7 +770,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium shot, chest-up; the glass of water o
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; a clock ticking, the leather armchair creaking, a radiator clicking, a very distant siren on the avenue. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -778,7 +778,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L14: The first phone call
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7102 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7228 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
@@ -812,7 +812,7 @@ The place from @Image 3: an Italian-American family dining room at Sunday lunch:
 Medium shot across the table, he speaks to the lens (and teases Nicky behind it).
 
 [CONTINUITY – LOCKED]
-This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. Framing constant after the opening second. No prop appears, disappears or changes.
+This is NOT a selfie: Lou is not holding the phone, no arm reaches toward the lens, and both of his hands are free for his gestures. Nicky holds the phone across the table at chest height, sitting. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The napkin in his collar, cutlery sounds off-frame; true body weight where he sits; fabric moves with his movement.
@@ -830,7 +830,7 @@ SHOT 1 — 0:00–0:30 — Medium shot across the table, he speaks to the lens (
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; cutlery on plates, a family murmur off-frame with no clear words, a chair scraping, a glass set down on the table. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; a selfie arm or Lou holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.
@@ -838,7 +838,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @
 
 ## L15: Lou's Rules #3, the phone goes face down
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7062 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sunday-lunch.jpg` · 7188 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -871,7 +871,7 @@ The place from @Image 3: an Italian-American family dining room at Sunday lunch:
 Medium close-up, chest-up, the sugar bowl's rim soft in the near foreground.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the sugar bowl on the table, a little below his eye level. Lou is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. No prop appears, disappears or changes.
+Nobody holds the phone: it is propped against the sugar bowl on the table, a little below his eye level. Lou is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The napkin in his collar, the lace cloth under his hands; true body weight where he sits; fabric moves with his movement.
@@ -887,7 +887,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, chest-up, the sugar bowl's rim soft 
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Lou's voice close and clear, English only, exactly the quoted words and nothing added; cutlery on plates, a family murmur off-frame with no clear words, a chair scraping, a glass set down on the table. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or moustache; thin or missing eyebrows; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or moustache; thin or missing eyebrows; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the very bushy white eyebrows, the beige hearing aid behind his right ear, the plain gold wedding band on a thin gold chain); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Lou. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his warm Brooklyn accent.

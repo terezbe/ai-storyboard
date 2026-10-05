@@ -165,6 +165,13 @@ def segments(c, v, script):
     return out, prev, compressed
 
 
+def scene_text(c, v):
+    scene = LOCS[c][v["loc"]]["scene"]
+    if v.get("light") == "windy":
+        scene = scene.replace("calm turquoise water", "choppy grey-turquoise water with small whitecaps")
+    return scene
+
+
 def references(c, v):
     ch = CHARS[c]
     n, his, sex = ch["name"], ch["his"], ch["sex"]
@@ -175,7 +182,7 @@ def references(c, v):
         f"layout, and do not copy its outfit ({his} outfit for this video is written in CAST).",
         f"@Image 2 is a close-up photo of the same {sex}, {n}, at a natural angle: it confirms {his} face. Use only {his} face "
         "and hair; ignore its background, light and clothes.",
-        f"@Image 3 defines the location: {LOCS[c][v['loc']]['scene']}. Use the place only.",
+        f"@Image 3 defines the location: {scene_text(c, v)}. Use the place only.",
     ]
 
 
@@ -195,7 +202,8 @@ def locked_intro(c, v, speaking=True):
     ident = ch["identity"].replace(f"{n}, ", "", 1)
     L.append(f"{n} (@Image 1): {ident}. Identity marks, always visible and unchanged: {ch['anchors']}. {ch['gender_lock']} "
              f"{His} face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.")
-    L.append(f"Wardrobe (this video): {ch['outfits'][v['outfit']]}.")
+    note = ch.get("outfit_not", {}).get(v["outfit"], "")
+    L.append(f"Wardrobe (this video): {ch['outfits'][v['outfit']]}." + (f" {note}" if note else ""))
     L.append(f"PERSONA: {ch['persona']}.")
     if speaking:
         L.append(f"VOICE: English only. {ch['voice_kolbo']}.")
@@ -203,21 +211,22 @@ def locked_intro(c, v, speaking=True):
         L.append(f"{n} does not speak in this video.")
     kind = v["cam"][0]
     if kind == "companion" or v["fmt"] == "B":
-        L.append(f"Off-screen: {ch['companion_age']}, {'holds the phone' if kind == 'companion' else 'sits just beside the lens'}. "
+        L.append(f"Off-screen: {ch['companion_age']}, {'holds the phone' if kind == 'companion' else 'sits out of frame just to the right of the phone'}. "
                  f"{ch['companion_short']} is never seen and never heard.")
     L.append("")
     L.append("[LOCATION]")
     extra = f" Real, untidy details that never move: {loc['clutter']}." if loc.get("clutter") else ""
-    L.append(f"The place from @Image 3: {loc['scene']}. No other people.{extra} No brands, no readable text, no signs.")
+    L.append(f"The place from @Image 3: {scene_text(c, v)}. No other people.{extra} No brands, no readable text, no signs.")
     L.append("")
     L.append("[LOCATION MAP]")
     L.append(v["framing"])
     L.append("")
     L.append("[CONTINUITY – LOCKED]")
-    cont = camera_setup(c, v) + " Framing constant after the opening second."
+    cont = (camera_setup(c, v) + " The lens is clean and clear: no finger, hand or object in front of it."
+            " Framing constant after the opening second.")
     if v["fmt"] == "B":
-        cont += (f" Interview set-up: {n} answers {ch['interviewer']}; {his} eyeline stays on {ch['companion_short']} just "
-                 f"beside the lens and {he} NEVER looks into the camera. The question was asked before the clip starts and is "
+        cont += (f" Interview set-up: {n} answers {ch['interviewer']}; {his} eyeline stays on {ch['companion_short']}, just "
+                 f"off-lens to the right, and {he} NEVER looks into the camera. The question was asked before the clip starts and is "
                  "added later as on-screen text: there is no interviewer voice.")
     if v["fmt"] == "C":
         cont += f" TEXT-SAFE FRAME: the upper third of the frame stays visually calm; {n} lives in the lower two-thirds."
@@ -236,7 +245,7 @@ def avoid(c, v, speaking=True):
     ch = CHARS[c]
     n = ch["name"]
     kind = v["cam"][0]
-    items = [ch["avoid_extra"]]
+    items = ([v["avoid"]] if v.get("avoid") else []) + [ch["avoid_extra"], "a finger, hand or blurred object in front of the lens"]
     if kind == "companion":
         items.append(f"a selfie arm or {n} holding the phone")
     if v["fmt"] == "B":
@@ -275,8 +284,9 @@ def kolbo_prompt(c, v, script):
     size = v["framing"].split(".")[0]
     L.append(f"SHOT 1 — 0:00–{tc(dur)} — {size}, {camera_heading(c, v)}, one unbroken take, 9:16 vertical phone frame")
     for k, (t0, t1, quote, action) in enumerate(beats):
-        who = f"{n}, " if k == 0 else ""
-        L.append(f"{tc(t0)}–{tc(t1)} — {who}{action}: \"{quote}\"")
+        if k == 0:
+            action = re.sub(r"^(she|he) ", f"{n} ", action) if re.match(r"(she|he) ", action) else f"{n}, {action}"
+        L.append(f"{tc(t0)}–{tc(t1)} — {action}: \"{quote}\"")
     if dur > speech_end:
         end_action = f"{final}" if final else "she holds the last expression, mid-thought"
         L.append(f"{tc(speech_end)}–{tc(dur)} — silence, lips still: {end_action}. Hold.")

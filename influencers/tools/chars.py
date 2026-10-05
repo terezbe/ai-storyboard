@@ -53,7 +53,7 @@ CHARS = {
         "companion": "Giulia (her great-granddaughter)",
         "companion_short": "Giulia",
         "companion_age": "Giulia (20), her great-granddaughter",
-        "interviewer": "Giulia, her great-granddaughter, sitting just beside the lens",
+        "interviewer": "Giulia, her great-granddaughter, sitting out of frame just to the right of the phone",
         "speech_wpm": 170,
         # Kolbo / Seedance 2.5 (native voice, Locked Intro). Approved in the R2 test on 2026-10-05.
         "sex": "woman",
@@ -71,6 +71,10 @@ CHARS = {
         "gender_lock": "She is a woman: a smooth upper lip and chin, NO moustache, no facial hair, no stubble.",
         "avoid_extra": "a moustache, upper-lip hair or any facial hair; a masculine face",
         "phone_owner": "filmed by her great-granddaughter on Rosa's old phone from around 2016",
+        "outfit_not": {
+            "doorstep": "This replaces her usual white linen shirt and navy trousers: she is NOT wearing them in this video.",
+            "sunday": "This replaces her usual white linen shirt and navy trousers: she is NOT wearing them in this video.",
+        },
     },
     "ray": {
         "name": "Ray",
@@ -105,7 +109,7 @@ CHARS = {
         "companion": "Kelly (his granddaughter)",
         "companion_short": "Kelly",
         "companion_age": "Kelly, his granddaughter",
-        "interviewer": "Kelly, his granddaughter, sitting just beside the lens",
+        "interviewer": "Kelly, his granddaughter, sitting out of frame just to the right of the phone",
         "speech_wpm": 155,
         "sex": "man",
         "persona": (
@@ -155,7 +159,7 @@ CHARS = {
         "companion": "Nicky (his grandson)",
         "companion_short": "Nicky",
         "companion_age": "Nicky (28), his grandson",
-        "interviewer": "Nicky, his grandson, sitting across the table just beside the lens",
+        "interviewer": "Nicky, his grandson, sitting across the table, out of frame just to the right of the phone",
         "speech_wpm": 150,
         "sex": "man",
         "persona": (

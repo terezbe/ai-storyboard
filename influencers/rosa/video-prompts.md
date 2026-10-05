@@ -515,7 +515,7 @@ Use the first reference image (character sheet) for identity ONLY and the second
 **FULL PROMPT (single clip, Seedance 2.x multi-reference):**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against a terracotta pot of red geraniums on the doorstep, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 4) The centerpiece is THE DEADPAN on the last line: give it room. 5) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 6) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against an upturned wooden crate about one and a half metres in front of her, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 4) The centerpiece is THE DEADPAN on the last line: give it room. 5) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 6) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -530,9 +530,9 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot of red geraniums on the doorstep, slightly below her eye level. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against an upturned wooden crate about one and a half metres in front of her, at her chest height. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
-Composition: 9:16. Medium shot from slightly below. She sits on the low wooden stool by the blue door; a soft edge of geranium leaves is in the near foreground.
+Composition: 9:16. Medium shot at chest height. She sits on the low wooden stool by the blue door, a pot of red geraniums at the edge of the frame.
 
 ACTING TASK — ROSA (fully invested; the work reads through the eyes, the stillness and the brow line):
 SCENE DIRECTION (unspoken): doorstep gossip about her very young doctor.
@@ -540,12 +540,12 @@ MOTIVE (fuel): she adores the boy, but she loves being the one who knows best.
 GOAL: land the double punchline.
 OBSTACLE: she mustn't sound like she's mocking doctors; she respects him.
 TACTIC: she plays both parts, the serious doctor and herself, eyes on the lens for the punchlines.
-Moment to moment: «My doctor is sixty years younger» — a delighted, scandalised look straight into the lens; «Little beard, like a goat» — she strokes an imaginary goatee on her own chin; «he listens to my chest» — she mimes a doctor peering at papers, at the lens, then at the papers again; «Signora, keep doing» — a solemn deep-voiced imitation, chin tucked; «I wasn't asking» — a sharp little shrug, eyes sparkling: the first punchline; «No, no, I listen to him» — both palms up, suddenly sincere; «He says I'm his favorite» — a proud chin lift; «He says that to everybody» — her face drops into deadpan for the second punchline; a beat of silence.
+Moment to moment: «My doctor is sixty years younger» — a delighted, scandalised look straight into the lens; «Little beard, like a goat» — she draws the doctor's little pointed beard in the air with one finger, a hand's width in front of her own chin, which stays smooth and bare; «he listens to my chest» — she mimes a doctor peering at papers, at the lens, then at the papers again; «Signora, keep doing» — a solemn deep-voiced imitation, chin tucked; «I wasn't asking» — a sharp little shrug, eyes sparkling: the first punchline; «No, no, I listen to him» — both palms up, suddenly sincere; «He says I'm his favorite» — a proud chin lift; «He says that to everybody» — her face drops into deadpan for the second punchline; a beat of silence.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
 
-Physics: the cardigan sleeve sliding up her right wrist during the goatee mime to show the faded anchor tattoo, the stool creaking, the sheets moving overhead; true weight where she sits; fabric breathing with her movement.
+Physics: the cardigan sleeve sliding up her right wrist as she draws the beard in the air, showing the faded anchor tattoo, the stool creaking, the sheets moving overhead; true weight where she sits; fabric breathing with her movement.
 
 Consistency: Rosa matches @image1 exactly (relit) for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
@@ -566,7 +566,7 @@ Mood & tempo: gossipy, warm, sharp timing; ~31 seconds, 9:16, one take, no subti
 SHOT BREAKDOWN (one take, ~31 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.8s — the soft settle-wobble as the propped phone finds its lean; the frame locks, slightly tilted.
 0.8–4.2s — «My doctor is sixty years younger…» a delighted, scandalised look straight into the lens.
-4.2–6.7s — «Little beard, like a goat…» she strokes an imaginary goatee on her own chin.
+4.2–6.7s — «Little beard, like a goat…» she draws the doctor's little pointed beard in the air with one finger, a hand's width in front of her own chin, which stays smooth and bare.
 6.7–15.3s — «he listens to my chest…» she mimes a doctor peering at papers, at the lens, then at the papers again.
 15.3–18.9s — «Signora, keep doing…» a solemn deep-voiced imitation, chin tucked.
 18.9–20.1s — «I wasn't asking…» a sharp little shrug, eyes sparkling: the first punchline (THE CENTERPIECE).
@@ -579,7 +579,7 @@ SHOT BREAKDOWN (one take, ~31 s, 9:16, no subtitles; timings approximate — fol
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
 
 ```text
-Rosa talks to the camera with natural, invested delivery that matches the voice exactly: on “My doctor is sixty years younger” a delighted, scandalised look straight into the lens; on “Little beard, like a goat” she strokes an imaginary goatee on her own chin; on “he listens to my chest” she mimes a doctor peering at papers, at the lens, then at the papers again; on “Signora, keep doing” a solemn deep-voiced imitation, chin tucked. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep her face, anchors, outfit and the lighting exactly as in the image.
+Rosa talks to the camera with natural, invested delivery that matches the voice exactly: on “My doctor is sixty years younger” a delighted, scandalised look straight into the lens; on “Little beard, like a goat” she draws the doctor's little pointed beard in the air with one finger, a hand's width in front of her own chin, which stays smooth and bare; on “he listens to my chest” she mimes a doctor peering at papers, at the lens, then at the papers again; on “Signora, keep doing” a solemn deep-voiced imitation, chin tucked. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep her face, anchors, outfit and the lighting exactly as in the image.
 ```
 
 <details><summary><b>TWO-PART version</b> (voice over 28 s, or a 15-second generator)</summary>
@@ -595,7 +595,7 @@ Part 2 frames a touch closer, so the cut looks intentional.
 **PART 1 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against a terracotta pot of red geraniums on the doorstep, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 4) Keep the energy rising to the cut; the payoff comes in Part 2. 5) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 6) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against an upturned wooden crate about one and a half metres in front of her, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 4) Keep the energy rising to the cut; the payoff comes in Part 2. 5) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 6) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -610,9 +610,9 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot of red geraniums on the doorstep, slightly below her eye level. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against an upturned wooden crate about one and a half metres in front of her, at her chest height. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
-Composition: 9:16. Medium shot from slightly below. She sits on the low wooden stool by the blue door; a soft edge of geranium leaves is in the near foreground.
+Composition: 9:16. Medium shot at chest height. She sits on the low wooden stool by the blue door, a pot of red geraniums at the edge of the frame.
 
 ACTING TASK — ROSA (fully invested; the work reads through the eyes, the stillness and the brow line):
 SCENE DIRECTION (unspoken): doorstep gossip about her very young doctor.
@@ -620,12 +620,12 @@ MOTIVE (fuel): she adores the boy, but she loves being the one who knows best.
 GOAL: land the double punchline.
 OBSTACLE: she mustn't sound like she's mocking doctors; she respects him.
 TACTIC: she plays both parts, the serious doctor and herself, eyes on the lens for the punchlines.
-Moment to moment: «My doctor is sixty years younger» — a delighted, scandalised look straight into the lens; «Little beard, like a goat» — she strokes an imaginary goatee on her own chin; «he listens to my chest» — she mimes a doctor peering at papers, at the lens, then at the papers again.
+Moment to moment: «My doctor is sixty years younger» — a delighted, scandalised look straight into the lens; «Little beard, like a goat» — she draws the doctor's little pointed beard in the air with one finger, a hand's width in front of her own chin, which stays smooth and bare; «he listens to my chest» — she mimes a doctor peering at papers, at the lens, then at the papers again.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
 
-Physics: the cardigan sleeve sliding up her right wrist during the goatee mime to show the faded anchor tattoo, the stool creaking, the sheets moving overhead; true weight where she sits; fabric breathing with her movement.
+Physics: the cardigan sleeve sliding up her right wrist as she draws the beard in the air, showing the faded anchor tattoo, the stool creaking, the sheets moving overhead; true weight where she sits; fabric breathing with her movement.
 
 Consistency: Rosa matches @image1 exactly (relit) for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
@@ -646,7 +646,7 @@ Mood & tempo: gossipy, warm, sharp timing; ~15 seconds, 9:16, one take, no subti
 SHOT BREAKDOWN (one take, ~15 s, 9:16, no subtitles; timings approximate — follow @audio1):
 0.0–0.8s — the soft settle-wobble as the propped phone finds its lean; the frame locks, slightly tilted.
 0.8–4.2s — «My doctor is sixty years younger…» a delighted, scandalised look straight into the lens.
-4.2–6.7s — «Little beard, like a goat…» she strokes an imaginary goatee on her own chin.
+4.2–6.7s — «Little beard, like a goat…» she draws the doctor's little pointed beard in the air with one finger, a hand's width in front of her own chin, which stays smooth and bare.
 6.7–14.2s — «he listens to my chest…» she mimes a doctor peering at papers, at the lens, then at the papers again.
 14.2–15.0s — she holds the last expression, mid-thought, lips still (the jump cut to Part 2 comes here). End.
 ```
@@ -669,9 +669,9 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot of red geraniums on the doorstep, slightly below her eye level. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against an upturned wooden crate about one and a half metres in front of her, at her chest height. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
-Composition: 9:16. Medium shot from slightly below. She sits on the low wooden stool by the blue door; a soft edge of geranium leaves is in the near foreground. Framing a touch closer than Part 1.
+Composition: 9:16. Medium shot at chest height. She sits on the low wooden stool by the blue door, a pot of red geraniums at the edge of the frame. Framing a touch closer than Part 1.
 
 ACTING TASK — ROSA (fully invested; the work reads through the eyes, the stillness and the brow line):
 SCENE DIRECTION (unspoken): doorstep gossip about her very young doctor.
@@ -684,7 +684,7 @@ Moment to moment: «Signora, keep doing» — a solemn deep-voiced imitation, ch
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
 
-Physics: the cardigan sleeve sliding up her right wrist during the goatee mime to show the faded anchor tattoo, the stool creaking, the sheets moving overhead; true weight where she sits; fabric breathing with her movement.
+Physics: the cardigan sleeve sliding up her right wrist as she draws the beard in the air, showing the faded anchor tattoo, the stool creaking, the sheets moving overhead; true weight where she sits; fabric breathing with her movement.
 
 Consistency: Rosa matches @image1 exactly (relit) for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads visible and unchanged; the outfit stays exactly as described; the place matches @image2; framing constant after the opening.
 
@@ -1226,7 +1226,7 @@ Use the first reference image (character sheet) for identity ONLY and the second
 **FULL PROMPT (single clip, Seedance 2.x multi-reference):**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against a terracotta pot on the doorstep step at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting just beside the lens; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The signature move (two fingertips tap the red coral beads twice) happens ONCE, exactly on «My husband bought me this», and nowhere else. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against a terracotta pot on the step about one and a half metres from her, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting out of frame just to the right of the phone; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The signature move (two fingertips tap the red coral beads twice) happens ONCE, exactly on «My husband bought me this», and nowhere else. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -1240,9 +1240,9 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot on the doorstep step at a 45-degree angle; Giulia sits on the step just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot on the step about one and a half metres from her, at a 45-degree angle; Giulia sits on the step out of frame, to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
-Composition: 9:16. 45-degree medium shot. She sits on the low stool; her eyeline goes to Giulia just beside the lens, never into it.
+Composition: 9:16. 45-degree medium shot. She sits on the low stool; her eyeline goes to Giulia, just off-lens to the right, never into the lens.
 
 ACTING TASK — ROSA (fully invested; the work reads through the eyes, the stillness and the brow line):
 SCENE DIRECTION (unspoken): telling Giulia the necklace story she has heard a hundred times, this time for the camera.
@@ -1251,7 +1251,7 @@ GOAL: make Giulia and everyone see him walking up the steps.
 OBSTACLE: the grief at the end, which she won't let turn sad.
 TACTIC: she performs the swordfish with her hands, then grows quiet; eyes on Giulia, never the lens.
 Moment to moment: «My husband bought me this» — THE SIGNATURE: two fingertips tap the red coral beads twice; a proud glance at Giulia; «Salvatore» — the name said softly, a tiny pause; «a swordfish so big» — her arms spread wide, eyes wide; «like a... like a second boat» — she searches for the words and laughs at herself; «he comes up all the steps» — her fingers walk up an invisible staircase; «Red coral.» — she lifts the beads slightly between finger and thumb; «every morning he walked me down» — the register breaks: quieter, her eyes drop for a moment; «Now I walk myself» — chin up again, a small brave smile at Giulia; «I still say good morning to him» — a gentle shrug, eyes glistening but bright, no tears.
-The question was just asked by Giulia, her great-granddaughter, sitting just beside the lens (it appears as on-screen text in post): she answers Giulia, never the lens.
+The question was just asked by Giulia, her great-granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): she answers Giulia, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
@@ -1292,7 +1292,7 @@ SHOT BREAKDOWN (one take, ~31 s, 9:16, no subtitles; timings approximate — fol
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
 
 ```text
-Rosa answers Giulia just beside the lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “My husband bought me this” two fingertips tap the red coral beads twice; a proud glance at Giulia; on “Salvatore” the name said softly, a tiny pause; on “a swordfish so big” her arms spread wide, eyes wide; on “like a... like a second boat” she searches for the words and laughs at herself. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep her face, anchors, outfit and the lighting exactly as in the image.
+Rosa answers Giulia just off-lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “My husband bought me this” two fingertips tap the red coral beads twice; a proud glance at Giulia; on “Salvatore” the name said softly, a tiny pause; on “a swordfish so big” her arms spread wide, eyes wide; on “like a... like a second boat” she searches for the words and laughs at herself. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep her face, anchors, outfit and the lighting exactly as in the image.
 ```
 
 <details><summary><b>TWO-PART version</b> (voice over 28 s, or a 15-second generator)</summary>
@@ -1308,7 +1308,7 @@ Part 2 frames a touch closer, so the cut looks intentional.
 **PART 1 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against a terracotta pot on the doorstep step at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting just beside the lens; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The signature move (two fingertips tap the red coral beads twice) happens ONCE, exactly on «My husband bought me this», and nowhere else. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against a terracotta pot on the step about one and a half metres from her, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting out of frame just to the right of the phone; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The signature move (two fingertips tap the red coral beads twice) happens ONCE, exactly on «My husband bought me this», and nowhere else. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -1322,9 +1322,9 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot on the doorstep step at a 45-degree angle; Giulia sits on the step just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot on the step about one and a half metres from her, at a 45-degree angle; Giulia sits on the step out of frame, to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
-Composition: 9:16. 45-degree medium shot. She sits on the low stool; her eyeline goes to Giulia just beside the lens, never into it.
+Composition: 9:16. 45-degree medium shot. She sits on the low stool; her eyeline goes to Giulia, just off-lens to the right, never into the lens.
 
 ACTING TASK — ROSA (fully invested; the work reads through the eyes, the stillness and the brow line):
 SCENE DIRECTION (unspoken): telling Giulia the necklace story she has heard a hundred times, this time for the camera.
@@ -1333,7 +1333,7 @@ GOAL: make Giulia and everyone see him walking up the steps.
 OBSTACLE: the grief at the end, which she won't let turn sad.
 TACTIC: she performs the swordfish with her hands, then grows quiet; eyes on Giulia, never the lens.
 Moment to moment: «My husband bought me this» — THE SIGNATURE: two fingertips tap the red coral beads twice; a proud glance at Giulia; «Salvatore» — the name said softly, a tiny pause; «a swordfish so big» — her arms spread wide, eyes wide; «like a... like a second boat» — she searches for the words and laughs at herself; «he comes up all the steps» — her fingers walk up an invisible staircase.
-The question was just asked by Giulia, her great-granddaughter, sitting just beside the lens (it appears as on-screen text in post): she answers Giulia, never the lens.
+The question was just asked by Giulia, her great-granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): she answers Giulia, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
@@ -1370,7 +1370,7 @@ SHOT BREAKDOWN (one take, ~21 s, 9:16, no subtitles; timings approximate — fol
 **PART 2 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting just beside the lens; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE QUIET TURN on 'every morning he walked me down to the sea': give it room. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting out of frame just to the right of the phone; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE QUIET TURN on 'every morning he walked me down to the sea': give it room. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -1384,9 +1384,9 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot on the doorstep step at a 45-degree angle; Giulia sits on the step just beside the lens. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against a terracotta pot on the step about one and a half metres from her, at a 45-degree angle; Giulia sits on the step out of frame, to the right of the phone. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
-Composition: 9:16. 45-degree medium shot. She sits on the low stool; her eyeline goes to Giulia just beside the lens, never into it. Framing a touch closer than Part 1.
+Composition: 9:16. 45-degree medium shot. She sits on the low stool; her eyeline goes to Giulia, just off-lens to the right, never into the lens. Framing a touch closer than Part 1.
 
 ACTING TASK — ROSA (fully invested; the work reads through the eyes, the stillness and the brow line):
 SCENE DIRECTION (unspoken): telling Giulia the necklace story she has heard a hundred times, this time for the camera.
@@ -1395,7 +1395,7 @@ GOAL: make Giulia and everyone see him walking up the steps.
 OBSTACLE: the grief at the end, which she won't let turn sad.
 TACTIC: she performs the swordfish with her hands, then grows quiet; eyes on Giulia, never the lens.
 Moment to moment: «Red coral.» — she lifts the beads slightly between finger and thumb; «every morning he walked me down» — the register breaks: quieter, her eyes drop for a moment; «Now I walk myself» — chin up again, a small brave smile at Giulia; «I still say good morning to him» — a gentle shrug, eyes glistening but bright, no tears.
-The question was just asked by Giulia, her great-granddaughter, sitting just beside the lens (it appears as on-screen text in post): she answers Giulia, never the lens.
+The question was just asked by Giulia, her great-granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): she answers Giulia, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
@@ -2740,7 +2740,7 @@ Use the first reference image (character sheet) for identity ONLY and the second
 **FULL PROMPT (single clip, Seedance 2.x multi-reference):**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the bowl of lemons at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting just beside the lens; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE PROUD CHIN on 'Old-fashioned and ninety-four': give it room. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the bowl of lemons at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting out of frame just to the right of the phone; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE PROUD CHIN on 'Old-fashioned and ninety-four': give it room. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -2755,7 +2755,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the bowl of lemons at a 45-degree angle; Giulia sits at the table just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the bowl of lemons at a 45-degree angle; Giulia sits at the table out of frame, just to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. Her eyeline goes to Giulia beside the lens, never into it.
 
@@ -2766,7 +2766,7 @@ GOAL: for once, make it stick.
 OBSTACLE: Giulia's eye-roll off camera, and her own exasperation.
 TACTIC: she lectures Giulia directly, then wins with the last line.
 Moment to moment: «Every morning I tell her» — a glance at Giulia, fond exasperation; «It's decided at seven» — she taps the table with one finger, emphatic; «The telephone or the window» — one hand weighs each option like a scale; «like a thief» — a hunched guilty mime; «that's so old-fashioned» — a whiny teenage imitation; «Old-fashioned and ninety-four» — chin up, proud: the register breaks; «in a little book» — she shapes a small book with her hands; «you're buying one» — a triumphant point at Giulia.
-The question was just asked by Giulia, her great-granddaughter, sitting just beside the lens (it appears as on-screen text in post): she answers Giulia, never the lens.
+The question was just asked by Giulia, her great-granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): she answers Giulia, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
@@ -2806,7 +2806,7 @@ SHOT BREAKDOWN (one take, ~31 s, 9:16, no subtitles; timings approximate — fol
 **LIP-SYNC PROMPT (talking-avatar route: first frame + voice file, no length cap):**
 
 ```text
-Rosa answers Giulia just beside the lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “Every morning I tell her” a glance at Giulia, fond exasperation; on “It's decided at seven” she taps the table with one finger, emphatic; on “The telephone or the window” one hand weighs each option like a scale; on “like a thief” a hunched guilty mime. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep her face, anchors, outfit and the lighting exactly as in the image.
+Rosa answers Giulia just off-lens, never looking into the camera with natural, invested delivery that matches the voice exactly: on “Every morning I tell her” a glance at Giulia, fond exasperation; on “It's decided at seven” she taps the table with one finger, emphatic; on “The telephone or the window” one hand weighs each option like a scale; on “like a thief” a hunched guilty mime. Natural blinks, small head movements, eyebrows active on key words, real breathing. A propped phone: one small settle-wobble at the start, then a slight casual tilt and gentle sensor breathing. Lips match the audio exactly and stay still in silences. No other people, no text, no music. Keep her face, anchors, outfit and the lighting exactly as in the image.
 ```
 
 <details><summary><b>TWO-PART version</b> (voice over 28 s, or a 15-second generator)</summary>
@@ -2822,7 +2822,7 @@ Part 2 frames a touch closer, so the cut looks intentional.
 **PART 1 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the bowl of lemons at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting just beside the lens; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) Keep the energy rising to the cut; the payoff comes in Part 2. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) The phone is casually PROPPED against the bowl of lemons at a 45-degree angle, NOT a tripod: living UGC framing with a settle-wobble at the start. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting out of frame just to the right of the phone; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) Keep the energy rising to the cut; the payoff comes in Part 2. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -2837,7 +2837,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the bowl of lemons at a 45-degree angle; Giulia sits at the table just beside the lens. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the bowl of lemons at a 45-degree angle; Giulia sits at the table out of frame, just to the right of the phone. The take opens with one soft settle-wobble as the phone finds its lean. Then the frame locks with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. Her eyeline goes to Giulia beside the lens, never into it.
 
@@ -2848,7 +2848,7 @@ GOAL: for once, make it stick.
 OBSTACLE: Giulia's eye-roll off camera, and her own exasperation.
 TACTIC: she lectures Giulia directly, then wins with the last line.
 Moment to moment: «Every morning I tell her» — a glance at Giulia, fond exasperation; «It's decided at seven» — she taps the table with one finger, emphatic; «The telephone or the window» — one hand weighs each option like a scale; «like a thief» — a hunched guilty mime.
-The question was just asked by Giulia, her great-granddaughter, sitting just beside the lens (it appears as on-screen text in post): she answers Giulia, never the lens.
+The question was just asked by Giulia, her great-granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): she answers Giulia, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.
@@ -2884,7 +2884,7 @@ SHOT BREAKDOWN (one take, ~20 s, 9:16, no subtitles; timings approximate — fol
 **PART 2 PROMPT:**
 
 ```text
-TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting just beside the lens; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE PROUD CHIN on 'Old-fashioned and ninety-four': give it room. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
+TOP PRIORITY (read first): 1) Rosa speaks ONLY English throughout, never Chinese or any other language. 2) This is PART 2 of 2, joined to Part 1 with a jump cut: the same person, outfit, place, light and camera style; framing a touch closer; no new settle-wobble. 3) Interview excerpt: her eyeline stays on Giulia, her great-granddaughter, sitting out of frame just to the right of the phone; she NEVER looks into the camera. 4) Lip-sync exactly to @audio1: it is the only voice; lips completely still in every silence; no added words. 5) The centerpiece is THE PROUD CHIN on 'Old-fashioned and ninety-four': give it room. 6) Face and identity match @image1 100% for the entire take; the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads always visible and unchanged. 7) Real aged skin texture; waxiness and smoothing strictly forbidden.
 
 === REFERENCE KEY (attach in this order) ===
 @image1 = THE WOMAN (Rosa, a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face; identity anchors: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads; in this video wearing an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot) — identity reference ONLY (face, hair, anchors; outfit as written here), NEVER its lighting
@@ -2899,7 +2899,7 @@ IMAGE QUALITY (fixed for the whole series: an older phone, around 2016): 720p-10
 
 Style: photoreal social-media footage of a real 94-year-old, filmed by her great-granddaughter on Rosa's old phone. Pure UGC register: never cinematic, never produced, never an advert. No IP: no brands, no logos, no readable text, no place names. Modest, fully clothed styling.
 
-Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the bowl of lemons at a 45-degree angle; Giulia sits at the table just beside the lens. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
+Camera movement (CRITICAL, casually propped and alive): the phone is PROPPED against the bowl of lemons at a 45-degree angle; Giulia sits at the table out of frame, just to the right of the phone. The frame is already settled (this is Part 2 after a jump cut): it holds with a slight casual tilt, subtle sensor breathing and one autofocus breath. No tripod steadiness, no pans, no zooms: the frame feels placed by a human in five seconds, not by a crew. One take, no cuts. 9:16 vertical.
 
 Composition: 9:16. 45-degree medium shot. Her eyeline goes to Giulia beside the lens, never into it. Framing a touch closer than Part 1.
 
@@ -2910,7 +2910,7 @@ GOAL: for once, make it stick.
 OBSTACLE: Giulia's eye-roll off camera, and her own exasperation.
 TACTIC: she lectures Giulia directly, then wins with the last line.
 Moment to moment: «that's so old-fashioned» — a whiny teenage imitation; «Old-fashioned and ninety-four» — chin up, proud: the register breaks; «in a little book» — she shapes a small book with her hands; «you're buying one» — a triumphant point at Giulia.
-The question was just asked by Giulia, her great-granddaughter, sitting just beside the lens (it appears as on-screen text in post): she answers Giulia, never the lens.
+The question was just asked by Giulia, her great-granddaughter, sitting out of frame just to the right of the phone (it appears as on-screen text in post): she answers Giulia, never the lens.
 (Safety: gaze always engaged in the task — never frozen or glassy; natural blink cadence. Never staged, never stiff, never puppet-like, no mugging; emotion is never played, it comes from the task.)
 
 Other people: none in frame. Giulia is never seen; nobody else is heard.

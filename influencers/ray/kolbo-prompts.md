@@ -29,7 +29,7 @@
 
 ## Y1: Red flags your money's got a leak
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7862 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7988 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -62,7 +62,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Near-frontal medium close-up, chest-up. He sits at the small Formica table, a touch off-center; the net curtains and pale green cupboards soft behind him.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy, a little below his eye level. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: the open spiral notebook (illegible pencil columns), the old calculator and a mug of tea on the table (static until the final beat). Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy, a little below his eye level. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: the open spiral notebook (illegible pencil columns), the old calculator and a mug of tea on the table (static until the final beat). Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The cosy's wool flattening where the phone leans, steam curling off the mug, the moustache moving with his words; true body weight where he sits; fabric moves with his movement.
@@ -78,7 +78,7 @@ SHOT 1 — 0:00–0:30 — Near-frontal medium close-up, chest-up, propped phone
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -86,7 +86,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y2: Ray's Rules, things I've never paid for (part one)
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7610 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7736 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -119,7 +119,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, chest-up, the mug held at chest height.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: a mug of tea held in both hands from frame one. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: a mug of tea held in both hands from frame one. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The cap lifting and resettling over real hair, the mug steaming, jumper wool creasing; true body weight where he sits; fabric moves with his movement.
@@ -135,7 +135,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, chest-up, the mug held at chest heig
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -143,7 +143,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y3: You lot call it loud budgeting
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7345 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7471 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -176,7 +176,7 @@ The place from @Image 3: a tidy wooden garden shed: a sturdy workbench with a be
 Medium close-up. He sits on a stool at the workbench, chest-up, the pegboard of tools soft behind him.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a jam jar of screws on the workbench. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: a flat-head screwdriver lying on the bench from frame one (picked up only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against a jam jar of screws on the workbench. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: a flat-head screwdriver lying on the bench from frame one (picked up only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The jam jars catching the window light, the darned elbow patch visible as he gestures, the bench creaking; true body weight where he sits; fabric moves with his movement.
@@ -192,7 +192,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, propped phone, one unbroken take, 9:
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; light rain pattering on the felt roof, a blackbird outside, the bench creaking, screws rattling in a jar. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -200,7 +200,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y4: How I paid off my house at forty-one
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7967 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8171 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -225,7 +225,7 @@ Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT y
 Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
-Off-screen: Kelly, his granddaughter, sits just beside the lens. Kelly is never seen and never heard.
+Off-screen: Kelly, his granddaughter, sits out of frame just to the right of the phone. Kelly is never seen and never heard.
 
 [LOCATION]
 The place from @Image 3: a modest kitchen in an old English terraced house: a small Formica-topped table against the wall, a brown teapot under a knitted tea cosy, a chipped mug, an open spiral notebook with illegible handwritten columns, an old pocket calculator and a pencil, net curtains, pale green 1980s cupboards. No other people. No brands, no readable text, no signs.
@@ -234,7 +234,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Interview set-up: Ray answers Kelly, his granddaughter, sitting just beside the lens; his eyeline stays on Kelly just beside the lens and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. No prop appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Interview set-up: Ray answers Kelly, his granddaughter, sitting out of frame just to the right of the phone; his eyeline stays on Kelly, just off-lens to the right, and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. No prop appears, disappears or changes.
 
 [PHYSICS]
 The checked shirt collar moving, his fingertip tapping the Formica; true body weight where he sits; fabric moves with his movement.
@@ -250,7 +250,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium shot, propped phone, one unbroken ta
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices. No interviewer voice: the question is added later as on-screen text.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; Ray looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; Ray looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -258,7 +258,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y5: The Notebook (episode 1, March 1987)
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7960 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8082 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -291,13 +291,13 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, chest-up, the notebook held at chest height.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: an old spiral notebook held open in his hands from frame one (handwriting illegible); the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: an old spiral notebook held open in his hands from frame one (handwriting illegible); the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 Old paper pages lifting slightly, the glasses' arms unfolding, illegible pencil marks; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium close-up, chest-up, the notebook held at chest height, propped phone, one unbroken take, 9:16 vertical phone frame
-0:00–0:02 — Ray, he reads from the notebook, a finger on the line: "March, nineteen eighty-seven. Two pounds forty."
+0:00–0:02 — Ray reads from the notebook, a finger on the line: "March, nineteen eighty-seven. Two pounds forty."
 0:02–0:05 — a slow look up at the lens: "On a pasty I didn't even want."
 0:05–0:07 — he unhooks the reading glasses from his collar, puts them on and peers at the page (the signature move: the only time in the whole video): "I've written next to it, in pencil..."
 0:07–0:16 — he reads it flatly, then looks over the glasses at the lens: "hungry? No. Bored. Forty years later, still the best lesson in this whole notebook. So much of what goes out isn't hunger, love,"
@@ -308,7 +308,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, chest-up, the notebook held at chest
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent, and he unhooks the black-rimmed reading glasses from his jumper collar and puts them on only on "I've written next to it".
@@ -316,7 +316,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y6: My van is twenty-two years old
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-van.jpg` · 7184 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-van.jpg` · 7306 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -349,13 +349,13 @@ The place from @Image 3: the cab of an old generic white work van parked on a st
 Medium close-up. He sits in the driver's seat turned slightly toward the phone, one hand on the wheel; the rainy windscreen and the blurred terraced street beside him.
 
 [CONTINUITY – LOCKED]
-The phone sits in the clip mount on the dashboard in front of the passenger seat, angled at the driver's seat; Ray is alone in the cab with both hands free. Framing constant after the opening second. No prop appears, disappears or changes.
+The phone sits in the clip mount on the dashboard in front of the passenger seat, angled at the driver's seat; Ray is alone in the cab with both hands free. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 Raindrops sliding down the windscreen, the fabric seat compressing, the cab rocking slightly when he shifts; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium close-up, phone in a dashboard clip mount, one unbroken take, 9:16 vertical phone frame
-0:00–0:06 — Ray, he pats the steering wheel: "My van is twenty-two years old, and people keep asking when I'll get a new one."
+0:00–0:06 — Ray pats the steering wheel: "My van is twenty-two years old, and people keep asking when I'll get a new one."
 0:06–0:08 — a flat look: "When she stops. That's when."
 0:08–0:11 — a slow proud nod: "She's done a hundred and ninety-one thousand miles."
 0:11–0:14 — a tiny wince: "The heater only works on full, so..."
@@ -367,7 +367,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, phone in a dashboard clip mount, one
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; rain drumming softly on the van roof, a car passing with wet tyres, the seat creaking, the indicator stalk clicking once when his elbow knocks it. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -375,7 +375,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y7: The richest man on my street
 
-- **Length:** 29 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-van.jpg` · 7240 characters
+- **Length:** 29 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-van.jpg` · 7366 characters
 
 ```text
 Single continuous shot, 29s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -408,7 +408,7 @@ The place from @Image 3: the cab of an old generic white work van parked on a st
 Medium close-up, he sits in the driver's seat, turned toward the phone.
 
 [CONTINUITY – LOCKED]
-The phone sits in the clip mount on the dashboard in front of the passenger seat, angled at the driver's seat; Ray is alone in the cab with both hands free. Framing constant after the opening second. No prop appears, disappears or changes.
+The phone sits in the clip mount on the dashboard in front of the passenger seat, angled at the driver's seat; Ray is alone in the cab with both hands free. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 Rain sliding, the cab's micro-movement, the cap brim; true body weight where he sits; fabric moves with his movement.
@@ -424,7 +424,7 @@ SHOT 1 — 0:00–0:29 — Medium close-up, he sits in the driver's seat, turned
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; rain drumming softly on the van roof, a car passing with wet tyres, the seat creaking, the indicator stalk clicking once when his elbow knocks it. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 29s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 29 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -432,7 +432,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y8: Twenty-five and skint
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7445 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7567 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -465,13 +465,13 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, he leans slightly toward the lens over the table; the tin's rim soft in the near foreground.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a round biscuit tin on the kitchen table. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. No prop appears, disappears or changes.
+Nobody holds the phone: it is propped against a round biscuit tin on the kitchen table. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
 
 [PHYSICS]
 The biscuit tin lid catching the window light, his palms on the Formica; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium close-up, he leans slightly toward the lens over the table; the tin's rim soft in the near foreground, propped phone, one unbroken take, 9:16 vertical phone frame
-0:00–0:05 — Ray, he leans in slightly, kind: "If you're twenty-five and skint, listen to an old man for thirty seconds."
+0:00–0:05 — Ray leans in slightly, kind: "If you're twenty-five and skint, listen to an old man for thirty seconds."
 0:05–0:09 — a small nod: a confession: "I was skint. January nineteen eighty-three, we couldn't pay the gas bill,"
 0:09–0:12 — a dry disbelieving look, the faint chuckle: "and I was a plumber. A plumber!"
 0:12–0:19 — finger and thumb show something tiny: "So I bought a notebook. Ten pence. Wrote down every penny for one month, and I didn't change a thing,"
@@ -482,7 +482,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, he leans slightly toward the lens ov
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -490,7 +490,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y9: Ray's Rules (part two)
 
-- **Length:** 27 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7273 characters
+- **Length:** 27 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7399 characters
 
 ```text
 Single continuous shot, 27s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -523,7 +523,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, chest-up.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: a mug of tea on the table by his hand (lifted only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: a mug of tea on the table by his hand (lifted only in the final beat). Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The checked shirt collar, the mug steaming; true body weight where he sits; fabric moves with his movement.
@@ -539,7 +539,7 @@ SHOT 1 — 0:00–0:27 — Medium close-up, chest-up, propped phone, one unbroke
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 27s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 27 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -547,7 +547,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y10: Sunday Sums (silent b-roll)
 
-- **Length:** 10 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 6772 characters
+- **Length:** 10 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 6898 characters
 
 ```text
 Single continuous shot, 10s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -579,7 +579,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 45-degree medium shot. He sits at the table in the LOWER two-thirds of the frame; the upper third is the calm net curtains and cupboards (text-safe).
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the biscuit tin at a 45-degree side angle. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. TEXT-SAFE FRAME: the upper third of the frame stays visually calm; Ray lives in the lower two-thirds. Props: a closed spiral notebook, a pencil, the brown teapot and a mug on the table from frame one; the reading glasses hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the biscuit tin at a 45-degree side angle. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. TEXT-SAFE FRAME: the upper third of the frame stays visually calm; Ray lives in the lower two-thirds. Props: a closed spiral notebook, a pencil, the brown teapot and a mug on the table from frame one; the reading glasses hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 Glasses' arms unfolding, notebook pages turning with a soft paper sound, steam from the mug; true body weight where he sits; fabric moves with his movement.
@@ -593,7 +593,7 @@ SHOT 1 — 0:00–0:10 — 45-degree medium shot, propped phone, one unbroken ta
 
 AUDIO: No music. No musical score. No dialogue: Ray never speaks or mouths words. Ambient sound from the phone's own mic only: a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any speech, mouthed words or lip movement; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any speech, mouthed words or lip movement; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 10s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray, silent, the upper third calm for text. His face matches @Image 1 and @Image 2 exactly for all 10 seconds, relit by the scene's own light.
@@ -601,7 +601,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray, silent, the upper 
 
 ## Y11: The Leak Hunt
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7855 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7977 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -634,13 +634,13 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, chest-up, the open notebook on the table in front of him.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: an open spiral notebook and a pencil on the table from frame one (handwriting illegible); the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: an open spiral notebook and a pencil on the table from frame one (handwriting illegible); the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The pencil tapping, paper pages lifting, the glasses' arms unfolding; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:30 — Medium close-up, chest-up, the open notebook on the table in front of him, propped phone, one unbroken take, 9:16 vertical phone frame
-0:00–0:04 — Ray, he taps the pencil on the table: "When I find a leak in a house, I don't start fixing."
+0:00–0:04 — Ray taps the pencil on the table: "When I find a leak in a house, I don't start fixing."
 0:04–0:07 — a stopcock-turning motion with his hand: "I turn the water off and I look."
 0:07–0:14 — a level look, then a nod toward the kettle off-frame: "Same with money. One sitting, kettle on. Every statement, every little drip. And next to each one, one question..."
 0:14–0:16 — the glasses go on; he peers at the lens over them (the signature move: the only time in the whole video): "would I buy this again today?"
@@ -650,7 +650,7 @@ SHOT 1 — 0:00–0:30 — Medium close-up, chest-up, the open notebook on the t
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent, and he unhooks the black-rimmed reading glasses from his jumper collar and puts them on only on "would I buy this again today?".
@@ -658,7 +658,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y12: The Thirty-Day Wait
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7279 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-shed.jpg` · 7405 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -691,7 +691,7 @@ The place from @Image 3: a tidy wooden garden shed: a sturdy workbench with a be
 Medium shot. He sits on a stool at the workbench; an old metal bucket by his boot at the bottom of frame.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against a jam jar of screws on the workbench. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: an old metal bucket on the floor by his boot from frame one. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against a jam jar of screws on the workbench. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: an old metal bucket on the floor by his boot from frame one. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The jam jars catching window light, rain on the roof, the stool creaking; true body weight where he sits; fabric moves with his movement.
@@ -707,7 +707,7 @@ SHOT 1 — 0:00–0:30 — Medium shot, propped phone, one unbroken take, 9:16 v
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; light rain pattering on the felt roof, a blackbird outside, the bench creaking, screws rattling in a jar. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -715,7 +715,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y13: The Notebook (episode 2, Christmas 1991)
 
-- **Length:** 29 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7794 characters
+- **Length:** 29 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7916 characters
 
 ```text
 Single continuous shot, 29s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -748,13 +748,13 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, chest-up, the notebook held at chest height.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: an old spiral notebook held open in his hands from frame one (handwriting illegible, one tiny pencil star doodle in the margin); the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: an old spiral notebook held open in his hands from frame one (handwriting illegible, one tiny pencil star doodle in the margin); the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 Pages turning, the warm bulb glinting on the glasses; true body weight where he sits; fabric moves with his movement.
 
 SHOT 1 — 0:00–0:29 — Medium close-up, chest-up, the notebook held at chest height, propped phone, one unbroken take, 9:16 vertical phone frame
-0:00–0:06 — Ray, he reads from the page, then a small fond smile under the moustache: "December, nineteen ninety-one. Bike for our Gary. Sixty-two pounds. Written down, saved for since June,"
+0:00–0:06 — Ray reads from the page, then a small fond smile under the moustache: "December, nineteen ninety-one. Bike for our Gary. Sixty-two pounds. Written down, saved for since June,"
 0:06–0:09 — he taps the page: "ten pound a month in an envelope. Look,"
 0:09–0:12 — the glasses go on, and he tilts the notebook toward the lens (the star is a tiny pencil doodle; all handwriting illegible) (the signature move: the only time in the whole video): "I've drawn a little star next to it."
 0:12–0:17 — a warm chuckle: "He rode that bike till it fell to bits. Now, the year before,"
@@ -764,7 +764,7 @@ SHOT 1 — 0:00–0:29 — Medium close-up, chest-up, the notebook held at chest
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 29s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 29 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent, and he unhooks the black-rimmed reading glasses from his jumper collar and puts them on only on "I've drawn a little star".
@@ -772,7 +772,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y14: Kelly asks what Sunday Sums is
 
-- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8005 characters
+- **Length:** 30 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 8209 characters
 
 ```text
 Single continuous shot, 30s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -797,7 +797,7 @@ Ray (@Image 1): a genuinely elderly 71-year-old English working-class man, NOT y
 Wardrobe (this video): a navy V-neck jumper over a blue-and-white checked shirt, dark grey trousers.
 PERSONA: dry, patient and kind under a sceptical surface; slow and deliberate, never in a hurry; he sits still and upright with his hands folded or flat on the table; small precise gestures (one finger lifted, a tap of the pencil on the notebook); deadpan, with the smallest smile before a punchline; never shouty, never mugging.
 VOICE: English only. A man in his early 70s with a natural Yorkshire (Northern English) working-class accent, a dry baritone, slow deadpan delivery with a pause before the punchline and a faint chuckle; never shouty, never a caricature.
-Off-screen: Kelly, his granddaughter, sits just beside the lens. Kelly is never seen and never heard.
+Off-screen: Kelly, his granddaughter, sits out of frame just to the right of the phone. Kelly is never seen and never heard.
 
 [LOCATION]
 The place from @Image 3: a modest kitchen in an old English terraced house: a small Formica-topped table against the wall, a brown teapot under a knitted tea cosy, a chipped mug, an open spiral notebook with illegible handwritten columns, an old pocket calculator and a pencil, net curtains, pale green 1980s cupboards. No other people. No brands, no readable text, no signs.
@@ -806,7 +806,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 45-degree medium shot. His eyeline goes to Kelly beside the lens, never into it.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot at a 45-degree angle; Kelly sits at the table just beside the lens. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Interview set-up: Ray answers Kelly, his granddaughter, sitting just beside the lens; his eyeline stays on Kelly just beside the lens and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. Props: a mug of tea in his hand from frame one. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot at a 45-degree angle; Kelly sits at the table out of frame, just to the right of the phone. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Interview set-up: Ray answers Kelly, his granddaughter, sitting out of frame just to the right of the phone; his eyeline stays on Kelly, just off-lens to the right, and he NEVER looks into the camera. The question was asked before the clip starts and is added later as on-screen text: there is no interviewer voice. Props: a mug of tea in his hand from frame one. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 Steam from the mug, the checked shirt collar; true body weight where he sits; fabric moves with his movement.
@@ -820,7 +820,7 @@ SHOT 1 — 0:00–0:30 — 45-degree medium shot, propped phone, one unbroken ta
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices. No interviewer voice: the question is added later as on-screen text.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; Ray looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; Ray looking into the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 30s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 30 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent.
@@ -828,7 +828,7 @@ POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @
 
 ## Y15: What I'd tell myself at twenty-seven
 
-- **Length:** 29 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7599 characters
+- **Length:** 29 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen-table.jpg` · 7725 characters
 
 ```text
 Single continuous shot, 29s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
@@ -861,7 +861,7 @@ The place from @Image 3: a modest kitchen in an old English terraced house: a sm
 Medium close-up, chest-up.
 
 [CONTINUITY – LOCKED]
-Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. Framing constant after the opening second. Props: the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
+Nobody holds the phone: it is propped against the brown teapot under its knitted cosy. Ray is not holding it; both of his hands are free for his gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: the reading glasses start hooked in his collar. Every prop is there from the first frame and never appears, disappears or changes.
 
 [PHYSICS]
 The glasses' arms unfolding, the moustache moving with his words; true body weight where he sits; fabric moves with his movement.
@@ -877,7 +877,7 @@ SHOT 1 — 0:00–0:29 — Medium close-up, chest-up, propped phone, one unbroke
 
 AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Ray's voice close and clear, English only, exactly the quoted words and nothing added; a wall clock ticking, wet tyres passing on the street outside, a teaspoon against a mug, the kettle ticking as it cools. His lips move only when he speaks and stay still in every silence. No other voices.
 
-AVOID: a beard or stubble on his chin; a missing or trimmed moustache; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+AVOID: a beard or stubble on his chin; a missing or trimmed moustache; a finger, hand or blurred object in front of the lens; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the thick bushy grey walrus moustache, the brown herringbone flat cap, the black-rimmed reading glasses hooked into his jumper collar); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
 
 Total: 29s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Ray. His face matches @Image 1 and @Image 2 exactly for all 29 seconds, relit by the scene's own light. He speaks only the quoted English words in his dry Yorkshire accent, and he unhooks the black-rimmed reading glasses from his jumper collar and puts them on only on "Then I'd give him a notebook".
