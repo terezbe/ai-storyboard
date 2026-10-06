@@ -38,6 +38,7 @@ CHARS = {
             "default": "an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot",
             "swim": "a plain black modest one-piece swimsuit under the open oversized white linen shirt, wet slicked-back silver hair, a faded striped cotton towel round her shoulders, bare feet",
             "swim_dry": "a plain black modest one-piece swimsuit under the open oversized white linen shirt, her short silver-white hair completely DRY (she has not been in the water today), a faded striped cotton towel folded on her lap, bare feet",
+            "swim_wet": "a plain black modest one-piece swimsuit and nothing over it when the take starts, her short silver-white hair wet and slicked back, water streaming off her arms and legs; a faded striped cotton towel that she pulls round her shoulders in the first seconds and keeps on; bare feet",
             "doorstep": "a faded cornflower-blue cotton housedress with a grey knitted cardigan, worn black slippers",
             "sunday": "a navy dress with small white dots and a black cardigan",
         },

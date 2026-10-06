@@ -264,6 +264,42 @@ Two of the five carry the book: R13 explicitly (she holds up her notebook and sa
 - **Length:** ~76 words (~29 s)
 - **Post caption:** The octopus won. The sea always wins. 🐙 #nonna #sicily #seaswimming #storytime
 
+## Batch 3: three selling videos (from day 11, one a day; the book is the subject)
+
+The owner asked for videos that sell the book, with the strongest hooks. Each one borrows a shape that already won in batch 1, gives real value first, and sells only in the last five seconds, in Rosa's words. The book's own lines are used where they exist ("You don't need anything, just a window", "The sea doesn't care how old you are", "the receipt", "a window, a glass of water, a chair").
+
+| Video | Shape it borrows | How it sells |
+|---|---|---|
+| R16 | A morning habit shown, not described (R6's "what I eat", R4's window) | Gives Day 1 of the book away on camera, then "twenty-nine more in my bio" |
+| R17 | The "Things I never do at 94" series, part 4 (352 and 326 views) | Every "never" is a page of the book (Day 15, Day 2, the recipe in the back); one share line; "part five when you do Day one" |
+| R18 | The sea plus a statement (R10, 1,365 views) | The cover line, the "lucky genes" objection and the pitch: the sea is the receipt, no sea needed |
+
+All three captions carry the product line, so they go up only once the store link is in the bio. R16 is the store-opening video: post it the day the link goes live, even in the middle of batch 2, and push the rest. For the algorithm: a visual change inside the first two seconds (the phone pushed away, four fingers up, the last rung of the ladder), a numbered rule to save, one line to share (R17), one question to answer in the comments (R16), and an ending that points at tomorrow morning.
+
+### R16: Day 1 of my book is free. Here.
+- **Format:** A, talking clip (Giulia handheld; she walks from the table to the window) · **Location:** `locations/1-kitchen.jpg`, low morning sun · **Outfit:** default white linen shirt · **The book:** the subject: she does Day 1 (the Window Rule) on camera and says where the other 29 are
+- **On-screen text:** "Day 1 of my book is free. Here."
+- **Script:**
+  > Day one of my book. I give it to you for free. Watch. Before the telephone... the window. Wide. Light on your face. One minute. Don't talk, don't scroll, just look. That's it. That's Day one. You don't need anything, just a window. Twenty-nine more, one a day: the big glass, the chair, the telephone that sleeps in the kitchen. It's in my bio, amore. Tomorrow morning: window first. Then come tell me.
+- **Length:** ~72 words (~27 s)
+- **Post caption:** Day 1 is free: the window before the telephone. One minute. ☀️ The other 29 are in the book. My 30-Day Morning Reset is in my bio 🍋 #morningroutine #healthyaging #nonna #oldways
+
+### R17: Things I never do at 94 (part four)
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/3-doorstep.jpg` (evening) · **Outfit:** blue housedress, grey cardigan · **The book:** every "never" is a page (Day 15 the Chair Rule, Day 2 the Big Glass Rule, the kitchen cards in the back); the notebook on her lap
+- **On-screen text:** "Things I never do at 94, part 4"
+- **Script:**
+  > Things I never do at ninety-four. Part four. I never eat standing up, like a thief at the sink. Sit. Day fifteen. I never drink coffee before water. A big glass. Day two. I never put sugar in caponata. Concetta does. Concetta is wrong. The recipe is in the back of my book. Thirty of these, in my bio. Show this to the one who eats at the sink. Part five when you do Day one.
+- **Length:** ~76 words (~28 s)
+- **Post caption:** Part four. Never at the sink like a thief: sit down. Day 15. 🍋 My 30-Day Morning Reset is in my bio 🍋 #healthyaging #nonna #oldways #morningroutine
+
+### R18: The sea doesn't care how old you are
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/2-sea-rocks.jpg`, calm morning; she steps off the ladder, just out of the water · **Outfit:** black one-piece swimsuit, wet; the striped towel pulled on in the first seconds · **The book:** its cover line, the objection ("lucky genes, lucky sea") and the pitch from the sales letter, in her voice
+- **On-screen text:** "The sea doesn't care how old you are"
+- **Script:**
+  > Ninety-four. I just came out. The sea doesn't care how old you are. People say: lucky genes, lucky sea. No. It's the mornings. Eighty-five years of small mornings, every day, piano piano. The sea is not the secret. The sea is the receipt. I put thirty of those mornings in a book. No sea needed. A window, a glass of water, a chair. It's in my bio, amore. Start tomorrow. Window first.
+- **Length:** ~73 words (~27 s)
+- **Post caption:** The sea is not the secret. It's the receipt. 🌊 85 years of small mornings, 30 of them in my book. No sea needed. My 30-Day Morning Reset is in my bio 🍋 #healthyaging #seaswimming #nonna #morningroutine
+
 ## Parked: the first batch-2 drafts (product-led, not produced)
 
 Kept for later. To use one, rename it to the next free R number.

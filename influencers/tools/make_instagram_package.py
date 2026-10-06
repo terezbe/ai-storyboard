@@ -381,24 +381,62 @@ def build(c):
 
 # ---------------------------------------------------------------- batch 2
 # One Reel a day from day 6. "tests" is the single thing each video changes, so the results can be read.
-BATCH2 = {
-    "rosa": [
-        (6, "R11", "The winner's shape (the sea plus a clear decision) on a calm day: does the decision carry it?"),
-        (7, "R13", "Part 3 of the second-best series, with the book in Rosa's own words (Day 6 and Day 1 of the book, her notebook, 'in the bio'); product caption"),
-        (8, "R15", "A personal story that opens with the surprise, at the sea"),
-        (9, "R12", "The winner's shape again, with dramatic weather (fog), a new rule and one soft line about the book at the end; product caption"),
-        (10, "R14", "Hook test of R7 (post 07): same story and length; only the first line and the title text change"),
-    ],
+BATCHES = {
+    2: {
+        "rosa": [
+            (6, "R11", "The winner's shape (the sea plus a clear decision) on a calm day: does the decision carry it?"),
+            (7, "R13", "Part 3 of the second-best series, with the book in Rosa's own words (Day 6 and Day 1 of the book, her notebook, 'in the bio'); product caption"),
+            (8, "R15", "A personal story that opens with the surprise, at the sea"),
+            (9, "R12", "The winner's shape again, with dramatic weather (fog), a new rule and one soft line about the book at the end; product caption"),
+            (10, "R14", "Hook test of R7 (post 07): same story and length; only the first line and the title text change"),
+        ],
+    },
+    3: {
+        "rosa": [
+            (11, "R16", "Store-opening video: Day 1 of the book given away on camera (the window before the telephone), then 'twenty-nine more in my bio'; product caption"),
+            (12, "R17", "The 'never' series, part 4, where every item is a page of the book (Day 15, Day 2, the recipe in the back), with one share line; product caption"),
+            (13, "R18", "The winner's shape (the sea plus a statement) carrying the book's cover line, the 'lucky genes' objection and the pitch: no sea needed; product caption"),
+        ],
+    },
+}
+
+# the earlier videos each batch is compared with in the 24 h / 72 h table
+COMPARE = {
+    2: "R10 for R11 and R12, R1 and R9 for R13, R7 for R14",
+    3: "R4 and R6 for R16; R1, R9 and R13 for R17; R10 and R2 for R18",
+}
+
+PIN_LINES = {
+    "R16": "Day one is free, in the video. The other twenty-nine are in my bio, amore 🍋",
+    "R17": "Thirty of these, one page each. In my bio 🍋",
+    "R18": "No sea needed. The thirty mornings are in my bio 🍋",
 }
 
 
-def batch2_instructions(c, kit, posts):
+def batch_instructions(c, kit, posts, n):
     ch = CHAR[c]
-    L = [f"# Batch 2 for @{kit['handle']}: {len(posts)} new Reels, one a day", ""]
+    L = [f"# Batch {n} for @{kit['handle']}: {len(posts)} new Reels, one a day", ""]
     L.append("Same account, same rules as `GPT-INSTRUCTIONS.md` from batch 1: AI label on every post, no music, no location, "
-             "captions pasted exactly, the store link only in the bio and the link story. This file replaces the batch-2 "
-             "line in that plan.")
+             "captions pasted exactly, the store link only in the bio and the link story. "
+             + ("This file replaces the batch-2 line in that plan." if n == 2 else f"It comes after `GPT-INSTRUCTIONS-BATCH{n - 1}.md`."))
     L.append("")
+    if n == 3:
+        L.append("## 0. This batch sells the book")
+        L.append("")
+        L.append(f"These Reels are about the product itself, so the store link must be live in the bio before the first one goes up. "
+                 f"{posts[0]['vid']} is the store-opening video: if the link goes live before its day, post it that day (even in the "
+                 f"middle of batch 2) and push everything else by one day; tell me what you moved.")
+        L.append("")
+        L.append("For each of them:")
+        L.append("")
+        pins = "; ".join(f"{v}: \"{PIN_LINES[v]}\"" for v in (p["vid"] for p in posts) if v in PIN_LINES)
+        L.append(f"- Right after posting, pin one comment from the account, in her voice. {pins}.")
+        L.append("- Reply to every \"where do I get it\" / \"how much\" with the replies table in `GPT-INSTRUCTIONS.md` (the link is in my bio; "
+                 "it's on launch price). Never paste the link in a comment or a DM.")
+        L.append(f"- Story the same day: the Reel reshared with the link sticker on it, saved to the \"{ch['highlight']}\" highlight.")
+        L.append("- In the 24 h and 72 h report, add that day's number of sales if the owner gives it to you. You can't see the store, "
+                 "so ask for the number rather than guess it.")
+        L.append("")
     L.append("Each video tests one thing, chosen from the batch-1 numbers. Don't change a caption, a cover or the order: "
              "otherwise we can't tell what worked.")
     L.append("")
@@ -415,7 +453,8 @@ def batch2_instructions(c, kit, posts):
     prod = [p for p in posts if ch["caption_line"] in p["caption"]]
     if prod:
         names = ", ".join(f"{p['vid']} (day {p['n']})" for p in prod)
-        L.append(f"**Product caption:** {names} ends with \"{ch['caption_line']}\". Post it only when the store link "
+        verb = "ends" if len(prod) == 1 else "end"
+        L.append(f"**Product caption:** {names} {verb} with \"{ch['caption_line']}\". Post it only when the store link "
                  "is already in the bio. If it isn't there yet, swap it with the next day's video and tell me.")
         L.append("")
     L.append("## 2. What each video tests")
@@ -429,7 +468,7 @@ def batch2_instructions(c, kit, posts):
     L.append("")
     L.append("- Repost the new Reel to your story, reply to comments in the first hour (replies table in `GPT-INSTRUCTIONS.md`).")
     L.append(f"- Once the store is live: one story a day with the link sticker, saved to the \"{ch['highlight']}\" highlight.")
-    L.append("- Keep the batch-1 pins. If a batch-2 Reel clearly beats the pinned ones on saves plus shares after 72 hours, tell me before changing the pins.")
+    L.append(f"- Keep the batch-1 pins. If a batch-{n} Reel clearly beats the pinned ones on saves plus shares after 72 hours, tell me before changing the pins.")
     L.append("")
     L.append("## 4. Measure it the same way for every video")
     L.append("")
@@ -447,8 +486,7 @@ def batch2_instructions(c, kit, posts):
     L.append("| Video | Age (h) | Views | Reached | Avg watch (s) | Likes | Comments | Saves | Shares | Follows | Saves/100 | Shares/100 |")
     L.append("|---|---|---|---|---|---|---|---|---|---|---|---|")
     L.append("")
-    L.append("Add the same row for the batch-1 videos they are compared with (R10 for R11 and R12, R1 and R9 for R13, R7 "
-             "for R14), from their insights now, with their age.")
+    L.append(f"Add the same row for the earlier videos they are compared with ({COMPARE[n]}), from their insights now, with their age.")
     L.append("")
     L.append("**How we decide:** a format wins only if it repeats across videos and brings saves, shares or follows, not "
              "views alone. Don't call a video a failure before 72 hours. Nothing here tells us which Reel made a sale; "
@@ -457,11 +495,14 @@ def batch2_instructions(c, kit, posts):
     return "\n".join(L) + "\n"
 
 
-def readme_he_batch2(c, kit, posts):
+def readme_he_batch(c, kit, posts, n):
     ch = CHAR[c]
     rows = "\n".join(f"- יום {p['n']}: {p['video']} ({p['vid']})" for p in posts)
     prod = [p for p in posts if ch["caption_line"] in p["caption"]]
-    if len(prod) == 1:
+    if len(prod) == len(posts):
+        prod_line = ("בכל הכיתובים של הגל הזה יש את שורת המוצר: אלה סרטוני מכירה. GPT מעלה אותם רק אחרי שהלינק לחנות כבר בביו. "
+                     f"{posts[0]['vid']} הוא סרטון פתיחת החנות: אם הלינק עולה מוקדם יותר, מעלים אותו באותו יום ודוחים את השאר.")
+    elif len(prod) == 1:
         prod_line = (f"רק בכיתוב של סרטון אחד ({prod[0]['vid']}, יום {prod[0]['n']}) יש את שורת המוצר. "
                      "GPT מעלה אותו רק אחרי שהלינק לחנות כבר בביו.")
     elif prod:
@@ -470,21 +511,21 @@ def readme_he_batch2(c, kit, posts):
                      "שאר הכיתובים נקיים בכוונה.")
     else:
         prod_line = "באף כיתוב בגל הזה אין את שורת המוצר."
-    return f"""גל 2 ל-@{kit['handle']}: {len(posts)} סרטונים חדשים, אחד ליום
+    return f"""גל {n} ל-@{kit['handle']}: {len(posts)} סרטונים חדשים, אחד ליום
 ==============================================
 
 מה יש כאן:
 - {len(posts)} הסרטונים (videos/, ונשלחו אליך גם בנפרד, וכל אחד גם בקישור ב-VIDEO-LINKS.txt).
 - captions ו-covers: כיתוב וקאבר לכל סרטון.
-- GPT-INSTRUCTIONS-BATCH2.md: ההוראות ל-GPT לגל הזה: לוח פרסום, מה כל סרטון בודק, ואיך מודדים אחרי 24 ו-72 שעות.
+- GPT-INSTRUCTIONS-BATCH{n}.md: ההוראות ל-GPT לגל הזה: לוח פרסום, מה כל סרטון בודק, ואיך מודדים אחרי 24 ו-72 שעות.
 - posts.csv: טבלת הפוסטים.
 
 סדר הפרסום:
 {rows}
 
 איך עובדים עם GPT:
-1. באותו צ'אט של החשבון (או צ'אט חדש עם Agent mode), מעלים את הזיפ הקטן של גל 2.
-2. כותבים: "Read GPT-INSTRUCTIONS-BATCH2.md in the zip and do it, one video a day."
+1. באותו צ'אט של החשבון (או צ'אט חדש עם Agent mode), מעלים את הזיפ הקטן של גל {n}.
+2. כותבים: "Read GPT-INSTRUCTIONS-BATCH{n}.md in the zip and do it, one video a day."
 
 חשוב:
 - {prod_line}
@@ -493,21 +534,21 @@ def readme_he_batch2(c, kit, posts):
 """
 
 
-def build_batch2(c):
+def build_batch(c, n):
     kit = launch_kit(c)
     plan = parse_plan(c)
     fdir = os.path.join(ROOT, c, "final")
-    pkg = os.path.join(fdir, "batch2-package")
+    pkg = os.path.join(fdir, f"batch{n}-package")
     if os.path.isdir(pkg):
         shutil.rmtree(pkg)
     for sub in ("videos", "captions", "covers"):
         os.makedirs(os.path.join(pkg, sub))
-    tracked = os.path.join(ROOT, c, "instagram", "batch2")
+    tracked = os.path.join(ROOT, c, "instagram", f"batch{n}")
     os.makedirs(os.path.join(tracked, "captions"), exist_ok=True)
     links_path = os.path.join(ROOT, c, "instagram", "video-links.json")
     links = json.load(open(links_path)) if os.path.exists(links_path) else {}
     posts = []
-    for day, vid, tests in BATCH2[c]:
+    for day, vid, tests in BATCHES[n][c]:
         src = os.path.join(fdir, f"{vid}.mp4")
         if not os.path.exists(src):
             sys.exit(f"missing {src}: run finish_video.py first")
@@ -521,8 +562,8 @@ def build_batch2(c):
         posts.append(dict(n=day, vid=vid, video=video, caption_file=f"captions/day{day:02d}-{vid}.txt",
                           cover_file=f"covers/day{day:02d}-{vid}.jpg", title=plan[vid]["title"], caption=cap,
                           tests=tests, url=links.get(vid)))
-    ins = batch2_instructions(c, kit, posts)
-    for path in (os.path.join(pkg, "GPT-INSTRUCTIONS-BATCH2.md"), os.path.join(tracked, "GPT-INSTRUCTIONS-BATCH2.md")):
+    ins = batch_instructions(c, kit, posts, n)
+    for path in (os.path.join(pkg, f"GPT-INSTRUCTIONS-BATCH{n}.md"), os.path.join(tracked, f"GPT-INSTRUCTIONS-BATCH{n}.md")):
         with open(path, "w", encoding="utf-8") as fh:
             fh.write(ins)
     for path in (os.path.join(pkg, "posts.csv"), os.path.join(tracked, "posts.csv")):
@@ -535,10 +576,10 @@ def build_batch2(c):
         lines = [f"day {p['n']:02d}  {p['video']}  {p.get('url') or '(no link)'}" for p in posts]
         for path in (os.path.join(pkg, "VIDEO-LINKS.txt"), os.path.join(tracked, "VIDEO-LINKS.txt")):
             with open(path, "w", encoding="utf-8") as fh:
-                fh.write(f"@{kit['handle']} batch 2: download links, one video a day\n\n" + "\n".join(lines) + "\n")
+                fh.write(f"@{kit['handle']} batch {n}: download links, one video a day\n\n" + "\n".join(lines) + "\n")
     with open(os.path.join(pkg, "READ-ME-FIRST-HE.txt"), "w", encoding="utf-8") as fh:
-        fh.write(readme_he_batch2(c, kit, posts))
-    small = os.path.join(fdir, f"{kit['handle']}-batch2-instructions-captions-covers.zip")
+        fh.write(readme_he_batch(c, kit, posts, n))
+    small = os.path.join(fdir, f"{kit['handle']}-batch{n}-instructions-captions-covers.zip")
     with zipfile.ZipFile(small, "w", zipfile.ZIP_DEFLATED) as z:
         for root, _, files in os.walk(pkg):
             for f in files:
@@ -550,9 +591,11 @@ def build_batch2(c):
 
 
 if __name__ == "__main__":
-    if sys.argv[1:2] == ["--batch2"]:
+    flag = sys.argv[1:2]
+    if flag and flag[0].startswith("--batch"):
+        n = int(flag[0][len("--batch"):])
         for ch in sys.argv[2:]:
-            build_batch2(ch)
+            build_batch(ch, n)
         sys.exit()
     for ch in sys.argv[1:] or ["rosa"]:
         build(ch)

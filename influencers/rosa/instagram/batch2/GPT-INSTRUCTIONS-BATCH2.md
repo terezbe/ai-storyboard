@@ -16,7 +16,7 @@ Post at about the same time each day: the hour batch 1 got the most views (Insig
 | 9 | `day09-rosa-R12.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791237850069-R12.mp4 | `covers/day09-R12.jpg` | The fog is the sea closing the door. 🌫️ You miss one, you do the next. My 30-Day Morning Reset is in my bio 🍋 #seaswimming #watersafety #nonna #sicily |
 | 10 | `day10-rosa-R14.mp4` | https://media.kolbo.ai/kolboai-media/uploaded-videos/6994bb8944a68dccba5f3c2f/6ac34f7c4d08b9a58f4238cd/1791237864393-R14.mp4 | `covers/day10-R14.jpg` | Sixty-nine years married. One fish. ❤️ #lovestory #nonna #sicily #grandmalove |
 
-**Product caption:** R13 (day 7), R12 (day 9) ends with "My 30-Day Morning Reset is in my bio 🍋". Post it only when the store link is already in the bio. If it isn't there yet, swap it with the next day's video and tell me.
+**Product caption:** R13 (day 7), R12 (day 9) end with "My 30-Day Morning Reset is in my bio 🍋". Post it only when the store link is already in the bio. If it isn't there yet, swap it with the next day's video and tell me.
 
 ## 2. What each video tests
 
@@ -49,7 +49,7 @@ Send me one table per check, like this:
 | Video | Age (h) | Views | Reached | Avg watch (s) | Likes | Comments | Saves | Shares | Follows | Saves/100 | Shares/100 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 
-Add the same row for the batch-1 videos they are compared with (R10 for R11 and R12, R1 and R9 for R13, R7 for R14), from their insights now, with their age.
+Add the same row for the earlier videos they are compared with (R10 for R11 and R12, R1 and R9 for R13, R7 for R14), from their insights now, with their age.
 
 **How we decide:** a format wins only if it repeats across videos and brings saves, shares or follows, not views alone. Don't call a video a failure before 72 hours. Nothing here tells us which Reel made a sale; I check sales in the store.
 
