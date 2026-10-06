@@ -174,9 +174,10 @@ For every route:
 ## Instagram by API (Rosa): numbers and posting without a third-party tool
 
 - The Supermetrics connector in this environment is connected to @nonnarosaswims (Instagram Insights, profile ID 17841426153815659) but its trial expired on 2026-08-10, so every query returns TRIAL_EXPIRED. Don't use it.
-- `tools/ig_graph.py` talks to the Meta Graph API directly (reachable from this environment). It needs `META_IG_TOKEN` and `IG_USER_ID` in the cloud environment's settings (the owner creates a Meta app at developers.facebook.com, adds the Instagram product, "API setup with Instagram login", adds @nonnarosaswims and generates a long-lived token; Development mode is enough for the owner's own accounts). A new session picks the variables up.
+- `tools/ig_graph.py` talks to the Meta Graph API directly (reachable from this environment). It needs one variable, `META_IG_TOKEN`, in the cloud environment's settings; the account ID is looked up from the token. The owner makes it at developers.facebook.com: Create App, use case "Manage messaging & content on Instagram", then "API setup with Instagram login" > Generate access tokens > Add account (@nonnarosaswims, a professional account; no Facebook Page needed) > Generate token. Development mode is enough for the owner's own accounts; if Meta asks for a role, add the account under App roles > Instagram Testers and accept the invite in Instagram (Settings > Apps and websites > Tester invites). A new session picks the variable up.
 - `insights [N]` prints our 24 h / 72 h table (views, reach, average watch time, likes, comments, saves, shares, follows, profile visits, saves and shares per 100 reached) for the last N posts and saves a JSON copy in `rosa/instagram/`; `publish VIDEO_URL CAPTION_FILE [COVER_URL]` posts a Reel from one of the public links in `rosa/instagram/video-links.json` with the caption file from the package; `comments` / `reply` handle the comment thread; `refresh` extends the token (60 days).
-- Still by hand: pinning a comment, the bio link, stories with a link sticker, DMs. The owner never pastes a token or password in chat.
+- The API can't switch on Instagram's AI label, so `publish` adds an "AI-created character 🤖" line to any caption that doesn't already say AI.
+- Still by hand: pinning a comment, the bio link, stories with a link sticker, DMs. The owner never pastes a token or password in chat. The token lasts 60 days: run `refresh` before then and store the new one.
 
 ## After batch 1 (day 5 onward)
 
