@@ -197,6 +197,7 @@ LOCS = {
             "scene": "a tiny whitewashed Sicilian kitchen: a worn wooden table with a white crochet cloth, a dented aluminium moka pot on a two-ring gas stove, a bowl of lemons, blue-and-white majolica tiles, a small window open to the sea",
             "light": {
                 "morning": "Low warm morning sun through the small window on the LEFT is the key, raking across her face and the crochet cloth. Soft fill from the whitewashed walls. A cool blue COLOR BOUNCE from the majolica tiles onto her shadow side, and a faint warm bounce from the wooden table under her chin. True contact shadows where her forearms rest on the cloth and under the moka pot.",
+                "counter": "Low warm morning sun through the small window on the LEFT is the key, raking across her face, her shoulders and the stone counter. Soft fill from the whitewashed walls and vault. A cool blue COLOR BOUNCE from the majolica tiles onto her shadow side. True contact shadows under her hands on the counter edge, under her bare feet on the floor and under the moka pot.",
                 "afternoon": "Afternoon: the shutters are half closed, so slatted warm light falls across the table and her shoulder from the LEFT as the key. A dim cool fill from the white walls. A cool blue COLOR BOUNCE from the tiles, and a warm bounce from the wood. True contact shadows under her arms and the cups.",
             },
             "sfx": "the moka pot ticking as it cools on the stove, a spoon on a saucer, distant gulls through the open window, one far-off church bell",

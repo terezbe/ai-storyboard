@@ -275,7 +275,7 @@ def kolbo_prompt(c, v, script):
     n, he, his, He, His = ch["name"], ch["he"], ch["his"], ch["He"], ch["His"]
     beats, speech_end, compressed = segments(c, v, script)
     final = v.get("final")
-    dur = min(MAX_DUR, max(4, speech_end + (2 if final else 1)))
+    dur = v.get("dur") or min(MAX_DUR, max(4, speech_end + (2 if final else 1)))  # "dur" buys a longer final hold
     take = "handheld" if v["cam"][0] in ("companion", "selfie") else "phone"
     L = [f"Single continuous shot, {dur}s total, 9:16 vertical phone frame. One unbroken {take} take, no cuts.",
          f"Total: {dur}s / 1 shot / 9:16", ""]

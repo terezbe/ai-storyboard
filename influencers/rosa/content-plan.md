@@ -300,6 +300,47 @@ All three captions carry the product line, so they go up only once the store lin
 - **Length:** ~73 words (~27 s)
 - **Post caption:** The sea is not the secret. It's the receipt. 🌊 85 years of small mornings, 30 of them in my book. No sea needed. My 30-Day Morning Reset is in my bio 🍋 #healthyaging #seaswimming #nonna #morningroutine
 
+## Batch 4: three short videos from the live numbers (2026-10-06)
+
+Pulled from Instagram Insights a day after posting. R6, the only short video (12 s, silent, text beats, the moka), has 24,162 views and an average watch of 17 s, so people loop it; every 27-30 s talking video holds 45-65%. R8 (riposo) has 309 shares, 5.5 per 100 reached, five times any other post. A viewer asked under R6: "Tell us about your daily movement nona". So batch 4 is short (13-14 s), one idea each, one per goal, and the book appears in a pinned comment for two of them and inside the video for one.
+
+| Video | Goal | Shape it borrows | The book |
+|---|---|---|---|
+| R19 | Reach | R6: silent, the kitchen, the moka, four text beats, a loop (hands on the kitchen table) | Day 12, the Heron Rule, in the pinned comment and the caption line |
+| R20 | Sales | R8: riposo, part two | Day 24, the Riposo Rule, said in the last line |
+| R21 | Followers | R18's ladder opening (lowest skip rate) | Day 30, the Three Words Rule, in the pinned comment |
+
+Post one a day: R19, R21, R20. Reply to the "daily movement" comment under R6 with R19, and to the "walk for ten minutes" comment under R8 with R20.
+
+### R19: My gym at 94: the kitchen table
+- **Format:** C, silent text-over b-roll, 13 s, loop-friendly · **Location:** `locations/1-kitchen.jpg` · **Outfit:** default white linen shirt
+- **On-screen text (overlay script, 4 beats of about 3 s each, added in post):**
+  1. My gym at 94: the kitchen table
+  2. Both hands on the table. One foot up. Count 10.
+  3. Then the other foot. Wobbly? Do it sitting down.
+  4. There's no prize for falling, amore.
+- **Action:** both hands flat on the kitchen table (the take put her at the table, not the counter, so the text says table), she lifts one foot a hand's width behind her, then the other. No dialogue.
+- **Post caption:** Not advice. Just my morning, while the coffee brews. ☕ You asked about my daily movement, amore. Both hands on something solid, always. One foot a little off the floor, count to ten, then the other. Wobbly? Do it sitting down. Pain means stop. What do you do while your coffee brews? My 30-Day Morning Reset is in my bio 🍋 #healthyaging #nonna #balance #morningroutine
+- **Pinned comment:** You asked about my movement, amore. This is Day 12 of my book, the Heron Rule. All of Week Two is gentle movement like this, and every day has a seated or smaller version. The other 29 are in my bio 🍋
+
+### R20: Your boss doesn't have to know (riposo, part two)
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/3-doorstep.jpg`, afternoon shade, like R8 · **Outfit:** default white linen shirt
+- **On-screen text:** "10 minutes of riposo. Your boss won't know."
+- **Script:**
+  > Your boss doesn't have to know. After lunch, the car. Engine off, eyes closed. Ten minutes of riposo. Me? Forty. I'm the boss. Day twenty-four of my book, in my bio.
+- **Length:** ~31 words (~14 s)
+- **Post caption:** No bed at work? The car, parked in the shade, engine off, eyes closed, no screen. Ten minutes. Your boss doesn't have to know. 😴 Send this to your work friend. Not to your boss. My 30-Day Morning Reset is in my bio 🍋 #riposo #slowliving #nonna #healthyaging
+- **Pinned comment:** Forty minutes if your day allows it, ten if it doesn't. That's Day 24, the Riposo Rule, and the other 29 mornings are in my bio 🍋 Car, bench or bed? One word, amore. Concetta says bench. Of course she does.
+
+### R21: 94, and I never say "at my age"
+- **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/2-sea-rocks.jpg`, calm morning; she steps off the ladder · **Outfit:** black one-piece swimsuit, wet; the striped towel pulled on in the first seconds
+- **On-screen text:** "94, and I never say 'at my age'"
+- **Script:**
+  > Ninety-four, and I never say at my age. Last summer a woman saw me on this ladder: at my age, I could never. She was forty-five... Forty-five, amore! Basta.
+- **Length:** ~29 words (~13 s)
+- **Post caption:** She was 45. I'm 94. 🌊 The sea isn't for everybody. Those three words are for nobody. Send this to the one who says 'at my age' every day. Follow, amore, I tell you more. (I swim only on calm days, and never alone.) #healthyaging #nonna #agingwell #seaswimming
+- **Pinned comment:** Tell me your age and I tell you if you're allowed to say it. (You're not.) Day 30 of my book: never say 'at my age'. In my bio 🍋
+
 ## Parked: the first batch-2 drafts (product-led, not produced)
 
 Kept for later. To use one, rename it to the next free R number.

@@ -29,6 +29,9 @@
 | R16 | Day 1 of my book is free. Here. | Talking | `locations/1-kitchen.jpg` | 28 s |
 | R17 | Things I never do at 94 (part four) | Talking | `locations/3-doorstep.jpg` | 29 s |
 | R18 | The sea doesn't care how old you are | Talking | `locations/2-sea-rocks.jpg` | 27 s |
+| R19 | My gym at 94: the kitchen counter | Silent b-roll | `locations/1-kitchen.jpg` | 13 s |
+| R20 | Your boss doesn't have to know (riposo, part two) | Talking | `locations/3-doorstep.jpg` | 14 s |
+| R21 | 94, and I never say "at my age" | Talking | `locations/2-sea-rocks.jpg` | 13 s |
 
 ## R1: Things I never do at 94 (part one)
 
@@ -1079,4 +1082,171 @@ AVOID: a moustache, upper-lip hair or any facial hair; a masculine face; a finge
 
 Total: 27s / 1 shot / 9:16
 POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Rosa. Her face matches @Image 1 and @Image 2 exactly for all 27 seconds, a woman with a smooth upper lip, relit by the scene's own light. She speaks only the quoted English words in her warm Sicilian accent, and two fingertips tap the red coral beads twice only on "The sea doesn't care how old you are".
+```
+
+## R19: My gym at 94: the kitchen counter
+
+- **Length:** 13 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/1-kitchen.jpg` · 8193 characters
+
+```text
+Single continuous shot, 13s total, 9:16 vertical phone frame. One unbroken phone take, no cuts.
+Total: 13s / 1 shot / 9:16
+
+[REFERENCES]
+@Image 1 defines Rosa's face, bone structure, skin, wrinkles, hair, body and identity marks. It is a character sheet on a white studio background: use only the woman. Do not use its white background, its flat studio lighting or its layout, and do not copy its outfit (her outfit for this video is written in CAST).
+@Image 2 is a close-up photo of the same woman, Rosa, at a natural angle: it confirms her face. Use only her face and hair; ignore its background, light and clothes.
+@Image 3 defines the location: a tiny whitewashed Sicilian kitchen: a worn wooden table with a white crochet cloth, a dented aluminium moka pot on a two-ring gas stove, a bowl of lemons, blue-and-white majolica tiles, a small window open to the sea. Use the place only.
+
+[EMOTIONAL INTENT]
+Her balance practice while the coffee brews, calm and careful. Mood and tempo: slow, golden, steady. She is absorbed in the task, never posing, eyes on what she is doing, never on the lens.
+
+[GLOBAL LOOK – LOCKED, APPLIES TO THE WHOLE TAKE]
+Real social-media footage of a real 94-year-old woman, filmed by her great-granddaughter on Rosa's old phone from around 2016. Phone optics: 26mm-equivalent wide lens, tiny sensor, DEEP depth of field: the background is as sharp as her face; mild wide-angle stretch toward the frame edges. Old-phone processing: 720p-1080p softness, narrow dynamic range so the brightest sky or window areas clip to white, warm-yellow white balance, faint noise in the shadows, slight compression in fine textures, auto-exposure that corrects a beat late. Honest phone degradation only: no film grain, no vignette, no light leaks, no filters. Skin at pore level, real and aged.
+Available light only, constant for the whole take: Low warm morning sun through the small window on the LEFT is the key, raking across her face, her shoulders and the stone counter. Soft fill from the whitewashed walls and vault. A cool blue COLOR BOUNCE from the majolica tiles onto her shadow side. True contact shadows under her hands on the counter edge, under her bare feet on the floor and under the moka pot. The light state never changes: not a time-lapse, no sun movement, no clouds racing. She is relit by this scene, never by the studio light of @Image 1: she is never brighter than her surroundings and never looks pasted in.
+Movement grammar: a phone propped on a surface, alive: one soft settle-wobble in the first second as it finds its lean, then a slight casual tilt, subtle sensor breathing and one autofocus breath. Never a tripod-perfect level frame, never a pan, zoom, dolly or orbit.
+
+[CAST – IDENTICAL FOR THE WHOLE TAKE]
+Rosa (@Image 1): a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face. Identity marks, always visible and unchanged: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads. She is a woman: a smooth upper lip and chin, NO moustache, no facial hair, no stubble. Her face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
+Wardrobe (this video): an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot.
+PERSONA: warm, mischievous and blunt; quick and lively, never frail; upright and wiry, she sits square; she talks with her hands in short, sharp gestures (a flat-hand chop, a finger wag, a pat of the air), sized small to medium, never mugging; she laughs in the middle of her own sentences; her eyes check the viewer after each joke.
+Rosa does not speak in this video.
+
+[LOCATION]
+The place from @Image 3: a tiny whitewashed Sicilian kitchen: a worn wooden table with a white crochet cloth, a dented aluminium moka pot on a two-ring gas stove, a bowl of lemons, blue-and-white majolica tiles, a small window open to the sea. No other people. No brands, no readable text, no signs.
+
+[LOCATION MAP]
+Full-length 45-degree side view. She stands upright and barefoot FACING the low tiled stone counter, her front to the counter a forearm's length away, both palms flat on the counter top in front of her like a dancer at a barre; she never sits on it or leans back against it. She is in the LOWER two-thirds of the frame, her bare feet and ankles stay in frame and nothing stands between the lens and her feet; the upper third is calm whitewashed vault (text-safe).
+
+[CONTINUITY – LOCKED]
+Nobody holds the phone: it is propped against the bowl of lemons on the kitchen table, about two metres from her, lens level and not tilted up, at a 45-degree side angle. Rosa is not holding it; both of her hands are free for her gestures. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. TEXT-SAFE FRAME: the upper third of the frame stays visually calm; Rosa lives in the lower two-thirds. Props: the dented aluminium moka pot on the far ring of the two-ring stove, an arm's length to her right, over a small steady blue flame, with a thin steady wisp of steam from frame one; it is the only moka in the kitchen. The stone counter top under her hands is bare: no papers, no newspaper. Nothing in her hands. Both of her hands stay flat on the counter edge for the whole take. Every prop is there from the first frame and never appears, disappears or changes.
+
+[PHYSICS]
+The thin steady wisp of steam, a soft steady hiss from the moka, true contact shadows under her lifted foot and her hands; true body weight where she sits; fabric moves with her movement.
+
+SHOT 1 — 0:00–0:13 — Full-length 45-degree side view, propped phone, one unbroken take, 9:16 vertical phone frame
+0:00–0:02 — Rosa stands upright facing the counter, both palms flat on the counter top in front of her, her right knee bent so her right bare foot is a hand's width off the floor behind her, eyes on the moka.
+0:02–0:04 — sets the right foot down.
+0:04–0:07 — bends the left knee and lifts the left foot the same hand's width behind her and holds it steady.
+0:07–0:09 — sets the left foot down.
+0:09–0:11 — lifts the right foot behind her again and holds it, eyes on the moka.
+0:11–0:13 — she settles and holds still, ready to loop (the last pose is the first pose: facing the counter, both palms flat on it, right foot a hand's width off the floor behind her, eyes on the moka). Hold.
+
+AUDIO: No music. No musical score. No dialogue: Rosa never speaks or mouths words. Ambient sound from the phone's own mic only: the moka's steady soft hiss, gulls through the open window, one far-off church bell.
+
+AVOID: sitting on, perching on or leaning back against the counter; swinging legs; her back to the counter; a hand leaving the counter, a high leg lift, a wobble or stumble, mouthed counting, papers or lettering on the counter, a second moka on the table, a large flame or flare-up, steam appearing or stopping; a moustache, upper-lip hair or any facial hair; a masculine face; a finger, hand or blurred object in front of the lens; any speech, mouthed words or lip movement; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+
+Total: 13s / 1 shot / 9:16
+POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Rosa, silent, the upper third calm for text. Her face matches @Image 1 and @Image 2 exactly for all 13 seconds, relit by the scene's own light.
+```
+
+## R20: Your boss doesn't have to know (riposo, part two)
+
+- **Length:** 14 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/3-doorstep.jpg` · 8211 characters
+
+```text
+Single continuous shot, 14s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
+Total: 14s / 1 shot / 9:16
+
+[REFERENCES]
+@Image 1 defines Rosa's face, bone structure, skin, wrinkles, hair, body and identity marks. It is a character sheet on a white studio background: use only the woman. Do not use its white background, its flat studio lighting or its layout, and do not copy its outfit (her outfit for this video is written in CAST).
+@Image 2 is a close-up photo of the same woman, Rosa, at a natural angle: it confirms her face. Use only her face and hair; ignore its background, light and clothes.
+@Image 3 defines the location: a narrow stone alley with ochre plaster walls, a weathered blue front door, pots of red geraniums and basil, a low wooden stool, a washing line with white sheets overhead. Use the place only.
+
+[EMOTIONAL INTENT]
+Part two of the riposo she defended in R8, now with the trick for people who work. Motive: she has napped after lunch for eighty years and can't believe offices forbid it. Goal: the viewer takes ten minutes of rest tomorrow, sends this to a work friend, and taps her bio. Obstacle: she is half asleep herself. Tactic: she wakes up mid-nap like a conspirator, mimes the car, then claims her own forty minutes with pride. Mood and tempo: sleepy, conspiratorial, proud. Every beat is played from this, never posed.
+SIGNATURE MOMENT: THE ONE-EYE WAKE-UP on 'Your boss doesn't have to know'.
+
+[GLOBAL LOOK – LOCKED, APPLIES TO THE WHOLE TAKE]
+Real social-media footage of a real 94-year-old woman, filmed by her great-granddaughter on Rosa's old phone from around 2016. Phone optics: 26mm-equivalent wide lens, tiny sensor, DEEP depth of field: the background is as sharp as her face; mild wide-angle stretch toward the frame edges. Old-phone processing: 720p-1080p softness, narrow dynamic range so the brightest sky or window areas clip to white, warm-yellow white balance, faint noise in the shadows, slight compression in fine textures, auto-exposure that corrects a beat late. Honest phone degradation only: no film grain, no vignette, no light leaks, no filters. Skin at pore level, real and aged.
+Available light only, constant for the whole take: Early afternoon: the alley is in deep warm shade. A soft ochre bounce off the wall opposite is the key from the RIGHT, with a bright strip of sun high on the wall above her. A cool sky fill and a faint blue from the door. True contact shadows under the stool. The light state never changes: not a time-lapse, no sun movement, no clouds racing. She is relit by this scene, never by the studio light of @Image 1: she is never brighter than her surroundings and never looks pasted in.
+Movement grammar: one handheld phone held by Giulia, alive: constant small sway and micro-corrections, one late human reframe, one tiny step-adjust. Never a tripod, gimbal, dolly, zoom or orbit.
+
+[CAST – IDENTICAL FOR THE WHOLE TAKE]
+Rosa (@Image 1): a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face. Identity marks, always visible and unchanged: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads. She is a woman: a smooth upper lip and chin, NO moustache, no facial hair, no stubble. Her face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
+Wardrobe (this video): an oversized faded white men's linen shirt with sleeves rolled to the elbow, buttoned modestly, rolled navy cotton trousers, barefoot.
+PERSONA: warm, mischievous and blunt; quick and lively, never frail; upright and wiry, she sits square; she talks with her hands in short, sharp gestures (a flat-hand chop, a finger wag, a pat of the air), sized small to medium, never mugging; she laughs in the middle of her own sentences; her eyes check the viewer after each joke.
+VOICE: English only. An elderly woman in her mid-90s with a warm Sicilian Italian accent, soft and musical, natural, not a cartoon, not heavy; a slightly husky timbre with a light rasp of age, strong and lively, never shaky; quick bursts of words, then sudden pauses.
+Off-screen: Giulia (20), her great-granddaughter, holds the phone. Giulia is never seen and never heard.
+
+[LOCATION]
+The place from @Image 3: a narrow stone alley with ochre plaster walls, a weathered blue front door, pots of red geraniums and basil, a low wooden stool, a washing line with white sheets overhead. No other people. Real, untidy details that never move: a worn straw broom leaning on the wall and a chipped saucer of water for the cats by the step. No brands, no readable text, no signs.
+
+[LOCATION MAP]
+Medium shot. She sits on the low wooden stool by the weathered blue door in deep afternoon shade, her back able to rest against the door.
+
+[CONTINUITY – LOCKED]
+This is NOT a selfie: Rosa is not holding the phone, no arm reaches toward the lens, and both of her hands are free for her gestures. Giulia holds the phone at chest height, standing in the alley about one and a half metres from the step. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. No prop appears, disappears or changes.
+
+[PHYSICS]
+The cool shade of the alley, the stool creaking as she leans back, the linen shirt creasing on the door; true body weight where she sits; fabric moves with her movement.
+
+SHOT 1 — 0:00–0:14 — Medium shot, phone handheld by Giulia, one unbroken take, 9:16 vertical phone frame
+0:00–0:02 — Rosa is dozing on the stool, head and back against the blue door, arms folded, eyes closed; on the first word she opens one eye at the lens, then both, and leans forward in a conspiratorial half-whisper that is still clearly audible: "Your boss doesn't have to know."
+0:02–0:05 — both empty hands grip an invisible steering wheel at chest height, then she drops her hands to her lap, tips her head back against the door and closes her eyes for a moment as she says it: "After lunch, the car. Engine off, eyes closed."
+0:05–0:08 — eyes open, all ten fingers spread at chest height, then a thumb to her own chest, chin up, a proud little laugh: "Ten minutes of riposo. Me? Forty. I'm the boss."
+0:08–0:11 — one finger points toward the lens from her lap, hand well below the lens, a sly smile: "Day twenty-four of my book, in my bio."
+0:11–0:14 — silence, lips still: she folds her arms, leans back against the blue door and closes her eyes, exactly as in the first frame. Hold.
+
+AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Rosa's voice close and clear, English only, exactly the quoted words and nothing added; swallows, a far-off scooter, a shutter closing somewhere for riposo, cicadas. Her lips move only when she speaks and stay still in every silence. No other voices.
+
+AVOID: a car, a steering wheel or any vehicle; a selfie arm or a phone in her hand; a moustache, upper-lip hair or any facial hair; a masculine face; a finger, hand or blurred object in front of the lens; a selfie arm or Rosa holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+
+Total: 14s / 1 shot / 9:16
+POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Rosa. Her face matches @Image 1 and @Image 2 exactly for all 14 seconds, a woman with a smooth upper lip, relit by the scene's own light. She speaks only the quoted English words in her warm Sicilian accent.
+```
+
+## R21: 94, and I never say "at my age"
+
+- **Length:** 13 s · **Refs:** `sheet.jpg`, `profile-picture.jpg`, `locations/2-sea-rocks.jpg` · 8746 characters
+
+```text
+Single continuous shot, 13s total, 9:16 vertical phone frame. One unbroken handheld take, no cuts.
+Total: 13s / 1 shot / 9:16
+
+[REFERENCES]
+@Image 1 defines Rosa's face, bone structure, skin, wrinkles, hair, body and identity marks. It is a character sheet on a white studio background: use only the woman. Do not use its white background, its flat studio lighting or its layout, and do not copy its outfit (her outfit for this video is written in CAST).
+@Image 2 is a close-up photo of the same woman, Rosa, at a natural angle: it confirms her face. Use only her face and hair; ignore its background, light and clothes.
+@Image 3 defines the location: flat pale limestone rocks stepping down into calm turquoise water, an old metal ladder bolted into the rock, a mountain headland across the bay, small generic fishing boats. Use the place only.
+
+[EMOTIONAL INTENT]
+The last rule of her book, told as a story about a woman half her age. Motive: the words 'at my age' make her furious, and she has a story that proves her right. Goal: the laugh, then the viewer bans those three words and follows for more. Obstacle: she is out of breath from the climb, so every line is short. Tactic: she does the woman's line as a prissy impression in her own voice, then lands the age like a punchline. Mood and tempo: breathless, scornful, funny. Every beat is played from this, never posed.
+SIGNATURE MOMENT: THE DEADPAN on 'She was forty-five'.
+
+[GLOBAL LOOK – LOCKED, APPLIES TO THE WHOLE TAKE]
+Real social-media footage of a real 94-year-old woman, filmed by her great-granddaughter on Rosa's old phone from around 2016. Phone optics: 26mm-equivalent wide lens, tiny sensor, DEEP depth of field: the background is as sharp as her face; mild wide-angle stretch toward the frame edges. Old-phone processing: 720p-1080p softness, narrow dynamic range so the brightest sky or window areas clip to white, warm-yellow white balance, faint noise in the shadows, slight compression in fine textures, auto-exposure that corrects a beat late. Honest phone degradation only: no film grain, no vignette, no light leaks, no filters. Skin at pore level, real and aged.
+Available light only, constant for the whole take: Soft low early-morning sun from the LEFT is the key, warm on her wet skin and hair. Open-sky fill from above. A turquoise COLOR BOUNCE from the water onto her chin and neck, and a pale warm bounce from the limestone. Water droplets catch tiny specular glints. True contact shadows where she sits on the rock and the towel presses down. The light state never changes: not a time-lapse, no sun movement, no clouds racing. She is relit by this scene, never by the studio light of @Image 1: she is never brighter than her surroundings and never looks pasted in.
+Movement grammar: one handheld phone held by Giulia, alive: constant small sway and micro-corrections, one late human reframe, one tiny step-adjust. Never a tripod, gimbal, dolly, zoom or orbit.
+
+[CAST – IDENTICAL FOR THE WHOLE TAKE]
+Rosa (@Image 1): a genuinely elderly 94-year-old Southern Italian woman, NOT young, NOT middle-aged, deeply sun-browned olive skin with real aged texture, deep sun creases and crow's feet, age spots, short cropped silver-white hair, a strong nose, sharp lively dark brown eyes, a lean wiry frame with upright posture, a completely bare no-makeup face. Identity marks, always visible and unchanged: a small pale scar through the outer end of her left eyebrow; a faded small blue anchor tattoo on the inside of her right wrist; exactly one necklace, a single strand of red coral beads. She is a woman: a smooth upper lip and chin, NO moustache, no facial hair, no stubble. Her face stays exactly the face of @Image 1 and @Image 2 in every frame and from every angle.
+Wardrobe (this video): a plain black modest one-piece swimsuit and nothing over it when the take starts, her short silver-white hair wet and slicked back, water streaming off her arms and legs; a faded striped cotton towel that she pulls round her shoulders in the first seconds and keeps on; bare feet.
+PERSONA: warm, mischievous and blunt; quick and lively, never frail; upright and wiry, she sits square; she talks with her hands in short, sharp gestures (a flat-hand chop, a finger wag, a pat of the air), sized small to medium, never mugging; she laughs in the middle of her own sentences; her eyes check the viewer after each joke.
+VOICE: English only. An elderly woman in her mid-90s with a warm Sicilian Italian accent, soft and musical, natural, not a cartoon, not heavy; a slightly husky timbre with a light rasp of age, strong and lively, never shaky; quick bursts of words, then sudden pauses.
+Off-screen: Giulia (20), her great-granddaughter, holds the phone. Giulia is never seen and never heard.
+
+[LOCATION]
+The place from @Image 3: flat pale limestone rocks stepping down into calm turquoise water, an old metal ladder bolted into the rock, a mountain headland across the bay, small generic fishing boats. No other people. Real, untidy details that never move: her worn rubber sandals and a small faded canvas bag on the rock beside her. No brands, no readable text, no signs.
+
+[LOCATION MAP]
+Medium shot. She stands at the top of the old metal ladder, just out of the calm water, dripping; the striped towel lies folded on the rock beside the ladder from frame one.
+
+[CONTINUITY – LOCKED]
+This is NOT a selfie: Rosa is not holding the phone, no arm reaches toward the lens, and both of her hands are free for her gestures. Giulia holds the phone at chest height, standing on the flat rock about one and a half metres from the top of the ladder. The lens is clean and clear: no finger, hand or object in front of it. Framing constant after the opening second. Props: the faded striped cotton towel folded on the rock beside the top of the ladder from frame one (she picks it up on 'Last summer' and keeps it on). Every prop is there from the first frame and never appears, disappears or changes.
+
+[PHYSICS]
+Water streaming off her arms and legs onto the limestone, drops falling from her hair, the towel darkening on her wet shoulders, sun glints on the wet rock and the ladder; true body weight where she sits; fabric moves with her movement.
+
+SHOT 1 — 0:00–0:13 — Medium shot, phone handheld by Giulia, one unbroken take, 9:16 vertical phone frame
+0:00–0:03 — Rosa, her right hand on the ladder rail, she takes the last step off the old metal ladder onto the rock, dripping; once both feet are flat she lets go of the rail and faces the lens with a pitying, amused look: "Ninety-four, and I never say at my age."
+0:03–0:06 — she picks up the striped towel from the rock and pulls it round her shoulders, with a small nod back at the ladder: "Last summer a woman saw me on this ladder:"
+0:06–0:08 — a limp dramatic hand to her chest and eyes rolled up: a mocking impression in her OWN voice, a little prissier: "at my age, I could never."
+0:08–0:10 — deadpan, eyes straight into the lens, a one-beat pause, then both palms up in disbelief, laughing as she says it, then one flat-hand chop on the last word: "She was forty-five... Forty-five, amore! Basta."
+0:10–0:13 — silence, lips still: she tightens the towel, looks back at the calm sea, then gives the lens a small nod. Hold.
+
+AUDIO: No music. No musical score. Synchronized production sound from the phone's own mic only: Rosa's voice close and clear, English only, exactly the quoted words and nothing added; small waves lapping the rocks, light breeze on the phone mic, gulls, a distant boat engine. Her lips move only when she speaks and stay still in every silence. No other voices.
+
+AVOID: a second woman or a second woman's voice; a hand merging with the ladder rail; the towel appearing from nowhere; a low neckline or swimsuit cut-outs; a moustache, upper-lip hair or any facial hair; a masculine face; a finger, hand or blurred object in front of the lens; a selfie arm or Rosa holding the phone; any language other than English; anyone else in frame; extra people; a younger, smoother or made-up face; waxy or plastic skin; missing identity marks (the pale scar through her left eyebrow, the faded blue anchor tattoo on her inner right wrist, the single strand of red coral beads); outfit changes; the white studio background or studio light of @Image 1; a blurred background, bokeh or a film-look colour grade; cuts, zooms, gimbal glide or tripod stillness; subtitles, captions, on-screen text, logos or watermarks.
+
+Total: 13s / 1 shot / 9:16
+POSITIVE LOCKS: One unbroken 9:16 vertical phone take of Rosa. Her face matches @Image 1 and @Image 2 exactly for all 13 seconds, a woman with a smooth upper lip, relit by the scene's own light. She speaks only the quoted English words in her warm Sicilian accent.
 ```

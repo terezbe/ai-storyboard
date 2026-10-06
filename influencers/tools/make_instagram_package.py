@@ -391,6 +391,13 @@ BATCHES = {
             (10, "R14", "Hook test of R7 (post 07): same story and length; only the first line and the title text change"),
         ],
     },
+    4: {
+        "rosa": [
+            (14, "R19", "Reach: R6's winning shape (13 s, silent, the kitchen, four text beats, a loop) answering a viewer's request for her daily movement; the book only in the caption line and the pinned comment (Day 12)"),
+            (15, "R21", "Followers: R18's ladder opening (lowest skip rate) with a story punchline and a follow line in the caption; Day 30 only in the pinned comment"),
+            (16, "R20", "Sales: R8's riposo (5.5 shares per 100 reached) as a 14 s part two that names Day 24 of the book in the last line"),
+        ],
+    },
     3: {
         "rosa": [
             (11, "R16", "Store-opening video: Day 1 of the book given away on camera (the window before the telephone), then 'twenty-nine more in my bio'; product caption"),
@@ -404,6 +411,7 @@ BATCHES = {
 COMPARE = {
     2: "R10 for R11 and R12, R1 and R9 for R13, R7 for R14",
     3: "R4 and R6 for R16; R1, R9 and R13 for R17; R10 and R2 for R18",
+    4: "R6 for R19; R18 and R1 for R21; R8 and R20's sales against R16-R18",
 }
 
 PIN_LINES = {
@@ -411,6 +419,18 @@ PIN_LINES = {
     "R17": "Thirty of these, one page each. In my bio 🍋",
     "R18": "No sea needed. The thirty mornings are in my bio 🍋",
 }
+
+
+def pinned_for(c, vid):
+    """The '- **Pinned comment:** ...' line of a video in the content plan, else PIN_LINES."""
+    text = open(os.path.join(ROOT, c, "content-plan.md"), encoding="utf-8").read()
+    start = text.find(f"\n### {vid}:")
+    if start >= 0:
+        section = re.split(r"\n##+ ", text[start + 1:])[0]
+        m = re.search(r"- \*\*Pinned comment:\*\* (.+)", section)
+        if m:
+            return m.group(1).strip()
+    return PIN_LINES.get(vid)
 
 
 def batch_instructions(c, kit, posts, n):
@@ -436,6 +456,20 @@ def batch_instructions(c, kit, posts, n):
         L.append(f"- Story the same day: the Reel reshared with the link sticker on it, saved to the \"{ch['highlight']}\" highlight.")
         L.append("- In the 24 h and 72 h report, add that day's number of sales if the owner gives it to you. You can't see the store, "
                  "so ask for the number rather than guess it.")
+        L.append("")
+    if n >= 4:
+        L.append("## 0. Before and right after each post")
+        L.append("")
+        L.append("- Before the first one: R6 (\"Not advice. Just my plate...\") and R8 (\"40 minutes. Not three hours...\") bring most of the traffic. "
+                 f"Edit both captions to end with \"{ch['caption_line']}\" and pin a comment under each: \"The thirty mornings are in my bio, amore 🍋\". "
+                 "Pin both posts to the top of the profile.")
+        for p in posts:
+            pin = pinned_for(c, p["vid"])
+            if pin:
+                L.append(f"- {p['vid']}, right after posting, pin this comment from the account: \"{pin}\"")
+        L.append("- Reply with the Reel: under R6, answer the comment \"Tell us about your daily movement nona\" with R19 (Reply > the Reel). "
+                 "Under R8, answer \"Yes take a nap but not right after lunch...\" with R20.")
+        L.append("- The AI label is switched on by hand on every post.")
         L.append("")
     L.append("Each video tests one thing, chosen from the batch-1 numbers. Don't change a caption, a cover or the order: "
              "otherwise we can't tell what worked.")
