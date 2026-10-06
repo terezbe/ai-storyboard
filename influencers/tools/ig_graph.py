@@ -15,13 +15,12 @@ Commands:
   python3 influencers/tools/ig_graph.py publish VIDEO_URL CAPTION_FILE [COVER_URL]   post a Reel from a public mp4
   python3 influencers/tools/ig_graph.py refresh                      extend an Instagram-login token by 60 days
 
-The API can't switch on Instagram's AI label, so `publish` adds an "AI-created character" line to any caption that
-doesn't already say AI. Still by hand (two minutes a day): pinning a comment, the bio link, a story with a link sticker, DMs.
+Captions go up exactly as in the package. The API can't switch on Instagram's AI label: the owner adds it by hand.
+Also by hand (two minutes a day): pinning a comment, the bio link, a story with a link sticker, DMs.
 """
 import datetime as dt
 import json
 import os
-import re
 import sys
 import time
 import urllib.error
@@ -34,7 +33,6 @@ TOKEN = os.environ.get("META_IG_TOKEN")
 USER = os.environ.get("IG_USER_ID")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHAR = os.environ.get("IG_CHAR", "rosa")
-AI_LINE = "AI-created character 🤖"
 
 REEL_METRICS = ["views", "reach", "saved", "shares", "likes", "comments", "total_interactions",
                 "ig_reels_avg_watch_time", "follows", "profile_visits"]
@@ -144,13 +142,9 @@ def reply(comment_id, text):
     print(call(f"{comment_id}/replies", {"message": text}, method="POST"))
 
 
-def with_ai_line(caption):
-    return caption if re.search(r"\bAI\b", caption) else f"{caption}\n\n{AI_LINE}"
-
-
 def publish(video_url, caption_file, cover_url=None, poll_s=10):
     uid = user_id()
-    caption = with_ai_line(open(caption_file, encoding="utf-8").read().strip())
+    caption = open(caption_file, encoding="utf-8").read().strip()
     params = {"media_type": "REELS", "video_url": video_url, "caption": caption, "share_to_feed": "true"}
     if cover_url:
         params["cover_url"] = cover_url
