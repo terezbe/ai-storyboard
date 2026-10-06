@@ -171,6 +171,13 @@ For every route:
 - **Never edit `video-prompts.md` by hand.** Change `content-plan.md`, `tools/videos.py` or `tools/chars.py`, then re-run `python3 influencers/tools/build_video_prompts.py`.
 - **Git:** commit and push to `claude/video-explanation-6b9nkr`. The draft PR is terezbe/ai-storyboard#2.
 
+## Instagram by API (Rosa): numbers and posting without a third-party tool
+
+- The Supermetrics connector in this environment is connected to @nonnarosaswims (Instagram Insights, profile ID 17841426153815659) but its trial expired on 2026-08-10, so every query returns TRIAL_EXPIRED. Don't use it.
+- `tools/ig_graph.py` talks to the Meta Graph API directly (reachable from this environment). It needs `META_IG_TOKEN` and `IG_USER_ID` in the cloud environment's settings (the owner creates a Meta app at developers.facebook.com, adds the Instagram product, "API setup with Instagram login", adds @nonnarosaswims and generates a long-lived token; Development mode is enough for the owner's own accounts). A new session picks the variables up.
+- `insights [N]` prints our 24 h / 72 h table (views, reach, average watch time, likes, comments, saves, shares, follows, profile visits, saves and shares per 100 reached) for the last N posts and saves a JSON copy in `rosa/instagram/`; `publish VIDEO_URL CAPTION_FILE [COVER_URL]` posts a Reel from one of the public links in `rosa/instagram/video-links.json` with the caption file from the package; `comments` / `reply` handle the comment thread; `refresh` extends the token (60 days).
+- Still by hand: pinning a comment, the bio link, stories with a link sticker, DMs. The owner never pastes a token or password in chat.
+
 ## After batch 1 (day 5 onward)
 
 - The winner gets batch 2 (5 videos: #11–#15 in its content plan). Its store goes live per `influencers/SELLING-GUIDE.md`.
