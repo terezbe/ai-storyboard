@@ -101,7 +101,7 @@ Never argue. Delete abusive comments. If someone seems in real money trouble (ba
 
 ## 5. The store link (day 5, when I send it)
 
-I sell a digital product: **The Quiet Money Workbook** ($12, regular $15.99) in a link-in-bio store (Stan Store or Payhip). When I send you the link:
+I sell a digital product: **The Quiet Money Workbook** ($12) in a link-in-bio store (Gumroad, Stan Store or Payhip). When I send you the link:
 
 - **Put it in the bio, and only there.** Edit profile > Links > Add external link > paste the URL > title `The Quiet Money Workbook`. The bio's last line ("👇 The Quiet Money Workbook") points at it.
 - **Do NOT add the link to the videos or type the URL into captions.** Links in Reels and captions aren't clickable and can lower reach. The videos are finished as they are.
@@ -111,7 +111,7 @@ I sell a digital product: **The Quiet Money Workbook** ($12, regular $15.99) in 
 
 ## 6. Sales strategy (how this account makes money)
 
-**The product:** "The Quiet Money Workbook": a 48-page printable PDF workbook: one guided evening to find where the money goes (the Leak Hunt), Ray's seven rules, and twelve weeks of fifteen-minute Sunday pages. General information, not financial advice. $12 (regular $15.99), delivered by email right after payment. Describe it only with these facts. Never promise results (savings, a debt-free date, or any money result).
+**The product:** "The Quiet Money Workbook": a 48-page printable PDF workbook: one guided evening to find where the money goes (the Leak Hunt), Ray's seven rules, and twelve weeks of fifteen-minute Sunday pages. General information, not financial advice. $12, delivered by email right after payment. Describe it only with these facts. Never promise results (savings, a debt-free date, or any money result).
 
 **The plan:**
 
@@ -128,7 +128,7 @@ I sell a digital product: **The Quiet Money Workbook** ($12, regular $15.99) in 
 - **The link lives in two places only:** the bio and the daily link-sticker story (saved in the highlight). Never in comments, captions or videos.
 - **Answer every buyer question within a day,** in Ray's voice, with the replies below.
 - **No pressure tricks:** no fake scarcity ("last copies", "today only"), no countdowns, no fake reviews or testimonials.
-- **No extra discounts:** $12 is already the launch price. No coupon codes unless I give you one.
+- **No extra discounts:** the price is $12, the only price it has ever had. No coupon codes unless I give you one, and only with a real end date set in the store.
 - **Never message people first.** Only answer people who wrote to us. No paid ads or boosting unless I say so.
 
 **Replies about the product (comments and DMs):**
@@ -137,7 +137,7 @@ I sell a digital product: **The Quiet Money Workbook** ($12, regular $15.99) in 
 |---|---|
 | "How do I get it?" / "Where's the workbook?" | It's in my bio, love 📓 Tap it, pay, and it lands in your email straight after. |
 | "I paid but didn't get it" | Sorry about that, love. Check your spam first. Not there? Send me the email you used and I'll sort it today. |
-| "Can I get a discount?" | It's already on launch price, love. That's as low as it goes. |
+| "Can I get a discount?" | It's $12, love. Less than one takeaway. |
 | "Is it worth it?" | It's a pencil and one evening with a brew. If it's not for you, message me. |
 | "Is the workbook AI too?" | Aye, I'm an AI grandad, it's on me page. The habits are real, and the workbook's a real PDF you keep. |
 | "Will it tell me what to invest in?" | No, love. It shows you where your money goes. Investing's for a proper adviser. |
@@ -148,7 +148,7 @@ I sell a digital product: **The Quiet Money Workbook** ($12, regular $15.99) in 
 
 **If nothing sells in the first week,** check these in order and tell me what you found:
 
-1. The bio link opens the store, and the price shows $12 with $15.99 crossed out.
+1. The bio link opens the store, and the price shows $12 (no crossed-out price: the product has never sold for more).
 2. The batch-2 captions that mention the product end with "The Quiet Money Workbook is in my bio 📓", and the bio link works when they go live.
 3. The link story is posted every day and saved in the "Workbook" highlight.
 4. Which Reels bring the most profile visits (Insights > the Reel > Profile activity). Tell me, and I'll write the next product video in that format.

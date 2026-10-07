@@ -104,7 +104,7 @@ Seed line (the test sentence for the voice tool):
 
 **Don't Text. Call.: Grandpa Lou's swipe file for the moments you don't know what to say.**
 - Situation cards with word-for-word scripts, navigable by feeling.
-- Price: $12 launch price (regular $15.99).
+- Price: $12 (never show an invented "regular" price).
 - Files are in `product/`.
 
 ## Safety rules

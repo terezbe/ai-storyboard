@@ -38,7 +38,7 @@ CHAR = {
         no_promises="younger, healthier, cured, or any health result",
         dm=[("\"How do I get it?\" / \"Where's the book?\"", "It's in my bio, amore 🍋 Tap it, pay, and the book comes to your email straight away."),
             ("\"I paid but didn't get it\"", "Scusa, amore! Look in your spam folder first. Not there? Send me the email you used and Giulia fixes it today."),
-            ("\"Can I get a discount?\"", "It's already the launch price, amore. That's as low as it goes."),
+            ("\"Can I get a discount?\"", "It's $12, amore, a little less than a coffee and a cornetto for two."),
             ("\"Is it worth it?\"", "Thirty small mornings, one page a day. If it's not for you, write to me."),
             ("\"Is the book AI too?\"", "I'm an AI nonna, it says so on my page. The habits are old and real, and the book is a real PDF you keep."),
             ("\"I have a health condition, is it safe?\"", "It's small daily habits, not medicine, amore. Ask your doctor before you change anything."),
@@ -55,7 +55,7 @@ CHAR = {
         no_promises="savings, a debt-free date, or any money result",
         dm=[("\"How do I get it?\" / \"Where's the workbook?\"", "It's in my bio, love 📓 Tap it, pay, and it lands in your email straight after."),
             ("\"I paid but didn't get it\"", "Sorry about that, love. Check your spam first. Not there? Send me the email you used and I'll sort it today."),
-            ("\"Can I get a discount?\"", "It's already on launch price, love. That's as low as it goes."),
+            ("\"Can I get a discount?\"", "It's $12, love. Less than one takeaway."),
             ("\"Is it worth it?\"", "It's a pencil and one evening with a brew. If it's not for you, message me."),
             ("\"Is the workbook AI too?\"", "Aye, I'm an AI grandad, it's on me page. The habits are real, and the workbook's a real PDF you keep."),
             ("\"Will it tell me what to invest in?\"", "No, love. It shows you where your money goes. Investing's for a proper adviser."),
@@ -71,7 +71,7 @@ CHAR = {
         no_promises="that someone will call back, come back, fall in love or say yes",
         dm=[("\"How do I get it?\" / \"Where are the words?\"", "It's in my bio, sweetheart 📞 Tap it, pay, and it's in your email right after."),
             ("\"I paid but didn't get it\"", "Sorry, kid! Check your spam. Not there? Send me the email you used and Nicky sorts it today."),
-            ("\"Can I get a discount?\"", "It's already the launch price, kid. Cheaper than the dinner you'd text your way out of."),
+            ("\"Can I get a discount?\"", "It's $12, kid. Cheaper than the dinner you'd text your way out of."),
             ("\"Is it worth it?\"", "Twenty-five moments, the exact words for each. If it's not for you, tell me."),
             ("\"Is the file AI too?\"", "Yeah, I'm an AI grandpa, it says so on my page. The advice is old-school real, and the file is a real PDF you keep."),
             ("\"Will it make him/her come back?\"", "No script makes anybody want you, sweetheart. It gets the words out so you get a real answer."),
@@ -206,7 +206,7 @@ def instructions(c, kit, posts):
     L.append("")
     L.append("## 5. The store link (day 5, when I send it)")
     L.append("")
-    L.append(f"I sell a digital product: **{ch['product']}** ($12, regular $15.99) in a link-in-bio store (Stan Store or Payhip). When I send you the link:")
+    L.append(f"I sell a digital product: **{ch['product']}** ($12) in a link-in-bio store (Gumroad, Stan Store or Payhip). When I send you the link:")
     L.append("")
     L.append(f"- **Put it in the bio, and only there.** Edit profile > Links > Add external link > paste the URL > title `{ch['link_title']}`. The bio's last line (\"{kit['bio'].splitlines()[-1]}\") points at it.")
     L.append("- **Do NOT add the link to the videos or type the URL into captions.** Links in Reels and captions aren't clickable and can lower reach. The videos are finished as they are.")
@@ -220,7 +220,7 @@ def instructions(c, kit, posts):
     L.append("")
     L.append("## 6. Sales strategy (how this account makes money)")
     L.append("")
-    L.append(f"**The product:** \"{ch['product']}\": {ch['what']}. $12 (regular $15.99), delivered by email right after payment. "
+    L.append(f"**The product:** \"{ch['product']}\": {ch['what']}. $12, delivered by email right after payment. "
              f"Describe it only with these facts. Never promise results ({ch['no_promises']}).")
     L.append("")
     L.append("**The plan:**")
@@ -238,7 +238,7 @@ def instructions(c, kit, posts):
     L.append("- **The link lives in two places only:** the bio and the daily link-sticker story (saved in the highlight). Never in comments, captions or videos.")
     L.append(f"- **Answer every buyer question within a day,** in {who}'s voice, with the replies below.")
     L.append("- **No pressure tricks:** no fake scarcity (\"last copies\", \"today only\"), no countdowns, no fake reviews or testimonials.")
-    L.append("- **No extra discounts:** $12 is already the launch price. No coupon codes unless I give you one.")
+    L.append("- **No extra discounts:** the price is $12, the only price it has ever had. No coupon codes unless I give you one, and only with a real end date set in the store.")
     L.append("- **Never message people first.** Only answer people who wrote to us. No paid ads or boosting unless I say so.")
     L.append("")
     L.append("**Replies about the product (comments and DMs):**")
@@ -253,7 +253,7 @@ def instructions(c, kit, posts):
     L.append("")
     L.append("**If nothing sells in the first week,** check these in order and tell me what you found:")
     L.append("")
-    L.append("1. The bio link opens the store, and the price shows $12 with $15.99 crossed out.")
+    L.append("1. The bio link opens the store, and the price shows $12 (no crossed-out price: the product has never sold for more).")
     L.append(f"2. The batch-2 captions that mention the product end with \"{ch['caption_line']}\", and the bio link works when they go live.")
     L.append(f"3. The link story is posted every day and saved in the \"{ch['highlight']}\" highlight.")
     L.append("4. Which Reels bring the most profile visits (Insights > the Reel > Profile activity). Tell me, and I'll write the next product video in that format.")
@@ -293,7 +293,7 @@ def readme_he(c, kit, n, has_later):
 4. כשהוא צריך להתחבר לאינסטגרם, הוא אמור להעביר לך את הדפדפן כדי שתתחבר בעצמך. לא נותנים לו סיסמה בצ'אט.
 5. אם GPT לא מצליח להעלות קבצים לאינסטגרם בעצמו, מעלים מהטלפון לפי אותן הוראות: לכל מספר יש סרטון, כיתוב להעתקה וקאבר.
 
-הלינק לחנות ({ch['product']}, $12 במקום $15.99):
+הלינק לחנות ({ch['product']}, $12):
 - שמים אותו רק בביו של הפרופיל, ביום 5, אחרי שפתחת את החנות (Stan Store לדמות המנצחת, או Payhip). ההסבר המלא ב-SELLING-GUIDE.md.
 - לא מוסיפים אותו לסרטונים ולא כותבים אותו בכיתובים.
 - כשיש לך את הלינק, שלח אותו ל-GPT. ההוראות מסבירות לו בדיוק מה לעשות איתו: ביו, סטורי יומי עם מדבקת לינק, והייליט בשם "{ch['highlight']}".
@@ -452,7 +452,7 @@ def batch_instructions(c, kit, posts, n):
         pins = "; ".join(f"{v}: \"{PIN_LINES[v]}\"" for v in (p["vid"] for p in posts) if v in PIN_LINES)
         L.append(f"- Right after posting, pin one comment from the account, in her voice. {pins}.")
         L.append("- Reply to every \"where do I get it\" / \"how much\" with the replies table in `GPT-INSTRUCTIONS.md` (the link is in my bio; "
-                 "it's on launch price). Never paste the link in a comment or a DM.")
+                 "it's $12). Never paste the link in a comment or a DM.")
         L.append(f"- Story the same day: the Reel reshared with the link sticker on it, saved to the \"{ch['highlight']}\" highlight.")
         L.append("- In the 24 h and 72 h report, add that day's number of sales if the owner gives it to you. You can't see the store, "
                  "so ask for the number rather than guess it.")

@@ -9,7 +9,7 @@ These Reels are about the product itself, so the store link must be live in the 
 For each of them:
 
 - Right after posting, pin one comment from the account, in her voice. R16: "Day one is free, in the video. The other twenty-nine are in my bio, amore 🍋"; R17: "Thirty of these, one page each. In my bio 🍋"; R18: "No sea needed. The thirty mornings are in my bio 🍋".
-- Reply to every "where do I get it" / "how much" with the replies table in `GPT-INSTRUCTIONS.md` (the link is in my bio; it's on launch price). Never paste the link in a comment or a DM.
+- Reply to every "where do I get it" / "how much" with the replies table in `GPT-INSTRUCTIONS.md` (the link is in my bio; it's $12). Never paste the link in a comment or a DM.
 - Story the same day: the Reel reshared with the link sticker on it, saved to the "Reset" highlight.
 - In the 24 h and 72 h report, add that day's number of sales if the owner gives it to you. You can't see the store, so ask for the number rather than guess it.
 

@@ -103,7 +103,7 @@ Never argue. Delete abusive comments. If someone seems in danger or asks somethi
 
 ## 5. The store link (day 5, when I send it)
 
-I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in a link-in-bio store (Stan Store or Payhip). When I send you the link:
+I sell a digital product: **The 30-Day Morning Reset** ($12) in a Gumroad store (morningstory.gumroad.com). When I send you the link:
 
 - **Put it in the bio, and only there.** Edit profile > Links > Add external link > paste the URL > title `My 30-Day Morning Reset`. The bio's last line ("👇 My 30-Day Morning Reset") points at it.
 - **Do NOT add the link to the videos or type the URL into captions.** Links in Reels and captions aren't clickable and can lower reach. The videos are finished as they are.
@@ -114,7 +114,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 
 ## 6. Sales strategy (how this account makes money)
 
-**The product:** "The 30-Day Morning Reset": a 54-page printable PDF: 30 small morning habits, one a day, each with a short story, a tick-box and a line to write, plus a Day 1 and Day 30 self-score and five bonuses. $12 (regular $15.99), delivered by email right after payment. Describe it only with these facts. Never promise results (younger, healthier, cured, or any health result).
+**The product:** "The 30-Day Morning Reset": a 54-page printable PDF: 30 small morning habits, one a day, each with a short story, a tick-box and a line to write, plus a Day 1 and Day 30 self-score and five bonuses. $12, delivered by email right after payment. Describe it only with these facts. Never promise results (younger, healthier, cured, or any health result).
 
 **The plan:**
 
@@ -131,7 +131,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 - **The link lives in two places only:** the bio and the daily link-sticker story (saved in the highlight). Never in comments, captions or videos.
 - **Answer every buyer question within a day,** in Nonna Rosa's voice, with the replies below.
 - **No pressure tricks:** no fake scarcity ("last copies", "today only"), no countdowns, no fake reviews or testimonials.
-- **No extra discounts:** $12 is already the launch price. No coupon codes unless I give you one.
+- **No extra discounts:** the price is $12, the only price it has ever had. No coupon codes unless I give you one, and only with a real end date that I set in Gumroad.
 - **Never message people first.** Only answer people who wrote to us. No paid ads or boosting unless I say so.
 
 **Replies about the product (comments and DMs):**
@@ -140,7 +140,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 |---|---|
 | "How do I get it?" / "Where's the book?" | It's in my bio, amore 🍋 Tap it, pay, and the book comes to your email straight away. |
 | "I paid but didn't get it" | Scusa, amore! Look in your spam folder first. Not there? Send me the email you used and Giulia fixes it today. |
-| "Can I get a discount?" | It's already the launch price, amore. That's as low as it goes. |
+| "Can I get a discount?" | It's $12, amore, a little less than a coffee and a cornetto for two. |
 | "Is it worth it?" | Thirty small mornings, one page a day. If it's not for you, write to me. |
 | "Is the book AI too?" | I'm an AI nonna, it says so on my page. The habits are old and real, and the book is a real PDF you keep. |
 | "I have a health condition, is it safe?" | It's small daily habits, not medicine, amore. Ask your doctor before you change anything. |
@@ -150,7 +150,7 @@ I sell a digital product: **The 30-Day Morning Reset** ($12, regular $15.99) in 
 
 **If nothing sells in the first week,** check these in order and tell me what you found:
 
-1. The bio link opens the store, and the price shows $12 with $15.99 crossed out.
+1. The bio link opens the store, and the price shows $12 (no crossed-out price: the book has never sold for more).
 2. The batch-2 captions that mention the product end with "My 30-Day Morning Reset is in my bio 🍋", and the bio link works when they go live.
 3. The link story is posted every day and saved in the "Reset" highlight.
 4. Which Reels bring the most profile visits (Insights > the Reel > Profile activity). Tell me, and I'll write the next product video in that format.

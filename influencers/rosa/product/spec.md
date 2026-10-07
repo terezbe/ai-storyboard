@@ -14,7 +14,7 @@ The owner delegated every decision, so there was no human pick and no human samp
 | Subtitle | Nonna Rosa's old ways for stronger mornings |
 | Catchphrase | "The sea doesn't care how old you are." It appears on the cover and at exactly two designed moments inside: the sign-off of the opening letter, and the closing band on the Keep Five page. It appears nowhere else. |
 | Byline | Nonna Rosa, 94 |
-| Price | $12, with a regular price of $15.99 |
+| Price | $12, the only price (no invented "regular" price) |
 | Page size | US Letter (8.5 x 11 in) |
 | Spelling | American English (neighbor, color, harbor, gray, elevator, favorite). In her voice Rosa keeps only the Italian words from her bible: amore, basta, piano piano, ascolta, riposo, and "Madonna" at most twice in the whole book. Dish names (caponata, pane cunzato) are allowed as names. |
 

@@ -14,7 +14,7 @@ Store-facing copy for a link-in-bio store (Stan Store or Payhip). Everything her
 
 ## 3. Price line
 
-**$12 launch price (regular $15.99).** It's a complete 30-day system, not a booklet: 54 printable pages with a tracker on every day page, a Day 1 and Day 30 self-score, and five bonuses.
+**$12.** It's a complete 30-day system, not a booklet: 54 printable pages with a tracker on every day page, a Day 1 and Day 30 self-score, and five bonuses.
 
 ## 4. Store fields
 
@@ -73,7 +73,7 @@ Store-facing copy for a link-in-bio store (Stan Store or Payhip). Everything her
 |---|---|
 | Bottom title | Your first morning only needs a window. |
 | CTA button | Start my 30 mornings |
-| Price | $15.99, discounted to **$12** |
+| Price | **$12** (no crossed-out price: it has never sold for more) |
 
 ### Delivery email (after purchase)
 

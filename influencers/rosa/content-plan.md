@@ -329,8 +329,8 @@ Post one a day: R19, R21, R20. Reply to the "daily movement" comment under R6 wi
 - **Script:**
   > Your boss doesn't have to know. After lunch, the car. Engine off, eyes closed. Ten minutes of riposo. Me? Forty. I'm the boss. Day twenty-four of my book, in my bio.
 - **Length:** ~31 words (~14 s)
-- **Post caption:** No bed at work? The car, parked in the shade, engine off, eyes closed, no screen. Ten minutes. Your boss doesn't have to know. 😴 Send this to your work friend. Not to your boss. My 30-Day Morning Reset is in my bio 🍋 #riposo #slowliving #nonna #healthyaging
-- **Pinned comment:** Forty minutes if your day allows it, ten if it doesn't. That's Day 24, the Riposo Rule, and the other 29 mornings are in my bio 🍋 Car, bench or bed? One word, amore. Concetta says bench. Of course she does.
+- **Post caption:** No bed at work? The car, parked in the shade, engine off, eyes closed, no screen. Ten minutes. Your boss doesn't have to know. 😴 My 30-Day Morning Reset is in my bio 🍋 #riposo #slowliving #nonna #healthyaging
+- **Pinned comment:** Forty minutes if your day allows it, ten if it doesn't. That's Day 24, the Riposo Rule, and the other 29 mornings are in my bio 🍋 Concetta naps on the bench. Of course she does.
 
 ### R21: 94, and I never say "at my age"
 - **Format:** A, talking clip (Giulia handheld) · **Location:** `locations/2-sea-rocks.jpg`, calm morning; she steps off the ladder · **Outfit:** black one-piece swimsuit, wet; the striped towel pulled on in the first seconds
@@ -338,7 +338,7 @@ Post one a day: R19, R21, R20. Reply to the "daily movement" comment under R6 wi
 - **Script:**
   > Ninety-four, and I never say at my age. Last summer a woman saw me on this ladder: at my age, I could never. She was forty-five... Forty-five, amore! Basta.
 - **Length:** ~29 words (~13 s)
-- **Post caption:** She was 45. I'm 94. 🌊 The sea isn't for everybody. Those three words are for nobody. Send this to the one who says 'at my age' every day. Follow, amore, I tell you more. (I swim only on calm days, and never alone.) #healthyaging #nonna #agingwell #seaswimming
+- **Post caption:** She was 45. I'm 94. 🌊 The sea isn't for everybody. Those three words are for nobody. Follow, amore, I tell you more. (I swim only on calm days, and never alone.) #healthyaging #nonna #agingwell #seaswimming
 - **Pinned comment:** Tell me your age and I tell you if you're allowed to say it. (You're not.) Day 30 of my book: never say 'at my age'. In my bio 🍋
 
 ## Parked: the first batch-2 drafts (product-led, not produced)

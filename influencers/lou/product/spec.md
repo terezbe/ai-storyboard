@@ -39,7 +39,7 @@ It is not used anywhere else in the body copy. The running footer carries the ti
 ## Buyer and price
 
 - **Buyer:** 18 to 35, any gender and orientation, dating in the app-and-text era. They hit "buy" in the moment: phone in hand, a message typed eleven times, or a silence they can't read. They also buy in calm moments, when they want to finally ask someone out.
-- **Price:** $12 launch, regular $15.99 shown crossed out. The justification is 25 situation cards with word-for-word scripts, a usage log, a 5-part bonus stack and a 40-page designed PDF.
+- **Price:** $12, no crossed-out "regular" price (it has never sold for more). The justification is 25 situation cards with word-for-word scripts, a usage log, a 5-part bonus stack and a 40-page designed PDF.
 
 ## Shape
 

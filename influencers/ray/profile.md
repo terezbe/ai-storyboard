@@ -98,7 +98,7 @@ Seed line (the test sentence for the voice tool):
 
 **The Quiet Money Workbook: Ray's one honest sitting and a fifteen-minute Sunday ritual.**
 - A reckoning and ritual workbook. You do one guided honest sitting (the Leak Hunt), then keep a short weekly ritual (Sunday Sums) for good.
-- Price: $12 launch price (regular $15.99).
+- Price: $12 (never show an invented "regular" price).
 - Files are in `product/`.
 
 ## Safety rules

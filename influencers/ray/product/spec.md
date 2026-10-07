@@ -30,7 +30,7 @@ This spec was locked before any page copy was written. The method normally stops
 ## Buyer and price
 
 - **Buyer:** someone with a money mess they don't look at. It is not always a crisis: often it's a steady fog of forgotten subscriptions, small daily spends and statements they don't open. They buy late at night, after an end-of-month "where did it all go?", or just after a bank app notification they didn't want to open.
-- **Price:** $12 launch price, regular $15.99 shown crossed out. Link-in-bio store (Stan Store or Payhip).
+- **Price:** $12, no crossed-out "regular" price (it has never sold for more). Link-in-bio store (Stan Store or Payhip).
 
 ## Content alignment with Ray's Instagram scripts (locked, do not paraphrase)
 

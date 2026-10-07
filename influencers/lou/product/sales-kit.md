@@ -16,7 +16,7 @@ Store-facing copy for Stan Store or Payhip. Everything is in Lou's voice except 
 
 ## 3. Price line
 
-**$12** (regular **$15.99**). For less than a dinner you'd text your way out of, you get a whole system, not one tip: 25 word-for-word situation cards, a usage log and five bonuses in a 40-page designed PDF.
+**$12.** For less than a dinner you'd text your way out of, you get a whole system, not one tip: 25 word-for-word situation cards, a usage log and five bonuses in a 40-page designed PDF.
 
 ## 4. Store fields
 
@@ -59,7 +59,7 @@ Store-facing copy for Stan Store or Payhip. Everything is in Lou's voice except 
 
 **CTA button:** Get the swipe file
 
-**Price:** $15.99, discounted to **$12**
+**Price:** **$12** (no crossed-out price: it has never sold for more)
 
 ### Delivery email (after purchase)
 

@@ -181,6 +181,13 @@ For every route:
 - Captions go up exactly as in the package. The API can't switch on Instagram's AI label, and the owner adds it by hand on every post (their decision, 2026-10-06): don't add an AI line to captions.
 - Still by hand: pinning a comment, the bio link, stories with a link sticker, DMs. The owner never pastes a token or password in chat. The token lasts 60 days: run `refresh` before then and store the new one.
 
+## Sales status and rules (2026-10-07)
+
+- **Numbers on Oct 7, ~17:00 Israel time:** 1,030 followers (355 on Oct 5). R6 44k views, R18 (the selling Reel) 32k and climbing with the lowest skip rate (17%), R8 22k with 659 shares. Gumroad Oct 5-7: 63 product-page views (49 from l.instagram.com), 1 sale, about 2% conversion. The page converts normally; the leak is link taps (about 56k accounts reached, about 50 store visits). So the work is getting viewers to the link: book line plus pinned comment on R6 and R8, a daily link-sticker Story, a bio that gives a reason to tap (and a link title), and later a comment-keyword DM flow (ManyChat) on R18's pinned comment only.
+- **Price rule:** $12 is the only price any of the three products has had. Never show a crossed-out "regular" price ($15.99 was removed from every guide, kit and the package generator on 2026-10-07; it was an invented reference price). A discount is allowed only as a real Gumroad code with a real end date that is enforced.
+- **No engagement bait:** no "send this to", "share this", "comment X" or "one word" asks in captions or pinned comments (removed from R20 and R21). The keyword DM flow, if used, lives only in one pinned comment.
+- **Stories:** `rosa/instagram/stories/2026-10-07/` has the five-frame sales Story (the $9 MILLE thank-you version and a plain $12 version) and its renderer; its README lists the stickers. Write poll results only from the real numbers.
+
 ## After batch 1 (day 5 onward)
 
 - The winner gets batch 2 (5 videos: #11–#15 in its content plan). Its store goes live per `influencers/SELLING-GUIDE.md`.

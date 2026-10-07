@@ -22,7 +22,7 @@ Files:
 
 ## 3. Price line
 
-**$12** (regular **$15.99**). It's a full system rather than an ebook: one guided sitting, seven named rules, twelve weeks of fill-in Sunday pages and five printable extras, across 48 pages.
+**$12.** It's a full system rather than an ebook: one guided sitting, seven named rules, twelve weeks of fill-in Sunday pages and five printable extras, across 48 pages.
 
 ## 4. Store fields
 
@@ -68,7 +68,7 @@ Files:
 
 **CTA button text:** Get it now
 
-**Price:** $15.99, discounted to **$12**
+**Price:** **$12** (no crossed-out price: it has never sold for more)
 
 ### Delivery email (after purchase)
 

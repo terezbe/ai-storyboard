@@ -104,7 +104,7 @@ Seed line (the test sentence for the voice tool):
 
 **The 30-Day Morning Reset: Nonna Rosa's old ways for stronger mornings.**
 - A 30-day challenge: one small morning habit per day, four themed weeks, a tick-box and a "What I noticed" line every day.
-- Price: $12 launch price (regular $15.99).
+- Price: $12 (never show an invented "regular" price).
 - Files are in `product/`.
 
 ## Safety rules

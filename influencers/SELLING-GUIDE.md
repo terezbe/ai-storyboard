@@ -8,9 +8,9 @@
 
 | דמות | מוצר | מחיר |
 |---|---|---|
-| רוזה | The 30-Day Morning Reset: אתגר של 30 בקרים | $12 (המחיר הרגיל $15.99 מוצג מחוק) |
-| ריי | The Quiet Money Workbook: חוברת עבודה לכסף | $12 (רגיל $15.99) |
-| לו | Don't Text. Call.: משפטים מוכנים לרגעים בדייטים | $12 (רגיל $15.99) |
+| רוזה | The 30-Day Morning Reset: אתגר של 30 בקרים | $12 (בלי מחיר "רגיל" מחוק: הוא מעולם לא נמכר ביותר) |
+| ריי | The Quiet Money Workbook: חוברת עבודה לכסף | $12 |
+| לו | Don't Text. Call.: משפטים מוכנים לרגעים בדייטים | $12 |
 
 הקבצים של כל מוצר נמצאים ב-`<דמות>/product/`:
 
@@ -51,7 +51,7 @@
    - **Description:** מעתיקים מ-`sales-kit.md`
    - **Bottom title:** מעתיקים מ-`sales-kit.md`
    - **Call to action:** `Purchase` (או מה שכתוב ב-sales-kit)
-   - **Price:** `15.99`, ובשדה **Discount price:** `12`
+   - **Price:** `12`. לא ממלאים Discount price: מחיר "רגיל" מחוק שמעולם לא היה הוא הטעיה.
 6. מעלים את ה-PDF בשדה של הקובץ הדיגיטלי.
 7. **Publish**, ואז מעתיקים את הלינק לחנות.
 8. **באינסטגרם:** עריכת פרופיל ← קישורים ← הוספת קישור חיצוני ← מדביקים.
@@ -74,7 +74,7 @@
 |---|---|
 | "How do I get it?" | The link is in my bio. Tap it, and it comes to your email right after you pay. |
 | "I paid but didn't get it" | So sorry! Check your spam folder. If it's not there, send me the email you used and I'll sort it today. |
-| "Can I get a discount?" | It's already on launch price, love. That's as low as it goes. |
+| "Can I get a discount?" | It's $12, love. Less than one takeaway. |
 | "Is it worth it?" | It's made to be used, not just read: one page at a time. If it's not for you, message me. |
 | "Is this real / AI?" | I'm an AI character, it says so on my page. The habits and the advice are real, and the product is a real PDF you keep. |
 
