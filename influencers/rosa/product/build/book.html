@@ -1,0 +1,1244 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<title>The 30-Day Morning Reset</title>
+<style>@font-face { font-family: 'Fraunces'; font-style: italic; font-weight: 400; src: url('fonts/Fraunces-400-italic.ttf') format('truetype'); }
+@font-face { font-family: 'Fraunces'; font-style: italic; font-weight: 600; src: url('fonts/Fraunces-600-italic.ttf') format('truetype'); }
+@font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 400; src: url('fonts/Fraunces-400.ttf') format('truetype'); }
+@font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 600; src: url('fonts/Fraunces-600.ttf') format('truetype'); }
+@font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 700; src: url('fonts/Fraunces-700.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: italic; font-weight: 400; src: url('fonts/Lora-400-italic.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: italic; font-weight: 500; src: url('fonts/Lora-500-italic.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 400; src: url('fonts/Lora-400.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 500; src: url('fonts/Lora-500.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 600; src: url('fonts/Lora-600.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: normal; font-weight: 700; src: url('fonts/Lora-700.ttf') format('truetype'); }
+@font-face { font-family: 'Fraunces'; font-style: italic; font-weight: 700; src: url('fonts/Fraunces-700-italic.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: italic; font-weight: 600; src: url('fonts/Lora-600-italic.ttf') format('truetype'); }
+@font-face { font-family: 'Lora'; font-style: italic; font-weight: 700; src: url('fonts/Lora-700-italic.ttf') format('truetype'); }
+
+/* The 30-Day Morning Reset: print stylesheet (US Letter) */
+:root {
+  --sea: #1F8C8F;
+  --sea-dark: #16696C;
+  --sea-tint: #DDEFEC;
+  --sea-mid: #9FD0CB;
+  --coral: #C8463A;
+  --coral-dark: #A9372D;
+  --coral-tint: #F6E1DA;
+  --linen: #FBF6EC;
+  --linen-deep: #F3EADA;
+  --navy: #1E2C47;
+  --navy-soft: rgba(30, 44, 71, 0.74);
+  --navy-line: rgba(30, 44, 71, 0.36);
+  --lemon: #F2CC55;
+  --lemon-tint: #FBF0CC;
+  --display: 'Fraunces', 'DejaVu Serif', serif;
+  --body: 'Lora', 'Liberation Serif', serif;
+}
+
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--linen); color: var(--navy); font-family: var(--body);
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  font-kerning: normal; text-rendering: geometricPrecision;
+}
+.page { width: 8.5in; height: 11in; position: relative; overflow: hidden; background: var(--linen); break-after: page; page-break-after: always; }
+.page:last-child { break-after: auto; page-break-after: auto; }
+.frame { position: absolute; top: 0.4in; left: 0.4in; right: 0.4in; bottom: 0.4in; border: 0.75pt solid var(--navy-line); pointer-events: none; }
+.content { position: absolute; top: 0.82in; left: 0.88in; right: 0.88in; bottom: 0.98in; overflow: hidden; }
+.footer {
+  position: absolute; left: 0.88in; right: 0.88in; bottom: 0.56in;
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: var(--body); font-weight: 600; font-size: 7.2pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--navy-soft);
+}
+.footer .pg { font-family: var(--display); font-weight: 600; font-size: 9pt; letter-spacing: 0.04em; color: var(--sea-dark); }
+
+/* ---------- shared type ---------- */
+p { margin: 0 0 0.6em 0; }
+em, i { font-style: italic; }
+strong, b { font-weight: 600; }
+.kicker { font-family: var(--body); font-weight: 600; font-size: 8.4pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral); }
+.kicker.light { color: var(--lemon); }
+h1.title { font-family: var(--display); font-weight: 600; font-size: 33pt; line-height: 1.04; margin: 0.06in 0 0.1in 0; color: var(--navy); letter-spacing: -0.005em; }
+.lede { font-family: var(--body); font-style: italic; font-size: 13.4pt; line-height: 1.42; color: var(--coral-dark); margin: 0 0 0.2in 0; }
+.body { font-size: 11.9pt; line-height: 1.52; }
+.body p { margin-bottom: 0.55em; }
+p.intro { font-size: 11.6pt; line-height: 1.5; margin: 0 0 0.18in 0; }
+h2.sec { font-family: var(--display); font-weight: 600; font-size: 14pt; line-height: 1.2; margin: 0 0 0.04in 0; color: var(--navy); }
+.rule-line { border-bottom: 0.75pt solid var(--navy-line); height: 0.37in; }
+.box { display: inline-block; width: 0.26in; height: 0.26in; border: 1.4pt solid var(--navy); border-radius: 2px; background: #fff; flex: 0 0 auto; }
+.box.sm { width: 0.18in; height: 0.18in; border-width: 1.1pt; }
+.blank { display: inline-block; border-bottom: 0.9pt solid var(--navy); width: 0.55in; height: 0.26in; vertical-align: bottom; }
+.blank.long { width: 2.4in; }
+.blank.s { width: 0.6in; }
+.lbl { font-family: var(--body); font-weight: 700; font-size: 8pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral); }
+.note-box { margin-top: 0.2in; background: var(--lemon-tint); border-radius: 4px; padding: 0.16in 0.22in 0.08in 0.22in; font-size: 11pt; line-height: 1.48; }
+.note-box.sea { background: var(--sea-tint); }
+.note-box.coral { background: var(--coral-tint); }
+.note-box .nb-h { font-family: var(--display); font-weight: 600; font-size: 13pt; margin-bottom: 0.05in; }
+.note-box p { margin-bottom: 0.5em; }
+.sig { font-family: var(--display); font-style: italic; font-weight: 600; font-size: 25pt; color: var(--navy); margin-top: 0.06in; }
+.sig.small { font-size: 22pt; }
+.sig.center { text-align: center; }
+
+/* ---------- day page ---------- */
+.dayhead { display: flex; justify-content: space-between; align-items: baseline; }
+.dayhead .wk { font-family: var(--body); font-weight: 600; font-size: 8.2pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral); }
+.dayhead .dn { font-family: var(--display); font-style: italic; font-size: 15pt; color: var(--sea-dark); }
+.dayhead .dn b { font-style: normal; font-weight: 600; font-size: 17pt; }
+/* progress: a string of thirty beads */
+.dots { position: relative; display: flex; justify-content: space-between; align-items: center; margin: 0.13in 0 0 0; height: 0.16in; }
+.dots::before { content: ''; position: absolute; left: 0.05in; right: 0.05in; top: 50%; border-top: 0.6pt solid var(--navy-line); }
+.dots i { position: relative; display: block; width: 0.115in; height: 0.115in; border-radius: 50%; border: 0.9pt solid var(--navy-line); background: var(--linen); }
+.dots i.done { background: var(--sea); border-color: var(--sea); }
+.dots i.today { background: var(--coral); border-color: var(--coral); width: 0.15in; height: 0.15in; box-shadow: 0 0 0 1.6pt var(--linen), 0 0 0 2.4pt var(--coral); }
+h1.rule { font-family: var(--display); font-weight: 600; font-size: 38pt; line-height: 1.02; margin: 0.38in 0 0.07in 0; letter-spacing: -0.01em; }
+.ruleline { font-family: var(--body); font-style: italic; font-size: 14.2pt; line-height: 1.35; color: var(--coral-dark); margin: 0 0 0.22in 0; }
+.story { font-size: 12.2pt; line-height: 1.52; }
+.story p { margin-bottom: 0.5em; }
+.task { margin-top: 0.2in; background: var(--sea-tint); border-left: 3.5pt solid var(--sea); border-radius: 3px; padding: 0.16in 0.24in 0.15in 0.2in; display: flex; gap: 0.2in; align-items: flex-start; }
+.task .box { margin-top: 0.03in; }
+.task .lbl { color: var(--sea-dark); margin-bottom: 0.03in; }
+.task .do { font-size: 12.3pt; line-height: 1.44; font-weight: 500; }
+.task .small { font-size: 10.8pt; line-height: 1.42; margin-top: 0.07in; color: var(--navy-soft); }
+.task .small b { font-style: italic; font-weight: 600; color: var(--navy); }
+.noticed { margin-top: 0.2in; }
+.noticed .rule-line { height: 0.36in; }
+
+/* ---------- cover ---------- */
+.cover { background: var(--linen-deep); }
+.cover .cover-frame { bottom: 3.45in; border-bottom: none; }
+.cover .sea { position: absolute; left: 0; right: 0; bottom: 0; height: 3.45in; background: var(--sea); }
+.cover .sea::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 0.06in; background: var(--lemon); }
+.cover .sea-frame { position: absolute; left: 0.4in; right: 0.4in; top: 0.06in; bottom: 0.4in; border: 0.75pt solid rgba(255,255,255,0.5); border-top: none; }
+.cover .top { position: absolute; top: 0.78in; left: 0.6in; right: 0.6in; text-align: center; }
+.cover h1 { margin: 0; font-family: var(--display); font-weight: 600; color: var(--navy); line-height: 0.92; }
+.cover h1 .a { display: block; font-style: italic; font-weight: 400; font-size: 36pt; color: var(--sea-dark); }
+.cover h1 .b { display: block; font-size: 68pt; letter-spacing: -0.015em; margin-top: 0.05in; }
+.cover .sub { margin-top: 0.17in; font-family: var(--body); font-style: italic; font-size: 17pt; color: var(--navy); }
+.cover .arch {
+  position: absolute; left: 50%; top: 2.92in; width: 4.7in; height: 5.32in; margin-left: -2.35in;
+  border-radius: 2.35in 2.35in 0.08in 0.08in; overflow: hidden; border: 0.085in solid var(--linen-deep);
+  box-shadow: 0 0 0 1.2pt var(--navy), 0 0.08in 0.25in rgba(20, 30, 50, 0.22); background: var(--sea);
+}
+.cover .arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block; }
+.cover .bottom { position: absolute; left: 0.7in; right: 0.7in; top: 8.62in; text-align: center; }
+.cover .promise { font-family: var(--display); font-weight: 600; font-size: 23.5pt; line-height: 1.16; color: #fff; max-width: 6.2in; margin: 0 auto; text-wrap: balance; }
+.cover .catch { margin-top: 0.16in; font-family: var(--display); font-style: italic; font-size: 17.5pt; color: var(--lemon); }
+.cover .byline { margin-top: 0.22in; display: flex; align-items: center; justify-content: center; gap: 0.16in; font-family: var(--body); font-weight: 600; font-size: 10pt; letter-spacing: 0.3em; text-transform: uppercase; color: #fff; }
+.cover .byline::before, .cover .byline::after { content: ''; display: block; width: 0.7in; border-top: 0.75pt solid rgba(255,255,255,0.7); }
+
+/* ---------- contents ---------- */
+.toc { display: flex; gap: 0.42in; margin-top: 0.12in; }
+.toc-col { flex: 1 1 0; }
+.toc-group { margin-bottom: 0.17in; }
+.toc-h { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--body); font-weight: 700; font-size: 7.8pt; letter-spacing: 0.17em; text-transform: uppercase; color: var(--coral); border-bottom: 0.75pt solid var(--navy-line); padding-bottom: 0.04in; margin-bottom: 0.05in; }
+.toc-hp { font-family: var(--display); font-weight: 600; font-size: 9.5pt; letter-spacing: 0; color: var(--sea-dark); }
+.toc-row { display: flex; align-items: baseline; font-size: 10.4pt; line-height: 1.32; padding: 0.012in 0; }
+.toc-d { flex: 0 0 0.25in; font-family: var(--display); font-weight: 600; font-size: 9.6pt; color: var(--sea-dark); }
+.toc-t { flex: 0 1 auto; }
+.toc-lead { flex: 1 1 auto; border-bottom: 0.9pt dotted var(--navy-line); margin: 0 0.06in; transform: translateY(-0.04in); min-width: 0.2in; }
+.toc-p { flex: 0 0 auto; font-family: var(--display); font-weight: 600; font-size: 10pt; color: var(--navy); }
+
+/* ---------- letters ---------- */
+.letterhead { display: flex; align-items: center; gap: 0.26in; margin-bottom: 0.14in; }
+.letterhead h1.title { margin-bottom: 0; }
+.roundimg { flex: 0 0 1.12in; width: 1.12in; height: 1.12in; border-radius: 50%; overflow: hidden; box-shadow: 0 0 0 2.5pt var(--linen), 0 0 0 3.4pt var(--sea); }
+.roundimg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; transform: scale(1.35); transform-origin: 50% 38%; }
+.letter-body { font-size: 11.95pt; line-height: 1.52; }
+.signoff { margin-top: 0.12in; }
+.catchband { background: var(--sea); color: #fff; border-radius: 3px; padding: 0.13in 0.25in; font-family: var(--display); font-style: italic; font-size: 16.5pt; line-height: 1.25; position: relative; }
+.catchband::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 0.045in; background: var(--lemon); border-radius: 0 0 3px 3px; }
+.catchband.big { text-align: center; font-size: 19pt; padding: 0.2in 0.3in; margin-top: 0.22in; }
+.mid-top { display: block; }
+.mid-body .mini-arch, .mini-arch { float: right; width: 1.75in; height: 2.55in; margin: 0.04in 0 0.1in 0.26in; border-radius: 0.875in 0.875in 0.05in 0.05in; overflow: hidden; box-shadow: 0 0 0 2.5pt var(--linen), 0 0 0 3.4pt var(--sea); }
+.mini-arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.mid-body { font-size: 12.1pt; line-height: 1.52; }
+
+/* ---------- why ---------- */
+.why { column-count: 2; column-gap: 0.36in; font-size: 10.6pt; line-height: 1.46; }
+.why-item { break-inside: avoid; margin-bottom: 0.13in; }
+.why-item h2.sec { font-size: 13pt; }
+.why-item p { margin-bottom: 0.4em; }
+.why .rosa { font-style: italic; color: var(--sea-dark); }
+
+/* ---------- score ---------- */
+table.score { width: 100%; border-collapse: collapse; margin-top: 0.06in; }
+table.score th { text-align: left; font-family: var(--body); font-weight: 700; font-size: 7.8pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--coral); padding: 0 0.1in 0.07in 0; border-bottom: 1pt solid var(--navy); white-space: nowrap; }
+table.score th.n, table.score td.n { text-align: center; width: 1.25in; }
+table.score.re th.n, table.score.re td.n { width: 1.05in; }
+table.score td { padding: 0.13in 0.1in 0.13in 0; border-bottom: 0.75pt solid var(--navy-line); vertical-align: middle; }
+table.score .m { font-family: var(--display); font-weight: 600; font-size: 13.4pt; }
+table.score .hint { font-size: 10.2pt; line-height: 1.38; color: var(--navy-soft); margin-top: 0.03in; }
+table.score .of { font-family: var(--display); font-weight: 600; font-size: 12pt; margin-left: 0.06in; }
+.dateline { display: flex; gap: 0.1in; align-items: flex-end; margin-top: 0.22in; font-size: 11pt; }
+.note-to { margin-top: 0.24in; }
+.note-to .hint { font-size: 10.6pt; line-height: 1.42; color: var(--navy-soft); font-style: italic; margin: 0.04in 0 0.02in 0; }
+
+/* ---------- expect ---------- */
+.timeline { border-left: 1.5pt solid var(--sea-mid); margin-left: 0.06in; }
+.tl { display: flex; gap: 0.22in; padding: 0 0 0.12in 0; position: relative; }
+.tl::before { content: ''; position: absolute; left: -0.068in; top: 0.07in; width: 0.11in; height: 0.11in; border-radius: 50%; background: var(--sea); }
+.tl.hot::before { background: var(--coral); width: 0.14in; height: 0.14in; left: -0.083in; }
+.tl-when { flex: 0 0 1.38in; padding-left: 0.2in; font-family: var(--body); font-weight: 700; font-size: 7.8pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--sea-dark); padding-top: 0.05in; }
+.tl.hot .tl-when { color: var(--coral); }
+.tl-what { flex: 1 1 auto; font-size: 11.2pt; line-height: 1.46; }
+.tl-what h2.sec { font-size: 13.4pt; }
+.tl-what p { margin-bottom: 0.2em; }
+.tl.hot .tl-what { background: var(--coral-tint); border-radius: 3px; padding: 0.08in 0.14in 0.04in 0.14in; margin-left: -0.14in; }
+
+/* ---------- failure ---------- */
+.fail-grid { display: flex; gap: 0.3in; align-items: flex-start; margin: 0.06in 0 0.16in 0; }
+ul.donts { flex: 1 1 auto; margin: 0; padding: 0; list-style: none; font-size: 12pt; line-height: 1.42; }
+ul.donts li { position: relative; padding: 0.05in 0 0.05in 0.3in; border-bottom: 0.75pt solid var(--navy-line); }
+ul.donts li::before { content: ''; position: absolute; left: 0.03in; top: 0.13in; width: 0.13in; height: 0.13in; border-radius: 50%; background: var(--coral); }
+ul.donts li:last-child::before { background: var(--sea); }
+ul.donts li:last-child { font-weight: 600; }
+.logbook { flex: 0 0 2.3in; background: #fff; border: 0.75pt solid var(--navy-line); border-radius: 3px; padding: 0.12in 0.16in 0.1in 0.16in; box-shadow: 0.04in 0.05in 0 var(--linen-deep); transform: rotate(-1deg); margin: 0.06in 0.1in 0 0; }
+.lb-h { font-family: var(--display); font-style: italic; font-size: 11.5pt; color: var(--sea-dark); margin-bottom: 0.05in; }
+.lb-row { display: flex; justify-content: space-between; font-family: var(--display); font-style: italic; font-size: 11pt; border-bottom: 0.6pt solid var(--sea-mid); padding: 0.025in 0; }
+.lb-row.storm span:last-child { color: var(--coral); font-weight: 600; }
+.lb-foot { font-size: 8.8pt; line-height: 1.3; color: var(--navy-soft); margin-top: 0.06in; font-style: italic; }
+.logline { margin-top: 0.22in; text-align: center; padding: 0.24in 0.3in; border-top: 1pt solid var(--navy); border-bottom: 1pt solid var(--navy); font-family: var(--display); font-style: italic; font-weight: 600; font-size: 21pt; line-height: 1.2; color: var(--coral-dark); }
+
+/* ---------- fit ---------- */
+.fit-item { margin-bottom: 0.11in; font-size: 11.1pt; line-height: 1.46; padding-left: 0.18in; border-left: 2.5pt solid var(--sea-mid); }
+.fit-item p { margin-bottom: 0.2em; }
+.fit-item h2.sec { font-size: 13.4pt; }
+
+/* ---------- week opener ---------- */
+.wk-top { display: flex; gap: 0.32in; align-items: flex-start; }
+.arch-panel { flex: 0 0 2.62in; width: 2.62in; height: 4.32in; border-radius: 1.31in 1.31in 0.06in 0.06in; overflow: hidden; box-shadow: 0 0 0 3pt var(--linen), 0 0 0 4pt var(--navy-line); }
+.arch-panel img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.wk-text { flex: 1 1 auto; padding-top: 0.06in; }
+.wk-title { font-family: var(--display); font-weight: 600; font-size: 33pt; line-height: 1.02; margin: 0.06in 0 0.06in 0; }
+.wk-sub { font-family: var(--body); font-style: italic; font-size: 13.4pt; color: var(--coral-dark); margin-bottom: 0.16in; }
+.wk-text .body { font-size: 11.4pt; line-height: 1.5; }
+.wk-map { margin-top: 0.2in; }
+.wk-map .lbl { margin-bottom: 0.05in; }
+.map-row { display: flex; align-items: center; gap: 0.16in; padding: 0.055in 0; border-bottom: 0.75pt solid var(--navy-line); }
+.map-n { flex: 0 0 0.3in; height: 0.3in; border-radius: 50%; background: var(--sea); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 600; font-size: 10.5pt; }
+.map-t { flex: 1 1 auto; display: flex; align-items: baseline; gap: 0.12in; }
+.map-t b { flex: 0 0 2.05in; font-family: var(--display); font-weight: 600; font-size: 11.6pt; }
+.map-t i { flex: 1 1 auto; font-size: 10.4pt; line-height: 1.32; color: var(--navy-soft); }
+.map-p { flex: 0 0 0.35in; text-align: right; font-family: var(--display); font-weight: 600; font-size: 10.5pt; color: var(--sea-dark); }
+.map-sub { font-family: var(--body); font-weight: 700; font-size: 7.4pt; letter-spacing: 0.17em; text-transform: uppercase; color: var(--coral); padding: 0.09in 0 0.01in 0; }
+.wk-map.long .map-row { padding: 0.035in 0; }
+.ready { margin-top: 0.17in; background: var(--lemon-tint); border-radius: 4px; padding: 0.12in 0.2in 0.06in 0.2in; font-size: 11pt; line-height: 1.45; }
+.ready .lbl { color: var(--navy); margin-bottom: 0.03in; }
+
+/* ---------- keep five ---------- */
+.cutcard { margin-top: 0.14in; border: 1.4pt dashed var(--navy-soft); border-radius: 6px; padding: 0.18in 0.28in 0.16in 0.28in; background: #fff; }
+.cc-h { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1pt solid var(--navy); padding-bottom: 0.05in; margin-bottom: 0.04in; }
+.cc-h span:first-child { font-family: var(--display); font-weight: 600; font-size: 19pt; }
+.cc-s { font-family: var(--body); font-weight: 600; font-size: 7.4pt; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); }
+.cc-row { display: flex; align-items: flex-end; gap: 0.14in; }
+.cc-n { flex: 0 0 0.22in; font-family: var(--display); font-weight: 600; font-size: 14pt; color: var(--sea-dark); padding-bottom: 0.04in; }
+.rule-line.grow { flex: 1 1 auto; height: 0.5in; }
+.cc-row .box { margin-bottom: 0.05in; }
+.cc-times { display: flex; align-items: flex-end; gap: 0.08in; margin-top: 0.16in; font-size: 10.2pt; }
+.cc-times .blank { width: 0.95in; margin-right: 0.2in; }
+.cut-note { font-size: 8.6pt; font-style: italic; color: var(--navy-soft); text-align: right; margin-top: 0.04in; }
+
+/* ---------- drawer (sea page) ---------- */
+.page.seapage { background: var(--sea); }
+.page.seapage .frame { border-color: rgba(255,255,255,0.5); }
+.page.seapage .footer { color: rgba(255,255,255,0.8); }
+.page.seapage .footer .pg { color: var(--lemon); }
+.drawer { color: #fff; padding-top: 0.9in; }
+.drawer-title { font-family: var(--display); font-weight: 600; font-size: 50pt; line-height: 1; margin: 0.1in 0 0.2in 0; }
+.drawer-line { font-family: var(--display); font-style: italic; font-size: 17pt; line-height: 1.4; max-width: 5.9in; margin-bottom: 0.5in; color: #fff; }
+.dl-row { display: flex; align-items: baseline; padding: 0.1in 0; border-bottom: 0.75pt solid rgba(255,255,255,0.35); }
+.dl-t { display: flex; flex-direction: column; }
+.dl-t b { font-family: var(--display); font-weight: 600; font-size: 15pt; }
+.dl-t i { font-size: 10.6pt; color: rgba(255,255,255,0.85); margin-top: 0.02in; }
+.dl-lead { flex: 1 1 auto; }
+.dl-p { font-family: var(--display); font-weight: 600; font-size: 15pt; color: var(--lemon); }
+
+/* ---------- quickstart ---------- */
+.qs-row { display: flex; align-items: center; gap: 0.2in; padding: 0.11in 0; border-bottom: 0.75pt solid var(--navy-line); }
+.qs-m { flex: 0 0 0.95in; font-family: var(--body); font-weight: 700; font-size: 7.8pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--coral); }
+.qs-t { flex: 1 1 auto; display: flex; flex-direction: column; }
+.qs-t b { font-family: var(--display); font-weight: 600; font-size: 13.4pt; }
+.qs-t span { font-size: 11pt; line-height: 1.4; }
+.qs-ref { flex: 0 0 0.8in; text-align: right; font-size: 8.8pt; line-height: 1.3; color: var(--sea-dark); font-style: italic; }
+.qs-after { margin-top: 0.2in; font-style: italic; font-size: 11.4pt; color: var(--sea-dark); }
+
+/* ---------- fridge ---------- */
+.fridge-top { display: flex; align-items: flex-end; gap: 0.08in; font-size: 10pt; margin-bottom: 0.12in; }
+.fridge-top .blank { width: 1.0in; margin-right: 0.18in; }
+.fridge { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.06in 0.1in; }
+.fr-cell { display: flex; align-items: flex-start; gap: 0.08in; background: #fff; border: 0.75pt solid var(--navy-line); border-left: 3pt solid var(--sea); border-radius: 3px; padding: 0.06in 0.08in; min-height: 0.56in; }
+.fr-cell:nth-child(n+8) { border-left-color: var(--coral); }
+.fr-cell:nth-child(n+15) { border-left-color: var(--lemon); }
+.fr-cell:nth-child(n+22) { border-left-color: var(--navy); }
+.fr-cell:nth-child(n+29) { border-left-color: var(--sea-dark); }
+.fr-cell .box { margin-top: 0.02in; }
+.fr-n { flex: 0 0 0.2in; font-family: var(--display); font-weight: 600; font-size: 11pt; color: var(--sea-dark); line-height: 1.1; }
+.fr-t { display: flex; flex-direction: column; }
+.fr-t b { font-family: var(--display); font-weight: 600; font-size: 9.6pt; line-height: 1.15; }
+.fr-t i { font-size: 8.3pt; line-height: 1.3; color: var(--navy-soft); margin-top: 0.02in; }
+.fridge-key { display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 0.08in; margin-top: 0.12in; font-size: 8.4pt; white-space: nowrap; color: var(--navy-soft); }
+.fridge-key span::before { content: ''; display: inline-block; width: 0.1in; height: 0.1in; border-radius: 2px; margin-right: 0.05in; vertical-align: -0.01in; background: var(--sea); }
+.fridge-key span:nth-child(2)::before { background: var(--coral); }
+.fridge-key span:nth-child(3)::before { background: var(--lemon); }
+.fridge-key span:nth-child(4)::before { background: var(--navy); }
+.fridge-key span:nth-child(5)::before { background: var(--sea-dark); }
+.fridge-key b { color: var(--navy); }
+.fridge-foot { margin-top: 0.1in; font-size: 10pt; font-style: italic; color: var(--sea-dark); }
+
+/* ---------- kitchen cards ---------- */
+.kc-pagehead { display: flex; align-items: baseline; gap: 0.16in; border-bottom: 1pt solid var(--navy); padding-bottom: 0.06in; margin-bottom: 0.14in; }
+.kc-title { font-family: var(--display); font-weight: 600; font-size: 18pt; }
+.kc-note { margin-left: auto; font-size: 8.4pt; font-style: italic; color: var(--navy-soft); max-width: 2.9in; text-align: right; line-height: 1.3; }
+.kcard { background: #fff; border: 0.75pt solid var(--navy-line); border-top: 4pt solid var(--coral); border-radius: 4px; padding: 0.15in 0.22in 0.1in 0.22in; margin-bottom: 0.17in; }
+.kcard:nth-of-type(2) { border-top-color: var(--sea); }
+.kc-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.2in; }
+.kc-name { font-family: var(--display); font-weight: 600; font-size: 20pt; line-height: 1.1; }
+.kc-tag { font-family: var(--body); font-style: italic; font-size: 10.6pt; color: var(--coral-dark); text-align: right; }
+.kc-rosa { font-family: var(--display); font-style: italic; font-size: 11.6pt; line-height: 1.38; color: var(--sea-dark); margin: 0.05in 0 0.09in 0; }
+.kc-cols { display: flex; gap: 0.24in; }
+.kc-need { flex: 0 0 2.15in; }
+.kc-steps { flex: 1 1 auto; }
+.kc-lbl { font-family: var(--body); font-weight: 700; font-size: 7.4pt; letter-spacing: 0.17em; text-transform: uppercase; color: var(--coral); margin-bottom: 0.03in; }
+.kc-need ul { margin: 0; padding: 0; list-style: none; font-size: 10.1pt; line-height: 1.38; }
+.kc-need li { padding: 0.022in 0 0.022in 0.13in; position: relative; }
+.kc-need li::before { content: ''; position: absolute; left: 0; top: 0.075in; width: 0.05in; height: 0.05in; border-radius: 50%; background: var(--sea); }
+.kc-steps ol { margin: 0; padding: 0 0 0 0.2in; font-size: 10.2pt; line-height: 1.4; }
+.kc-steps li { padding: 0.012in 0; }
+.kc-steps li::marker { font-family: var(--display); font-weight: 600; color: var(--sea-dark); }
+.kc-tip { margin-top: 0.08in; padding-top: 0.06in; border-top: 0.6pt solid var(--navy-line); font-size: 9.9pt; line-height: 1.38; color: var(--navy-soft); }
+.kc-tip b { color: var(--coral-dark); font-weight: 600; }
+
+/* ---------- 112 steps ---------- */
+.rosa-quote { font-family: var(--display); font-style: italic; font-size: 13.2pt; line-height: 1.45; color: var(--sea-dark); margin-bottom: 0.12in; }
+.body.find { font-size: 11.2pt; }
+.my112 { display: flex; align-items: flex-end; gap: 0.08in; font-size: 10.8pt; margin: 0.06in 0 0.2in 0; }
+.my112 .blank.long { width: 2.5in; margin-right: 0.18in; }
+.my112 .blank { width: 1.0in; }
+.steps-rules .lbl, .steplog .lbl { margin-bottom: 0.05in; }
+.sr-row { display: flex; gap: 0.14in; align-items: baseline; padding: 0.07in 0; border-bottom: 0.75pt solid var(--navy-line); font-size: 11pt; }
+.sr-n { flex: 0 0 0.24in; height: 0.24in; border-radius: 50%; background: var(--coral); color: #fff; font-family: var(--display); font-weight: 600; font-size: 9.4pt; display: flex; align-items: center; justify-content: center; align-self: center; }
+.sr-row b { font-family: var(--display); font-weight: 600; }
+.steplog { margin-top: 0.22in; }
+.log-row { display: flex; align-items: center; gap: 0.1in; padding: 0.12in 0; border-bottom: 0.75pt solid var(--navy-line); }
+.log-w { flex: 0 0 0.9in; font-family: var(--display); font-weight: 600; font-size: 11pt; }
+.log-c { flex: 1 1 0; display: flex; align-items: center; gap: 0.05in; }
+.log-c .box.sm { width: 0.22in; height: 0.22in; }
+.log-c i { font-size: 8pt; color: var(--navy-soft); font-style: normal; }
+.safety { margin-top: 0.2in; font-size: 10pt; font-style: italic; color: var(--navy-soft); border-left: 2.5pt solid var(--coral); padding-left: 0.14in; }
+
+/* ---------- poster ---------- */
+.poster { border: 2pt solid var(--navy); outline: 0.75pt solid var(--navy); outline-offset: 0.06in; margin: 0.12in 0.08in 0 0.08in; padding: 0.55in 0.5in 0.45in 0.5in; background: #fff; text-align: center; }
+.poster-title { font-family: var(--display); font-weight: 600; font-size: 33pt; line-height: 1.08; margin: 0.12in auto 0.3in auto; max-width: 5.2in; text-wrap: balance; }
+.poster-list { text-align: left; }
+.pl-row { display: flex; align-items: flex-start; gap: 0.22in; padding: 0.2in 0; border-top: 0.75pt solid var(--navy-line); }
+.pl-row:last-child { border-bottom: 0.75pt solid var(--navy-line); }
+.pl-n { flex: 0 0 0.5in; height: 0.5in; border-radius: 50%; border: 1.5pt solid var(--coral); color: var(--coral); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 600; font-size: 19pt; }
+.pl-t { display: flex; flex-direction: column; padding-top: 0.02in; }
+.pl-t b { font-family: var(--display); font-weight: 600; font-size: 18.5pt; line-height: 1.2; }
+.pl-t i { font-size: 12.8pt; line-height: 1.4; color: var(--sea-dark); margin-top: 0.02in; }
+.poster-sig { margin-top: 0.26in; font-family: var(--display); font-style: italic; font-weight: 600; font-size: 19pt; color: var(--navy); }
+
+/* ---------- small print ---------- */
+.sp-item { margin-bottom: 0.1in; font-size: 10.9pt; line-height: 1.46; }
+.sp-item h2.sec { font-size: 12.8pt; }
+.sp-item p { margin-bottom: 0.1em; }
+.sp-close { margin-top: 0.18in; font-family: var(--display); font-style: italic; font-weight: 600; font-size: 17pt; color: var(--coral-dark); }
+
+/* long week opener (week four lists nine mornings) */
+.wk-top.long .arch-panel { flex-basis: 2.25in; width: 2.25in; height: 3.6in; border-radius: 1.125in 1.125in 0.06in 0.06in; }
+.wk-top.long .wk-text .body { font-size: 11.1pt; line-height: 1.46; }
+.wk-top.long .wk-sub { margin-bottom: 0.1in; }
+.wk-map.long { margin-top: 0.14in; }
+/* failure page sizing */
+.failpage .body { font-size: 12.5pt; line-height: 1.55; }
+.failpage ul.donts { font-size: 12.5pt; }
+.failpage .fail-grid { margin: 0.1in 0 0.24in 0; }
+.failpage .logline { margin-top: 0.42in; padding: 0.32in 0.3in; font-size: 24pt; }
+
+/* Navigation numerals set in Lora: Fraunces' flat-topped 3 reads like a 5 at small sizes. */
+.footer .pg, .toc-d, .toc-p, .toc-hp, .fr-n, .map-n, .map-p, .dl-p, .sr-n, .cc-n, .pl-n, .log-w, .dayhead .dn b { font-family: var(--body); }
+.kc-steps li::marker { font-family: var(--body); }
+.dayhead .dn b { font-weight: 700; font-size: 16pt; }
+.toc-d { font-weight: 700; font-size: 9.4pt; }
+.toc-p, .toc-hp, .map-p, .dl-p { font-weight: 700; }
+
+.kbreak { background: var(--lemon-tint); border-radius: 4px; padding: 0.13in 0.22in 0.06in 0.22in; }
+.kbreak p { font-size: 10.6pt; line-height: 1.45; margin: 0.04in 0 0.06in 0; }
+.kc-name.sm { font-size: 16pt; }
+
+/* typographic polish: no one-word last lines */
+p, .do, .small, li, .map-t i, .fr-t i, .qs-t span, .dl-t i, .pl-t i, .hint { text-wrap: pretty; }
+.kc-note { text-wrap: balance; }
+</style></head><body><section class="page cover" data-title="Cover">
+<div class="frame cover-frame"></div>
+<div class="sea"><div class="sea-frame"></div></div>
+<div class="top">
+  <h1><span class="a">The 30-Day</span><span class="b">Morning Reset</span></h1>
+  <div class="sub">Nonna Rosa’s old ways for stronger mornings</div>
+</div>
+<div class="arch"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/rosa-portrait.jpg" alt=""></div>
+<div class="bottom">
+  <div class="promise">One small habit a day to stop feeling old before 9&nbsp;a.m.</div>
+  <div class="catch">“The sea doesn’t care how old you are.”</div>
+  <div class="byline">Nonna Rosa, 94</div>
+</div>
+</section>
+<section class="page " data-title="Contents">
+<div class="frame"></div>
+<div class="content"><div class="kicker">The 30-Day Morning Reset</div><h1 class="title">Contents</h1>
+<div class="toc"><div class="toc-col">
+<div class="toc-group">
+  <div class="toc-h">Before you start</div>
+  <div class="toc-row"><span class="toc-t">A letter from Rosa</span><span class="toc-lead"></span><span class="toc-p">3</span></div><div class="toc-row"><span class="toc-t">Why this works</span><span class="toc-lead"></span><span class="toc-p">4</span></div><div class="toc-row"><span class="toc-t">Where you’re starting</span><span class="toc-lead"></span><span class="toc-p">5</span></div><div class="toc-row"><span class="toc-t">What to expect</span><span class="toc-lead"></span><span class="toc-p">6</span></div><div class="toc-row"><span class="toc-t">When you miss a morning</span><span class="toc-lead"></span><span class="toc-p">7</span></div><div class="toc-row"><span class="toc-t">Make it fit your life</span><span class="toc-lead"></span><span class="toc-p">8</span></div>
+</div>
+<div class="toc-group">
+  <div class="toc-h">Week One &middot; Light and water<span class="toc-hp">9</span></div>
+  <div class="toc-row day"><span class="toc-d">1</span><span class="toc-t">The Window Rule</span><span class="toc-lead"></span><span class="toc-p">10</span></div><div class="toc-row day"><span class="toc-d">2</span><span class="toc-t">The Big Glass Rule</span><span class="toc-lead"></span><span class="toc-p">11</span></div><div class="toc-row day"><span class="toc-d">3</span><span class="toc-t">The Wrist Rule</span><span class="toc-lead"></span><span class="toc-p">12</span></div><div class="toc-row day"><span class="toc-d">4</span><span class="toc-t">The Doorstep Rule</span><span class="toc-lead"></span><span class="toc-p">13</span></div><div class="toc-row day"><span class="toc-d">5</span><span class="toc-t">The Basil Rule</span><span class="toc-lead"></span><span class="toc-p">14</span></div><div class="toc-row day"><span class="toc-d">6</span><span class="toc-t">The Hallway Rule</span><span class="toc-lead"></span><span class="toc-p">15</span></div><div class="toc-row day"><span class="toc-d">7</span><span class="toc-t">The Bell Rule</span><span class="toc-lead"></span><span class="toc-p">16</span></div>
+</div>
+<div class="toc-group">
+  <div class="toc-h">Week Two &middot; Gentle movement<span class="toc-hp">17</span></div>
+  <div class="toc-row day"><span class="toc-d">8</span><span class="toc-t">The Counting Rule</span><span class="toc-lead"></span><span class="toc-p">18</span></div><div class="toc-row day"><span class="toc-d">9</span><span class="toc-t">The Cat Rule</span><span class="toc-lead"></span><span class="toc-p">19</span></div><div class="toc-row day"><span class="toc-d">10</span><span class="toc-t">The Bread Rule</span><span class="toc-lead"></span><span class="toc-p">20</span></div><div class="toc-row day"><span class="toc-d">11</span><span class="toc-t">The Tall Rule</span><span class="toc-lead"></span><span class="toc-p">21</span></div><div class="toc-row day"><span class="toc-d">12</span><span class="toc-t">The Heron Rule</span><span class="toc-lead"></span><span class="toc-p">22</span></div><div class="toc-row day"><span class="toc-d">13</span><span class="toc-t">The Stool Rule</span><span class="toc-lead"></span><span class="toc-p">23</span></div><div class="toc-row day"><span class="toc-d">14</span><span class="toc-t">The Broom Rule</span><span class="toc-lead"></span><span class="toc-p">24</span></div><div class="toc-row"><span class="toc-t">A letter for Day 15</span><span class="toc-lead"></span><span class="toc-p">25</span></div>
+</div></div><div class="toc-col">
+<div class="toc-group">
+  <div class="toc-h">Week Three &middot; Eating like Nonna<span class="toc-hp">26</span></div>
+  <div class="toc-row day"><span class="toc-d">15</span><span class="toc-t">The Chair Rule</span><span class="toc-lead"></span><span class="toc-p">27</span></div><div class="toc-row day"><span class="toc-d">16</span><span class="toc-t">The Moka Rule</span><span class="toc-lead"></span><span class="toc-p">28</span></div><div class="toc-row day"><span class="toc-d">17</span><span class="toc-t">The Table Rule</span><span class="toc-lead"></span><span class="toc-p">29</span></div><div class="toc-row day"><span class="toc-d">18</span><span class="toc-t">The Market Rule</span><span class="toc-lead"></span><span class="toc-p">30</span></div><div class="toc-row day"><span class="toc-d">19</span><span class="toc-t">The One Pot Rule</span><span class="toc-lead"></span><span class="toc-p">31</span></div><div class="toc-row day"><span class="toc-d">20</span><span class="toc-t">The One O’Clock Rule</span><span class="toc-lead"></span><span class="toc-p">32</span></div><div class="toc-row day"><span class="toc-d">21</span><span class="toc-t">The Sunday Table Rule</span><span class="toc-lead"></span><span class="toc-p">33</span></div>
+</div>
+<div class="toc-group">
+  <div class="toc-h">Week Four &middot; People and rest<span class="toc-hp">34</span></div>
+  <div class="toc-row day"><span class="toc-d">22</span><span class="toc-t">The Good Morning Rule</span><span class="toc-lead"></span><span class="toc-p">35</span></div><div class="toc-row day"><span class="toc-d">23</span><span class="toc-t">The Concetta Rule</span><span class="toc-lead"></span><span class="toc-p">36</span></div><div class="toc-row day"><span class="toc-d">24</span><span class="toc-t">The Riposo Rule</span><span class="toc-lead"></span><span class="toc-p">37</span></div><div class="toc-row day"><span class="toc-d">25</span><span class="toc-t">The Evening Walk Rule</span><span class="toc-lead"></span><span class="toc-p">38</span></div><div class="toc-row day"><span class="toc-d">26</span><span class="toc-t">The Voice Rule</span><span class="toc-lead"></span><span class="toc-p">39</span></div><div class="toc-row day"><span class="toc-d">27</span><span class="toc-t">The Octopus Rule</span><span class="toc-lead"></span><span class="toc-p">40</span></div><div class="toc-row day"><span class="toc-d">28</span><span class="toc-t">The Last Boat Rule</span><span class="toc-lead"></span><span class="toc-p">41</span></div>
+</div>
+<div class="toc-group">
+  <div class="toc-h">The last two mornings</div>
+  <div class="toc-row day"><span class="toc-d">29</span><span class="toc-t">The Whole Morning Rule</span><span class="toc-lead"></span><span class="toc-p">42</span></div><div class="toc-row day"><span class="toc-d">30</span><span class="toc-t">The Three Words Rule</span><span class="toc-lead"></span><span class="toc-p">43</span></div>
+</div>
+<div class="toc-group">
+  <div class="toc-h">The ending</div>
+  <div class="toc-row"><span class="toc-t">Thirty mornings later</span><span class="toc-lead"></span><span class="toc-p">44</span></div><div class="toc-row"><span class="toc-t">Keep Five</span><span class="toc-lead"></span><span class="toc-p">45</span></div>
+</div>
+<div class="toc-group">
+  <div class="toc-h">Rosa’s drawer<span class="toc-hp">46</span></div>
+  <div class="toc-row"><span class="toc-t">The 7-Morning Quickstart</span><span class="toc-lead"></span><span class="toc-p">47</span></div><div class="toc-row"><span class="toc-t">The Fridge Sheet</span><span class="toc-lead"></span><span class="toc-p">48</span></div><div class="toc-row"><span class="toc-t">Rosa’s Kitchen Cards</span><span class="toc-lead"></span><span class="toc-p">49</span></div><div class="toc-row"><span class="toc-t">The 112 Steps Card</span><span class="toc-lead"></span><span class="toc-p">52</span></div><div class="toc-row"><span class="toc-t">Five Things I Won’t Have in My House</span><span class="toc-lead"></span><span class="toc-p">53</span></div><div class="toc-row"><span class="toc-t">The honest small print</span><span class="toc-lead"></span><span class="toc-p">54</span></div>
+</div></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">2</span></div>
+</section>
+<section class="page " data-title="A letter from Rosa">
+<div class="frame"></div>
+<div class="content">
+<div class="letterhead">
+  <div class="roundimg"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/rosa-portrait.jpg" alt=""></div>
+  <div><div class="kicker">A letter from Rosa</div><h1 class="title">Amore, read this first.</h1></div>
+</div>
+<div class="body letter-body"><p>Giulia says a book needs a letter at the front. So: I talk, she types. If you find a mistake, it’s hers.</p><p>I know your mornings. The telephone is in your hand before your eyes are open. The coffee goes down standing at the sink. The keys are lost. Breakfast is nothing, or something in the car. And by nine o’clock you feel old. Older than me, maybe.</p><p>Everybody thinks their mornings are the worst in the world. Everybody is wrong. My Totò had three children under five and one bathroom. I have seen bad mornings, amore. Yours are ordinary, and that’s good news, because ordinary trouble has ordinary answers.</p><p>People see me come out of the sea at ninety-four and they say: lucky woman. Lucky genes, lucky sea. Ascolta. The sea is not my secret. The sea is my receipt. Eighty-five years of small mornings paid for it: light first, a big glass of water, the stairs, breakfast sitting down, lunch at one, a rest, a walk, people. Not one of those needs a sea. You can do every one of them in an apartment in a city.</p><p>So here’s the deal. Thirty mornings, one small thing each, so small you’ll feel a little silly. Do it, tick the box, write one line. That’s all. You won’t get younger; nobody can sell you that. But your mornings will feel like yours again, you’ll know which small things did it, and nine o’clock will stop feeling like the end of the day.</p><p>And you don’t have to swim. Please don’t. The sea is my story. Yours is a window, a glass of water and a chair.</p><p>Piano piano.</p></div>
+<div class="signoff">
+  <div class="catchband"><span>“The sea doesn’t care how old you are.”</span></div>
+  <div class="sig">Rosa</div>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">3</span></div>
+</section>
+<section class="page " data-title="Why this works">
+<div class="frame"></div>
+<div class="content">
+<div class="kicker">Before you start</div>
+<h1 class="title">Why this works</h1>
+<div class="lede">Giulia studies in the city and likes reasons, so she looked things up. I told her what I know. Here’s both.</div>
+<div class="why">
+  <div class="why-item">
+    <h2 class="sec">Small and daily beats big and brave</h2>
+    <p>Research on habits keeps finding that tiny actions tied to something you already do (waking up, the kettle, lunch) last longer than big plans that run on willpower. One well-known study found new habits took around two months on average to feel automatic, and much longer for some people. So thirty days starts the job; it doesn’t finish it. That’s why the book ends with you choosing five to keep.</p>
+    <p class="rosa">“I didn’t need a study. I had a moka and a church bell.”</p>
+  </div>
+  <div class="why-item">
+    <h2 class="sec">Light first</h2>
+    <p>Sleep researchers keep finding that daylight early in the day helps set the body’s internal clock. That’s one reason people often feel more awake after morning light, and sleepier at the right time at night. Week one is built on this.</p>
+    <p class="rosa">“I don’t know about clocks inside the body. I know about windows.”</p>
+  </div>
+  <div class="why-item">
+    <h2 class="sec">The old Mediterranean pattern</h2>
+    <p>Rosa’s town isn’t one of the famous Blue Zones, the handful of places where researchers found unusual numbers of people living into their nineties and past a hundred. One of them, Sardinia, is just across the water. What keeps coming up in those places is ordinary: walking every day because the town makes you, simple food built on beans, vegetables, bread and olive oil, meals eaten with other people, time to slow down, and a reason to get up. The traditional Mediterranean way of eating has been studied for decades and is often linked with healthier aging. Researchers still argue about exactly why, and they call these patterns, not promises.</p>
+    <p class="rosa">“So do I.”</p>
+  </div>
+  <div class="why-item">
+    <h2 class="sec">People count</h2>
+    <p>Studies that follow people over many years keep finding that regular contact with others goes along with aging well. That’s week four.</p>
+    <p class="rosa">“Concetta has been annoying me for sixty years. It’s good for both of us.”</p>
+  </div>
+</div>
+<div class="note-box">
+  <div class="nb-h">What this book isn’t</div>
+  <p>It’s a set of everyday habits, not medical advice. It doesn’t treat or cure anything, and it can’t replace a doctor who knows you. If you’re tired every day no matter what you change, that’s for a doctor, not a nonna. As Rosa says: ask your doctor, then go outside.</p>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">4</span></div>
+</section>
+<section class="page " data-title="Where you're starting">
+<div class="frame"></div>
+<div class="content"><div class="kicker">Before Day 1</div><h1 class="title">Where you’re starting</h1><div class="lede">Fishermen write down the catch. Not the one they wanted: the one they got.</div>
+<p class="intro">Before your first morning, score your mornings as they are now. Don’t be kind to yourself and don’t be cruel. Just true. You’ll score them again after Day 30, on page 44, and you’ll want something honest to compare.</p>
+<table class="score">
+  <thead><tr><th>My mornings now</th><th class="n">Day 1 score</th></tr></thead>
+  <tbody><tr><td><div class="m">My energy in the morning</div><div class="hint">1 is a wet towel on the line. 10 is a nine-year-old running down to the sea.</div></td><td class="n"><span class="blank"></span><span class="of">/ 10</span></td></tr><tr><td><div class="m">My mood in the morning</div><div class="hint">1 is a storm: nobody talk to me. 10 is Sunday lunch.</div></td><td class="n"><span class="blank"></span><span class="of">/ 10</span></td></tr><tr><td><div class="m">How rushed my mornings feel</div><div class="hint">1 is calm as the harbor at dawn. 10 is running for the bus with one shoe on. <em>For this one, lower is better.</em></div></td><td class="n"><span class="blank"></span><span class="of">/ 10</span></td></tr></tbody>
+</table>
+<div class="dateline"><span>Date of my first morning:</span><span class="blank long"></span></div>
+<div class="note-to">
+  <div class="lbl">A note to me, to read on Day 30</div>
+  <div class="hint">Write it like a letter. What do your mornings look like now? What do you want from these thirty? You’ll be the one reading it.</div>
+  <div data-fill="3"><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">5</span></div>
+</section>
+<section class="page " data-title="What to expect">
+<div class="frame"></div>
+<div class="content">
+<div class="kicker">Before you start</div>
+<h1 class="title">What to expect</h1>
+<div class="lede">A storm you can see coming is just weather.</div>
+<div class="timeline">
+  <div class="tl"><div class="tl-when">Days 1 to 3</div><div class="tl-what"><h2 class="sec">Easy, and a little silly</h2><p>You’ll think: this is too small to matter. Good. Small is the point. Nobody is frightened of opening a window, so you’ll actually do it.</p></div></div>
+  <div class="tl"><div class="tl-when">Days 4 to 7</div><div class="tl-what"><h2 class="sec">The first surprise</h2><p>One morning you’ll open the window before you’ve even thought about it. Write that down. That’s your first fish.</p></div></div>
+  <div class="tl hot"><div class="tl-when">Week two</div><div class="tl-what"><h2 class="sec">The wobble</h2><p>This is the one I want you ready for. The new feeling wears off. Life gets loud. You miss a morning, maybe two, and a little voice says you’ve already failed. Everybody gets this week, amore. It’s the week people quit things. You won’t, because now you know it’s coming, and because of Salvatore’s Rule on the next page.</p></div></div>
+  <div class="tl"><div class="tl-when">Week three</div><div class="tl-what"><h2 class="sec">It starts to feel like yours</h2><p>The food week is the most fun. My kitchen cards are at the back, from page 49.</p></div></div>
+  <div class="tl"><div class="tl-when">Week four and the last two</div><div class="tl-what"><h2 class="sec">It stops being a challenge</h2><p>It turns into how you live. Then you score yourself again and choose five to keep.</p></div></div>
+</div>
+<div class="note-box sea">
+  <div class="nb-h">How to use a day page</div>
+  <p>Read it the night before, or with your first coffee (sitting down). Do the small thing. Tick the box. Write one line under “What I noticed.” That’s the whole method: <strong>Read &gt; Do &gt; Tick &gt; One line.</strong></p>
+  <p>Day 1 is the first morning you do it, whatever day of the week that is. Some tasks happen tonight, so read ahead when a page says so.</p>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">6</span></div>
+</section>
+<section class="page failpage" data-title="Salvatore's Rule">
+<div class="frame"></div>
+<div class="content"><div class="kicker">When you miss a morning</div><h1 class="title">Salvatore’s Rule</h1><div class="lede">No restarts. No catching up. No doubling.</div>
+<div class="body"><p>Salvatore fished all his life. Some mornings the sea said no, and the boats stayed in the harbor. Did he go out twice the next day to make up for it? Of course not. He’d have sunk the boat. He went out once, like always, and in his little book he wrote one word for the day he missed: storm. Then he forgot about it.</p><p>You will miss mornings, amore. Children get sick. Some mornings you sleep through everything. When it happens:</p></div>
+<div class="fail-grid">
+  <ul class="donts"><li>Don’t go back to Day 1. You haven’t lost anything.</li><li>Don’t do two pages tomorrow to catch up.</li><li>Don’t punish yourself with extra.</li><li>Open the book at the next page and do that one. Just that one.</li></ul>
+  <div class="logbook"><div class="lb-h">From Salvatore’s little book</div>
+    <div class="lb-row"><span>Monday</span><span>out</span></div><div class="lb-row"><span>Tuesday</span><span>out</span></div><div class="lb-row storm"><span>Wednesday</span><span>storm</span></div><div class="lb-row"><span>Thursday</span><span>out</span></div><div class="lb-row"><span>Friday</span><span>out</span></div>
+    <div class="lb-foot">Thursday: out once, like always.</div>
+  </div>
+</div>
+<div class="body"><p>A day in this book is a morning you did, not a date on the calendar. If your thirty mornings take thirty-six days, they are still thirty mornings. Miss a whole week? Same rule. The next page is waiting, and it doesn’t ask where you were.</p></div>
+<div class="logline"><span>The tick-sheet is a logbook, not a courtroom.</span></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">7</span></div>
+</section>
+<section class="page " data-title="Make it fit your life">
+<div class="frame"></div>
+<div class="content">
+<div class="kicker">Before you start</div>
+<h1 class="title">Make it fit your life</h1>
+<div class="lede">If your life doesn’t fit the book, change the book, not your life.</div>
+<p class="intro">These mornings are written for an ordinary day: a bed, a window, a kitchen, a start somewhere between six and nine. If that isn’t you, here’s how to bend it.</p>
+<div class="fit">
+  <div class="fit-item"><h2 class="sec">If you work shifts</h2><p>Your morning is whenever you wake up. Salvatore’s started at three, in the dark. If you wake in the dark, switch on the brightest light for the Window Rule and get outside when the daylight comes. Pick one bell for work days and one for days off, as close together as your schedule allows.</p></div>
+  <div class="fit-item"><h2 class="sec">If you have small children</h2><p>My Totò had three under five. Do the rules with them: children love a rule with a name. A two-minute version counts. A version where somebody is crying counts too.</p></div>
+  <div class="fit-item"><h2 class="sec">If your body has limits</h2><p>Every movement here is gentle, and every one can be done slower, sitting down, or skipped. <strong>Go at your own pace. If you have a heart, lung, joint or balance condition, are pregnant, or have been told to take it easy, check with your doctor before week two.</strong> Pain means stop, not push. And if a doctor has told you how to eat, drink or move, the doctor wins.</p></div>
+  <div class="fit-item"><h2 class="sec">If you live alone</h2><p>Since Salvatore, my house is quiet. Quiet, not empty. Week four asks you to talk to people: a neighbor, the baker, a voice on the telephone. You choose the people. They don’t have to live with you.</p></div>
+</div>
+<div class="note-box coral">
+  <div class="nb-h">When it’s more than mornings</div>
+  <p>If tiredness never lifts whatever you change, if you snore loudly or wake up gasping, or if your mood is low most days, see a doctor. That’s the strong move, not a failure. If you’re in a dark place or thinking about hurting yourself, call or text <strong>988</strong> in the US (988 Suicide &amp; Crisis Lifeline), free, any hour. In the UK and Ireland, call <strong>Samaritans</strong> on <strong>116&nbsp;123</strong>, free. Anywhere else, call your local emergency number.</p>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">8</span></div>
+</section>
+<section class="page " data-title="Week One Light and water">
+<div class="frame"></div>
+<div class="content">
+<div class="wk-top">
+  <div class="arch-panel"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/wk1-window.jpg" alt=""></div>
+  <div class="wk-text">
+    <div class="kicker">Week One</div>
+    <h1 class="wk-title">Light and water</h1>
+    <div class="wk-sub">The first ten minutes</div>
+    <div class="body"><p>Week one is only the first ten minutes of your day. You don’t change your job, your breakfast or your family. Just what happens between your eyes opening and your hand reaching for the telephone. Light. Water. Air. The things my mother did before anybody told her why.</p><p>Small? Yes. That’s the trick, amore. Small things pull the bigger things along behind them, like a little boat towing a big one into the harbor.</p></div>
+  </div>
+</div>
+<div class="wk-map"><div class="lbl">This week</div><div class="map-row"><span class="map-n">1</span><span class="map-t"><b>The Window Rule</b><i>Before the telephone, the window. Wide open.</i></span><span class="map-p">10</span></div><div class="map-row"><span class="map-n">2</span><span class="map-t"><b>The Big Glass Rule</b><i>A big glass of water before the coffee. Not a little one.</i></span><span class="map-p">11</span></div><div class="map-row"><span class="map-n">3</span><span class="map-t"><b>The Wrist Rule</b><i>Cool water on the face and the wrists.</i></span><span class="map-p">12</span></div><div class="map-row"><span class="map-n">4</span><span class="map-t"><b>The Doorstep Rule</b><i>Outside in the first hour, even for five minutes.</i></span><span class="map-p">13</span></div><div class="map-row"><span class="map-n">5</span><span class="map-t"><b>The Basil Rule</b><i>Give something alive a drink.</i></span><span class="map-p">14</span></div><div class="map-row"><span class="map-n">6</span><span class="map-t"><b>The Hallway Rule</b><i>The telephone sleeps outside the bedroom.</i></span><span class="map-p">15</span></div><div class="map-row"><span class="map-n">7</span><span class="map-t"><b>The Bell Rule</b><i>One time to get up, every day. Sunday too.</i></span><span class="map-p">16</span></div></div>
+<div class="ready"><div class="lbl">Get ready</div><p>Tonight, put a big glass by your bed or next to the kettle. Check that one window in your home opens wide and easily. That’s all the shopping this week needs.</p></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">9</span></div>
+</section>
+<section class="page " data-title="Day 1 The Window Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>1</b> of 30</span></div>
+<div class="dots"><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Window Rule</h1>
+<div class="ruleline">Before the telephone, the window. Wide open.</div>
+<div class="story"><p>The first thing I touch every morning is the window. Not the moka, not the telephone: the window. I open it wide, both sides, all the way, and I stand there with the light on my face and look. The sea tells me what kind of day it is. Flat. Angry. Or that silver color it goes in February, when it’s thinking about something.</p><p>Giulia’s telephone sleeps next to her pillow like a cat. The first thing she sees every morning is a little glass box full of other people’s news. Then she comes into my kitchen with a face like yesterday’s bread and asks me why she’s tired.</p><p>Listen to me. Your eyes wake up before the rest of you. Give them the sky first, not the box. One minute. You don’t need a sea, amore. You don’t need anything, just a window. A parking lot has a sky over it too.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Before you touch the telephone, go to a window and open it wide, not a crack. Stand there for one whole minute with the light on your face, looking at whatever is outside.</div>
+  <div class="small"><b>Too much today?</b> If it’s dark or the window won’t open, pull the curtains wide and switch on the brightest light in the room. Then the telephone.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">10</span></div>
+</section>
+<section class="page " data-title="Day 2 The Big Glass Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>2</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Big Glass Rule</h1>
+<div class="ruleline">A big glass of water before the coffee. Not a little one.</div>
+<div class="story"><p>Before the moka, a glass of water. A big one, amore. Not one of those little glasses you could hide in your fist. A real glass, full to the top.</p><p>My mother did it, and her mother, and nobody ever told them why. They just knew that a body that has been all night without a drink is like the hill behind the church in August. It doesn’t need a speech. It needs water.</p><p>I keep my glass upside down on the little table by the bed, so the dust stays out. In the morning I turn it over, fill it at the kitchen sink and drink it slowly, looking out of the window I just opened. Then I light the gas under the moka. Not before.</p><p>I’m not telling you water is magic. Giulia would make a face. I’m telling you it’s the easiest win of the whole day, and a day likes to start with a win.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Before your coffee or tea, drink one big glass of water, full to the top. Tonight, put the glass out so it’s waiting for you.</div>
+  <div class="small"><b>Too much today?</b> Drink half the big glass before the coffee and the other half after it.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">11</span></div>
+</section>
+<section class="page " data-title="Day 3 The Wrist Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>3</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Wrist Rule</h1>
+<div class="ruleline">Cool water on the face and the wrists.</div>
+<div class="story"><p>You want to know about the sea. Everybody does. Yes: every morning since I was nine, down the steps, down the ladder, in. Eighty-five years. Only when the sea is kind, and never alone: there is always somebody on the rocks. On rough days I stay by the ladder and splash, and I’m not ashamed to say so.</p><p>But I’m telling you this so you won’t do it. The sea is my story, amore, not your homework. What you want isn’t the sea. It’s the moment: the first cool touch that says, awake now.</p><p>So. The kitchen sink. Cool water on the face, three times. Then on the inside of the wrists. My little anchor gets wet every morning. I got it at seventeen, on a dare from a sailor’s sister, and my mother didn’t speak to me for a month. Worth it.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Splash cool tap water on your face three times, then let it run over the insides of your wrists for a few seconds. Cool, not icy.</div>
+  <div class="small"><b>Too much today?</b> Hold a cool, wet washcloth against your face for ten seconds.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">12</span></div>
+</section>
+<section class="page " data-title="Day 4 The Doorstep Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>4</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Doorstep Rule</h1>
+<div class="ruleline">Outside in the first hour, even for five minutes.</div>
+<div class="story"><p>My stool lives by the front door. Low, wooden, with one leg that wobbles if you sit on it wrong. In the morning, before the town is properly awake, I sit there between my geraniums and my basil and watch the alley wake up. The baker’s boy going down. The cats going up. The laundry on the line, deciding whether to dry.</p><p>Five minutes. I’m not doing anything, and that’s the point. I’m outside, in the real light. Not the light from a screen, not the light through glass. Giulia read me something that says even a cloudy morning outside is much brighter than a lamp indoors. I said: I know, amore. I have eyes.</p><p>You have a doorstep too, or a balcony. If you have neither, you have the walk to the car. Take it slowly and look up.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Get outside within an hour of waking, for at least five minutes: the doorstep, the balcony, or the slow way to the car.</div>
+  <div class="small"><b>Too much today?</b> Stand in your open front door for one minute and look at the sky.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">13</span></div>
+</section>
+<section class="page " data-title="Day 5 The Basil Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>5</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Basil Rule</h1>
+<div class="ruleline">Give something alive a drink.</div>
+<div class="story"><p>Every morning, after my own glass, I water the pots by the door. Two of basil, three of geraniums, and one of something Concetta gave me in 1998 that has never flowered once. I water that one too. Maybe this year.</p><p>People think the plants need me. Ha. I need the plants. They’re the reason I open the door at seven instead of sitting at the table looking at nothing. Something alive is waiting out there, and it’s thirsty, and it doesn’t care how I slept.</p><p>So give something alive a drink this morning: a pot on the windowsill, or the cheap herbs from the market standing in a jar of water. It takes one minute, and it puts you at the window, in the light, before the day starts shouting at you.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Water a plant this morning. No plant? Today, put a cheap pot of herbs, or a green cutting in a jar of water, on your brightest windowsill.</div>
+  <div class="small"><b>Too much today?</b> Put any green stem in a glass of water and stand it by the window you opened on Day 1.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">14</span></div>
+</section>
+<section class="page " data-title="Day 6 The Hallway Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>6</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Hallway Rule</h1>
+<div class="ruleline">The telephone sleeps outside the bedroom.</div>
+<div class="story"><p>When I was a bride, there was one telephone in this town, in the bar on the square. If somebody called from America, a boy ran up the steps to fetch you, and the whole bar listened. Later we had our own, black and heavy, on a little table in the hall. It rang, you walked to it. It never once came to bed with us.</p><p>You remember Giulia’s telephone, sleeping by her pillow like a cat? One weekend she forgot it in my kitchen all night. In the morning she said, Nonna, I slept like a stone. I said: I know, amore. The cat was in the kitchen.</p><p>So tonight your telephone sleeps outside the bedroom. If it’s your alarm, put it across the room, so you have to stand up to make it stop. Standing up is half the morning. The other half is the window, and you already know that one.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Tonight, charge your telephone outside the bedroom. If it’s your alarm, put it across the room, where you have to get up to turn it off.</div>
+  <div class="small"><b>Too much today?</b> Leave it in the room tonight, but face down and out of arm’s reach.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">15</span></div>
+</section>
+<section class="page " data-title="Day 7 The Bell Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week One &middot; Light and water</span><span class="dn">Day <b>7</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Bell Rule</h1>
+<div class="ruleline">One time to get up, every day. Sunday too.</div>
+<div class="story"><p>I have never owned a watch. I don’t need one. The church bell rings, the boats come in, and I know what time it is. The bell rings at seven every morning: Monday, Thursday, Christmas, it doesn’t care. It has never once slept in.</p><p>Your body likes a bell too, amore. You get up at six for work and at eleven on Saturday, and then on Monday morning you feel like you crossed the ocean in the night. That isn’t age. That’s a clock you keep moving around.</p><p>So pick your bell. One time to get up, every day, weekends too, within half an hour. On Sunday I put on my navy dress with the white dots, and I still get up with the bell. After that I can be as lazy as I like. Lazy after the bell is allowed. Lazy instead of the bell is how a week gets ruined.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Choose one wake-up time for every day this week, weekends included, within half an hour either way. Set it tonight.</div>
+  <div class="small"><b>Too much today?</b> Keep your weekend wake-up within an hour of your weekday one.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">16</span></div>
+</section>
+<section class="page " data-title="Week Two Gentle movement">
+<div class="frame"></div>
+<div class="content">
+<div class="wk-top">
+  <div class="arch-panel"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/wk2-doorstep.jpg" alt=""></div>
+  <div class="wk-text">
+    <div class="kicker">Week Two</div>
+    <h1 class="wk-title">Gentle movement</h1>
+    <div class="wk-sub">The 112 steps</div>
+    <div class="body"><p>I have never been to a gym in my life. I had steps, a broom, a baker at the bottom of the hill and three children who never sat still. This week you move the way my town moves: a little, often, on the way to somewhere.</p><p>Nothing hard. Nothing fast. Nothing that hurts, and if something does hurt, you stop. Piano piano isn’t weakness, amore. It’s a method.</p></div>
+  </div>
+</div>
+<div class="wk-map"><div class="lbl">This week</div><div class="map-row"><span class="map-n">8</span><span class="map-t"><b>The Counting Rule</b><i>Take one flight of stairs on purpose, and count it.</i></span><span class="map-p">18</span></div><div class="map-row"><span class="map-n">9</span><span class="map-t"><b>The Cat Rule</b><i>Stretch before you stand.</i></span><span class="map-p">19</span></div><div class="map-row"><span class="map-n">10</span><span class="map-t"><b>The Bread Rule</b><i>Walk to the shop for something small. No car, no delivery.</i></span><span class="map-p">20</span></div><div class="map-row"><span class="map-n">11</span><span class="map-t"><b>The Tall Rule</b><i>Stand like you’re watching for the boats.</i></span><span class="map-p">21</span></div><div class="map-row"><span class="map-n">12</span><span class="map-t"><b>The Heron Rule</b><i>While the coffee makes itself, practice your balance.</i></span><span class="map-p">22</span></div><div class="map-row"><span class="map-n">13</span><span class="map-t"><b>The Stool Rule</b><i>Stand up slowly, and let your legs do the work.</i></span><span class="map-p">23</span></div><div class="map-row"><span class="map-n">14</span><span class="map-t"><b>The Broom Rule</b><i>One job by hand, done properly.</i></span><span class="map-p">24</span></div></div>
+<div class="ready"><div class="lbl">Get ready</div><p>Comfortable shoes by the door. Find your stairs: at home, at work, at the station. Find a sturdy chair with no wheels. If you have a condition, read page 8 first.</p></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">17</span></div>
+</section>
+<section class="page " data-title="Day 8 The Counting Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>8</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Counting Rule</h1>
+<div class="ruleline">Take one flight of stairs on purpose, and count it.</div>
+<div class="story"><p>A hundred and twelve steps from the sea to my door. I know because I count them. Out loud, some mornings, and the neighbors count along to tease me. Let them. Counting keeps the mind busy, so it has no time to complain.</p><p>There is no elevator in my town. There isn’t one in my house, there isn’t one in my life, and I don’t miss it. An elevator is a little box where people stand too close together and look at the ceiling. Steps are better company.</p><p>You don’t need a hundred and twelve, amore. Not today. Maybe not ever. You need your own stairs, taken on purpose instead of by accident. One flight. A hand on the rail, always, and especially on the way down. Count them. Then write the number down below, so you know it.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Take one flight of stairs on purpose today instead of the elevator or the escalator, with a hand on the rail. Count the steps.</div>
+  <div class="small"><b>Too much today?</b> No stairs, or stairs are hard for you? Walk to the end of the hallway and back, counting your steps.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">18</span></div>
+</section>
+<section class="page " data-title="Day 9 The Cat Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>9</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Cat Rule</h1>
+<div class="ruleline">Stretch before you stand.</div>
+<div class="story"><p>The cats on my steps know something. Watch one wake up. It never jumps up and runs. It stretches: front legs, back legs, a big yawn with all its teeth. Then it walks off like it owns the town, which it does.</p><p>People do the opposite. The alarm screams, they jump out of bed like the house is on fire, and then they wonder why their back grumbles all morning.</p><p>So before your feet touch the floor, be a cat for one minute. Arms over your head, long, like you’re reaching for the top shelf where I hide the good cookies from Giulia. Point your toes, then pull them back. Circle your ankles. Then roll onto your side, push yourself up slowly with your arms, and sit on the edge of the bed for three breaths. Then stand. Then the window.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Before you get out of bed, stretch slowly for one minute: arms up, toes pointed then pulled back, ankles circled. Sit on the edge of the bed for three breaths before you stand.</div>
+  <div class="small"><b>Too much today?</b> Skip the stretch and just sit on the edge of the bed for three slow breaths before you stand.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">19</span></div>
+</section>
+<section class="page " data-title="Day 10 The Bread Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>10</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Bread Rule</h1>
+<div class="ruleline">Walk to the shop for something small. No car, no delivery.</div>
+<div class="story"><p>Every morning I go down for bread. One loaf. I could buy two and keep one, Giulia says, very clever. No. The going is the point. Down the alley, past the church, down to the baker. Twenty minutes there and back, if nobody stops me. Somebody always stops me.</p><p>Giulia showed me pictures of the big suburbs, all the houses the same. Madonna. Everything is a car ride from everything, and now people don’t even drive: a boy on a bicycle brings dinner to the door. You can live a whole week and never walk further than from the sofa to the door.</p><p>So today you go yourself. Something small: bread, milk, a lemon, a newspaper. On your own feet, not in the car, and not on the telephone. Nothing heavy to carry home. Just the small thing, and some air.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Walk to a shop or bakery yourself today for something small, instead of driving or ordering it.</div>
+  <div class="small"><b>Too much today?</b> If every shop is too far to walk, drive, park at the far end of the lot, and walk the rest of the way.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">20</span></div>
+</section>
+<section class="page " data-title="Day 11 The Tall Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>11</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Tall Rule</h1>
+<div class="ruleline">Stand like you’re watching for the boats.</div>
+<div class="story"><p>When the boats were late, the wives stood on the harbor wall and watched the water. Nobody slouched. You don’t slouch when you’re looking for your husband’s boat. You stand tall, chin level, eyes far out. I stood like that for years, and now my back does it by itself.</p><p>Giulia sits like a question mark. Over the telephone, over the computer, over her coffee. She’s twenty and she’s bent over like an old man mending nets.</p><p>Here is my mother’s trick. Stand with your back against a wall: heels, bottom, shoulders and the back of your head, all touching it. Not pushing. Just touching. Thirty seconds. That’s what tall feels like. Then step away from the wall and try to keep it, like you’re carrying a full glass across the room.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Three times today, stand with your back against a wall for thirty seconds: heels, bottom, shoulders and head gently touching.</div>
+  <div class="small"><b>Too much today?</b> Once is enough. If your head doesn’t reach the wall comfortably, let it be. Never force it.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">21</span></div>
+</section>
+<section class="page " data-title="Day 12 The Heron Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>12</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Heron Rule</h1>
+<div class="ruleline">While the coffee makes itself, practice your balance.</div>
+<div class="story"><p>In winter a heron comes to the rocks. Gray, serious, like a priest. It stands on one leg for an hour and never falls in. I don’t have an hour. I have the moka.</p><p>The moka takes four or five minutes to start singing. That’s a long time to stare at a pot. So I hold the edge of the counter with both hands and lift one foot, just a little, off the floor. I count to ten. Then the other foot. Some mornings I hold on with only one hand, and some mornings I don’t. Both are fine.</p><p>Balance is like the dialect my mother spoke. I still have it because I use it every day. Keep both hands on the counter until you’re sure of yourself. There’s no prize for falling, amore. Not in my kitchen.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">While your coffee or tea is brewing, hold the counter with both hands and lift one foot just off the floor for a count of ten. Then the other foot.</div>
+  <div class="small"><b>Too much today?</b> Do it sitting down: lift one foot a little off the floor, then the other.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">22</span></div>
+</section>
+<section class="page " data-title="Day 13 The Stool Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>13</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Stool Rule</h1>
+<div class="ruleline">Stand up slowly, and let your legs do the work.</div>
+<div class="story"><p>Concetta uses the wall to get up from her chair. I see her do it. I don’t say anything. (I&nbsp;say it to everybody else.)</p><p>When I get up from my stool by the door, I put my feet flat, lean forward until my nose is over my toes, and stand up with my legs. Then I sit down again slowly, as if there’s an egg on the stool and I don’t want to break it. Five times, while the alley watches. Concetta pretends not to look.</p><p>Getting up from a chair is something you do every day of your life, so practice it, amore. Not fast. Not proud. A sturdy chair with no wheels, its back against the wall so it can’t slide. Use your hands on the armrests if you need them. That isn’t cheating. That’s sense.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Sit in a sturdy chair with no wheels. Five times, slowly, stand up and sit back down. Use your hands on the armrests if you need to.</div>
+  <div class="small"><b>Too much today?</b> Do it twice, or just once, slowly, with all the help you need.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">23</span></div>
+</section>
+<section class="page " data-title="Day 14 The Broom Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Two &middot; Gentle movement</span><span class="dn">Day <b>14</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Broom Rule</h1>
+<div class="ruleline">One job by hand, done properly.</div>
+<div class="story"><p>I ran my house like a boat. Everything has its place, everything gets done, and nobody waits for somebody else to do it. On a boat there’s no machine for anything. You do it with your hands.</p><p>So every morning I sweep. The kitchen, then my step, then a bit of the alley that isn’t mine, because if I don’t, who will? Ten minutes with the broom and my arms and my back have said good morning. Then I hang the laundry on the line across the alley, arms up, clothespins in my mouth like my mother.</p><p>You have machines for everything. Good. Keep them. But pick one job today and give it to your body. Sweep a floor, or carry the groceries in from the car with one bag in each hand, like a sensible person. Slowly. Properly. Then stand back and look at it, done.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Do one household job by hand today, slowly and properly: sweep a floor, hang laundry, or carry the groceries in with one bag in each hand.</div>
+  <div class="small"><b>Too much today?</b> Five minutes tidying one table or counter, standing up.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">24</span></div>
+</section>
+<section class="page " data-title="Halfway">
+<div class="frame"></div>
+<div class="content">
+<div class="kicker">A letter for Day 15</div><h1 class="title">Halfway, amore.</h1>
+<div class="body letter-body mid-body"><div class="mini-arch"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/mid-ladder.jpg" alt=""></div><p>Giulia, write this exactly the way I say it.</p><p>You’re halfway. Fourteen mornings. And if it took you twenty days to get here, it’s still fourteen mornings. I don’t count the storms.</p><p>Now I’ll tell you something nobody told me when I was young. This is the place. Right here. Not Day 1, when everything is new and you buy a nice pen. Not Day 29, when you can see the end. Here, in the middle, when it isn’t new anymore and the end is still far. This is where people put the book in a drawer.</p><p>When I swim, there’s a moment a little way out, with the ladder behind me and the white rock still ahead, when a small voice says: why are you doing this? Go home. Have your coffee. Eighty-five years, and that voice still comes some mornings. (Never alone and never in a rough sea, I promise you. Somebody is always on the rocks.) I don’t argue with it. I don’t win by being strong. I just take the next stroke. Only the next one. Then the voice gets bored and goes away.</p><p>That moment is the whole game. This exact moment. So don’t think about sixteen more mornings. Think about tomorrow’s page. It’s small. They’re all small. I made them small on purpose.</p><p>Before you turn the page, go back and read what you wrote under “What I noticed.” All of it, even the lazy lines. That’s fourteen mornings you didn’t have before.</p><p>I’m touching my beads while I say this. Salvatore bought them in 1952 with the money from his first big swordfish, so big it didn’t fit in the boat. He used to say the sea decides nothing; the fisherman decides, every morning, to go out.</p><p>Tomorrow we eat. Piano piano.</p></div>
+<div class="sig small">Rosa</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">25</span></div>
+</section>
+<section class="page " data-title="Week Three Eating like Nonna">
+<div class="frame"></div>
+<div class="content">
+<div class="wk-top">
+  <div class="arch-panel"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/wk3-table.jpg" alt=""></div>
+  <div class="wk-text">
+    <div class="kicker">Week Three</div>
+    <h1 class="wk-title">Eating like Nonna</h1>
+    <div class="wk-sub">Sit down, amore</div>
+    <div class="body"><p>In my house nobody eats standing up. You sit, you eat, you talk, you get up. This week isn’t about what you eat. I’m not a doctor, and I won’t give you a list.</p><p>It’s about how: sitting down, slowly, without the telephone, with a lunch that feels like lunch, and once, with people around you. If you want to cook something my way, the kitchen cards are at the back.</p></div>
+  </div>
+</div>
+<div class="wk-map"><div class="lbl">This week</div><div class="map-row"><span class="map-n">15</span><span class="map-t"><b>The Chair Rule</b><i>Never eat standing up.</i></span><span class="map-p">27</span></div><div class="map-row"><span class="map-n">16</span><span class="map-t"><b>The Moka Rule</b><i>Set the morning up the night before.</i></span><span class="map-p">28</span></div><div class="map-row"><span class="map-n">17</span><span class="map-t"><b>The Table Rule</b><i>No telephone at the table.</i></span><span class="map-p">29</span></div><div class="map-row"><span class="map-n">18</span><span class="map-t"><b>The Market Rule</b><i>Buy one thing you have to wash or peel.</i></span><span class="map-p">30</span></div><div class="map-row"><span class="map-n">19</span><span class="map-t"><b>The One Pot Rule</b><i>Cook one simple thing from scratch.</i></span><span class="map-p">31</span></div><div class="map-row"><span class="map-n">20</span><span class="map-t"><b>The One O’Clock Rule</b><i>Lunch is a meal, not a pause.</i></span><span class="map-p">32</span></div><div class="map-row"><span class="map-n">21</span><span class="map-t"><b>The Sunday Table Rule</b><i>One meal with people around you.</i></span><span class="map-p">33</span></div></div>
+<div class="ready"><div class="lbl">Get ready</div><p>Clear one end of the table so there’s always a place to sit. Buy bread, olive oil, a lemon and a bag of lentils. The kitchen cards start on page 49.</p></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">26</span></div>
+</section>
+<section class="page " data-title="Day 15 The Chair Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>15</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Chair Rule</h1>
+<div class="ruleline">Never eat standing up.</div>
+<div class="story"><p>The first summer Giulia stayed with me, she ate her breakfast standing over my sink. A cookie in one hand, the telephone in the other, crumbs everywhere, eating like a thief who’s afraid somebody’s coming. She was eleven. I took the cookie away and pointed at the chair. She still talks about it.</p><p>In my house nobody eats standing up. Not a cookie, not an olive. My table has a white crochet cloth my mother made and four chairs that don’t match, and you sit on one of them. You are not a horse and you are not a thief. Nobody is chasing you.</p><p>Whatever your breakfast is, even a piece of bread and a coffee, put it on a plate and sit down for it. Five minutes. Food eaten sitting down is a meal. Food eaten over the sink is just a hurry.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Whatever your breakfast is today, even just bread and coffee, put it on a plate and eat it sitting down at a table, for at least five minutes.</div>
+  <div class="small"><b>Too much today?</b> If you can’t eat in the morning, sit down with your coffee or tea for five minutes. Sitting is the rule.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">27</span></div>
+</section>
+<section class="page " data-title="Day 16 The Moka Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>16</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Moka Rule</h1>
+<div class="ruleline">Set the morning up the night before.</div>
+<div class="story"><p>Every night before bed I fill the moka. Water up to the little valve, coffee in the basket, screwed tight, standing ready on the stove. In the morning I only have to light the gas. The morning shouldn’t have to think, amore. Thinking is for later.</p><p>This moka is dented on one side. Salvatore dropped it on the tiles in 1974, bang, and then he swore at it like it was the moka’s fault. It still works. So do I.</p><p>Your mornings are scattered because you make the morning do everything: find the keys, find the cup, decide the breakfast, decide the shoes. Give it some help. Tonight, put out the cup, the coffee or the tea, the plate. Put the keys where keys live. When you wake up, half the morning is already done, by somebody who wasn’t tired at all: you, last night.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Tonight, set up tomorrow’s breakfast: the cup, the coffee or tea, the plate or bowl. Put your keys and bag where they’ll be in the morning.</div>
+  <div class="small"><b>Too much today?</b> Just put out the cup.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">28</span></div>
+</section>
+<section class="page " data-title="Day 17 The Table Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>17</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Table Rule</h1>
+<div class="ruleline">No telephone at the table.</div>
+<div class="story"><p>Giulia’s friends come for lunch, and they put their telephones next to their forks like a fourth piece of cutlery. Every two minutes, a little light. Everybody looks. Nobody tastes anything. I made those children pasta with sardines and wild fennel, and I don’t think one of them could tell you what was in it.</p><p>So now there’s a basket by my door. The telephones go in the basket. They complain for two minutes, then they forget, and then they talk to me for an hour about their lives, and everybody is happy.</p><p>The table is for faces, amore, even if the only face at the table is yours. With the telephone at the table you’re not eating breakfast, you’re eating the news. One meal today with the telephone in another room. See how much longer that meal lasts when you’re actually at it.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Have one meal today with your telephone in another room. Not face down on the table: in another room.</div>
+  <div class="small"><b>Too much today?</b> Face down and on silent for the first ten minutes of the meal.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">29</span></div>
+</section>
+<section class="page " data-title="Day 18 The Market Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>18</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Market Rule</h1>
+<div class="ruleline">Buy one thing you have to wash or peel.</div>
+<div class="story"><p>When I was a girl I sold lemons at the harbor, from a basket nearly as big as me. So I know a real lemon. You scratch the skin with your nail, and the smell jumps out and grabs you by the nose. The ones in plastic nets that smell of nothing? Basta.</p><p>There’s always a bowl of lemons on my table, and almost nothing in my kitchen comes in a box with a picture on it. Not because a doctor told me. Because my mother cooked what the hill and the boats gave her, and so do I.</p><p>I’m not going to tell you what to eat. That’s between you and your doctor. I’m only sending you shopping. Buy one thing today that grew in the ground or on a tree, something you’ll have to wash, or peel, or cut. A lemon, maybe, or an orange that actually smells like an orange. Then put it where you can see it.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Buy one fresh thing today that you’ll have to wash, peel or cut, and put it out where you can see it.</div>
+  <div class="small"><b>Too much today?</b> Use something fresh you already have. Wash it, cut it, and eat it sitting down.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">30</span></div>
+</section>
+<section class="page " data-title="Day 19 The One Pot Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>19</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The One Pot Rule</h1>
+<div class="ruleline">Cook one simple thing from scratch.</div>
+<div class="story"><p>On Mondays I make lentils. One big pot: an onion, a carrot, a stick of celery, a tomato, a bay leaf, olive oil. Ten minutes of chopping, then the pot does the work while I sweep. It feeds me Monday and Tuesday, and on Wednesday it’s better than it was on Monday, which is one of the mysteries of God.</p><p>Young people think cooking is a show. Thirty ingredients, a video, a mess, a photograph. No, amore. Cooking is one pot, a few things, and patience. My mother fed eight people on two rings of gas.</p><p>Today you cook one thing from scratch. It can be the lentils on my card at the back of this book, or it can be a tomato cut over bread, with oil and salt. If your hands made it, it counts.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Cook one simple thing from scratch today. The Monday Lentils card on page 50 is a good first pot.</div>
+  <div class="small"><b>Too much today?</b> Toast, a cut tomato, a little olive oil and salt. Put together by you, it counts.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">31</span></div>
+</section>
+<section class="page " data-title="Day 20 The One O'Clock Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>20</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The One O’Clock Rule</h1>
+<div class="ruleline">Lunch is a meal, not a pause.</div>
+<div class="story"><p>At one o’clock the bell rings and the whole town stops. The shops close. The men come up from the harbor. Everybody goes home and eats lunch sitting down, properly. It’s the big meal of the day. Supper is small.</p><p>Giulia says in offices now, lunch is a sandwich eaten over the keyboard in eleven minutes. She timed a friend. I didn’t believe it until I saw it with my own eyes, on her telephone.</p><p>I know you can’t close the shop and go home to your mother. But you can stop. Today lunch is a meal: away from the desk, away from the screen, sitting down, for fifteen minutes at least. And if you can make lunch a bit bigger and supper a bit smaller, try it once and see how the next morning feels. Just see. I’m a nonna, not a pharmacist. If your doctor has told you how and when to eat, the doctor wins. Always.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Eat lunch today away from your desk and your screens, sitting down, for at least fifteen minutes.</div>
+  <div class="small"><b>Too much today?</b> Five minutes away from the screen, looking out of a window while you eat.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">32</span></div>
+</section>
+<section class="page " data-title="Day 21 The Sunday Table Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Three &middot; Eating like Nonna</span><span class="dn">Day <b>21</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Sunday Table Rule</h1>
+<div class="ruleline">One meal with people around you.</div>
+<div class="story"><p>On Sunday the long table comes out. Pina and Totò, Carmela when she’s down from the north, grandchildren, great-grandchildren, a cousin nobody invited. Fourteen chairs, six of them borrowed from the neighbors. We eat for three hours. Everybody talks at once, and nobody looks at a telephone, because the telephones are in the basket.</p><p>Salvatore used to say that a meal eaten alone is food, and a meal eaten together is a day. He said it every Sunday for sixty-nine years, and every Sunday somebody rolled their eyes.</p><p>You don’t need fourteen chairs. You need two. This week, share one meal with someone across the table from you: family, a friend, a neighbor, someone from work. If you live alone, invite somebody. Keep it simple. Pasta and a salad is a feast if there’s somebody to argue with.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Today, invite someone to share a meal with you this week, sitting at a table. Or share one today.</div>
+  <div class="small"><b>Too much today?</b> Eat lunch with one coworker or neighbor today instead of alone.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">33</span></div>
+</section>
+<section class="page " data-title="Week Four People and rest">
+<div class="frame"></div>
+<div class="content">
+<div class="wk-top long">
+  <div class="arch-panel"><img src="file:///home/user/ai-storyboard/influencers/rosa/product/build/img/wk4-boats.jpg" alt=""></div>
+  <div class="wk-text">
+    <div class="kicker">Week Four</div>
+    <h1 class="wk-title">People and rest</h1>
+    <div class="wk-sub">A morning is made the day before</div>
+    <div class="body"><p>Here’s a secret, amore: the best mornings start the day before. With who you talked to, how you rested, and what time you put the day down. So this week goes outside the morning on purpose: neighbors, a voice on the telephone, a rest after lunch, a slow walk, a bedtime.</p><p>Then two last mornings to put it all together, and you’re done. Well. You’re started.</p></div>
+  </div>
+</div>
+<div class="wk-map long"><div class="lbl">This week, and the last two</div><div class="map-row"><span class="map-n">22</span><span class="map-t"><b>The Good Morning Rule</b><i>Your first conversation of the day is with a person, not a screen.</i></span><span class="map-p">35</span></div><div class="map-row"><span class="map-n">23</span><span class="map-t"><b>The Concetta Rule</b><i>Five real minutes with a neighbor.</i></span><span class="map-p">36</span></div><div class="map-row"><span class="map-n">24</span><span class="map-t"><b>The Riposo Rule</b><i>Rest after lunch. Rest, not work in a different chair.</i></span><span class="map-p">37</span></div><div class="map-row"><span class="map-n">25</span><span class="map-t"><b>The Evening Walk Rule</b><i>A slow walk after supper.</i></span><span class="map-p">38</span></div><div class="map-row"><span class="map-n">26</span><span class="map-t"><b>The Voice Rule</b><i>Call, don’t type.</i></span><span class="map-p">39</span></div><div class="map-row"><span class="map-n">27</span><span class="map-t"><b>The Octopus Rule</b><i>When the morning goes wrong, laugh first.</i></span><span class="map-p">40</span></div><div class="map-row"><span class="map-n">28</span><span class="map-t"><b>The Last Boat Rule</b><i>When the last boat is in, the day is done.</i></span><span class="map-p">41</span></div><div class="map-sub">Then, the last two mornings</div><div class="map-row"><span class="map-n">29</span><span class="map-t"><b>The Whole Morning Rule</b><i>Put your morning together, your way.</i></span><span class="map-p">42</span></div><div class="map-row"><span class="map-n">30</span><span class="map-t"><b>The Three Words Rule</b><i>Never say “at my age.”</i></span><span class="map-p">43</span></div></div>
+<div class="ready"><div class="lbl">Get ready</div><p>Think of one neighbor whose name you don’t know yet. Check the telephone is still sleeping outside the bedroom (Day 6). Tell someone you’re nearly at the end. People like to be told.</p></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">34</span></div>
+</section>
+<section class="page " data-title="Day 22 The Good Morning Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>22</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Good Morning Rule</h1>
+<div class="ruleline">Your first conversation of the day is with a person, not a screen.</div>
+<div class="story"><p>Going down for bread, I say good morning to eleven people. I counted once. The baker. The man who mends the nets, who has answered me with the same grunt for forty years. The priest, who is always late. The girl at the bus stop with the little things in her ears, who now takes one out to answer me. That took three years.</p><p>Giulia’s first conversation of the day used to be with her telephone. Forty messages before she said one word out loud to a living person. You can hear it, you know? A voice that hasn’t been used yet sounds like a door that needs oil.</p><p>Today your first conversation is with a person. Out loud, face to face: whoever you live with, the neighbor with the dog, the bus driver, the woman at the coffee counter. Look at them. Say good morning like you mean it. If they look surprised, good. Say it again tomorrow.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Make your first conversation of the day a real one: say good morning out loud, face to face, to a person, before you read a single message.</div>
+  <div class="small"><b>Too much today?</b> A smile and a nod to one person, before the first message.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">35</span></div>
+</section>
+<section class="page " data-title="Day 23 The Concetta Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>23</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Concetta Rule</h1>
+<div class="ruleline">Five real minutes with a neighbor.</div>
+<div class="story"><p>Concetta lives two doors down. She’s ninety-one, and she thinks she makes better caponata than me. She doesn’t. We’ve been arguing about it for sixty years: sugar or no sugar, fry the eggplant or don’t. Last spring we didn’t speak for two days over a stick of celery.</p><p>But every afternoon she brings her chair out, and I bring my stool, and we talk. About the caponata, about the priest, about whose grandchildren are worse. If one morning her shutters don’t open, I knock on her door. If mine don’t, she knocks on mine. That’s what a neighbor is, amore. Not exactly a friend. Something better: somebody who notices.</p><p>Today, have one real conversation of five minutes with somebody you don’t live with. A neighbor, or the man at the newsstand. Not about work. Ask them one thing and listen to the whole answer.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Have one real five-minute conversation today with someone you don’t live with, about anything except work.</div>
+  <div class="small"><b>Too much today?</b> Ask one person one real question today, and listen to the whole answer.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">36</span></div>
+</section>
+<section class="page " data-title="Day 24 The Riposo Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>24</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Riposo Rule</h1>
+<div class="ruleline">Rest after lunch. Rest, not work in a different chair.</div>
+<div class="story"><p>After lunch the whole town lies down. The shops close, the dogs find some shade, and the alley goes so quiet you can hear the sea. Riposo. I take off my shoes, half close the shutters and lie on my bed for about forty minutes. Sometimes I sleep, sometimes I just listen to the town breathing. Then I get up, drink a glass of water, and the afternoon is new.</p><p>The old men at the bar sleep for two hours and call it riposo. That isn’t riposo, that’s hibernation. Forty minutes, then up.</p><p>I know your boss doesn’t believe in riposo. Fine. Your boss doesn’t have to know. After lunch today, find a quiet place: your bed if you’re home, the car with the radio off, a bench in the shade. Close your eyes. No screen. Forty minutes if your day allows it, ten if it doesn’t. This isn’t laziness, amore. It’s the middle of the day taking a breath.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">After lunch today, rest with no screen: lie down, or sit with your eyes closed. Forty minutes if your day allows it, ten if it doesn’t.</div>
+  <div class="small"><b>Too much today?</b> Two minutes with your eyes closed after lunch, anywhere you can sit.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">37</span></div>
+</section>
+<section class="page " data-title="Day 25 The Evening Walk Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>25</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Evening Walk Rule</h1>
+<div class="ruleline">A slow walk after supper.</div>
+<div class="story"><p>When the heat goes out of the day, the whole town comes out. Arm in arm, up the main street and back down again, slowly, in our good cardigans. Nobody is going anywhere. That’s the point. You walk the day off. You see who’s engaged, who’s fighting, who has a new haircut and shouldn’t.</p><p>I go in my blue housedress and my gray cardigan, down to the end of the harbor wall and back, slow as a procession. Salvatore and I walked it every evening of our marriage. Now I walk it with whoever is going. Somebody is always going.</p><p>After supper tonight, walk for ten minutes. Slowly. Not exercise, amore: a walk. Around the block, to the end of the street and back, somewhere lit and safe. With someone if you have someone, with your own thoughts if you don’t. The telephone stays in your pocket.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">After supper tonight, take a slow ten-minute walk somewhere lit and safe. No destination, no hurry.</div>
+  <div class="small"><b>Too much today?</b> Five minutes up and down your own street, or around your building.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">38</span></div>
+</section>
+<section class="page " data-title="Day 26 The Voice Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>26</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Voice Rule</h1>
+<div class="ruleline">Call, don’t type.</div>
+<div class="story"><p>Every Sunday at six, Carmela calls me from the north. Every Sunday for thirty years. I know her voice before she says anything: tired, happy, worried, a new boyfriend for one of the grandchildren. You can’t hear any of that in a little written message with a yellow face at the end.</p><p>Giulia sends me those all week. Little hearts, little faces. I call her back and I say: Giulietta, I don’t want a picture of a heart. I want to hear you.</p><p>So today, a voice. Call one person instead of sending a message: your mother, or the friend you keep meaning to write to. Five minutes is enough. You’ll be surprised how much a voice carries, and how much yours needed using. The telephone is for voices, amore. That’s what it was invented for.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Call one person today instead of messaging them. Five minutes is enough.</div>
+  <div class="small"><b>Too much today?</b> Send a voice message instead of a written one.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">39</span></div>
+</section>
+<section class="page " data-title="Day 27 The Octopus Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>27</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Octopus Rule</h1>
+<div class="ruleline">When the morning goes wrong, laugh first.</div>
+<div class="story"><p>You see this little scar in my eyebrow? I was eleven. I saw an octopus on the rocks and I chased it, and I slipped, and I hit my head, and there was blood everywhere, and my mother screamed loud enough to bring the priest. The octopus won. I still think it’s funny.</p><p>Some mornings go wrong. The coffee goes down your shirt. The bus leaves without you. The child puts a shoe in the toilet. And at a quarter past seven you decide the whole day is ruined. Eh. It isn’t the day. It’s ten minutes of the day, and you’re letting those ten minutes boss around the other nine hundred.</p><p>So today, when the first thing goes wrong, say it out loud: the octopus won. Laugh if you can. Tell somebody about it later and laugh then. Then carry on with your day, like somebody who fell off a rock once and got up.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">When the first thing goes wrong today, say out loud, “The octopus won.” Tell someone about it later, and carry on.</div>
+  <div class="small"><b>Too much today?</b> Tonight, tell one person the silliest thing that went wrong today.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">40</span></div>
+</section>
+<section class="page " data-title="Day 28 The Last Boat Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">Week Four &middot; People and rest</span><span class="dn">Day <b>28</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i><i class=""></i></div>
+<h1 class="rule">The Last Boat Rule</h1>
+<div class="ruleline">When the last boat is in, the day is done.</div>
+<div class="story"><p>In my town the evening has an end. The last boat comes in, the men tie it up, the lights come on along the harbor, and that’s it. The day is finished. Nobody fishes at midnight.</p><p>So I have my own last boat. When it’s in, around nine, I turn off the big light and put on the little lamp. The radio goes off. I put out tomorrow’s glass and fill the moka for the morning. Then I wash my face and go to bed, at more or less the same time every night, the way the bell rings at the same time every morning. The bell and the last boat hold my day between them, like two hands.</p><p>Pick your last boat tonight. A time when the screens go off and the lights go low, at least half an hour before you want to be asleep. Then go to bed when you’re sleepy, not when the television tells you the next episode is starting.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Choose your last-boat time tonight: screens off and lights low at least half an hour before bed. Go to bed close to the same time every night this week.</div>
+  <div class="small"><b>Too much today?</b> Tonight, lights low and no screen for the last fifteen minutes before sleep.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">41</span></div>
+</section>
+<section class="page " data-title="Day 29 The Whole Morning Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">The last two mornings</span><span class="dn">Day <b>29</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i><i class=""></i></div>
+<h1 class="rule">The Whole Morning Rule</h1>
+<div class="ruleline">Put your morning together, your way.</div>
+<div class="story"><p>Twenty-eight mornings, twenty-eight small things. Today we put them all on one table.</p><p>My whole morning takes about an hour, and I’ve been practicing it since I was nine. The window. The big glass. A stretch like the cat. Down the steps to the sea, when it’s kind, with somebody on the rocks. Up again, counting. The moka I filled last night. Breakfast at the table, sitting down, with the radio. Then the broom. It isn’t a routine, amore. It’s just my morning. It feels like work about as much as combing my hair does.</p><p>Today, do your whole morning. Choose four or five of the rules you liked best and do them one after another, in the order that makes sense in your house. Don’t add anything new. Don’t make it a show. Just see how it feels to have a morning that belongs to you from the first minute.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Do your whole morning: four or five of your favorite rules, one after another, in your own order. Write the order under “What I noticed.”</div>
+  <div class="small"><b>Too much today?</b> Do any two of your favorites back to back.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">42</span></div>
+</section>
+<section class="page " data-title="Day 30 The Three Words Rule">
+<div class="frame"></div>
+<div class="content">
+<div class="dayhead"><span class="wk">The last two mornings</span><span class="dn">Day <b>30</b> of 30</span></div>
+<div class="dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="today"></i></div>
+<h1 class="rule">The Three Words Rule</h1>
+<div class="ruleline">Never say “at my age.”</div>
+<div class="story"><p>There are three words I don’t allow in my house. At my age.</p><p>Last summer a woman on vacation watched me come up the ladder, and she said, “At my age, I could never do that.” She was forty-five. I’m old enough to be her grandmother. I didn’t tell her to swim, amore; the sea isn’t for everybody. I told her to stop saying those three words, because every time you say them you make yourself a little older, for nothing.</p><p>You came to this book feeling old before nine in the morning. Look at you now: thirty mornings. Your age was never the problem. The words were. So today, catch them. “At my age.” “I’m too old for that.” “It’s too late for me.” Every time you hear yourself say one, stop, and do one small piece of the thing instead. One minute of it. Then come and tell me who’s old.</p></div>
+<div class="task"><span class="box "></span><div>
+  <div class="lbl">Today</div>
+  <div class="do">Today, catch every “at my age,” “I’m too old for this” and “it’s too late for me.” Each time, stop and do one small piece of the thing instead, even for one minute.</div>
+  <div class="small"><b>Too much today?</b> Write the sentence you say most often on the first line below, then cross it out.</div>
+</div></div>
+<div class="noticed" data-fill="4"><div class="lbl">What I noticed:</div><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">43</span></div>
+</section>
+<section class="page " data-title="Thirty mornings later">
+<div class="frame"></div>
+<div class="content"><div class="kicker">After Day 30</div><h1 class="title">Thirty mornings later</h1><div class="lede">Now the numbers. Honestly, like the first time.</div>
+<p class="intro">Turn back to page 5 and copy your Day 1 scores into the first column. Then score yourself today, the same way: not the score you hoped for, the one that’s true.</p>
+<table class="score re">
+  <thead><tr><th>Measure</th><th class="n">Day 1</th><th class="n">Day 30</th><th class="n">The change</th></tr></thead>
+  <tbody><tr><td><div class="m">My energy in the morning</div></td><td class="n"><span class="blank s"></span></td><td class="n"><span class="blank s"></span></td><td class="n"><span class="blank s"></span></td></tr><tr><td><div class="m">My mood in the morning</div></td><td class="n"><span class="blank s"></span></td><td class="n"><span class="blank s"></span></td><td class="n"><span class="blank s"></span></td></tr><tr><td><div class="m">How rushed my mornings feel <em>(lower is better)</em></div></td><td class="n"><span class="blank s"></span></td><td class="n"><span class="blank s"></span></td><td class="n"><span class="blank s"></span></td></tr></tbody>
+</table>
+<div class="body after"><p>Now read the note you wrote to yourself on Day 1. Out loud, if nobody’s listening.</p><p>If your numbers moved, that isn’t me talking, and it isn’t excitement. It’s your own handwriting, thirty mornings apart. That’s evidence, amore.</p><p>If they didn’t move much, read your “What I noticed” lines. Small changes hide there, the way the little fish hide under the rocks. And if you’re still exhausted every morning after all this, take this book to your doctor and show them. A month of notes is useful to a doctor. Mine is thirty-four, sixty years younger than me, and he reads everything I bring him. He tells me to keep doing what I’m doing.</p></div>
+<div class="note-to"><div class="lbl">What I want to remember from these thirty mornings</div><div data-fill="4"><div class="rule-line "></div><div class="rule-line "></div><div class="rule-line "></div></div></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">44</span></div>
+</section>
+<section class="page " data-title="Keep Five">
+<div class="frame"></div>
+<div class="content"><div class="kicker">The ritual is yours now</div><h1 class="title">Keep Five</h1>
+<div class="body"><p>Thirty rules is too many to carry forever. Even I don’t do all thirty every day, and they’re my rules.</p><p>Choose five: the ones that made the biggest difference, the ones you’d miss. Write them on the card, cut it out, and put it where your morning starts: by the kettle, on the bathroom mirror, inside the cabinet with the cups. Habits take longer than thirty days to really settle, so keep the card up for at least another month. After that you won’t need it. It will just be your morning.</p></div>
+<div class="cutcard">
+  <div class="cc-h"><span>My five</span><span class="cc-s">The 30-Day Morning Reset</span></div>
+  <div class="cc-row"><span class="cc-n">1</span><span class="rule-line grow"></span><span class="box sm"></span></div><div class="cc-row"><span class="cc-n">2</span><span class="rule-line grow"></span><span class="box sm"></span></div><div class="cc-row"><span class="cc-n">3</span><span class="rule-line grow"></span><span class="box sm"></span></div><div class="cc-row"><span class="cc-n">4</span><span class="rule-line grow"></span><span class="box sm"></span></div><div class="cc-row"><span class="cc-n">5</span><span class="rule-line grow"></span><span class="box sm"></span></div>
+  <div class="cc-times"><span>My bell (wake-up time):</span><span class="blank"></span><span>My last boat (lights low):</span><span class="blank"></span></div>
+</div>
+<div class="cut-note">Cut along the dotted line.</div>
+<div class="catchband big"><span>“The sea doesn’t care how old you are.”</span></div>
+<div class="sig center">Rosa</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">45</span></div>
+</section>
+<section class="page seapage" data-title="Rosa's drawer">
+<div class="frame"></div>
+<div class="content">
+<div class="drawer">
+  <div class="kicker light">The back of the book</div>
+  <h1 class="drawer-title">Rosa’s drawer</h1>
+  <div class="drawer-line">Every kitchen has one drawer where the useful things live: string, a good knife, a recipe somebody’s aunt wrote on an envelope. This is mine.</div>
+  <div class="drawer-list"><div class="dl-row"><span class="dl-t"><b>The 7-Morning Quickstart</b><i>For a week when thirty is too many.</i></span><span class="dl-lead"></span><span class="dl-p">47</span></div><div class="dl-row"><span class="dl-t"><b>The Fridge Sheet</b><i>All thirty rules on one page, to print and tick.</i></span><span class="dl-lead"></span><span class="dl-p">48</span></div><div class="dl-row"><span class="dl-t"><b>Rosa’s Kitchen Cards</b><i>Six dishes and my own breakfast, simple enough for a Tuesday.</i></span><span class="dl-lead"></span><span class="dl-p">49</span></div><div class="dl-row"><span class="dl-t"><b>The 112 Steps Card</b><i>Your own walking habit, for after Day 30.</i></span><span class="dl-lead"></span><span class="dl-p">52</span></div><div class="dl-row"><span class="dl-t"><b>Five Things I Won’t Have in My House</b><i>For the kitchen wall.</i></span><span class="dl-lead"></span><span class="dl-p">53</span></div><div class="dl-row"><span class="dl-t"><b>The honest small print</b><i>Read it. It matters.</i></span><span class="dl-lead"></span><span class="dl-p">54</span></div></div>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">46</span></div>
+</section>
+<section class="page " data-title="The 7-Morning Quickstart">
+<div class="frame"></div>
+<div class="content"><div class="kicker">Bonus one</div><h1 class="title">The 7-Morning Quickstart</h1><div class="lede">For a week when thirty is too many.</div>
+<p class="intro">A new baby, a new job, a month when everything is on fire. You don’t need thirty rules. You need seven, one a morning. Each morning, add the new one and keep the ones before it if you can. If you can’t, just do today’s. If my house were burning, these are the seven I’d carry out.</p>
+<div class="qs"><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 1</span><span class="qs-t"><b>The Window Rule</b><span>Before the telephone, open a window wide and stand in the light for one minute.</span></span><span class="qs-ref">Day 1<br>page 10</span></div><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 2</span><span class="qs-t"><b>The Big Glass Rule</b><span>A big glass of water before the coffee.</span></span><span class="qs-ref">Day 2<br>page 11</span></div><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 3</span><span class="qs-t"><b>The Hallway Rule</b><span>Tonight, the telephone sleeps outside the bedroom.</span></span><span class="qs-ref">Day 6<br>page 15</span></div><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 4</span><span class="qs-t"><b>The Moka Rule</b><span>Tonight, set out the cup, the coffee and the keys for the morning.</span></span><span class="qs-ref">Day 16<br>page 28</span></div><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 5</span><span class="qs-t"><b>The Chair Rule</b><span>Breakfast on a plate, sitting down, five minutes at least.</span></span><span class="qs-ref">Day 15<br>page 27</span></div><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 6</span><span class="qs-t"><b>The Bread Rule</b><span>Walk to the shop for something small. No car, no delivery.</span></span><span class="qs-ref">Day 10<br>page 20</span></div><div class="qs-row"><span class="box "></span><span class="qs-m">Morning 7</span><span class="qs-t"><b>The Last Boat Rule</b><span>Screens off and lights low at least half an hour before bed.</span></span><span class="qs-ref">Day 28<br>page 41</span></div></div>
+<p class="qs-after">When the seven are done and you want more, the thirty are waiting where you left them.</p></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">47</span></div>
+</section>
+<section class="page " data-title="The Fridge Sheet">
+<div class="frame"></div>
+<div class="content"><div class="kicker">Bonus two</div><h1 class="title">The Fridge Sheet</h1><div class="lede">Print it. Stick it up with a magnet. Tick it with a pen.</div>
+<div class="fridge-top"><span>My bell:</span><span class="blank"></span><span>My last boat:</span><span class="blank"></span><span>Started on:</span><span class="blank"></span></div>
+<div class="fridge"><div class="fr-cell"><span class="box sm"></span><span class="fr-n">1</span><span class="fr-t"><b>Window Rule</b><i>Window wide, one minute, before the telephone</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">2</span><span class="fr-t"><b>Big Glass Rule</b><i>A big glass of water before the coffee</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">3</span><span class="fr-t"><b>Wrist Rule</b><i>Cool water on the face and wrists</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">4</span><span class="fr-t"><b>Doorstep Rule</b><i>Five minutes outside in the first hour</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">5</span><span class="fr-t"><b>Basil Rule</b><i>Water something alive</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">6</span><span class="fr-t"><b>Hallway Rule</b><i>Telephone sleeps outside the bedroom</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">7</span><span class="fr-t"><b>Bell Rule</b><i>Same wake-up time, weekends too</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">8</span><span class="fr-t"><b>Counting Rule</b><i>One flight of stairs, counted</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">9</span><span class="fr-t"><b>Cat Rule</b><i>Stretch for one minute before you stand</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">10</span><span class="fr-t"><b>Bread Rule</b><i>Walk to the shop for something small</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">11</span><span class="fr-t"><b>Tall Rule</b><i>Back to the wall, thirty seconds</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">12</span><span class="fr-t"><b>Heron Rule</b><i>Balance at the counter while the coffee brews</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">13</span><span class="fr-t"><b>Stool Rule</b><i>Stand up and sit down slowly, five times</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">14</span><span class="fr-t"><b>Broom Rule</b><i>One job by hand, done properly</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">15</span><span class="fr-t"><b>Chair Rule</b><i>Breakfast sitting down</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">16</span><span class="fr-t"><b>Moka Rule</b><i>Set up breakfast the night before</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">17</span><span class="fr-t"><b>Table Rule</b><i>One meal, telephone in another room</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">18</span><span class="fr-t"><b>Market Rule</b><i>Buy one thing you wash or peel</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">19</span><span class="fr-t"><b>One Pot Rule</b><i>Cook one simple thing from scratch</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">20</span><span class="fr-t"><b>One O’Clock Rule</b><i>Lunch sitting down, away from screens</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">21</span><span class="fr-t"><b>Sunday Table Rule</b><i>One meal with people</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">22</span><span class="fr-t"><b>Good Morning Rule</b><i>First conversation with a person</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">23</span><span class="fr-t"><b>Concetta Rule</b><i>Five real minutes with a neighbor</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">24</span><span class="fr-t"><b>Riposo Rule</b><i>Rest after lunch, no screen</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">25</span><span class="fr-t"><b>Evening Walk Rule</b><i>A slow walk after supper</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">26</span><span class="fr-t"><b>Voice Rule</b><i>Call someone instead of typing</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">27</span><span class="fr-t"><b>Octopus Rule</b><i>Something goes wrong? Laugh, tell someone</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">28</span><span class="fr-t"><b>Last Boat Rule</b><i>Screens off, lights low, same bedtime</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">29</span><span class="fr-t"><b>Whole Morning Rule</b><i>Your favorite rules, in your order</i></span></div><div class="fr-cell"><span class="box sm"></span><span class="fr-n">30</span><span class="fr-t"><b>Three Words Rule</b><i>Never say “at my age”</i></span></div></div>
+<div class="fridge-key"><span>Light and water</span><span>Gentle movement</span><span>Eating like Nonna</span><span>People and rest</span><span>The last two mornings</span></div>
+<p class="fridge-foot">Missed a box? Leave it empty and do the next one. That’s Salvatore’s Rule, page 7.</p></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">48</span></div>
+</section>
+<section class="page " data-title="Kitchen cards 1">
+<div class="frame"></div>
+<div class="content"><div class="kc-pagehead"><span class="kicker">Bonus three</span><span class="kc-title">Rosa’s Kitchen Cards</span><span class="kc-note">Ordinary home cooking for an ordinary kitchen. Allergies, special diets and your doctor’s advice come first.</span></div>
+<div class="kcard">
+  <div class="kc-head"><span class="kc-name">The Moka</span><span class="kc-tag">Coffee the way my house makes it</span></div>
+  <div class="kc-rosa">Set it up the night before (the Moka Rule, page 28) and the morning only has to light the gas.</div>
+  <div class="kc-cols">
+    <div class="kc-need"><div class="kc-lbl">You need</div><ul><li>A stovetop moka pot, any size</li><li>Cold water</li><li>Ground coffee for moka or espresso: fine, but not powder</li></ul></div>
+    <div class="kc-steps"><div class="kc-lbl">Do this</div><ol><li>Fill the bottom with cold water up to the little valve, never above it.</li><li>Fill the basket with coffee and level it with your finger. Don’t press it down. It isn’t a sandwich.</li><li>Screw the top on firmly.</li><li>Low to medium heat, lid open if you like to watch.</li><li>When it starts to gurgle and sputter, take it off the heat. Basta.</li></ol></div>
+  </div>
+  <div class="kc-tip"><b>Careful.</b> The handle and the metal get very hot. Let it cool before you open it to clean it. Tea people: same rule, with the teapot and the cup set out tonight.</div>
+</div><div class="kcard">
+  <div class="kc-head"><span class="kc-name">Pane Cunzato</span><span class="kc-tag">Dressed bread, ready in five minutes</span></div>
+  <div class="kc-rosa">Fishermen took this to sea in their pockets. You will eat it at the table.</div>
+  <div class="kc-cols">
+    <div class="kc-need"><div class="kc-lbl">You need</div><ul><li>A thick slice of good bread (yesterday’s is fine)</li><li>A ripe tomato</li><li>Good olive oil, salt and dried oregano</li><li>If you like: a slice of cheese, a few olives, an anchovy</li></ul></div>
+    <div class="kc-steps"><div class="kc-lbl">Do this</div><ol><li>Warm or toast the bread if it’s old.</li><li>Cut the tomato in half and rub it into the bread, or slice it on top.</li><li>Olive oil over everything, a pinch of salt, a pinch of oregano.</li><li>Cheese or olives on top, if you want them.</li><li>Sit down.</li></ol></div>
+  </div>
+  <div class="kc-tip"><b>In winter.</b> When tomatoes taste of nothing, use a spoonful of canned crushed tomatoes instead.</div>
+</div><div class="kbreak"><div class="kc-head"><span class="kc-name sm">Rosa’s breakfast</span><span class="kc-tag">No recipe needed</span></div><p>A cup from the moka. A slice of yesterday’s bread with olive oil. An orange or a fig, depending on the month. All of it on a plate, at the table, with the radio on. That has been my breakfast for as long as I can remember. Yours can be anything at all. Just sit down for it: the Chair Rule, page 27.</p></div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">49</span></div>
+</section>
+<section class="page " data-title="Kitchen cards 2">
+<div class="frame"></div>
+<div class="content"><div class="kc-pagehead"><span class="kicker">Bonus three</span><span class="kc-title">Rosa’s Kitchen Cards</span><span class="kc-note">Ordinary home cooking for an ordinary kitchen. Allergies, special diets and your doctor’s advice come first.</span></div>
+<div class="kcard">
+  <div class="kc-head"><span class="kc-name">Monday Lentils</span><span class="kc-tag">One pot, three days</span></div>
+  <div class="kc-rosa">Better on Wednesday. Don’t ask me why. (The One Pot Rule, page 31.)</div>
+  <div class="kc-cols">
+    <div class="kc-need"><div class="kc-lbl">You need</div><ul><li>1 cup brown or green lentils, rinsed</li><li>1 onion, 1 carrot and 1 celery stalk, chopped small</li><li>1 clove garlic, sliced, and 2 tablespoons olive oil</li><li>1 cup canned crushed tomatoes, 1 bay leaf</li><li>About 4 cups water, and salt</li></ul></div>
+    <div class="kc-steps"><div class="kc-lbl">Do this</div><ol><li>Warm the oil and cook the onion, carrot and celery gently for 8 to 10 minutes, until soft.</li><li>Add the garlic for one minute.</li><li>Add the lentils, tomatoes, bay leaf and water. Bring to a boil, then turn it down to a gentle simmer.</li><li>Cook 30 to 40 minutes, until the lentils are soft. Add a little water if it gets too thick.</li><li>Salt at the end. Take out the bay leaf. A little olive oil on top in the bowl.</li></ol></div>
+  </div>
+  <div class="kc-tip"><b>Keep it.</b> Let it cool, cover it, keep it in the fridge, and eat it within three days.</div>
+</div><div class="kcard">
+  <div class="kc-head"><span class="kc-name">Beans and Greens</span><span class="kc-tag">The hill on a plate</span></div>
+  <div class="kc-rosa">On my hill the fennel grows wild. Don’t go picking wild plants unless somebody who truly knows them shows you. Buy a fennel bulb and use the feathery tops.</div>
+  <div class="kc-cols">
+    <div class="kc-need"><div class="kc-lbl">You need</div><ul><li>1 can (15 oz) white beans or chickpeas, rinsed</li><li>A big bunch of greens: chard, escarole, kale or spinach</li><li>2 cloves garlic, sliced, and 3 tablespoons olive oil</li><li>Salt, black pepper and half a lemon</li><li>Fennel fronds if you have them, and bread for the side</li></ul></div>
+    <div class="kc-steps"><div class="kc-lbl">Do this</div><ol><li>Wash the greens well and chop them roughly.</li><li>Warm the oil and garlic over low heat until it smells good, not brown.</li><li>Add the greens with a splash of water, cover, and cook until soft: about 3 minutes for spinach, up to 10 for kale or chard stems.</li><li>Add the beans and warm them through.</li><li>Salt, pepper, a squeeze of lemon, the fennel fronds and a little more oil.</li></ol></div>
+  </div>
+  <div class="kc-tip"><b>With it.</b> Bread, to wipe the plate. In my house that is not bad manners. It is the point.</div>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">50</span></div>
+</section>
+<section class="page " data-title="Kitchen cards 3">
+<div class="frame"></div>
+<div class="content"><div class="kc-pagehead"><span class="kicker">Bonus three</span><span class="kc-title">Rosa’s Kitchen Cards</span><span class="kc-note">Ordinary home cooking for an ordinary kitchen. Allergies, special diets and your doctor’s advice come first.</span></div>
+<div class="kcard">
+  <div class="kc-head"><span class="kc-name">Salvatore’s Fish</span><span class="kc-tag">Whatever came in this morning</span></div>
+  <div class="kc-rosa">Salvatore said: don’t ask for the fish you want. Ask which fish is fresh today. Then cook it simply, and sit down to eat it at one.</div>
+  <div class="kc-cols">
+    <div class="kc-need"><div class="kc-lbl">You need</div><ul><li>2 fillets of white fish, whatever is freshest</li><li>1 lemon</li><li>2 tablespoons olive oil</li><li>1 clove garlic, sliced thin</li><li>A handful of parsley, and salt</li></ul></div>
+    <div class="kc-steps"><div class="kc-lbl">Do this</div><ol><li>Heat the oven to 400&deg;F (200&deg;C).</li><li>Put the fish in an oiled baking dish. Salt, oil, the garlic, and thin slices of lemon on top.</li><li>Bake 10 to 15 minutes, until the fish is white all the way through and flakes easily with a fork.</li><li>Chopped parsley and a squeeze of lemon. Sit down.</li></ol></div>
+  </div>
+  <div class="kc-tip"><b>Careful.</b> Fish must be cooked all the way through. If you’re not sure, give it two more minutes.</div>
+</div><div class="kcard">
+  <div class="kc-head"><span class="kc-name">Caponata (Not Concetta’s)</span><span class="kc-tag">Sweet and sour, better tomorrow</span></div>
+  <div class="kc-rosa">Concetta puts in too much sugar. I’m not saying this to be unkind. I’m saying it because it’s true. She fries the eggplant. I roast it. I’m right.</div>
+  <div class="kc-cols">
+    <div class="kc-need"><div class="kc-lbl">You need</div><ul><li>1 large eggplant, in cubes</li><li>1 onion, chopped, and 2 celery stalks, sliced</li><li>4 tablespoons olive oil</li><li>1 cup canned crushed tomatoes</li><li>2 tablespoons capers, rinsed, and a handful of pitted green olives</li><li>3 tablespoons red wine vinegar, 1 tablespoon sugar (one, Concetta), salt, fresh basil</li></ul></div>
+    <div class="kc-steps"><div class="kc-lbl">Do this</div><ol><li>Heat the oven to 425&deg;F (220&deg;C). Toss the eggplant with half the oil and a pinch of salt and roast 25 to 30 minutes, until soft and golden.</li><li>Meanwhile cook the onion and celery gently in the rest of the oil for 10 minutes.</li><li>Add the tomatoes, capers and olives, and simmer 10 minutes.</li><li>Stir in the eggplant, vinegar and sugar and simmer 5 minutes more. Taste: sweet and sour together.</li><li>Rest it, until tomorrow if you can. Basil on top. Eat it at room temperature, with bread.</li></ol></div>
+  </div>
+  <div class="kc-tip"><b>Keep it.</b> Covered in the fridge, up to four days.</div>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">51</span></div>
+</section>
+<section class="page " data-title="The 112 Steps Card">
+<div class="frame"></div>
+<div class="content"><div class="kicker">Bonus four</div><h1 class="title">The 112 Steps Card</h1><div class="lede">Your own walking habit, for after Day 30.</div>
+<p class="rosa-quote">A hundred and twelve steps from the sea to my door. Down in the morning, up again after my swim (only when the sea is kind, and never alone). Some days I count them out loud. There’s a low wall at step sixty where I sit if I want to, and I don’t apologize to anybody for sitting.</p>
+<p class="body find">Find your 112. The stairs at the station, the hill to the mailbox, the long way around the block, laps of the hallway on a rainy day. Walk it once and count it, so you know your number.</p>
+<div class="my112"><span>My 112 is:</span><span class="blank long"></span><span>Steps or minutes:</span><span class="blank"></span></div>
+<div class="steps-rules"><div class="lbl">Rosa’s walking rules</div><div class="sr-row"><span class="sr-n">1</span><span><b>Piano piano.</b> If you can’t talk while you walk, slow down.</span></div><div class="sr-row"><span class="sr-n">2</span><span><b>One hand for the rail.</b> On the way down, always.</span></div><div class="sr-row"><span class="sr-n">3</span><span><b>Count out loud.</b> The mind can’t count and complain at the same time.</span></div><div class="sr-row"><span class="sr-n">4</span><span><b>Sit when you want to.</b> My wall is at step sixty. Find yours.</span></div><div class="sr-row"><span class="sr-n">5</span><span><b>Same time, same place.</b> The habit lives in the place.</span></div></div>
+<div class="steplog"><div class="lbl">Four weeks of walking: tick a box for every day you walk your 112</div><div class="log-row"><span class="log-w">Week 1</span><span class="log-c"><span class="box sm"></span><i>1</i></span><span class="log-c"><span class="box sm"></span><i>2</i></span><span class="log-c"><span class="box sm"></span><i>3</i></span><span class="log-c"><span class="box sm"></span><i>4</i></span><span class="log-c"><span class="box sm"></span><i>5</i></span><span class="log-c"><span class="box sm"></span><i>6</i></span><span class="log-c"><span class="box sm"></span><i>7</i></span></div><div class="log-row"><span class="log-w">Week 2</span><span class="log-c"><span class="box sm"></span><i>1</i></span><span class="log-c"><span class="box sm"></span><i>2</i></span><span class="log-c"><span class="box sm"></span><i>3</i></span><span class="log-c"><span class="box sm"></span><i>4</i></span><span class="log-c"><span class="box sm"></span><i>5</i></span><span class="log-c"><span class="box sm"></span><i>6</i></span><span class="log-c"><span class="box sm"></span><i>7</i></span></div><div class="log-row"><span class="log-w">Week 3</span><span class="log-c"><span class="box sm"></span><i>1</i></span><span class="log-c"><span class="box sm"></span><i>2</i></span><span class="log-c"><span class="box sm"></span><i>3</i></span><span class="log-c"><span class="box sm"></span><i>4</i></span><span class="log-c"><span class="box sm"></span><i>5</i></span><span class="log-c"><span class="box sm"></span><i>6</i></span><span class="log-c"><span class="box sm"></span><i>7</i></span></div><div class="log-row"><span class="log-w">Week 4</span><span class="log-c"><span class="box sm"></span><i>1</i></span><span class="log-c"><span class="box sm"></span><i>2</i></span><span class="log-c"><span class="box sm"></span><i>3</i></span><span class="log-c"><span class="box sm"></span><i>4</i></span><span class="log-c"><span class="box sm"></span><i>5</i></span><span class="log-c"><span class="box sm"></span><i>6</i></span><span class="log-c"><span class="box sm"></span><i>7</i></span></div></div>
+<div class="safety">Gentle walking only. If you have a heart, lung, joint or balance condition, ask your doctor what is right for you. Then go outside.</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">52</span></div>
+</section>
+<section class="page " data-title="Five things I won't have in my house">
+<div class="frame"></div>
+<div class="content"><div class="poster">
+  <div class="kicker">Bonus five: for the kitchen wall</div>
+  <h1 class="poster-title">Five things I won’t have in my house</h1>
+  <div class="poster-list"><div class="pl-row"><span class="pl-n">1</span><span class="pl-t"><b>Eating standing up.</b><i>Sit. The food isn’t going anywhere, and neither are you.</i></span></div><div class="pl-row"><span class="pl-n">2</span><span class="pl-t"><b>Telephones at the table.</b><i>The table is for faces.</i></span></div><div class="pl-row"><span class="pl-n">3</span><span class="pl-t"><b>Elevators.</b><i>There isn’t one, and I don’t miss it. Take the stairs. Hold the rail.</i></span></div><div class="pl-row"><span class="pl-n">4</span><span class="pl-t"><b>Fuss.</b><i>Basta. Do the small thing and stop talking about it.</i></span></div><div class="pl-row"><span class="pl-n">5</span><span class="pl-t"><b>People who say “at my age.”</b><i>I’m ninety-four. Don’t.</i></span></div></div>
+  <div class="poster-sig">Nonna Rosa, 94</div>
+</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">53</span></div>
+</section>
+<section class="page " data-title="The honest small print">
+<div class="frame"></div>
+<div class="content"><div class="kicker">The last page</div><h1 class="title">The honest small print</h1><div class="lede">Ascolta. This part matters, so I’ll say it plainly.</div>
+<div class="sp"><div class="sp-item"><h2 class="sec">I’m not a real person.</h2><p>Nonna Rosa is a fictional character created with AI. So are Giulia, Concetta, Salvatore, the town and the 112 steps. The habits in this book are real and ordinary: daylight, water, walking, sitting down to eat, rest and people. They have been part of everyday life in many places for a very long time. You don’t need me to believe in them.</p></div><div class="sp-item"><h2 class="sec">This is not medical advice.</h2><p>It’s general information about everyday habits. It doesn’t diagnose, treat or cure anything, it isn’t therapy, and it doesn’t replace a doctor who knows you. If a doctor has told you how to eat, drink, move or rest, follow the doctor.</p></div><div class="sp-item"><h2 class="sec">Move gently.</h2><p>Go at your own pace. Stop if anything hurts or makes you dizzy or short of breath. If you have a condition, are pregnant or are recovering from something, ask your doctor before the movement week.</p></div><div class="sp-item"><h2 class="sec">Never the sea.</h2><p>Nothing in this book asks you to swim, or to get into cold or open water. The sea is my story, not your homework.</p></div><div class="sp-item"><h2 class="sec">Food.</h2><p>The kitchen cards are ordinary home recipes. Mind your allergies, cook fish all the way through, and keep leftovers in the fridge.</p></div><div class="sp-item"><h2 class="sec">When it’s more than mornings.</h2><p>Tiredness that never lifts, low mood most days, or weeks of bad sleep: see a doctor. If you are in a dark place or thinking about hurting yourself, call or text <strong>988</strong> in the US (988 Suicide &amp; Crisis Lifeline), free, any hour. In the UK and Ireland, call <strong>Samaritans</strong> on <strong>116&nbsp;123</strong>, free. Anywhere else, call your local emergency number.</p></div><div class="sp-item"><h2 class="sec">Your copy.</h2><p>This PDF is for you and your home. Print as many pages as you like. Please don’t share or resell the file.</p></div></div>
+<div class="sp-close">Now close the book, amore, and go open a window.</div></div>
+<div class="footer"><span>The 30-Day Morning Reset &middot; Nonna Rosa</span><span class="pg">54</span></div>
+</section></body></html>

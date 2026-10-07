@@ -1,0 +1,272 @@
+[
+ {
+  "page": 1,
+  "id": "cover",
+  "title": "Cover"
+ },
+ {
+  "page": 2,
+  "id": "contents",
+  "title": "Contents"
+ },
+ {
+  "page": 3,
+  "id": "letter",
+  "title": "A letter from Rosa"
+ },
+ {
+  "page": 4,
+  "id": "why",
+  "title": "Why this works"
+ },
+ {
+  "page": 5,
+  "id": "score",
+  "title": "Where you're starting"
+ },
+ {
+  "page": 6,
+  "id": "expect",
+  "title": "What to expect"
+ },
+ {
+  "page": 7,
+  "id": "failure",
+  "title": "Salvatore's Rule"
+ },
+ {
+  "page": 8,
+  "id": "fit",
+  "title": "Make it fit your life"
+ },
+ {
+  "page": 9,
+  "id": "week1",
+  "title": "Week One: Light and water"
+ },
+ {
+  "page": 10,
+  "id": "day1",
+  "title": "Day 1: The Window Rule"
+ },
+ {
+  "page": 11,
+  "id": "day2",
+  "title": "Day 2: The Big Glass Rule"
+ },
+ {
+  "page": 12,
+  "id": "day3",
+  "title": "Day 3: The Wrist Rule"
+ },
+ {
+  "page": 13,
+  "id": "day4",
+  "title": "Day 4: The Doorstep Rule"
+ },
+ {
+  "page": 14,
+  "id": "day5",
+  "title": "Day 5: The Basil Rule"
+ },
+ {
+  "page": 15,
+  "id": "day6",
+  "title": "Day 6: The Hallway Rule"
+ },
+ {
+  "page": 16,
+  "id": "day7",
+  "title": "Day 7: The Bell Rule"
+ },
+ {
+  "page": 17,
+  "id": "week2",
+  "title": "Week Two: Gentle movement"
+ },
+ {
+  "page": 18,
+  "id": "day8",
+  "title": "Day 8: The Counting Rule"
+ },
+ {
+  "page": 19,
+  "id": "day9",
+  "title": "Day 9: The Cat Rule"
+ },
+ {
+  "page": 20,
+  "id": "day10",
+  "title": "Day 10: The Bread Rule"
+ },
+ {
+  "page": 21,
+  "id": "day11",
+  "title": "Day 11: The Tall Rule"
+ },
+ {
+  "page": 22,
+  "id": "day12",
+  "title": "Day 12: The Heron Rule"
+ },
+ {
+  "page": 23,
+  "id": "day13",
+  "title": "Day 13: The Stool Rule"
+ },
+ {
+  "page": 24,
+  "id": "day14",
+  "title": "Day 14: The Broom Rule"
+ },
+ {
+  "page": 25,
+  "id": "midpoint",
+  "title": "Halfway: a letter for Day 15"
+ },
+ {
+  "page": 26,
+  "id": "week3",
+  "title": "Week Three: Eating like Nonna"
+ },
+ {
+  "page": 27,
+  "id": "day15",
+  "title": "Day 15: The Chair Rule"
+ },
+ {
+  "page": 28,
+  "id": "day16",
+  "title": "Day 16: The Moka Rule"
+ },
+ {
+  "page": 29,
+  "id": "day17",
+  "title": "Day 17: The Table Rule"
+ },
+ {
+  "page": 30,
+  "id": "day18",
+  "title": "Day 18: The Market Rule"
+ },
+ {
+  "page": 31,
+  "id": "day19",
+  "title": "Day 19: The One Pot Rule"
+ },
+ {
+  "page": 32,
+  "id": "day20",
+  "title": "Day 20: The One O'Clock Rule"
+ },
+ {
+  "page": 33,
+  "id": "day21",
+  "title": "Day 21: The Sunday Table Rule"
+ },
+ {
+  "page": 34,
+  "id": "week4",
+  "title": "Week Four: People and rest"
+ },
+ {
+  "page": 35,
+  "id": "day22",
+  "title": "Day 22: The Good Morning Rule"
+ },
+ {
+  "page": 36,
+  "id": "day23",
+  "title": "Day 23: The Concetta Rule"
+ },
+ {
+  "page": 37,
+  "id": "day24",
+  "title": "Day 24: The Riposo Rule"
+ },
+ {
+  "page": 38,
+  "id": "day25",
+  "title": "Day 25: The Evening Walk Rule"
+ },
+ {
+  "page": 39,
+  "id": "day26",
+  "title": "Day 26: The Voice Rule"
+ },
+ {
+  "page": 40,
+  "id": "day27",
+  "title": "Day 27: The Octopus Rule"
+ },
+ {
+  "page": 41,
+  "id": "day28",
+  "title": "Day 28: The Last Boat Rule"
+ },
+ {
+  "page": 42,
+  "id": "day29",
+  "title": "Day 29: The Whole Morning Rule"
+ },
+ {
+  "page": 43,
+  "id": "day30",
+  "title": "Day 30: The Three Words Rule"
+ },
+ {
+  "page": 44,
+  "id": "rescore",
+  "title": "Thirty mornings later"
+ },
+ {
+  "page": 45,
+  "id": "keep",
+  "title": "Keep Five"
+ },
+ {
+  "page": 46,
+  "id": "drawer",
+  "title": "Rosa's drawer"
+ },
+ {
+  "page": 47,
+  "id": "quick",
+  "title": "The 7-Morning Quickstart"
+ },
+ {
+  "page": 48,
+  "id": "fridge",
+  "title": "The Fridge Sheet"
+ },
+ {
+  "page": 49,
+  "id": "kitchen1",
+  "title": "Rosa's Kitchen Cards (1 of 3)"
+ },
+ {
+  "page": 50,
+  "id": "kitchen2",
+  "title": "Rosa's Kitchen Cards (2 of 3)"
+ },
+ {
+  "page": 51,
+  "id": "kitchen3",
+  "title": "Rosa's Kitchen Cards (3 of 3)"
+ },
+ {
+  "page": 52,
+  "id": "steps",
+  "title": "The 112 Steps Card"
+ },
+ {
+  "page": 53,
+  "id": "poster",
+  "title": "Five Things I Won't Have in My House"
+ },
+ {
+  "page": 54,
+  "id": "smallprint",
+  "title": "The honest small print"
+ }
+]
